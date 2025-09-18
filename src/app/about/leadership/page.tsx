@@ -186,7 +186,7 @@ export default function LeadershipPage() {
               </p>
             </div>
 
-            {/* Advisor Cards Grid - Professional Design */}
+            {/* Advisor Cards Grid - Professional Design - Updated */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
