@@ -12,23 +12,44 @@ out/
 dist/
 build/
 
-# Environment variables - CRITICAL: Never commit these!
+# 🔐 CRITICAL SECURITY: Environment variables - NEVER COMMIT!
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 .env.*
+.envrc
+.env.backup
+.env.example.local
 
-# Logs
-*.log
-dev.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+# 🔐 CRITICAL SECURITY: Secrets and credentials
+secrets/
+credentials/
+keys/
+tokens/
+auth/
+config/secrets/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.p8
+*.keystore
+*.jks
+id_rsa
+id_rsa.pub
+*.private
+*.secret
+*.token
+*.credential
+*.auth
+*.pass
+*.password
+*.pwd
 
-# Database files - CRITICAL: Never commit these!
+# 🔐 CRITICAL SECURITY: Database files - NEVER COMMIT!
 *.db
 *.sqlite
 *.sqlite3
@@ -36,165 +57,72 @@ sqlite.db
 data/
 data/secure.db
 data/backups/
+backups/
+*.backup.db
+*.dump
+*.sql
+*.backup
 
-# Generated reports
-lighthouse-report.html
-*-report.md
-*_REPORT.md
-GITHUB_FAILURE_REPORT.md
-WEBSITE_CLEANUP_REPORT.md
-MISSING_NAVIGATION_REPORT.md
-
-# Security Documentation - CRITICAL: Never commit these!
+# 🔐 CRITICAL SECURITY: Security documentation and audits
 SECURITY_AUDIT_*.md
 OWASP_*.md
 *_SECURITY_*.md
 *_AUDIT_*.md
 *_COMPLIANCE_*.md
-HYDRATION_FIX.md
-TROUBLESHOOTING.md
+*_PENETRATION_*.md
+*_VULNERABILITY_*.md
+security-reports/
+audit-reports/
+compliance-reports/
 
-# Generated sitemap
-public/sitemap.xml
-
-# Temporary files
-*.tmp
-*.temp
-.cache/
-tsconfig.tsbuildinfo
-
-# IDE files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
-
-# Coverage directory used by tools like istanbul
-coverage/
-*.lcov
-
-# nyc test coverage
-.nyc_output
-
-# Dependency directories
-jspm_packages/
-
-# Optional npm cache directory
-.npm
-
-# Optional eslint cache
-.eslintcache
-
-# Microbundle cache
-.rpt2_cache/
-.rts2_cache_cjs/
-.rts2_cache_es/
-.rts2_cache_umd/
-
-# Optional REPL history
-.node_repl_history
-
-# Output of 'npm pack'
-*.tgz
-
-# Yarn Integrity file
-.yarn-integrity
-
-# parcel-bundler cache (https://parceljs.org/)
-.cache
-.parcel-cache
-
-# Next.js build output
-.next
-.next/cache
-
-# Nuxt.js build / generate output
-.nuxt
-dist
-
-# Gatsby files
-.cache/
-
-# Storybook build outputs
-.out
-.storybook-out
-
-# Temporary folders
-tmp/
-temp/
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Local Netlify folder
-.netlify
-
-# Vercel
-.vercel
-
-# TypeScript
-*.tsbuildinfo
-
-# Security files - CRITICAL: Never commit these!
-*.pem
-*.key
-*.crt
-*.p12
-*.pfx
-*.p8
-*.pem
-id_rsa
-id_rsa.pub
-*.keystore
-*.jks
-
-# Backup files
-*.bak
-*.backup
-*.old
-
-# Database backups
-backups/
-*.backup.db
-
-# 🔐 SECURITY: Additional sensitive files
-secrets/
-credentials/
-keys/
-tokens/
-auth/
-config/secrets/
-
-# Security and debugging utilities - CRITICAL: Never commit these!
+# 🔐 CRITICAL SECURITY: Debug and development files
 src/lib/debug.ts
 src/lib/security.ts
 src/lib/hooks.ts
 src/components/HydrationHandler.tsx
 src/components/ErrorBoundary.tsx
-# macOS
+debug/
+debug-*
+*.debug
+*.dev
+*.development
+
+# 🔐 CRITICAL SECURITY: Test and CI/CD sensitive files
+testsprite_*
+.testsprite.json
+run-testsprite.js
+*.test.local
+*.spec.local
+test-secrets/
+ci-secrets/
+.github/secrets/
+.github/workflows/secrets/
+
+# 🔐 CRITICAL SECURITY: Backup and temporary files
+*.bak
+*.backup
+*.old
+*.tmp
+*.temp
+*.log
+*.dump
+temp/
+tmp/
+.cache/
+cache/
+
+# 🔐 CRITICAL SECURITY: IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.vscode/extensions.json
+
+# 🔐 CRITICAL SECURITY: OS generated files
 .DS_Store
 .DS_Store?
 ._*
@@ -202,12 +130,139 @@ src/components/ErrorBoundary.tsx
 .Trashes
 ehthumbs.db
 Thumbs.db
-# Temporary files
-*.tmp
-*.temp
-*.log
-*.dump
-# TestSprite
-.testsprite.json
-testsprite_*
-run-testsprite.js
+
+# 🔐 CRITICAL SECURITY: Runtime and process files
+pids
+*.pid
+*.seed
+*.pid.lock
+*.sock
+*.socket
+
+# 🔐 CRITICAL SECURITY: Coverage and reports
+coverage/
+*.lcov
+.nyc_output
+reports/
+*.report
+*-report.md
+*_REPORT.md
+GITHUB_FAILURE_REPORT.md
+WEBSITE_CLEANUP_REPORT.md
+MISSING_NAVIGATION_REPORT.md
+PERFORMANCE_OPTIMIZATIONS.md
+CLEANUP_SUMMARY.md
+
+# 🔐 CRITICAL SECURITY: Generated files
+public/sitemap.xml
+lighthouse-report.html
+*.tgz
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# 🔐 CRITICAL SECURITY: Dependency directories
+jspm_packages/
+.npm
+.yarn
+.pnpm
+
+# 🔐 CRITICAL SECURITY: Cache directories
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.parcel-cache
+.cache
+.parcel-cache
+
+# 🔐 CRITICAL SECURITY: Optional REPL history
+.node_repl_history
+
+# 🔐 CRITICAL SECURITY: Next.js specific
+.next
+.next/cache
+.vercel
+.netlify
+
+# 🔐 CRITICAL SECURITY: TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# 🔐 CRITICAL SECURITY: Storybook
+.out
+.storybook-out
+
+# 🔐 CRITICAL SECURITY: Additional security patterns
+**/node_modules/**
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+**/.env*
+**/secrets/**
+**/keys/**
+**/credentials/**
+**/tokens/**
+**/auth/**
+**/config/secrets/**
+**/*.pem
+**/*.key
+**/*.crt
+**/*.p12
+**/*.pfx
+**/*.p8
+**/*.keystore
+**/*.jks
+**/id_rsa*
+**/*.private
+**/*.secret
+**/*.token
+**/*.credential
+**/*.auth
+**/*.pass
+**/*.password
+**/*.pwd
+**/*.db
+**/*.sqlite*
+**/*.backup
+**/*.dump
+**/*.sql
+**/data/**
+**/backups/**
+**/security-reports/**
+**/audit-reports/**
+**/compliance-reports/**
+**/debug/**
+**/test-secrets/**
+**/ci-secrets/**
+**/.github/secrets/**
+**/temp/**
+**/tmp/**
+**/.cache/**
+**/cache/**
+**/reports/**
+**/*.report
+**/*-report.md
+**/*_REPORT.md
+**/*.tgz
+**/*.tar.gz
+**/*.zip
+**/*.rar
+**/*.7z
+**/.npm
+**/.yarn
+**/.pnpm
+**/.eslintcache
+**/.rpt2_cache/**
+**/.rts2_cache_**
+**/.parcel-cache
+**/.cache
+**/.node_repl_history
+**/.next
+**/.vercel
+**/.netlify
+**/*.tsbuildinfo
+**/.out
+**/.storybook-out

@@ -7,8 +7,9 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Providers from '@/components/Providers'
 import { ToastProvider } from '@/components/ui/toast'
-import CookieConsent from '@/components/CookieConsent'
-import AnalyticsWrapper from '@/components/AnalyticsWrapper'
+import PerformanceOptimizer from '@/components/PerformanceOptimizer'
+import PerformanceMonitor from '@/components/PerformanceMonitor'
+import { LazyAnalytics, LazyCookieConsent, LazySpeedInsights } from '@/components/LazyComponent'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -16,6 +17,8 @@ const inter = Inter({
   display: 'swap',
   preload: true,
   fallback: ['system-ui', 'arial'],
+  weight: ['400', '500', '600', '700'],
+  adjustFontFallback: true,
 })
 
 export const metadata: Metadata = {
@@ -784,14 +787,52 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://vercel.live" />
         <link rel="dns-prefetch" href="https://va.vercel-scripts.com" />
 
-        {/* Preload critical resources */}
+        {/* Preload critical resources with optimized loading */}
         <link
           rel="preload"
           href="/images/vishva-patel-headshot.jpg"
           as="image"
           type="image/jpeg"
+          fetchPriority="high"
         />
-        <link rel="preload" href="/og-image.jpg" as="image" type="image/jpeg" />
+        <link 
+          rel="preload" 
+          href="/og-image.jpg" 
+          as="image" 
+          type="image/jpeg"
+          fetchPriority="low"
+        />
+        
+        {/* Preload critical CSS */}
+        <link
+          rel="preload"
+          href="/_next/static/css/app/layout.css"
+          as="style"
+        />
+        
+        {/* Resource hints for better performance */}
+        <link rel="prefetch" href="/about" />
+        <link rel="prefetch" href="/products" />
+        <link rel="prefetch" href="/services" />
+        
+        {/* Service Worker Registration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                      console.log('SW registered: ', registration);
+                    })
+                    .catch((registrationError) => {
+                      console.log('SW registration failed: ', registrationError);
+                    });
+                });
+              }
+            `,
+          }}
+        />
       </head>
       <body suppressHydrationWarning={true}>
         <Providers>
@@ -805,9 +846,11 @@ export default function RootLayout({
           </main>
           <Footer />
           <ToastProvider />
-          <CookieConsent />
-          <SpeedInsights />
-          <AnalyticsWrapper />
+          <LazyCookieConsent />
+          <LazySpeedInsights />
+          <LazyAnalytics />
+          <PerformanceOptimizer />
+          <PerformanceMonitor />
         </Providers>
       </body>
     </html>

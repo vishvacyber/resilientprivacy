@@ -37,7 +37,7 @@ const nextConfig: NextConfig = {
           {
             key: 'Content-Security-Policy',
             value:
-              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live https://va.vercel-scripts.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://vercel.live https://va.vercel-scripts.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;",
+              "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://vercel.live https://va.vercel-scripts.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https: blob:; connect-src 'self' https://vercel.live https://va.vercel-scripts.com https://www.google-analytics.com https://analytics.google.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content;",
           },
           {
             key: 'X-DNS-Prefetch-Control',
@@ -164,19 +164,38 @@ const nextConfig: NextConfig = {
       }
     }
 
-    // Optimize asset loading
+    // Optimize asset loading with better code splitting
     if (!dev && !isServer) {
       config.optimization.splitChunks = {
         chunks: 'all',
+        minSize: 20000,
+        maxSize: 244000,
         cacheGroups: {
           default: false,
           vendors: false,
-          // Vendor chunk
+          // Vendor chunk - split large vendor bundles
           vendor: {
             name: 'vendor',
             chunks: 'all',
             test: /node_modules/,
             priority: 20,
+            maxSize: 200000,
+          },
+          // React and React-DOM separate chunk
+          react: {
+            name: 'react',
+            chunks: 'all',
+            test: /node_modules\/(react|react-dom)/,
+            priority: 30,
+            maxSize: 100000,
+          },
+          // UI libraries separate chunk
+          ui: {
+            name: 'ui',
+            chunks: 'all',
+            test: /node_modules\/(@radix-ui|lucide-react|class-variance-authority)/,
+            priority: 25,
+            maxSize: 100000,
           },
           // Common chunk
           common: {
@@ -186,9 +205,27 @@ const nextConfig: NextConfig = {
             priority: 10,
             reuseExistingChunk: true,
             enforce: true,
+            maxSize: 100000,
           },
         },
       }
+      
+      // Enable tree shaking
+      config.optimization.usedExports = true
+      config.optimization.sideEffects = false
+      
+      // Optimize module resolution
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        '@': require('path').resolve(__dirname, 'src'),
+      }
+      
+      // Optimize JavaScript loading
+      config.optimization.moduleIds = 'deterministic'
+      config.optimization.chunkIds = 'deterministic'
+      
+      // Add module concatenation for better performance
+      config.optimization.concatenateModules = true
     }
 
     // Add error handling for CI/CD
