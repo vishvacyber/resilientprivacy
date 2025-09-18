@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server'
-import { securitySchemas, sanitizeInput, validateFormData, checkRateLimit, logSecurityEvent } from '@/lib/security'
+import { securitySchemas, sanitizeInput, validateFormData, checkRateLimit, logSecurityEvent } from '../../../lib/security'
 
 // Rate limiting configuration
 const RATE_LIMIT_MAX = 10 // 10 requests per window
