@@ -620,10 +620,10 @@ export default function Header() {
         {/* Enhanced Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="xl:hidden absolute top-full left-0 right-0 bg-gradient-to-br from-background-card/95 to-background-alt/95 border-t border-border-light/50 backdrop-blur-2xl shadow-2xl animate-in slide-in-from-top-2 fade-in duration-300">
-            <div className="px-4 py-6 space-y-4">
+            <div className="px-4 py-6 space-y-2">
               <Link
                 href="/"
-                className="block px-3 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors"
+                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base"
                 onClick={closeAllDropdowns}
               >
                 Home
@@ -632,7 +632,7 @@ export default function Header() {
               {/* About */}
               <div>
                 <button
-                  className="w-full text-left px-3 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
                   onClick={() => handleDropdownToggle('mobile-about')}
                 >
                   <span>About</span>
@@ -680,7 +680,7 @@ export default function Header() {
               {/* Products & Services */}
               <div>
                 <button
-                  className="w-full text-left px-3 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
                   onClick={() =>
                     handleDropdownToggle('mobile-products-services')
                   }
@@ -785,7 +785,7 @@ export default function Header() {
               {/* Resources */}
               <div>
                 <button
-                  className="w-full text-left px-3 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
                   onClick={() => handleDropdownToggle('mobile-resources')}
                 >
                   <span>Resources</span>
@@ -851,7 +851,7 @@ export default function Header() {
 
               <Link
                 href="/contact"
-                className="block px-3 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors"
+                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base"
                 onClick={closeAllDropdowns}
               >
                 Contact

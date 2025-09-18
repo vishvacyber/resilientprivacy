@@ -95,9 +95,9 @@ export default function Home() {
             <div className="max-w-7xl mx-auto text-center relative z-10">
               <h1
                 id="hero-heading"
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 leading-tight px-2"
+                className="text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 leading-tight px-2"
               >
-                A Secure <span className="inline-block min-w-[120px]"><AnimatedText /></span> Release Engine Company
+                A Secure <span className="inline-block min-w-[100px] xs:min-w-[120px]"><AnimatedText /></span> Release Engine Company
               </h1>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 justify-center px-4">
                 <Link
@@ -126,36 +126,28 @@ export default function Home() {
               >
                 Our Impact in Numbers
               </h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-center px-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 md:gap-12 text-center px-4">
                 <div className="group">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={5000000} suffix="+" />
                   </div>
-                  <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
+                  <div className="text-text-secondary text-sm sm:text-base md:text-lg font-medium">
                     Threats Blocked
                   </div>
                 </div>
                 <div className="group">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={99} suffix=".9%" />
                   </div>
-                  <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
+                  <div className="text-text-secondary text-sm sm:text-base md:text-lg font-medium">
                     Detection Rate
                   </div>
                 </div>
                 <div className="group">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <AnimatedCounter end={50} suffix="+" />
-                  </div>
-                  <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
-                    Global Clients
-                  </div>
-                </div>
-                <div className="group">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gradient mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={24} suffix="/7" />
                   </div>
-                  <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
+                  <div className="text-text-secondary text-sm sm:text-base md:text-lg font-medium">
                     IR Hotline
                   </div>
                 </div>
@@ -176,10 +168,10 @@ export default function Home() {
               >
                 Our Core Services
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <Link
                   href="/products"
-                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-purple rounded-lg flex items-center justify-center shadow-purple group-hover:shadow-purple-lg transition-all duration-300">
@@ -191,7 +183,7 @@ export default function Home() {
                         <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
                       Products
                     </h3>
                   </div>
@@ -206,7 +198,7 @@ export default function Home() {
 
                 <Link
                   href="/services"
-                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-blue rounded-lg flex items-center justify-center shadow-blue group-hover:shadow-blue-lg transition-all duration-300">
@@ -218,7 +210,7 @@ export default function Home() {
                         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
                       Managed Services
                     </h3>
                   </div>
@@ -233,7 +225,7 @@ export default function Home() {
 
                 <Link
                   href="/products/threat-intelligence-platform"
-                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-green rounded-lg flex items-center justify-center shadow-green group-hover:shadow-green-lg transition-all duration-300">
@@ -245,7 +237,7 @@ export default function Home() {
                         <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
                       Threat Intel
                     </h3>
                   </div>
@@ -260,7 +252,7 @@ export default function Home() {
 
                 <Link
                   href="/services"
-                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                  className="group bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-xl p-4 sm:p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
                 >
                   <div className="flex items-center gap-4 mb-4">
                     <div className="w-12 h-12 bg-gradient-orange rounded-lg flex items-center justify-center shadow-orange group-hover:shadow-orange-lg transition-all duration-300">
@@ -273,7 +265,7 @@ export default function Home() {
                         <path d="M12 6l1.09 2.26L15.5 8.27l-2.5 2.43.59 3.44L12 13.77l-1.59.84.59-3.44L8.5 8.27l2.41-.01L12 6z" />
                       </svg>
                     </div>
-                    <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
+                    <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors">
                       Strategic Consulting
                     </h3>
                   </div>
@@ -292,9 +284,9 @@ export default function Home() {
           {/* Additional Metrics - Mobile Optimized */}
           <section className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 px-4 sm:px-6 bg-background">
             <div className="max-w-7xl mx-auto">
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-center px-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-12 text-center px-4">
                 <div className="group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={2} />
                   </div>
                   <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
@@ -302,7 +294,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={99} suffix=".99%" />
                   </div>
                   <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
@@ -310,7 +302,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={15} suffix="-min" />
                   </div>
                   <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
@@ -318,7 +310,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-gradient mb-2 sm:mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={1000} suffix="+" />
                   </div>
                   <div className="text-text-secondary text-xs sm:text-sm md:text-base lg:text-lg font-medium">
