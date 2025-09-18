@@ -91,7 +91,7 @@ export default function Home() {
             role="region"
             aria-labelledby="hero-heading"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-accent-500/15 via-transparent to-primary-600/10"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-accent-500/20 via-transparent to-success-600/15"></div>
             <div className="max-w-7xl mx-auto text-center relative z-10">
               <h1
                 id="hero-heading"

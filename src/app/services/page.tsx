@@ -430,16 +430,16 @@ export default function ServicesPage() {
       </section>
 
       {/* Industry Expertise */}
-      <section className="relative py-24 px-6 bg-gradient-to-br from-[#1A1A1A]/50 to-[#0D0D0F]/80 backdrop-blur-xl">
+      <section className="relative py-24 px-6 bg-gradient-to-br from-background-alt/50 to-background/80 backdrop-blur-xl">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
               Industry{' '}
-              <span className="bg-gradient-to-r from-[#06B6D4] to-[#8B5CF6] bg-clip-text text-transparent">
+              <span className="fxology-text-gradient">
                 Expertise
               </span>
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
               Deep industry knowledge and compliance expertise across regulated
               and high-risk sectors.
             </p>
@@ -449,7 +449,7 @@ export default function ServicesPage() {
             {industryExpertise.map((industry, index) => (
               <div
                 key={industry.industry}
-                className="group relative bg-gradient-to-br from-[#0D0D0F]/90 to-[#1A1A1A]/90 backdrop-blur-xl p-8 rounded-3xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-[#8B5CF6]/10 transform hover:-translate-y-2"
+                className="group relative fxology-card p-8 rounded-3xl hover:fxology-shadow transition-all duration-500 hover:scale-105 transform hover:-translate-y-2"
               >
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${industry.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
@@ -468,7 +468,7 @@ export default function ServicesPage() {
                     {industry.regulations.map((reg, regIndex) => (
                       <span
                         key={reg}
-                        className="px-3 py-2 bg-gradient-to-r from-[#8B5CF6]/10 to-[#EC4899]/10 text-[#8B5CF6] text-sm rounded-xl border border-[#8B5CF6]/20 hover:border-[#8B5CF6]/50 hover:bg-gradient-to-r hover:from-[#8B5CF6]/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
+                        className="px-3 py-2 bg-gradient-to-r from-accent-500/10 to-success-500/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-accent-500/20 hover:to-success-500/20 transition-all duration-300 hover:scale-105"
                         style={{ transitionDelay: `${regIndex * 100}ms` }}
                       >
                         {reg}

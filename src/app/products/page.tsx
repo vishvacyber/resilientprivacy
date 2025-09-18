@@ -145,12 +145,12 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Security <span className="text-[#8B5CF6]">Products</span>
+            Security <span className="fxology-text-gradient">Products</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive cybersecurity solutions designed to protect your
             organization from evolving threats and ensure compliance with
             industry standards.
@@ -163,7 +163,7 @@ export default function ProductsPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Request Demo
             </Link>
@@ -254,23 +254,23 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {productCategories.map((product) => (
               <Link key={product.name} href={product.link} className="group">
-                <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-all duration-300 group-hover:transform group-hover:scale-105">
+                <div className="fxology-card p-8 hover:fxology-shadow transition-all duration-300 group-hover:transform group-hover:scale-105">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {product.name}
                   </h3>
-                  <p className="text-[#A1A1AA] mb-6">{product.description}</p>
+                  <p className="text-text-secondary mb-6">{product.description}</p>
                   <ul className="space-y-2 mb-6">
                     {product.features.map((feature) => (
                       <li
                         key={feature}
-                        className="text-[#8B5CF6] text-sm flex items-center"
+                        className="text-accent-500 text-sm flex items-center"
                       >
-                        <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                         {feature}
                       </li>
                     ))}
                   </ul>
-                  <div className="text-[#8B5CF6] group-hover:text-white transition-colors">
+                  <div className="fxology-text-gradient group-hover:text-white transition-colors">
                     Learn More →
                   </div>
                 </div>

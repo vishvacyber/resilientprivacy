@@ -17,40 +17,40 @@ const config: Config = {
         '2xl': '1536px',
       },
       colors: {
-        // Fxology-inspired dark theme
-        background: '#0B0E14',
-        'background-alt': '#141B23',
-        'background-card': '#1A2332',
-        'background-light': '#243447',
-        // Professional fintech accent colors
+        // Fxology green trading theme
+        background: '#0A0F0A',
+        'background-alt': '#0F1A0F',
+        'background-card': '#1A2A1A',
+        'background-light': '#2A3A2A',
+        // Green trading platform colors
         accent: {
-          50: '#E6F3FF',
-          100: '#CCE7FF',
-          200: '#99CFFF',
-          300: '#66B7FF',
-          400: '#339FFF',
-          500: '#0087FF',
-          600: '#006FCC',
-          700: '#005799',
-          800: '#003F66',
-          900: '#002733',
-          950: '#001A1F',
+          50: '#F0FDF4',
+          100: '#DCFCE7',
+          200: '#BBF7D0',
+          300: '#86EFAC',
+          400: '#4ADE80',
+          500: '#22C55E',
+          600: '#16A34A',
+          700: '#15803D',
+          800: '#166534',
+          900: '#14532D',
+          950: '#052E16',
         },
-        // Trading platform colors
+        // Primary green theme
         primary: {
-          50: '#F0F9FF',
-          100: '#E0F2FE',
-          200: '#BAE6FD',
-          300: '#7DD3FC',
-          400: '#38BDF8',
-          500: '#0EA5E9',
-          600: '#0284C7',
-          700: '#0369A1',
-          800: '#075985',
-          900: '#0C4A6E',
-          950: '#082F49',
+          50: '#F0FDF4',
+          100: '#DCFCE7',
+          200: '#BBF7D0',
+          300: '#86EFAC',
+          400: '#4ADE80',
+          500: '#22C55E',
+          600: '#16A34A',
+          700: '#15803D',
+          800: '#166534',
+          900: '#14532D',
+          950: '#052E16',
         },
-        // Success/Profit colors
+        // Success/Profit colors (bright green)
         success: {
           50: '#F0FDF4',
           100: '#DCFCE7',
@@ -64,7 +64,7 @@ const config: Config = {
           900: '#14532D',
           950: '#052E16',
         },
-        // Error/Loss colors
+        // Error/Loss colors (red for losses)
         error: {
           50: '#FEF2F2',
           100: '#FEE2E2',
@@ -80,18 +80,18 @@ const config: Config = {
         },
         text: {
           primary: '#FFFFFF',
-          secondary: '#CBD5E1',
-          tertiary: '#94A3B8',
-          muted: '#64748B',
+          secondary: '#D1FAE5',
+          tertiary: '#A7F3D0',
+          muted: '#6EE7B7',
         },
         border: {
-          light: '#334155',
-          medium: '#475569',
-          dark: '#1E293B',
+          light: '#374151',
+          medium: '#4B5563',
+          dark: '#1F2937',
         },
-        // Fxology-style gradients
+        // Fxology green gradients
         gradient: {
-          primary: 'linear-gradient(135deg, #0087FF 0%, #0EA5E9 100%)',
+          primary: 'linear-gradient(135deg, #22C55E 0%, #16A34A 100%)',
           success: 'linear-gradient(135deg, #22C55E 0%, #16A34A 100%)',
           error: 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)',
         },
