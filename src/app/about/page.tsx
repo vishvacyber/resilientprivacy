@@ -65,7 +65,7 @@ export default function AboutPage() {
               Privacy
             </span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Resilient Privacy is a next-generation cybersecurity company
             redefining digital trust. We specialize in identity security, zero
             trust architecture, threat intelligence, and enterprise
@@ -77,18 +77,18 @@ export default function AboutPage() {
       </section>
 
       {/* Company Overview */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#18181B] to-[#232336]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-4xl font-bold text-[#8B5CF6] mb-8 flex items-center gap-3">
-                <ShieldCheck className="w-8 h-8 text-[#8B5CF6] drop-shadow" />{' '}
+              <h2 className="text-4xl font-bold fxology-text-gradient mb-8 flex items-center gap-3">
+                <ShieldCheck className="w-8 h-8 text-accent-500 drop-shadow" />{' '}
                 Company Overview
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <div className="mb-4 text-lg">
                   <span className="font-semibold text-white">Resilient </span>
-                  <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent font-semibold">
+                  <span className="fxology-text-gradient font-semibold">
                     Privacy
                   </span>{' '}
                   , founded in <span className="font-semibold">2025</span> by
@@ -97,15 +97,15 @@ export default function AboutPage() {
                   the world's most critical organizations—keeping them secure,
                   resilient, and always one step ahead of threats.
                 </div>
-                <div className="my-4 p-6 bg-gradient-to-r from-[#232336] to-[#18181B] border-l-4 border-[#8B5CF6] rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-[#8B5CF6] mb-1 flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-[#8B5CF6]" /> Our Mission
+                <div className="my-4 p-6 bg-gradient-to-r from-background-card to-background-alt border-l-4 border-accent-500 rounded-xl shadow-lg">
+                  <h3 className="text-xl font-bold text-accent-500 mb-1 flex items-center gap-2">
+                    <Zap className="w-5 h-5 text-accent-500" /> Our Mission
                   </h3>
                   <p className="mb-2 text-base">
                     Empower organizations to anticipate threats and strengthen
                     digital trust.
                   </p>
-                  <blockquote className="italic text-[#8B5CF6] border-l-2 border-[#8B5CF6] pl-4 text-lg font-semibold mt-2">
+                  <blockquote className="italic text-accent-500 border-l-2 border-accent-500 pl-4 text-lg font-semibold mt-2">
                     We Don’t Chase Threats. We Preempt Them.
                   </blockquote>
                 </div>
@@ -113,28 +113,28 @@ export default function AboutPage() {
                   <span className="font-semibold">What Sets Us Apart:</span>
                   <ul className="list-none mt-2 space-y-3">
                     <li className="flex items-center gap-3">
-                      <Target className="w-5 h-5 text-[#8B5CF6]" />{' '}
+                      <Target className="w-5 h-5 text-accent-500" />{' '}
                       Identity-first security & zero trust architecture
                     </li>
                     <li className="flex items-center gap-3">
-                      <Globe className="w-5 h-5 text-[#8B5CF6]" /> Advanced
+                      <Globe className="w-5 h-5 text-accent-500" /> Advanced
                       threat intelligence & bespoke consulting
                     </li>
 
                     <li className="flex items-center gap-3">
-                      <Settings className="w-5 h-5 text-[#8B5CF6]" /> Serving
+                      <Settings className="w-5 h-5 text-accent-500" /> Serving
                       healthcare, finance, energy, and more
                     </li>
                   </ul>
                 </div>
 
                 <div className="mt-8">
-                  <p className="text-[#A1A1AA] text-base">
+                  <p className="text-text-secondary text-base">
                     At Resilient Privacy, we don’t just protect digital
                     assets—we engineer trust, enable innovation, and build
                     cyber-resilient enterprises.
                   </p>
-                  <p className="font-semibold text-[#8B5CF6] mt-4 text-lg">
+                  <p className="font-semibold text-accent-500 mt-4 text-lg">
                     Let’s shape a safer digital future—together.
                   </p>
                 </div>
@@ -144,8 +144,8 @@ export default function AboutPage() {
             {/* Right Column - Company Navigation */}
             <div className="lg:col-start-2">
               <div className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A]">
-                <h3 className="text-2xl font-bold text-[#8B5CF6] mb-6 flex items-center gap-3">
-                  <Users className="w-6 h-6 text-[#8B5CF6]" />
+                <h3 className="text-2xl font-bold text-accent-500 mb-6 flex items-center gap-3">
+                  <Users className="w-6 h-6 text-accent-500" />
                   Learn More About Us
                 </h3>
                 <div className="space-y-4">
@@ -157,10 +157,10 @@ export default function AboutPage() {
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white group-hover:text-[#8B5CF6] transition-colors duration-300">
+                      <h4 className="text-lg font-semibold text-white group-hover:text-accent-500 transition-colors duration-300">
                         Leadership & Advisory Board
                       </h4>
-                      <p className="text-[#A1A1AA] text-sm">
+                      <p className="text-text-secondary text-sm">
                         Meet our executive team and strategic advisors
                       </p>
                     </div>
@@ -183,10 +183,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <ShieldCheck className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                 Resilience
               </h3>
-              <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+              <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
                 Adapting and evolving in the face of ever-changing cyber
                 threats, ensuring our clients remain protected and confident in
                 their security posture.
@@ -196,10 +196,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                 Innovation
               </h3>
-              <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+              <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
                 Pioneering cutting-edge security solutions and methodologies
                 that anticipate threats before they materialize, staying ahead
                 of the curve.
@@ -209,10 +209,10 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                 Trust
               </h3>
-              <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+              <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
                 Building lasting relationships through transparency, integrity,
                 and unwavering commitment to protecting our clients' most
                 valuable assets and data.
@@ -250,9 +250,9 @@ export default function AboutPage() {
                 Global Presence
               </h2>
             </div>
-            <p className="text-lg sm:text-xl text-[#A1A1AA] max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
               Our strategically positioned offices form a{' '}
-              <span className="text-[#8B5CF6] font-semibold">
+              <span className="text-accent-500 font-semibold">
                 connected security ecosystem
               </span>
               , delivering world-class cybersecurity services across continents
@@ -265,7 +265,7 @@ export default function AboutPage() {
             <div className="relative bg-gradient-to-r from-[#1A1A1A]/60 to-[#2D2D2D]/60 backdrop-blur-sm rounded-3xl border border-[#333]/50 p-8 sm:p-12 overflow-hidden">
               {/* Decorative World Map Background */}
               <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[200px] sm:text-[300px] text-[#8B5CF6]">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[200px] sm:text-[300px] text-accent-500">
                   🌍
                 </div>
               </div>
@@ -275,7 +275,7 @@ export default function AboutPage() {
                   <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                     Our Global Network
                   </h3>
-                  <p className="text-[#A1A1AA] text-sm sm:text-base">
+                  <p className="text-text-secondary text-sm sm:text-base">
                     Connected security operations worldwide
                   </p>
                 </div>
@@ -288,10 +288,10 @@ export default function AboutPage() {
                       </div>
                       <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                    <div className="text-sm sm:text-base text-[#A1A1AA] font-semibold group-hover:text-white transition-colors duration-300">
+                    <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Strategic Locations
                     </div>
-                    <div className="text-xs text-[#8B5CF6] mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       North America & Asia
                     </div>
                   </div>
@@ -303,10 +303,10 @@ export default function AboutPage() {
                       </div>
                       <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                    <div className="text-sm sm:text-base text-[#A1A1AA] font-semibold group-hover:text-white transition-colors duration-300">
+                    <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Global Operations
                     </div>
-                    <div className="text-xs text-[#8B5CF6] mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Never Sleep Security
                     </div>
                   </div>
@@ -318,10 +318,10 @@ export default function AboutPage() {
                       </div>
                       <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
-                    <div className="text-sm sm:text-base text-[#A1A1AA] font-semibold group-hover:text-white transition-colors duration-300">
+                    <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Security Domains
                     </div>
-                    <div className="text-xs text-[#8B5CF6] mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Consultation
                     </div>
                   </div>
@@ -349,10 +349,10 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Delaware, USA
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-[#8B5CF6] px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
                         Corporate Headquarters
                       </div>
                     </div>
@@ -362,14 +362,14 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
+                <p className="text-text-secondary group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
                   Strategic headquarters serving enterprise clients across North
                   America with comprehensive cybersecurity solutions and
                   executive leadership.
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-[#8B5CF6] font-medium">
+                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>Eastern Time • Primary Office</span>
                   </div>
@@ -397,10 +397,10 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Dallas, Texas, USA
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-[#8B5CF6] px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
                         Regional Operations
                       </div>
                     </div>
@@ -410,14 +410,14 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
+                <p className="text-text-secondary group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
                   Advanced operations center delivering enterprise cybersecurity
                   solutions and technical expertise across North America with
                   24/7 support capabilities.
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-[#8B5CF6] font-medium">
+                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>Central Time • Operations Center</span>
                   </div>
@@ -445,10 +445,10 @@ export default function AboutPage() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-[#8B5CF6] transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Surat, India
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-[#8B5CF6] px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
                         Asia Operations
                       </div>
                     </div>
@@ -458,17 +458,17 @@ export default function AboutPage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
+                <p className="text-text-secondary group-hover:text-white transition-colors duration-300 mb-5 leading-relaxed text-base">
                   Strategic Asia operations center delivering regional
                   cybersecurity expertise and innovative solutions across the
                   Asian continent with local market knowledge.
                 </p>
-                <p className="text-[#8B5CF6] text-sm font-mono mb-3 bg-[#8B5CF6]/5 px-4 py-2 rounded-lg border border-[#8B5CF6]/10">
+                <p className="text-accent-500 text-sm font-mono mb-3 bg-[#8B5CF6]/5 px-4 py-2 rounded-lg border border-[#8B5CF6]/10">
                   Surat, Gujarat, India
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-[#8B5CF6] font-medium">
+                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>India Time • Asia Hub</span>
                   </div>
@@ -488,9 +488,9 @@ export default function AboutPage() {
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-[#E2E8F0] bg-clip-text text-transparent mb-6">
                   Comprehensive Global Coverage
                 </h3>
-                <p className="text-[#A1A1AA] leading-relaxed text-base sm:text-lg">
+                <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
                   With offices strategically positioned across{' '}
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-accent-500 font-semibold">
                     North America and Asia
                   </span>
                   , Resilient Privacy delivers consistent, high-quality
@@ -506,12 +506,12 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#18181B] to-[#232336]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Connect with Us?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Discover how Resilient Privacy can transform your
             organization&apos;s security posture.
           </p>

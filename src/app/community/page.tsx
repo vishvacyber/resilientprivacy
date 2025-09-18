@@ -99,12 +99,12 @@ export default function CommunityPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Security <span className="text-[#8B5CF6]">Community</span>
+            Security <span className="fxology-text-gradient">Community</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Join our global community of cybersecurity professionals. Access
             resources, share knowledge, and help shape the future of security.
           </p>
@@ -114,7 +114,7 @@ export default function CommunityPage() {
             </Link>
             <Link
               href="#forums"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Join Forums
             </Link>
@@ -130,7 +130,7 @@ export default function CommunityPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Building a Global Security Community
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   At Resilient Privacy, we believe that cybersecurity is a
                   collaborative effort that requires the collective knowledge
@@ -168,32 +168,32 @@ export default function CommunityPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Access to exclusive resources
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Direct product influence
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Professional networking
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Early access to features
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Expert support and guidance
                   </span>
                 </div>
@@ -213,24 +213,24 @@ export default function CommunityPage() {
             {communityFeatures.map((feature) => (
               <div
                 key={feature.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-6">{feature.description}</p>
+                <p className="text-text-secondary mb-6">{feature.description}</p>
                 <div className="mb-6">
-                  <h4 className="text-[#8B5CF6] font-semibold mb-3">
+                  <h4 className="text-accent-500 font-semibold mb-3">
                     Key Features
                   </h4>
                   <ul className="space-y-2">
                     {feature.features.map((item) => (
                       <li
                         key={item}
-                        className="text-[#A1A1AA] text-sm flex items-center"
+                        className="text-text-secondary text-sm flex items-center"
                       >
-                        <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                         {item}
                       </li>
                     ))}
@@ -238,7 +238,7 @@ export default function CommunityPage() {
                 </div>
                 <Link
                   href={feature.link}
-                  className="text-[#8B5CF6] hover:text-white transition-colors"
+                  className="text-accent-500 hover:text-white transition-colors"
                 >
                   Access {feature.title} →
                 </Link>
@@ -260,13 +260,13 @@ export default function CommunityPage() {
                 key={stat.metric}
                 className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] text-center"
               >
-                <h3 className="text-4xl font-bold text-[#8B5CF6] mb-4">
+                <h3 className="text-4xl font-bold text-accent-500 mb-4">
                   {stat.value}
                 </h3>
                 <h4 className="text-xl font-bold text-white mb-2">
                   {stat.metric}
                 </h4>
-                <p className="text-[#A1A1AA]">{stat.description}</p>
+                <p className="text-text-secondary">{stat.description}</p>
               </div>
             ))}
           </div>
@@ -283,10 +283,10 @@ export default function CommunityPage() {
             {upcomingEvents.map((event) => (
               <div
                 key={event.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="bg-[#8B5CF6] text-white px-3 py-1 rounded text-sm">
+                  <span className="bg-accent-500 text-white px-3 py-1 rounded text-sm">
                     {event.type}
                   </span>
                 </div>
@@ -295,16 +295,16 @@ export default function CommunityPage() {
                 </h3>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-center gap-2">
-                    <span className="text-[#8B5CF6]">📅</span>
-                    <span className="text-[#A1A1AA]">{event.date}</span>
+                    <span className="text-accent-500">📅</span>
+                    <span className="text-text-secondary">{event.date}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-[#8B5CF6]">📍</span>
-                    <span className="text-[#A1A1AA]">{event.location}</span>
+                    <span className="text-accent-500">📍</span>
+                    <span className="text-text-secondary">{event.location}</span>
                   </div>
                 </div>
-                <p className="text-[#A1A1AA] mb-6">{event.description}</p>
-                <button className="w-full bg-[#8B5CF6] text-white py-3 px-6 rounded font-semibold hover:bg-[#a78bfa] transition-colors">
+                <p className="text-text-secondary mb-6">{event.description}</p>
+                <button className="w-full bg-accent-500 text-white py-3 px-6 rounded font-semibold hover:bg-[#a78bfa] transition-colors">
                   Register Now
                 </button>
               </div>
@@ -320,7 +320,7 @@ export default function CommunityPage() {
             Submit a Feature Request
           </h2>
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <p className="text-[#A1A1AA] mb-8 text-center">
+            <p className="text-text-secondary mb-8 text-center">
               Help us improve our platform by submitting feature requests and
               voting on ideas from other community members.
             </p>
@@ -331,7 +331,7 @@ export default function CommunityPage() {
                 </label>
                 <input
                   type="text"
-                  className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-[#8B5CF6] focus:outline-none"
+                  className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-accent-500 focus:outline-none"
                   placeholder="Your name"
                 />
               </div>
@@ -341,7 +341,7 @@ export default function CommunityPage() {
                 </label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-[#8B5CF6] focus:outline-none"
+                  className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-accent-500 focus:outline-none"
                   placeholder="Your email"
                 />
               </div>
@@ -349,7 +349,7 @@ export default function CommunityPage() {
                 <label className="block text-white font-semibold mb-2">
                   Feature Category
                 </label>
-                <select className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white focus:border-[#8B5CF6] focus:outline-none">
+                <select className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white focus:border-accent-500 focus:outline-none">
                   <option>Select category</option>
                   <option>Platform Features</option>
                   <option>Security Tools</option>
@@ -362,7 +362,7 @@ export default function CommunityPage() {
                 <label className="block text-white font-semibold mb-2">
                   Priority
                 </label>
-                <select className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white focus:border-[#8B5CF6] focus:outline-none">
+                <select className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white focus:border-accent-500 focus:outline-none">
                   <option>Select priority</option>
                   <option>Low</option>
                   <option>Medium</option>
@@ -377,7 +377,7 @@ export default function CommunityPage() {
               </label>
               <textarea
                 rows={6}
-                className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-[#8B5CF6] focus:outline-none resize-vertical"
+                className="w-full px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded text-white placeholder-[#A1A1AA] focus:border-accent-500 focus:outline-none resize-vertical"
                 placeholder="Describe the feature you'd like to see, including use cases and benefits..."
               />
             </div>
@@ -389,12 +389,12 @@ export default function CommunityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Join Our Community?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Connect with security professionals, share knowledge, and help shape
             the future of cybersecurity.
           </p>
@@ -409,7 +409,7 @@ export default function CommunityPage() {
             </Link>
             <Link
               href="/about/careers"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Join Our Team
             </Link>

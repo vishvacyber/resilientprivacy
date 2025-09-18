@@ -118,12 +118,12 @@ export default function TrustCenterPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Trust <span className="text-[#8B5CF6]">Center</span>
+            Trust <span className="fxology-text-gradient">Center</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Transparency in our security practices, performance metrics, and
             commitment to protecting your data and systems.
           </p>
@@ -133,7 +133,7 @@ export default function TrustCenterPage() {
             </Link>
             <Link
               href="#architecture"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Security Architecture
             </Link>
@@ -149,7 +149,7 @@ export default function TrustCenterPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Building Trust Through Transparency
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   At Resilient Privacy, we believe that trust is earned through
                   transparency, consistent performance, and demonstrated
@@ -187,24 +187,24 @@ export default function TrustCenterPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Real-time security metrics
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Independent security audits
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">Bug bounty program</span>
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">Bug bounty program</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Transparent incident reporting
                   </span>
                 </div>
@@ -230,10 +230,10 @@ export default function TrustCenterPage() {
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {metric.metric}
                 </h3>
-                <div className="text-4xl font-bold text-[#8B5CF6] mb-4">
+                <div className="text-4xl font-bold text-accent-500 mb-4">
                   {metric.value}
                 </div>
-                <p className="text-[#A1A1AA] text-sm">{metric.description}</p>
+                <p className="text-text-secondary text-sm">{metric.description}</p>
               </div>
             ))}
           </div>
@@ -264,9 +264,9 @@ export default function TrustCenterPage() {
                   {layer.components.map((component) => (
                     <li
                       key={component}
-                      className="text-[#A1A1AA] flex items-center"
+                      className="text-text-secondary flex items-center"
                     >
-                      <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                       {component}
                     </li>
                   ))}
@@ -297,15 +297,15 @@ export default function TrustCenterPage() {
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between">
-                    <span className="text-[#A1A1AA]">Last Conducted</span>
+                    <span className="text-text-secondary">Last Conducted</span>
                     <span className="text-white">{test.lastConducted}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#A1A1AA]">Next Scheduled</span>
+                    <span className="text-text-secondary">Next Scheduled</span>
                     <span className="text-white">{test.nextScheduled}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#A1A1AA]">Findings</span>
+                    <span className="text-text-secondary">Findings</span>
                     <span className="text-white">{test.findings}</span>
                   </div>
                 </div>
@@ -326,7 +326,7 @@ export default function TrustCenterPage() {
               <h3 className="text-2xl font-bold text-white mb-6">
                 Community-Driven Security
               </h3>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   We believe that security is a collaborative effort. Our bug
                   bounty program invites security researchers from around the
@@ -353,32 +353,32 @@ export default function TrustCenterPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Total Researchers</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Total Researchers</span>
+                  <span className="text-accent-500 font-semibold">
                     {bugBountyProgram.totalResearchers}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Total Reports</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Total Reports</span>
+                  <span className="text-accent-500 font-semibold">
                     {bugBountyProgram.totalReports}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Resolved Reports</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Resolved Reports</span>
+                  <span className="text-accent-500 font-semibold">
                     {bugBountyProgram.resolvedReports}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Average Response</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Average Response</span>
+                  <span className="text-accent-500 font-semibold">
                     {bugBountyProgram.averageResponse}
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Wall of Fame Members</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Wall of Fame Members</span>
+                  <span className="text-accent-500 font-semibold">
                     {bugBountyProgram.wallOfFameMembers}
                   </span>
                 </div>
@@ -399,7 +399,7 @@ export default function TrustCenterPage() {
               <h3 className="text-2xl font-bold text-white mb-6">
                 Honoring Security Researchers
               </h3>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   We believe in recognizing the valuable contributions of
                   security researchers who help make our platform more secure.
@@ -427,30 +427,30 @@ export default function TrustCenterPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Featured on our Wall of Fame
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Up to 50% service discounts
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">Conference recognition</span>
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">Conference recognition</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Priority support access
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Exclusive security updates
                   </span>
                 </div>
@@ -461,12 +461,12 @@ export default function TrustCenterPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Questions About Our Security?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Our security team is available to answer questions about our
             security practices, metrics, and architecture.
           </p>
