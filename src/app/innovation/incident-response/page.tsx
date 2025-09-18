@@ -21,37 +21,37 @@ import {
 const services = [
   {
     name: 'AI-Powered Threat Detection',
-    icon: <Brain className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Brain className="w-6 h-6 text-accent-500" />,
     description:
       'Machine learning algorithms detect and classify threats in real-time with 99.8% accuracy',
   },
   {
     name: 'Quantum-Safe Incident Response',
-    icon: <Shield className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Shield className="w-6 h-6 text-accent-500" />,
     description:
       'Future-proof incident handling with quantum-resistant cryptography and protocols',
   },
   {
     name: 'Advanced Digital Forensics',
-    icon: <Eye className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Eye className="w-6 h-6 text-accent-500" />,
     description:
       'AI-enhanced forensic analysis across cloud, hybrid, and on-premise environments',
   },
   {
     name: 'Automated Containment',
-    icon: <Zap className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Zap className="w-6 h-6 text-accent-500" />,
     description:
       'Zero-touch incident isolation and containment within seconds of detection',
   },
   {
     name: 'Predictive Threat Intelligence',
-    icon: <Globe className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Globe className="w-6 h-6 text-accent-500" />,
     description:
       'AI models predict and prevent future attacks based on global threat patterns',
   },
   {
     name: 'Regulatory Compliance Automation',
-    icon: <Users className="w-6 h-6 text-[#8B5CF6]" />,
+    icon: <Users className="w-6 h-6 text-accent-500" />,
     description:
       'Automated compliance reporting for GDPR, NIS2, DORA, and emerging regulations',
   },
@@ -181,41 +181,41 @@ export default function IncidentResponsePage() {
             className="text-5xl md:text-6xl font-extrabold mb-6 text-white"
           >
             AI-Enhanced{' '}
-            <span className="text-[#8B5CF6]">Incident Response</span>
+            <span className="text-accent-500">Incident Response</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] max-w-4xl mx-auto mb-8">
+          <p className="text-xl text-text-secondary max-w-4xl mx-auto mb-8">
             Revolutionary 2025 incident response powered by artificial
             intelligence, quantum-safe protocols, and automated containment.
             Detect, contain, and remediate threats in seconds, not hours.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-[#232336] p-6 rounded-xl border border-[#8B5CF6]/30">
-              <div className="w-12 h-12 mb-2 bg-[#8B5CF6]/20 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-[#8B5CF6]" />
+            <div className="bg-[#232336] p-6 rounded-xl border border-accent-500/30">
+              <div className="w-12 h-12 mb-2 bg-accent-500/20 rounded-lg flex items-center justify-center">
+                <Zap className="w-6 h-6 text-accent-500" />
               </div>
               <div className="text-2xl font-bold text-white mb-1">
                 15 Seconds
               </div>
-              <div className="text-[#A1A1AA] text-sm">
+              <div className="text-text-secondary text-sm">
                 Average Detection Time
               </div>
             </div>
-            <div className="bg-[#232336] p-6 rounded-xl border border-[#8B5CF6]/30">
-              <div className="w-12 h-12 mb-2 bg-[#8B5CF6]/20 rounded-lg flex items-center justify-center">
-                <Brain className="w-6 h-6 text-[#8B5CF6]" />
+            <div className="bg-[#232336] p-6 rounded-xl border border-accent-500/30">
+              <div className="w-12 h-12 mb-2 bg-accent-500/20 rounded-lg flex items-center justify-center">
+                <Brain className="w-6 h-6 text-accent-500" />
               </div>
               <div className="text-2xl font-bold text-white mb-1">99.8%</div>
-              <div className="text-[#A1A1AA] text-sm">AI Accuracy Rate</div>
+              <div className="text-text-secondary text-sm">AI Accuracy Rate</div>
             </div>
-            <div className="bg-[#232336] p-6 rounded-xl border border-[#8B5CF6]/30">
-              <div className="w-12 h-12 mb-2 bg-[#8B5CF6]/20 rounded-lg flex items-center justify-center">
-                <Shield className="w-6 h-6 text-[#8B5CF6]" />
+            <div className="bg-[#232336] p-6 rounded-xl border border-accent-500/30">
+              <div className="w-12 h-12 mb-2 bg-accent-500/20 rounded-lg flex items-center justify-center">
+                <Shield className="w-6 h-6 text-accent-500" />
               </div>
               <div className="text-2xl font-bold text-white mb-1">
                 Quantum-Safe
               </div>
-              <div className="text-[#A1A1AA] text-sm">
+              <div className="text-text-secondary text-sm">
                 Future-Proof Security
               </div>
             </div>
@@ -231,7 +231,7 @@ export default function IncidentResponsePage() {
             </button>
             <button
               onClick={() => setShowReport(true)}
-              className="inline-flex items-center gap-2 bg-[#232336] border border-[#8B5CF6] text-[#8B5CF6] px-8 py-4 rounded-xl font-semibold hover:bg-[#8B5CF6] hover:text-white transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+              className="inline-flex items-center gap-2 bg-[#232336] border border-accent-500 text-accent-500 px-8 py-4 rounded-xl font-semibold hover:bg-accent-500 hover:text-white transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
               aria-label="Report Incident with AI Analysis"
             >
               <Brain className="w-5 h-5" /> AI-Powered Report
@@ -250,7 +250,7 @@ export default function IncidentResponsePage() {
           >
             Live Incident Status
           </h2>
-          <div className="bg-[#232336] rounded-2xl p-6 border border-[#8B5CF6]/30 shadow-lg flex flex-col md:flex-row items-center justify-between">
+          <div className="bg-[#232336] rounded-2xl p-6 border border-accent-500/30 shadow-lg flex flex-col md:flex-row items-center justify-between">
             <span className="text-lg text-white font-semibold">
               All systems operational
             </span>
@@ -275,7 +275,7 @@ export default function IncidentResponsePage() {
             {services.map((item) => (
               <div
                 key={item.name}
-                className="bg-[#232336] rounded-2xl p-6 border border-[#8B5CF6]/30 shadow-lg hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#232336] rounded-2xl p-6 border border-accent-500/30 shadow-lg hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center mb-4">
                   {item.icon}
@@ -283,7 +283,7 @@ export default function IncidentResponsePage() {
                     {item.name}
                   </h3>
                 </div>
-                <p className="text-[#A1A1AA] text-sm leading-relaxed">
+                <p className="text-text-secondary text-sm leading-relaxed">
                   {item.description}
                 </p>
               </div>
@@ -306,7 +306,7 @@ export default function IncidentResponsePage() {
             {faqs.map((faq, i) => (
               <div
                 key={i}
-                className="bg-[#232336] rounded-2xl border border-[#8B5CF6]/30 shadow-lg"
+                className="bg-[#232336] rounded-2xl border border-accent-500/30 shadow-lg"
               >
                 <button
                   className="w-full flex items-center justify-between px-6 py-4 text-left min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
@@ -317,15 +317,15 @@ export default function IncidentResponsePage() {
                 >
                   <span className="text-lg font-bold text-white">{faq.q}</span>
                   {faqOpen === i ? (
-                    <ArrowRight className="w-6 h-6 text-[#8B5CF6]" />
+                    <ArrowRight className="w-6 h-6 text-accent-500" />
                   ) : (
-                    <ArrowRight className="w-6 h-6 text-[#8B5CF6]" />
+                    <ArrowRight className="w-6 h-6 text-accent-500" />
                   )}
                 </button>
                 {faqOpen === i && (
                   <div
                     id={`faq-panel-${i}`}
-                    className="px-6 pb-4 text-[#A1A1AA]"
+                    className="px-6 pb-4 text-text-secondary"
                   >
                     <p>{faq.a}</p>
                   </div>
@@ -344,9 +344,9 @@ export default function IncidentResponsePage() {
             aria-labelledby="hotline-modal-title"
             aria-live="assertive"
           >
-            <div className="bg-[#232336] rounded-2xl p-8 max-w-md w-full shadow-2xl border border-[#8B5CF6]/40 relative text-center">
+            <div className="bg-[#232336] rounded-2xl p-8 max-w-md w-full shadow-2xl border border-accent-500/40 relative text-center">
               <button
-                className="absolute top-3 right-3 text-[#8B5CF6] text-xl min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+                className="absolute top-3 right-3 text-accent-500 text-xl min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
                 onClick={() => setShowHotline(false)}
                 aria-label="Close hotline modal"
               >
@@ -358,7 +358,7 @@ export default function IncidentResponsePage() {
               >
                 24/7 AI-Enhanced Emergency Response
               </h3>
-              <p className="text-[#A1A1AA] mb-4">
+              <p className="text-text-secondary mb-4">
                 Connect to our AI-powered incident response team for immediate
                 threat analysis and containment:
               </p>
@@ -368,17 +368,17 @@ export default function IncidentResponsePage() {
               >
                 <Brain className="w-5 h-5" /> +1 (469) 666-0131
               </a>
-              <div className="mt-4 text-xs text-[#A1A1AA] space-y-2">
+              <div className="mt-4 text-xs text-text-secondary space-y-2">
                 <p className="flex items-center">
-                  <Brain className="w-3 h-3 mr-2 text-[#8B5CF6]" />
+                  <Brain className="w-3 h-3 mr-2 text-accent-500" />
                   AI triage in 15 seconds
                 </p>
                 <p className="flex items-center">
-                  <Zap className="w-3 h-3 mr-2 text-[#8B5CF6]" />
+                  <Zap className="w-3 h-3 mr-2 text-accent-500" />
                   Automated containment available
                 </p>
                 <p className="flex items-center">
-                  <Shield className="w-3 h-3 mr-2 text-[#8B5CF6]" />
+                  <Shield className="w-3 h-3 mr-2 text-accent-500" />
                   Quantum-safe communication
                 </p>
               </div>
@@ -395,9 +395,9 @@ export default function IncidentResponsePage() {
             aria-labelledby="report-modal-title"
             aria-live="assertive"
           >
-            <div className="bg-[#232336] rounded-2xl p-8 max-w-lg w-full shadow-2xl border border-[#8B5CF6]/40 relative max-h-[90vh] overflow-y-auto">
+            <div className="bg-[#232336] rounded-2xl p-8 max-w-lg w-full shadow-2xl border border-accent-500/40 relative max-h-[90vh] overflow-y-auto">
               <button
-                className="absolute top-3 right-3 text-[#8B5CF6] text-xl min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+                className="absolute top-3 right-3 text-accent-500 text-xl min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
                 onClick={() => {
                   setShowReport(false)
                   resetForm()
@@ -410,7 +410,7 @@ export default function IncidentResponsePage() {
                 id="report-modal-title"
                 className="text-xl font-bold text-white mb-4 flex items-center"
               >
-                <Brain className="w-6 h-6 mr-2 text-[#8B5CF6]" />
+                <Brain className="w-6 h-6 mr-2 text-accent-500" />
                 AI-Powered Incident Report
               </h3>
 
@@ -420,12 +420,12 @@ export default function IncidentResponsePage() {
                   <h4 className="text-lg font-bold text-white mb-2">
                     AI Analysis Complete - Incident Processed!
                   </h4>
-                  <p className="text-[#A1A1AA] mb-4">
+                  <p className="text-text-secondary mb-4">
                     Our AI has analyzed your incident and initiated automated
                     containment protocols. Our expert team has been alerted and
                     will contact you within 15 minutes.
                   </p>
-                  <p className="text-sm text-[#8B5CF6]">
+                  <p className="text-sm text-accent-500">
                     For critical incidents, call our AI-enhanced hotline: +1
                     (469) 666-0131
                   </p>
@@ -444,7 +444,7 @@ export default function IncidentResponsePage() {
                       type="text"
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
                       value={report.name}
                       onChange={(e) =>
                         setReport({ ...report, name: e.target.value })
@@ -464,7 +464,7 @@ export default function IncidentResponsePage() {
                       type="email"
                       required
                       placeholder="Enter your email address"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
                       value={report.email}
                       onChange={(e) =>
                         setReport({ ...report, email: e.target.value })
@@ -483,7 +483,7 @@ export default function IncidentResponsePage() {
                       id="company"
                       type="text"
                       placeholder="Enter your company name"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
                       value={report.company}
                       onChange={(e) =>
                         setReport({ ...report, company: e.target.value })
@@ -501,7 +501,7 @@ export default function IncidentResponsePage() {
                     <select
                       id="incidentType"
                       required
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
                       value={report.incidentType}
                       onChange={(e) =>
                         setReport({
@@ -538,7 +538,7 @@ export default function IncidentResponsePage() {
                     <select
                       id="severity"
                       required
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
                       value={report.severity}
                       onChange={(e) =>
                         setReport({
@@ -578,7 +578,7 @@ export default function IncidentResponsePage() {
                       required
                       placeholder="Describe the incident in detail. Include what happened, when it occurred, and any immediate actions taken."
                       rows={4}
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-[#8B5CF6]/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none resize-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none resize-none"
                       value={report.description}
                       onChange={(e) =>
                         setReport({ ...report, description: e.target.value })
@@ -608,7 +608,7 @@ export default function IncidentResponsePage() {
                     )}
                   </button>
 
-                  <p className="text-xs text-[#A1A1AA] text-center">
+                  <p className="text-xs text-text-secondary text-center">
                     * Required fields. For urgent incidents, please call our
                     24/7 hotline immediately.
                   </p>

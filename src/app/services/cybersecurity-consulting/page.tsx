@@ -259,17 +259,17 @@ export default function CybersecurityConsultingPage() {
       <section className="bg-gradient-to-br from-[#0D0D0F] via-[#1A1A1A] to-[#0D0D0F] py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 bg-[#8B5CF6]/10 border border-[#8B5CF6]/30 rounded-full px-4 py-2 mb-6">
-              <span className="w-2 h-2 bg-[#8B5CF6] rounded-full animate-pulse"></span>
-              <span className="text-[#8B5CF6] text-sm font-semibold">
+            <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-accent-500/30 rounded-full px-4 py-2 mb-6">
+              <span className="w-2 h-2 bg-accent-500 rounded-full animate-pulse"></span>
+              <span className="text-accent-500 text-sm font-semibold">
                 AI-POWERED SECURITY CONSULTING
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
               Next-Generation{' '}
-              <span className="text-[#8B5CF6]">Cybersecurity</span> Consulting
+              <span className="text-accent-500">Cybersecurity</span> Consulting
             </h1>
-            <p className="text-xl text-[#A1A1AA] mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary mb-12 max-w-4xl mx-auto leading-relaxed">
               Strategic cybersecurity guidance powered by AI insights,
               quantum-ready solutions, and future-proof security architectures.
               Navigate the evolving threat landscape with confidence.
@@ -285,7 +285,7 @@ export default function CybersecurityConsultingPage() {
               </Link>
               <Link
                 href="#services"
-                className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
               >
                 Explore AI-Enhanced Services
               </Link>
@@ -297,15 +297,15 @@ export default function CybersecurityConsultingPage() {
             {stats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105"
               >
-                <div className="text-2xl font-bold text-[#8B5CF6] mb-2">
+                <div className="text-2xl font-bold text-accent-500 mb-2">
                   {stat.metric}
                 </div>
                 <div className="text-sm font-semibold text-white mb-1">
                   {stat.label}
                 </div>
-                <div className="text-xs text-[#A1A1AA]">{stat.description}</div>
+                <div className="text-xs text-text-secondary">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -319,7 +319,7 @@ export default function CybersecurityConsultingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               2025 Cybersecurity Consulting Services
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Cutting-edge security consulting services designed for the modern
               threat landscape, incorporating AI, quantum-readiness, and zero
               trust principles.
@@ -330,7 +330,7 @@ export default function CybersecurityConsultingPage() {
             {modernServices.map((service, index) => (
               <div
                 key={service.category}
-                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:transform hover:scale-105 group"
+                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
@@ -338,7 +338,7 @@ export default function CybersecurityConsultingPage() {
                       {service.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                         {service.category}
                       </h3>
                       <span
@@ -353,7 +353,7 @@ export default function CybersecurityConsultingPage() {
                                   ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
                                   : service.trend === 'REGULATORY UPDATE'
                                     ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
-                                    : 'bg-[#8B5CF6]/20 text-[#8B5CF6] border border-[#8B5CF6]/30'
+                                    : 'bg-accent-500/20 text-accent-500 border border-accent-500/30'
                         }`}
                       >
                         {service.trend}
@@ -362,7 +362,7 @@ export default function CybersecurityConsultingPage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
                   {service.description}
                 </p>
 
@@ -373,8 +373,8 @@ export default function CybersecurityConsultingPage() {
                       className="flex items-center gap-3 text-sm"
                       style={{ transitionDelay: `${itemIndex * 50}ms` }}
                     >
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <div className="w-2 h-2 bg-accent-500 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {item}
                       </span>
                     </div>
@@ -393,7 +393,7 @@ export default function CybersecurityConsultingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Industry-Specific Expertise
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Deep domain knowledge across critical industries with specialized
               security requirements and regulatory frameworks.
             </p>
@@ -403,22 +403,22 @@ export default function CybersecurityConsultingPage() {
             {industrySpecializations.map((industry, index) => (
               <div
                 key={industry.industry}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {industry.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {industry.industry}
                 </h3>
-                <p className="text-[#A1A1AA] mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {industry.focus}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {industry.regulations.map((reg) => (
                     <span
                       key={reg}
-                      className="px-3 py-1 bg-[#8B5CF6]/10 text-[#8B5CF6] text-xs rounded-md border border-[#8B5CF6]/20 hover:bg-[#8B5CF6]/20 transition-colors duration-300"
+                      className="px-3 py-1 bg-accent-500/10 text-accent-500 text-xs rounded-md border border-accent-500/20 hover:bg-accent-500/20 transition-colors duration-300"
                     >
                       {reg}
                     </span>
@@ -437,7 +437,7 @@ export default function CybersecurityConsultingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Cutting-Edge Security Frameworks
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Implementation expertise across the latest security frameworks,
               standards, and best practices for 2025 and beyond.
             </p>
@@ -447,16 +447,16 @@ export default function CybersecurityConsultingPage() {
             {modernFrameworks.map((framework, index) => (
               <div
                 key={framework.name}
-                className="bg-[#1A1A1A]/60 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group relative"
+                className="bg-[#1A1A1A]/60 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group relative"
               >
                 {framework.updated && (
                   <div className="absolute -top-2 -right-2 w-4 h-4 bg-green-500 rounded-full animate-pulse"></div>
                 )}
                 <div className="text-center">
-                  <h4 className="font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                  <h4 className="font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                     {framework.name}
                   </h4>
-                  <span className="inline-block px-2 py-1 bg-[#8B5CF6]/10 text-[#8B5CF6] text-xs rounded-md">
+                  <span className="inline-block px-2 py-1 bg-accent-500/10 text-accent-500 text-xs rounded-md">
                     {framework.category}
                   </span>
                 </div>
@@ -473,7 +473,7 @@ export default function CybersecurityConsultingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Choose Our AI-Enhanced Consulting?
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Experience the next generation of cybersecurity consulting with
               AI-augmented insights and future-ready strategies.
             </p>
@@ -483,19 +483,19 @@ export default function CybersecurityConsultingPage() {
             {consultingBenefits.map((benefit, index) => (
               <div
                 key={benefit.title}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {benefit.description}
                 </p>
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-[#8B5CF6]/30 rounded-full">
-                  <span className="text-[#8B5CF6] font-semibold text-sm">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
+                  <span className="text-accent-500 font-semibold text-sm">
                     {benefit.value}
                   </span>
                 </div>
@@ -514,7 +514,7 @@ export default function CybersecurityConsultingPage() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Ready to Future-Proof Your Security?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-12 leading-relaxed">
+          <p className="text-xl text-text-secondary mb-12 leading-relaxed">
             Partner with our AI-enhanced cybersecurity consultants to build
             quantum-ready, zero trust security architectures that evolve with
             emerging threats and regulatory requirements.
@@ -530,7 +530,7 @@ export default function CybersecurityConsultingPage() {
             </Link>
             <Link
               href="/services/managed-security"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
             >
               Explore Managed Security
             </Link>
@@ -538,22 +538,22 @@ export default function CybersecurityConsultingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 bg-[#1A1A1A]/50 backdrop-blur-sm rounded-2xl border border-[#333]/50">
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">FREE</div>
-              <div className="text-sm text-[#A1A1AA]">
+              <div className="text-2xl font-bold text-accent-500 mb-2">FREE</div>
+              <div className="text-sm text-text-secondary">
                 Initial Security Assessment
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">24/7</div>
-              <div className="text-sm text-[#A1A1AA]">
+              <div className="text-2xl font-bold text-accent-500 mb-2">24/7</div>
+              <div className="text-sm text-text-secondary">
                 Strategic Advisory Access
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">
+              <div className="text-2xl font-bold text-accent-500 mb-2">
                 GUARANTEED
               </div>
-              <div className="text-sm text-[#A1A1AA]">Compliance Success</div>
+              <div className="text-sm text-text-secondary">Compliance Success</div>
             </div>
           </div>
         </div>

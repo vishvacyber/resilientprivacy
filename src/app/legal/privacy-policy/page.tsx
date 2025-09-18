@@ -4,15 +4,15 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Privacy <span className="text-[#8B5CF6]">Policy</span>
+            Privacy <span className="text-accent-500">Policy</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-4 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-4 max-w-4xl mx-auto">
             Comprehensive Global Privacy Protection Framework
           </p>
-          <p className="text-lg text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-lg text-text-secondary mb-8 max-w-4xl mx-auto">
             Last Updated:{' '}
             {new Date().toLocaleDateString('en-US', {
               year: 'numeric',
@@ -24,11 +24,11 @@ export default function PrivacyPolicyPage() {
             <Link href="#overview" className="btn text-lg px-8 py-4">
               Read Full Policy
             </Link>
-            <p className="text-lg text-[#A1A1AA]">
+            <p className="text-lg text-text-secondary">
               Privacy Questions? Email us at{' '}
               <a
                 href="mailto:privacy@resilientprivacy.com"
-                className="text-[#8B5CF6] hover:text-white underline"
+                className="text-accent-500 hover:text-white underline"
               >
                 privacy@resilientprivacy.com
               </a>
@@ -41,13 +41,13 @@ export default function PrivacyPolicyPage() {
       <section id="overview" className="py-20 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-12 text-[#A1A1AA]">
+            <div className="space-y-12 text-text-secondary">
               {/* Table of Contents */}
               <div className="bg-[#0D0D0F] p-6 rounded border border-[#222]">
                 <h2 className="text-2xl font-bold text-white mb-4">
                   Table of Contents
                 </h2>
-                <p className="text-[#A1A1AA] mb-6 text-sm">
+                <p className="text-text-secondary mb-6 text-sm">
                   Click on any section below to view detailed information. Each
                   section provides comprehensive legal details and your rights
                   under applicable privacy laws.
@@ -55,147 +55,147 @@ export default function PrivacyPolicyPage() {
                 <div className="grid md:grid-cols-2 gap-3">
                   <Link
                     href="/legal/privacy-policy/sections/introduction-scope"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     1. Introduction & Scope
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/definitions"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     2. Definitions
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/information-collection"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     3. Information Collection
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/legal-basis"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     4. Legal Basis for Processing
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/use-of-information"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     5. Use of Information
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/information-sharing"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     6. Information Sharing
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/international-transfers"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     7. International Transfers
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/data-security"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     8. Data Security
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/your-rights"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     9. Your Rights
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/jurisdiction-specific-rights"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     10. Jurisdiction-Specific Rights
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/childrens-privacy"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     11. Children's Privacy
                   </Link>
                   <Link
                     href="/legal/cookie-policy"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     12. Cookies & Tracking
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/data-retention"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     13. Data Retention
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/third-party-services"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     14. Third-Party Services
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/business-transfers"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     15. Business Transfers
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/legal-compliance"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     16. Legal Compliance
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/limitations-disclaimers"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     17. Limitations & Disclaimers
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/updates-to-policy"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     18. Updates to Policy
                   </Link>
                   <Link
                     href="#section-19"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     19. Contact Information
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/governing-law"
-                    className="text-[#8B5CF6] hover:text-white hover:bg-[#8B5CF6]/10 block py-2 px-3 rounded transition-all duration-200"
+                    className="text-accent-500 hover:text-white hover:bg-accent-500/10 block py-2 px-3 rounded transition-all duration-200"
                   >
                     20. Governing Law
                   </Link>
                 </div>
 
                 {/* Featured Sections */}
-                <div className="mt-8 p-4 bg-[#8B5CF6]/5 border border-[#8B5CF6]/20 rounded">
+                <div className="mt-8 p-4 bg-accent-500/5 border border-accent-500/20 rounded">
                   <h3 className="text-white font-semibold mb-3">
                     Most Viewed Sections
                   </h3>
                   <div className="flex flex-wrap gap-2">
                     <Link
                       href="/legal/privacy-policy/sections/your-rights"
-                      className="bg-[#8B5CF6] hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
+                      className="bg-accent-500 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
                     >
                       Your Privacy Rights
                     </Link>
                     <Link
                       href="/legal/privacy-policy/sections/information-collection"
-                      className="bg-[#8B5CF6] hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
+                      className="bg-accent-500 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
                     >
                       What We Collect
                     </Link>
                     <Link
                       href="/legal/privacy-policy/sections/use-of-information"
-                      className="bg-[#8B5CF6] hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
+                      className="bg-accent-500 hover:bg-purple-700 text-white px-3 py-1 rounded text-sm transition-colors duration-200"
                     >
                       How We Use Data
                     </Link>
@@ -518,7 +518,7 @@ export default function PrivacyPolicyPage() {
                   </div>
 
                   <div className="text-center mt-8">
-                    <p className="text-[#8B5CF6] font-semibold">
+                    <p className="text-accent-500 font-semibold">
                       Last Updated:{' '}
                       {new Date().toLocaleDateString('en-US', {
                         year: 'numeric',
@@ -526,7 +526,7 @@ export default function PrivacyPolicyPage() {
                         day: 'numeric',
                       })}
                     </p>
-                    <p className="text-sm text-[#A1A1AA] mt-2">
+                    <p className="text-sm text-text-secondary mt-2">
                       Version 3.0 - Comprehensive Global Privacy Framework
                     </p>
                   </div>
@@ -538,20 +538,20 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Questions About Your Privacy Rights?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-4">
+          <p className="text-xl text-text-secondary mb-4">
             Our dedicated privacy team is available 24/7 to help you understand
             your rights and exercise control over your personal data.
           </p>
-          <p className="text-lg text-[#A1A1AA] mb-8">
+          <p className="text-lg text-text-secondary mb-8">
             Email us directly at{' '}
             <a
               href="mailto:privacy@resilientprivacy.com"
-              className="text-[#8B5CF6] hover:text-white underline font-semibold"
+              className="text-accent-500 hover:text-white underline font-semibold"
             >
               privacy@resilientprivacy.com
             </a>
@@ -559,7 +559,7 @@ export default function PrivacyPolicyPage() {
           <div className="flex justify-center">
             <Link
               href="/legal"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               View All Legal Documents
             </Link>
@@ -568,7 +568,7 @@ export default function PrivacyPolicyPage() {
           <div className="mt-12 grid md:grid-cols-1 gap-6">
             <div className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222]">
               <h3 className="text-white font-bold mb-2">🇺🇸 USA Compliance</h3>
-              <p className="text-sm text-[#A1A1AA]">
+              <p className="text-sm text-text-secondary">
                 CCPA, COPPA, State Privacy Laws, Federal Privacy Regulations
               </p>
             </div>

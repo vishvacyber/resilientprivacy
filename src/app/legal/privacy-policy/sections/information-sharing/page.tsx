@@ -4,17 +4,17 @@ export default function InformationSharingPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-16 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Information <span className="text-[#8B5CF6]">Sharing</span>
+            Information <span className="text-accent-500">Sharing</span>
           </h1>
-          <p className="text-lg text-[#A1A1AA] mb-6">
+          <p className="text-lg text-text-secondary mb-6">
             Privacy Policy Section 6: How We Share Your Personal Data
           </p>
           <Link
             href="/legal/privacy-policy"
-            className="text-[#8B5CF6] hover:text-white underline"
+            className="text-accent-500 hover:text-white underline"
           >
             ← Back to Privacy Policy
           </Link>
@@ -25,7 +25,7 @@ export default function InformationSharingPage() {
       <section className="py-16 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-8 text-[#A1A1AA]">
+            <div className="space-y-8 text-text-secondary">
               <div className="bg-green-900/20 border border-green-500/30 p-6 rounded">
                 <h3 className="text-lg font-semibold text-green-400 mb-3">
                   🔒 Our Commitment
@@ -405,13 +405,13 @@ export default function InformationSharingPage() {
                 <div className="flex justify-between items-center">
                   <Link
                     href="/legal/privacy-policy/sections/use-of-information"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     ← Previous: Use of Information
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/international-transfers"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     Next: International Transfers →
                   </Link>

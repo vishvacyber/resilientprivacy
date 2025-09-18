@@ -299,9 +299,9 @@ export default function RedTeamingPage() {
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-              Elite <span className="text-[#8B5CF6]">Red Team</span> Operations
+              Elite <span className="text-accent-500">Red Team</span> Operations
             </h1>
-            <p className="text-xl text-[#A1A1AA] mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary mb-12 max-w-4xl mx-auto leading-relaxed">
               Advanced penetration testing and adversarial simulation using
               cutting-edge techniques including AI-powered attacks, zero trust
               validation, and nation-state level APT simulation.
@@ -317,7 +317,7 @@ export default function RedTeamingPage() {
               </Link>
               <Link
                 href="#services"
-                className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
               >
                 Explore Attack Vectors
               </Link>
@@ -329,15 +329,15 @@ export default function RedTeamingPage() {
             {redTeamStats.map((stat, index) => (
               <div
                 key={index}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105"
               >
-                <div className="text-2xl font-bold text-[#8B5CF6] mb-2">
+                <div className="text-2xl font-bold text-accent-500 mb-2">
                   {stat.metric}
                 </div>
                 <div className="text-sm font-semibold text-white mb-1">
                   {stat.label}
                 </div>
-                <div className="text-xs text-[#A1A1AA]">{stat.description}</div>
+                <div className="text-xs text-text-secondary">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -351,7 +351,7 @@ export default function RedTeamingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               2025 Advanced Red Team Services
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Cutting-edge adversarial simulation services incorporating the
               latest attack techniques, AI-powered testing, and nation-state
               level threat actor methodologies.
@@ -362,7 +362,7 @@ export default function RedTeamingPage() {
             {modernRedTeamServices.map((service, index) => (
               <div
                 key={service.category}
-                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:transform hover:scale-105 group"
+                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
@@ -370,7 +370,7 @@ export default function RedTeamingPage() {
                       {service.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                         {service.category}
                       </h3>
                       <div className="flex items-center gap-3">
@@ -386,7 +386,7 @@ export default function RedTeamingPage() {
                                     ? 'bg-purple-500/20 text-purple-400 border border-purple-500/30'
                                     : service.trend === 'FUTURE-READY'
                                       ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/30'
-                                      : 'bg-[#8B5CF6]/20 text-[#8B5CF6] border border-[#8B5CF6]/30'
+                                      : 'bg-accent-500/20 text-accent-500 border border-accent-500/30'
                           }`}
                         >
                           {service.trend}
@@ -409,7 +409,7 @@ export default function RedTeamingPage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
                   {service.description}
                 </p>
 
@@ -420,8 +420,8 @@ export default function RedTeamingPage() {
                       className="flex items-center gap-3 text-sm"
                       style={{ transitionDelay: `${itemIndex * 50}ms` }}
                     >
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <div className="w-2 h-2 bg-accent-500 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {item}
                       </span>
                     </div>
@@ -440,7 +440,7 @@ export default function RedTeamingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Red Team Service Tiers
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Choose the right level of adversarial testing for your
               organization, from tactical assessments to comprehensive purple
               team operations.
@@ -453,8 +453,8 @@ export default function RedTeamingPage() {
                 key={tier.tier}
                 className={`bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border transition-all duration-300 hover:transform hover:scale-105 group ${
                   tier.popular
-                    ? 'border-[#8B5CF6] ring-2 ring-[#8B5CF6]/20'
-                    : 'border-[#333]/50 hover:border-[#8B5CF6]/50'
+                    ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20'
+                    : 'border-[#333]/50 hover:border-accent-500/50'
                 }`}
               >
                 {tier.popular && (
@@ -466,16 +466,16 @@ export default function RedTeamingPage() {
                 )}
 
                 <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                     {tier.tier}
                   </h3>
-                  <p className="text-[#8B5CF6] font-semibold mb-2">
+                  <p className="text-accent-500 font-semibold mb-2">
                     {tier.duration}
                   </p>
-                  <p className="text-[#A1A1AA] text-sm mb-4">
+                  <p className="text-text-secondary text-sm mb-4">
                     {tier.description}
                   </p>
-                  <div className="text-xs text-[#A1A1AA] mb-4">
+                  <div className="text-xs text-text-secondary mb-4">
                     <strong>Scope:</strong> {tier.scope}
                   </div>
                   <div className="text-lg font-bold text-white mb-6">
@@ -489,8 +489,8 @@ export default function RedTeamingPage() {
                       key={feature}
                       className="flex items-start gap-2 text-sm"
                     >
-                      <div className="w-1.5 h-1.5 bg-[#8B5CF6] rounded-full mt-2 flex-shrink-0"></div>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <div className="w-1.5 h-1.5 bg-accent-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {feature}
                       </span>
                     </div>
@@ -498,8 +498,8 @@ export default function RedTeamingPage() {
                 </div>
 
                 <div className="text-center pt-4 border-t border-[#333]/50">
-                  <div className="text-xs text-[#A1A1AA] mb-2">Team Size</div>
-                  <div className="text-sm font-semibold text-[#8B5CF6]">
+                  <div className="text-xs text-text-secondary mb-2">Team Size</div>
+                  <div className="text-sm font-semibold text-accent-500">
                     {tier.team}
                   </div>
                 </div>
@@ -516,7 +516,7 @@ export default function RedTeamingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               MITRE ATT&CK Framework Coverage
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our red team operations cover the full spectrum of adversary
               tactics and techniques mapped to the MITRE ATT&CK framework,
               updated with the latest 2025 techniques.
@@ -527,13 +527,13 @@ export default function RedTeamingPage() {
             {redTeamTechniques.map((category, index) => (
               <div
                 key={category.category}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="text-center mb-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                     {category.category}
                   </h3>
-                  <div className="text-xs text-[#8B5CF6] font-semibold bg-[#8B5CF6]/10 px-2 py-1 rounded">
+                  <div className="text-xs text-accent-500 font-semibold bg-accent-500/10 px-2 py-1 rounded">
                     {category.mitre}
                   </div>
                 </div>
@@ -544,8 +544,8 @@ export default function RedTeamingPage() {
                       key={technique}
                       className="flex items-center gap-2 text-sm"
                     >
-                      <div className="w-1.5 h-1.5 bg-[#8B5CF6] rounded-full flex-shrink-0"></div>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <div className="w-1.5 h-1.5 bg-accent-500 rounded-full flex-shrink-0"></div>
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {technique}
                       </span>
                     </div>
@@ -564,7 +564,7 @@ export default function RedTeamingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Elite Red Team Certifications
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our red team specialists hold the industry's most prestigious
               certifications and continuously update their skills with the
               latest attack techniques.
@@ -575,12 +575,12 @@ export default function RedTeamingPage() {
             {certifications.map((cert, index) => (
               <div
                 key={`${cert.cert}-${index}`}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-6 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
-                <h4 className="font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h4 className="font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                   {cert.cert}
                 </h4>
-                <p className="text-xs text-[#A1A1AA] mb-2">{cert.category}</p>
+                <p className="text-xs text-text-secondary mb-2">{cert.category}</p>
                 <span
                   className={`inline-block px-2 py-1 text-xs rounded ${
                     cert.level === 'Expert'
@@ -607,7 +607,7 @@ export default function RedTeamingPage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Choose Our Elite Red Team?
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Experience the most advanced adversarial simulation available,
               incorporating cutting-edge techniques used by nation-state actors
               and advanced threat groups.
@@ -618,19 +618,19 @@ export default function RedTeamingPage() {
             {redTeamBenefits.map((benefit, index) => (
               <div
                 key={benefit.title}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {benefit.description}
                 </p>
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-[#8B5CF6]/30 rounded-full">
-                  <span className="text-[#8B5CF6] font-semibold text-sm">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
+                  <span className="text-accent-500 font-semibold text-sm">
                     {benefit.value}
                   </span>
                 </div>
@@ -649,7 +649,7 @@ export default function RedTeamingPage() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Ready to Test Your Defenses?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-12 leading-relaxed">
+          <p className="text-xl text-text-secondary mb-12 leading-relaxed">
             Challenge your security posture with the most advanced red team
             operations available. Our elite hackers will test your defenses
             using nation-state level techniques and AI-powered attacks.
@@ -665,7 +665,7 @@ export default function RedTeamingPage() {
             </Link>
             <Link
               href="/services/incident-response"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
             >
               Explore Incident Response
             </Link>
@@ -673,22 +673,22 @@ export default function RedTeamingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8 bg-[#1A1A1A]/50 backdrop-blur-sm rounded-2xl border border-[#333]/50">
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">100%</div>
-              <div className="text-sm text-[#A1A1AA]">
+              <div className="text-2xl font-bold text-accent-500 mb-2">100%</div>
+              <div className="text-sm text-text-secondary">
                 Undetected Penetration
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">30+</div>
-              <div className="text-sm text-[#A1A1AA]">
+              <div className="text-2xl font-bold text-accent-500 mb-2">30+</div>
+              <div className="text-sm text-text-secondary">
                 Elite Red Team Specialists
               </div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-[#8B5CF6] mb-2">
+              <div className="text-2xl font-bold text-accent-500 mb-2">
                 AI-POWERED
               </div>
-              <div className="text-sm text-[#A1A1AA]">
+              <div className="text-sm text-text-secondary">
                 Advanced Attack Simulation
               </div>
             </div>

@@ -18,7 +18,7 @@ function Avatar({
   // If image fails to load or doesn't exist, show initials
   if (imgError || !src) {
     return (
-      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-[#8B5CF6] shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300">
+      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300">
         <span className="text-white font-bold text-2xl">{initials}</span>
       </div>
     )
@@ -26,7 +26,7 @@ function Avatar({
 
   // Show actual image if it exists
   return (
-    <div className="w-24 h-24 rounded-full border-2 border-[#8B5CF6] shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 overflow-hidden">
+    <div className="w-24 h-24 rounded-full border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 overflow-hidden">
       <img
         src={src}
         alt={alt}
@@ -67,11 +67,11 @@ export default function LeadershipPage() {
               </span>
               <span className="text-white"> Leadership</span>
             </h1>
-            <p className="text-2xl text-[#A1A1AA] mb-6 font-medium">
+            <p className="text-2xl text-text-secondary mb-6 font-medium">
               Exceptional leadership is the cornerstone of building a
               world-class cybersecurity organization.
             </p>
-            <p className="text-lg text-[#A1A1AA] max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
               Our leadership team doesn't just lead, we revolutionize. We are
               the architects of digital trust, the guardians of innovation, and
               the catalysts of transformation. With unshakeable integrity and
@@ -102,7 +102,7 @@ export default function LeadershipPage() {
               .map((leader) => (
                 <div
                   key={leader.name}
-                  className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl border border-[#232336] shadow-sm hover:shadow-xl hover:shadow-[#8B5CF6]/20 transition-all duration-300 flex flex-col items-center px-8 py-10 w-full group cursor-pointer hover:border-[#8B5CF6] hover:bg-[#18181B]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-105"
+                  className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl border border-[#232336] shadow-sm hover:shadow-xl hover:shadow-[#8B5CF6]/20 transition-all duration-300 flex flex-col items-center px-8 py-10 w-full group cursor-pointer hover:border-accent-500 hover:bg-[#18181B]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-105"
                   onClick={() =>
                     router.push(`/about/leadership/${slugify(leader.name)}`)
                   }
@@ -122,14 +122,14 @@ export default function LeadershipPage() {
                       .map((n) => n[0])
                       .join('')}
                   />
-                  <h3 className="text-2xl font-semibold text-white mt-6 mb-1 text-center tracking-tight group-hover:text-[#8B5CF6] transition-colors">
+                  <h3 className="text-2xl font-semibold text-white mt-6 mb-1 text-center tracking-tight group-hover:text-accent-500 transition-colors">
                     {leader.name}
                   </h3>
-                  <p className="text-[#8B5CF6] font-medium text-base mb-4 text-center">
+                  <p className="text-accent-500 font-medium text-base mb-4 text-center">
                     {leader.title}
                   </p>
 
-                  <div className="text-[#8B5CF6] text-sm font-medium group-hover:text-white transition-colors">
+                  <div className="text-accent-500 text-sm font-medium group-hover:text-white transition-colors">
                     Click to read full profile →
                   </div>
                 </div>
@@ -147,11 +147,11 @@ export default function LeadershipPage() {
             <div className="text-center mb-16">
               <h2
                 id="advisor-board-heading"
-                className="text-4xl font-bold text-[#8B5CF6] mb-6"
+                className="text-4xl font-bold text-accent-500 mb-6"
               >
                 Advisory Board
               </h2>
-              <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto mb-8">
+              <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
                 Our distinguished Advisory Board brings together industry
                 leaders, cybersecurity experts, and strategic visionaries who
                 guide our mission to redefine digital trust and security.
@@ -218,7 +218,7 @@ export default function LeadershipPage() {
               ].map((advisor) => (
                 <div
                   key={advisor.id}
-                  className="group bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A] hover:border-[#8B5CF6] transition-all duration-300 hover:shadow-2xl hover:shadow-[#8B5CF6]/20 hover:-translate-y-2"
+                  className="group bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A] hover:border-accent-500 transition-all duration-300 hover:shadow-2xl hover:shadow-[#8B5CF6]/20 hover:-translate-y-2"
                 >
                   {/* Enhanced Profile Photo */}
                   <div className="flex justify-center mb-6">
@@ -227,7 +227,7 @@ export default function LeadershipPage() {
                         <img
                           src={advisor.image}
                           alt={`${advisor.name} profile`}
-                          className="w-24 h-24 rounded-full object-cover object-center border-4 border-[#8B5CF6] shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 filter group-hover:brightness-110"
+                          className="w-24 h-24 rounded-full object-cover object-center border-4 border-accent-500 shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 filter group-hover:brightness-110"
                           loading="lazy"
                           width="96"
                           height="96"
@@ -256,19 +256,19 @@ export default function LeadershipPage() {
 
                   {/* Enhanced Advisor Info */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                       {advisor.name}
                     </h3>
                     <p className="text-[#A78BFA] mb-3 font-semibold">
                       {advisor.title}
                     </p>
-                    <p className="text-[#A1A1AA] text-sm leading-relaxed mb-4">
+                    <p className="text-text-secondary text-sm leading-relaxed mb-4">
                       {advisor.description}
                     </p>
 
                     {/* Enhanced Expertise Badge */}
                     <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#232336] to-[#2A2A3A] border border-[#3A3A4A] rounded-full">
-                      <span className="text-[#8B5CF6] text-xs font-medium">
+                      <span className="text-accent-500 text-xs font-medium">
                         {advisor.expertise}
                       </span>
                     </div>
@@ -292,14 +292,14 @@ export default function LeadershipPage() {
             >
               Join Our Leadership Team
             </h2>
-            <p className="text-lg text-[#A1A1AA] mb-6">
+            <p className="text-lg text-text-secondary mb-6">
               We're always looking for exceptional leaders to join our mission.
               Explore opportunities to make a difference in cybersecurity.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/about/careers"
-                className="inline-block text-base font-medium text-white bg-[#8B5CF6] hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
+                className="inline-block text-base font-medium text-white bg-accent-500 hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
               >
                 View Careers
               </Link>
@@ -307,7 +307,7 @@ export default function LeadershipPage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-base font-medium text-white border border-[#8B5CF6] hover:bg-[#232336] px-6 py-2 rounded-lg transition-colors"
+                className="inline-block text-base font-medium text-white border border-accent-500 hover:bg-[#232336] px-6 py-2 rounded-lg transition-colors"
               >
                 Contact Us
               </Link>

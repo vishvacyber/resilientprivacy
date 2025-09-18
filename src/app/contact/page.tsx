@@ -76,7 +76,7 @@ export default function ContactPage() {
                 className="bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
               >
                 {/* Department Badge */}
-                <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-[#8B5CF6]/20 rounded-full px-3 py-1 mb-6">
+                <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-accent-500/20 rounded-full px-3 py-1 mb-6">
                   <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
                   <span className="text-accent-500 text-sm font-medium">
                     {method.department}
@@ -95,7 +95,7 @@ export default function ContactPage() {
                 <div className="space-y-6">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-[#8B5CF6] rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
                       </div>
                       <span className="text-accent-500 font-medium text-sm">
@@ -112,7 +112,7 @@ export default function ContactPage() {
 
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-[#8B5CF6] rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
                       </div>
                       <span className="text-accent-500 font-medium text-sm">
@@ -129,7 +129,7 @@ export default function ContactPage() {
 
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-[#8B5CF6] rounded-full flex items-center justify-center">
+                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
                         <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
                       </div>
                       <span className="text-accent-500 font-medium text-sm">

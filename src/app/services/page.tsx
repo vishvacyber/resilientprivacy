@@ -318,10 +318,10 @@ export default function ServicesPage() {
       <section className="relative py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            Complete <span className="text-[#8B5CF6]">IT & Security</span>{' '}
+            Complete <span className="text-accent-500">IT & Security</span>{' '}
             Services
           </h1>
-          <p className="text-2xl text-[#A1A1AA] mb-12 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-2xl text-text-secondary mb-12 max-w-5xl mx-auto leading-relaxed">
             From IT support and data center services to advanced cybersecurity
             solutions. We provide comprehensive technology services that scale
             with your business needs.
@@ -335,7 +335,7 @@ export default function ServicesPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Get Free Consultation
             </Link>
@@ -348,13 +348,13 @@ export default function ServicesPage() {
                 key={index}
                 className="bg-[#1A1A1A]/50 backdrop-blur-sm p-4 rounded-lg border border-[#333]"
               >
-                <div className="text-2xl font-bold text-[#8B5CF6] mb-1">
+                <div className="text-2xl font-bold text-accent-500 mb-1">
                   {stat.metric}
                 </div>
                 <div className="text-sm font-semibold text-white mb-1">
                   {stat.label}
                 </div>
-                <div className="text-xs text-[#A1A1AA]">{stat.description}</div>
+                <div className="text-xs text-text-secondary">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -368,7 +368,7 @@ export default function ServicesPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Our Service Portfolio
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Comprehensive technology and security services designed to support
               your business at every stage of growth. From basic IT support to
               enterprise-grade security solutions.
@@ -381,12 +381,12 @@ export default function ServicesPage() {
                 <div
                   className={`bg-[#1A1A1A] p-8 rounded-lg border transition-all duration-300 group-hover:transform group-hover:scale-105 relative overflow-hidden ${
                     service.popular
-                      ? 'border-[#8B5CF6] ring-2 ring-[#8B5CF6]/20'
-                      : 'border-[#333] hover:border-[#8B5CF6]'
+                      ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20'
+                      : 'border-[#333] hover:border-accent-500'
                   }`}
                 >
                   {service.popular && (
-                    <div className="absolute top-0 right-0 bg-[#8B5CF6] text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
+                    <div className="absolute top-0 right-0 bg-accent-500 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
                       POPULAR
                     </div>
                   )}
@@ -395,7 +395,7 @@ export default function ServicesPage() {
                   <h3 className="text-xl font-bold text-white mb-3">
                     {service.name}
                   </h3>
-                  <p className="text-[#A1A1AA] mb-4 text-sm leading-relaxed">
+                  <p className="text-text-secondary mb-4 text-sm leading-relaxed">
                     {service.description}
                   </p>
 
@@ -403,9 +403,9 @@ export default function ServicesPage() {
                     {service.features.map((feature) => (
                       <li
                         key={feature}
-                        className="text-[#8B5CF6] text-sm flex items-center"
+                        className="text-accent-500 text-sm flex items-center"
                       >
-                        <span className="w-1.5 h-1.5 bg-[#8B5CF6] rounded-full mr-3 flex-shrink-0"></span>
+                        <span className="w-1.5 h-1.5 bg-accent-500 rounded-full mr-3 flex-shrink-0"></span>
                         {feature}
                       </li>
                     ))}
@@ -413,12 +413,12 @@ export default function ServicesPage() {
 
                   <div className="flex items-center justify-between">
                     <div className="text-sm">
-                      <span className="text-[#A1A1AA]">Contact us for</span>
+                      <span className="text-text-secondary">Contact us for</span>
                       <div className="font-semibold text-white">
                         {service.pricing}
                       </div>
                     </div>
-                    <div className="text-[#8B5CF6] group-hover:text-white transition-colors font-medium">
+                    <div className="text-accent-500 group-hover:text-white transition-colors font-medium">
                       Learn More →
                     </div>
                   </div>
@@ -458,10 +458,10 @@ export default function ServicesPage() {
                   <div className="text-4xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 filter group-hover:drop-shadow-lg">
                     {industry.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                     {industry.industry}
                   </h3>
-                  <p className="text-[#A1A1AA] text-base mb-6 group-hover:text-white transition-colors duration-300">
+                  <p className="text-text-secondary text-base mb-6 group-hover:text-white transition-colors duration-300">
                     {industry.description}
                   </p>
                   <div className="flex flex-wrap gap-3">
@@ -494,7 +494,7 @@ export default function ServicesPage() {
                 </span>{' '}
                 Approach
               </h2>
-              <div className="space-y-8 text-[#A1A1AA]">
+              <div className="space-y-8 text-text-secondary">
                 {[
                   {
                     step: '1',
@@ -537,7 +537,7 @@ export default function ServicesPage() {
                       </span>
                     </div>
                     <div>
-                      <h3 className="text-white font-bold text-xl mb-3 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                      <h3 className="text-white font-bold text-xl mb-3 group-hover:text-accent-500 transition-colors duration-300">
                         {item.title}
                       </h3>
                       <p className="text-base group-hover:text-white transition-colors duration-300 leading-relaxed">
@@ -549,7 +549,7 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1A1A1A]/90 to-[#2D2D2D]/90 backdrop-blur-xl p-10 rounded-3xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
+            <div className="bg-gradient-to-br from-[#1A1A1A]/90 to-[#2D2D2D]/90 backdrop-blur-xl p-10 rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
               <h3 className="text-3xl font-bold text-white mb-8 text-center">
                 Service Level{' '}
                 <span className="bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] bg-clip-text text-transparent">
@@ -578,17 +578,17 @@ export default function ServicesPage() {
                 ].map((item, index) => (
                   <div
                     key={index}
-                    className="group flex justify-between items-center border-b border-[#333]/50 pb-4 hover:border-[#8B5CF6]/30 transition-all duration-300"
+                    className="group flex justify-between items-center border-b border-[#333]/50 pb-4 hover:border-accent-500/30 transition-all duration-300"
                   >
                     <div className="flex items-center gap-3">
                       <span className="text-xl group-hover:scale-125 transition-transform duration-300">
                         {item.icon}
                       </span>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {item.label}
                       </span>
                     </div>
-                    <span className="text-[#8B5CF6] font-bold text-lg group-hover:scale-110 transition-transform duration-300">
+                    <span className="text-accent-500 font-bold text-lg group-hover:scale-110 transition-transform duration-300">
                       {item.value}
                     </span>
                   </div>
@@ -604,13 +604,13 @@ export default function ServicesPage() {
                   {certifications.slice(0, 8).map((cert, index) => (
                     <span
                       key={cert}
-                      className="px-3 py-2 bg-gradient-to-r from-[#8B5CF6]/10 to-[#EC4899]/10 text-[#8B5CF6] text-sm rounded-xl border border-[#8B5CF6]/20 hover:border-[#8B5CF6]/50 hover:bg-gradient-to-r hover:from-[#8B5CF6]/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
+                      className="px-3 py-2 bg-gradient-to-r from-[#8B5CF6]/10 to-[#EC4899]/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-[#8B5CF6]/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
                       style={{ transitionDelay: `${index * 50}ms` }}
                     >
                       {cert}
                     </span>
                   ))}
-                  <span className="px-3 py-2 text-[#A1A1AA] text-sm bg-[#333]/20 rounded-xl">
+                  <span className="px-3 py-2 text-text-secondary text-sm bg-[#333]/20 rounded-xl">
                     +{certifications.length - 8} more
                   </span>
                 </div>
@@ -633,7 +633,7 @@ export default function ServicesPage() {
               IT & Security?
             </span>
           </h2>
-          <p className="text-2xl text-[#A1A1AA] mb-12 leading-relaxed">
+          <p className="text-2xl text-text-secondary mb-12 leading-relaxed">
             Get a free consultation with our experts and discover how our
             comprehensive services can accelerate your business growth while
             keeping you secure.
@@ -655,7 +655,7 @@ export default function ServicesPage() {
             </Link>
             <Link
               href="/services/managed-security"
-              className="group relative overflow-hidden border-3 border-[#8B5CF6] text-[#8B5CF6] px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-[#8B5CF6] hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[#8B5CF6]/25 hover:border-transparent transform hover:-translate-y-1"
+              className="group relative overflow-hidden border-3 border-accent-500 text-accent-500 px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-[#8B5CF6] hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[#8B5CF6]/25 hover:border-transparent transform hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>View Popular Service</span>
@@ -666,7 +666,7 @@ export default function ServicesPage() {
             </Link>
           </div>
 
-          <div className="p-8 bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/80 backdrop-blur-xl rounded-3xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
+          <div className="p-8 bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/80 backdrop-blur-xl rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
               {[
                 {
@@ -700,7 +700,7 @@ export default function ServicesPage() {
                   >
                     {item.value}
                   </div>
-                  <div className="text-base text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                  <div className="text-base text-text-secondary group-hover:text-white transition-colors duration-300">
                     {item.label}
                   </div>
                 </div>

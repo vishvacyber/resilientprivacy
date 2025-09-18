@@ -64,12 +64,12 @@ export default function IdentityAccessSuitePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Identity & Access <span className="text-[#8B5CF6]">Suite</span>
+            Identity & Access <span className="fxology-text-gradient">Suite</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive identity and access management solution that secures
             user identities and controls access across your entire organization.
           </p>
@@ -84,7 +84,7 @@ export default function IdentityAccessSuitePage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -100,7 +100,7 @@ export default function IdentityAccessSuitePage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Complete Identity Management
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s Identity & Access Suite provides
                   organizations with a comprehensive solution for managing user
@@ -142,26 +142,26 @@ export default function IdentityAccessSuitePage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Authentication Methods</span>
-                  <span className="text-[#8B5CF6] font-semibold">15+</span>
+                  <span className="text-text-secondary">Authentication Methods</span>
+                  <span className="text-accent-500 font-semibold">15+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Supported Applications</span>
-                  <span className="text-[#8B5CF6] font-semibold">1,000+</span>
+                  <span className="text-text-secondary">Supported Applications</span>
+                  <span className="text-accent-500 font-semibold">1,000+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Compliance Frameworks</span>
-                  <span className="text-[#8B5CF6] font-semibold">25+</span>
+                  <span className="text-text-secondary">Compliance Frameworks</span>
+                  <span className="text-accent-500 font-semibold">25+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Deployment Time</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Deployment Time</span>
+                  <span className="text-accent-500 font-semibold">
                     4-6 Weeks
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Uptime SLA</span>
-                  <span className="text-[#8B5CF6] font-semibold">99.99%</span>
+                  <span className="text-text-secondary">Uptime SLA</span>
+                  <span className="text-accent-500 font-semibold">99.99%</span>
                 </div>
               </div>
             </div>
@@ -187,8 +187,8 @@ export default function IdentityAccessSuitePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2"></div>
-                      <p className="text-[#A1A1AA]">{feature}</p>
+                      <div className="w-2 h-2 bg-accent-500 rounded-full mt-2"></div>
+                      <p className="text-text-secondary">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -214,7 +214,7 @@ export default function IdentityAccessSuitePage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -222,12 +222,12 @@ export default function IdentityAccessSuitePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Secure Your Identities?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Transform your identity and access management with a comprehensive
             solution that protects your organization from identity-based
             threats.
@@ -243,7 +243,7 @@ export default function IdentityAccessSuitePage() {
             </Link>
             <Link
               href="/products/zero-trust-network-edge"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Zero Trust
             </Link>

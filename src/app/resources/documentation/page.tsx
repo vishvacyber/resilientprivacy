@@ -169,12 +169,12 @@ export default function DocumentationPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            <span className="text-[#8B5CF6]">Documentation</span>
+            <span className="text-accent-500">Documentation</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive technical documentation, API references, and
             implementation guides to help you get the most out of Resilient
             Privacy solutions.
@@ -185,7 +185,7 @@ export default function DocumentationPage() {
             </Link>
             <Link
               href="#categories"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Browse Categories
             </Link>
@@ -204,7 +204,7 @@ export default function DocumentationPage() {
               <input
                 type="text"
                 placeholder="Search for guides, APIs, or topics..."
-                className="flex-1 px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded-lg text-white placeholder-[#A1A1AA] focus:border-[#8B5CF6] focus:outline-none"
+                className="flex-1 px-4 py-3 bg-[#0D0D0F] border border-[#222] rounded-lg text-white placeholder-[#A1A1AA] focus:border-accent-500 focus:outline-none"
               />
               <button className="btn px-8 py-3">Search</button>
             </div>
@@ -212,7 +212,7 @@ export default function DocumentationPage() {
               {searchCategories.map((category) => (
                 <button
                   key={category}
-                  className="px-3 py-1 bg-[#0D0D0F] border border-[#222] text-[#A1A1AA] rounded text-sm hover:border-[#8B5CF6] hover:text-white transition-colors"
+                  className="px-3 py-1 bg-[#0D0D0F] border border-[#222] text-text-secondary rounded text-sm hover:border-accent-500 hover:text-white transition-colors"
                 >
                   {category}
                 </button>
@@ -232,10 +232,10 @@ export default function DocumentationPage() {
             {popularGuides.map((guide) => (
               <div
                 key={guide.title}
-                className="bg-[#0D0D0F] p-6 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-6 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="px-2 py-1 bg-[#8B5CF6] bg-opacity-20 text-[#8B5CF6] rounded text-xs">
+                  <span className="px-2 py-1 bg-accent-500 bg-opacity-20 text-accent-500 rounded text-xs">
                     {guide.category}
                   </span>
                 </div>
@@ -243,8 +243,8 @@ export default function DocumentationPage() {
                   {guide.title}
                 </h3>
                 <div className="flex items-center justify-between text-sm">
-                  <span className="text-[#A1A1AA]">{guide.views} views</span>
-                  <span className="text-[#8B5CF6]">{guide.rating}</span>
+                  <span className="text-text-secondary">{guide.views} views</span>
+                  <span className="text-accent-500">{guide.rating}</span>
                 </div>
                 <Link
                   href={`/resources/documentation/${guide.slug}`}
@@ -274,13 +274,13 @@ export default function DocumentationPage() {
                   <h3 className="text-2xl font-bold text-white mb-2">
                     {category.category}
                   </h3>
-                  <p className="text-[#A1A1AA]">{category.description}</p>
+                  <p className="text-text-secondary">{category.description}</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {category.guides.map((guide) => (
                     <div
                       key={guide.title}
-                      className="bg-[#0D0D0F] p-6 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                      className="bg-[#0D0D0F] p-6 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
                     >
                       <div className="flex items-center gap-2 mb-3">
                         <span
@@ -294,19 +294,19 @@ export default function DocumentationPage() {
                         >
                           {guide.difficulty}
                         </span>
-                        <span className="text-[#A1A1AA] text-xs">
+                        <span className="text-text-secondary text-xs">
                           {guide.time}
                         </span>
                       </div>
                       <h4 className="text-lg font-bold text-white mb-3">
                         {guide.title}
                       </h4>
-                      <p className="text-[#A1A1AA] text-sm mb-4">
+                      <p className="text-text-secondary text-sm mb-4">
                         {guide.description}
                       </p>
                       <Link
                         href={`/resources/documentation/${guide.slug}`}
-                        className="text-[#8B5CF6] hover:text-white transition-colors text-sm"
+                        className="text-accent-500 hover:text-white transition-colors text-sm"
                       >
                         Read Guide →
                       </Link>
@@ -320,12 +320,12 @@ export default function DocumentationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Need Help with Implementation?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Our technical support team is available to help you with
             implementation, troubleshooting, and best practices.
           </p>
@@ -340,7 +340,7 @@ export default function DocumentationPage() {
             </Link>
             <Link
               href="/resources/training"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               View Training
             </Link>

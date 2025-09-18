@@ -100,12 +100,12 @@ export default function ResourcesPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Cybersecurity <span className="text-[#8B5CF6]">Resources</span>
+            Cybersecurity <span className="text-accent-500">Resources</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Access our comprehensive library of cybersecurity insights,
             research, and educational content to stay ahead of evolving threats
             and industry trends.
@@ -126,7 +126,7 @@ export default function ResourcesPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Knowledge is Power
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   At Resilient Privacy, we believe that knowledge sharing is
                   essential to building a more secure digital world. Our
@@ -165,20 +165,20 @@ export default function ResourcesPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Total Resources</span>
-                  <span className="text-[#8B5CF6] font-semibold">250+</span>
+                  <span className="text-text-secondary">Total Resources</span>
+                  <span className="text-accent-500 font-semibold">250+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Monthly Downloads</span>
-                  <span className="text-[#8B5CF6] font-semibold">15,000+</span>
+                  <span className="text-text-secondary">Monthly Downloads</span>
+                  <span className="text-accent-500 font-semibold">15,000+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Expert Contributors</span>
-                  <span className="text-[#8B5CF6] font-semibold">50+</span>
+                  <span className="text-text-secondary">Expert Contributors</span>
+                  <span className="text-accent-500 font-semibold">50+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Languages</span>
-                  <span className="text-[#8B5CF6] font-semibold">8</span>
+                  <span className="text-text-secondary">Languages</span>
+                  <span className="text-accent-500 font-semibold">8</span>
                 </div>
               </div>
             </div>
@@ -196,27 +196,27 @@ export default function ResourcesPage() {
             {resourceCategories.map((category) => (
               <div
                 key={category.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="text-4xl mb-4">{category.icon}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {category.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4">{category.description}</p>
-                <p className="text-[#8B5CF6] font-semibold mb-6">
+                <p className="text-text-secondary mb-4">{category.description}</p>
+                <p className="text-accent-500 font-semibold mb-6">
                   {category.count}
                 </p>
                 <div className="mb-6">
-                  <h4 className="text-[#8B5CF6] font-semibold mb-3">
+                  <h4 className="text-accent-500 font-semibold mb-3">
                     Featured Content
                   </h4>
                   <ul className="space-y-2">
                     {category.featured.map((item) => (
                       <li
                         key={item}
-                        className="text-[#A1A1AA] text-sm flex items-center"
+                        className="text-text-secondary text-sm flex items-center"
                       >
-                        <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                        <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                         {item}
                       </li>
                     ))}
@@ -224,7 +224,7 @@ export default function ResourcesPage() {
                 </div>
                 <Link
                   href={category.link}
-                  className="text-[#8B5CF6] hover:text-white transition-colors"
+                  className="text-accent-500 hover:text-white transition-colors"
                 >
                   Browse {category.title} →
                 </Link>
@@ -244,26 +244,26 @@ export default function ResourcesPage() {
             {latestInsights.map((insight) => (
               <div
                 key={insight.title}
-                className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[#8B5CF6] text-sm font-semibold">
+                  <span className="text-accent-500 text-sm font-semibold">
                     {insight.category}
                   </span>
-                  <span className="text-[#A1A1AA] text-sm">•</span>
-                  <span className="text-[#A1A1AA] text-sm">{insight.date}</span>
+                  <span className="text-text-secondary text-sm">•</span>
+                  <span className="text-text-secondary text-sm">{insight.date}</span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {insight.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4">{insight.excerpt}</p>
+                <p className="text-text-secondary mb-4">{insight.excerpt}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA] text-sm">
+                  <span className="text-text-secondary text-sm">
                     {insight.readTime}
                   </span>
                   <Link
                     href="/resources/blog"
-                    className="text-[#8B5CF6] hover:text-white transition-colors text-sm"
+                    className="text-accent-500 hover:text-white transition-colors text-sm"
                   >
                     Read More →
                   </Link>
@@ -284,23 +284,23 @@ export default function ResourcesPage() {
             {featuredResources.map((resource) => (
               <div
                 key={resource.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[#8B5CF6] text-sm font-semibold">
+                  <span className="text-accent-500 text-sm font-semibold">
                     {resource.type}
                   </span>
-                  <span className="text-[#A1A1AA] text-sm">•</span>
-                  <span className="text-[#A1A1AA] text-sm">
+                  <span className="text-text-secondary text-sm">•</span>
+                  <span className="text-text-secondary text-sm">
                     {resource.readTime}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {resource.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-6">{resource.description}</p>
+                <p className="text-text-secondary mb-6">{resource.description}</p>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA] text-sm">
+                  <span className="text-text-secondary text-sm">
                     {resource.author}
                   </span>
                   <Link
@@ -309,7 +309,7 @@ export default function ResourcesPage() {
                         ? '/resources/white-papers'
                         : '#'
                     }
-                    className="text-[#8B5CF6] hover:text-white transition-colors text-sm"
+                    className="text-accent-500 hover:text-white transition-colors text-sm"
                   >
                     Read More →
                   </Link>
@@ -321,12 +321,12 @@ export default function ResourcesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Need Custom Research or Analysis?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Our team can provide custom research, analysis, and guidance
             tailored to your specific security challenges and requirements.
           </p>
@@ -341,7 +341,7 @@ export default function ResourcesPage() {
             </Link>
             <Link
               href="/services/cybersecurity-consulting"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Consulting Services
             </Link>

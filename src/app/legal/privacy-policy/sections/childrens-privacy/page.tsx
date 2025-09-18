@@ -4,15 +4,15 @@ export default function ChildrensPrivacyPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Children's <span className="text-[#8B5CF6]">Privacy</span>
+            Children's <span className="text-accent-500">Privacy</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-4 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-4 max-w-4xl mx-auto">
             Special Protections for Minors Under Age 13
           </p>
-          <p className="text-lg text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-lg text-text-secondary mb-8 max-w-4xl mx-auto">
             Section 11 of our Privacy Policy
           </p>
           <div className="flex flex-col gap-4 justify-center items-center">
@@ -30,7 +30,7 @@ export default function ChildrensPrivacyPage() {
       <section className="py-20 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-8 text-[#A1A1AA]">
+            <div className="space-y-8 text-text-secondary">
               <div>
                 <h2 className="text-3xl font-bold text-white mb-6">
                   11. Children's Privacy
@@ -262,7 +262,7 @@ export default function ChildrensPrivacyPage() {
                   <div className="text-center mt-8">
                     <Link
                       href="/legal/privacy-policy"
-                      className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+                      className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
                     >
                       Back to Privacy Policy
                     </Link>

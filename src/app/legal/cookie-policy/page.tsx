@@ -4,12 +4,12 @@ export default function CookiePolicyPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Cookie <span className="text-[#8B5CF6]">Policy</span>
+            Cookie <span className="text-accent-500">Policy</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Last updated: January 15, 2024
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -20,7 +20,7 @@ export default function CookiePolicyPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Contact Us
             </Link>
@@ -32,7 +32,7 @@ export default function CookiePolicyPage() {
       <section id="policy" className="py-20 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-8 text-[#A1A1AA]">
+            <div className="space-y-8 text-text-secondary">
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
                   What Are Cookies?
@@ -133,12 +133,12 @@ export default function CookiePolicyPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Questions About Cookies?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Our privacy team is available to answer questions about our cookie
             practices.
           </p>

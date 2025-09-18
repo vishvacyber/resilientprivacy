@@ -244,14 +244,14 @@ export default function ITConsultingPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-2xl">
                 <Briefcase className="w-8 h-8 text-white" />
               </div>
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider bg-[#8B5CF6]/10 px-4 py-2 rounded-full">
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider bg-accent-500/10 px-4 py-2 rounded-full">
                 Strategic Technology Solutions
               </span>
             </div>
             <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
               IT Consulting Services
             </h1>
-            <p className="text-2xl text-[#A1A1AA] mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-text-secondary mb-12 max-w-4xl mx-auto leading-relaxed">
               Transform your business with strategic technology solutions. Our
               expert consultants help you navigate digital transformation,
               optimize infrastructure, and achieve your technology goals.
@@ -266,7 +266,7 @@ export default function ITConsultingPage() {
               </Link>
               <Link
                 href="/resources"
-                className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
               >
                 View Resources
               </Link>
@@ -277,12 +277,12 @@ export default function ITConsultingPage() {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-6 h-6 text-[#8B5CF6]" />
+                    <stat.icon className="w-6 h-6 text-accent-500" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-[#A1A1AA]">{stat.label}</div>
+                  <div className="text-sm text-text-secondary">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -295,16 +295,16 @@ export default function ITConsultingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Star className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Our Services
               </span>
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
+              <Star className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Comprehensive IT Consulting
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               From strategy to implementation, we provide end-to-end IT
               consulting services that drive business value and competitive
               advantage.
@@ -315,7 +315,7 @@ export default function ITConsultingPage() {
             {services.map((service, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-[#8B5CF6]/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                   >
@@ -324,16 +324,16 @@ export default function ITConsultingPage() {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {service.title}
                   </h3>
-                  <p className="text-[#A1A1AA] mb-8 leading-relaxed">
+                  <p className="text-text-secondary mb-8 leading-relaxed">
                     {service.description}
                   </p>
                   <ul className="space-y-3">
                     {service.benefits.map((benefit, idx) => (
                       <li
                         key={idx}
-                        className="flex items-center gap-3 text-sm text-[#A1A1AA]"
+                        className="flex items-center gap-3 text-sm text-text-secondary"
                       >
-                        <CheckCircle className="w-4 h-4 text-[#8B5CF6] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-accent-500 flex-shrink-0" />
                         {benefit}
                       </li>
                     ))}
@@ -351,15 +351,15 @@ export default function ITConsultingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-6">
-                <Award className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+                <Award className="w-5 h-5 text-accent-500" />
+                <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                   Our Capabilities
                 </span>
               </div>
               <h2 className="text-5xl font-bold text-white mb-8">
                 Expert Technology Consulting
               </h2>
-              <p className="text-xl text-[#A1A1AA] mb-12 leading-relaxed">
+              <p className="text-xl text-text-secondary mb-12 leading-relaxed">
                 Our team of certified consultants brings decades of experience
                 across industries, helping organizations leverage technology for
                 competitive advantage.
@@ -370,8 +370,8 @@ export default function ITConsultingPage() {
                     key={index}
                     className="flex items-center gap-4 p-3 rounded-lg hover:bg-[#1A1A1A] transition-colors duration-200"
                   >
-                    <CheckCircle className="w-5 h-5 text-[#8B5CF6] flex-shrink-0" />
-                    <span className="text-[#A1A1AA]">{capability}</span>
+                    <CheckCircle className="w-5 h-5 text-accent-500 flex-shrink-0" />
+                    <span className="text-text-secondary">{capability}</span>
                   </div>
                 ))}
               </div>
@@ -380,41 +380,41 @@ export default function ITConsultingPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-10 rounded-3xl border border-[#333] shadow-2xl">
                 <div className="flex items-center gap-3 mb-8">
-                  <TrendingUp className="w-8 h-8 text-[#8B5CF6]" />
+                  <TrendingUp className="w-8 h-8 text-accent-500" />
                   <h3 className="text-3xl font-bold text-white">
                     Why Choose Us
                   </h3>
                 </div>
                 <div className="space-y-8">
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Industry Experience
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       15+ Years
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Certified Consultants
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       50+
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Success Rate
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       98%
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Average ROI
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       300%
                     </span>
                   </div>
@@ -430,16 +430,16 @@ export default function ITConsultingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Globe className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Globe className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Industry Expertise
               </span>
-              <Globe className="w-5 h-5 text-[#8B5CF6]" />
+              <Globe className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Trusted Across Industries
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               Our consultants have deep expertise across multiple industries,
               delivering tailored solutions that address unique challenges and
               opportunities.
@@ -450,21 +450,21 @@ export default function ITConsultingPage() {
             {industries.map((industry, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-[#8B5CF6]/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div className="flex items-center gap-6 mb-8">
                     <span className="text-5xl">{industry.icon}</span>
                     <h3 className="text-3xl font-bold text-white">
                       {industry.title}
                     </h3>
                   </div>
-                  <p className="text-[#A1A1AA] leading-relaxed mb-8 text-lg">
+                  <p className="text-text-secondary leading-relaxed mb-8 text-lg">
                     {industry.description}
                   </p>
                   <div className="space-y-3">
                     {industry.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-[#8B5CF6] rounded-full"></div>
-                        <span className="text-[#A1A1AA]">{feature}</span>
+                        <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
+                        <span className="text-text-secondary">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -480,16 +480,16 @@ export default function ITConsultingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Settings className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Settings className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Our Process
               </span>
-              <Settings className="w-5 h-5 text-[#8B5CF6]" />
+              <Settings className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Proven Consulting Methodology
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               Our structured approach ensures successful project delivery and
               measurable business outcomes.
             </p>
@@ -499,17 +499,17 @@ export default function ITConsultingPage() {
             {process.map((step, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-8 rounded-2xl border border-[#333] hover:border-[#8B5CF6]/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
-                  <div className="text-sm font-bold text-[#8B5CF6] mb-4">
+                  <div className="text-sm font-bold text-accent-500 mb-4">
                     {step.step}
                   </div>
                   <h3 className="text-xl font-bold text-white mb-4">
                     {step.title}
                   </h3>
-                  <p className="text-[#A1A1AA] leading-relaxed">
+                  <p className="text-text-secondary leading-relaxed">
                     {step.description}
                   </p>
                 </div>
@@ -524,11 +524,11 @@ export default function ITConsultingPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Star className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Client Success
               </span>
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
+              <Star className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               What Our Clients Say
@@ -539,7 +539,7 @@ export default function ITConsultingPage() {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl"></div>
-                <div className="relative bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] p-10 rounded-2xl border border-[#333] shadow-2xl">
+                <div className="relative bg-gradient-to-br from-background to-background-alt p-10 rounded-2xl border border-[#333] shadow-2xl">
                   <div className="flex items-start gap-4 mb-6">
                     <div className="w-12 h-12 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-lg">
@@ -550,12 +550,12 @@ export default function ITConsultingPage() {
                       <h4 className="text-xl font-bold text-white">
                         {testimonial.author}
                       </h4>
-                      <p className="text-[#8B5CF6]">
+                      <p className="text-accent-500">
                         {testimonial.role}, {testimonial.company}
                       </p>
                     </div>
                   </div>
-                  <blockquote className="text-[#A1A1AA] text-lg leading-relaxed italic">
+                  <blockquote className="text-text-secondary text-lg leading-relaxed italic">
                     "{testimonial.quote}"
                   </blockquote>
                 </div>
@@ -570,18 +570,18 @@ export default function ITConsultingPage() {
         <div className="max-w-5xl mx-auto text-center">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
-            <div className="relative bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] p-16 rounded-3xl border border-[#333] shadow-2xl">
+            <div className="relative bg-gradient-to-br from-background to-background-alt p-16 rounded-3xl border border-[#333] shadow-2xl">
               <div className="inline-flex items-center gap-2 mb-8">
-                <Award className="w-6 h-6 text-[#8B5CF6]" />
-                <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+                <Award className="w-6 h-6 text-accent-500" />
+                <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                   Get Started Today
                 </span>
-                <Award className="w-6 h-6 text-[#8B5CF6]" />
+                <Award className="w-6 h-6 text-accent-500" />
               </div>
               <h2 className="text-5xl font-bold text-white mb-8">
                 Ready to Transform Your Technology?
               </h2>
-              <p className="text-xl text-[#A1A1AA] mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
                 Let our expert consultants help you achieve your technology
                 goals and drive business success.
               </p>
@@ -595,7 +595,7 @@ export default function ITConsultingPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
                 >
                   Schedule a Call
                 </Link>

@@ -297,10 +297,10 @@ export default function IncidentResponsePage() {
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">
-              Advanced <span className="text-[#8B5CF6]">Incident Response</span>{' '}
+              Advanced <span className="text-accent-500">Incident Response</span>{' '}
               & Digital Forensics
             </h1>
-            <p className="text-xl text-[#A1A1AA] mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary mb-12 max-w-4xl mx-auto leading-relaxed">
               Rapid, AI-enhanced incident response with world-class digital
               forensics capabilities. When every minute counts, our expert team
               delivers immediate containment and comprehensive investigation.
@@ -316,7 +316,7 @@ export default function IncidentResponsePage() {
               </Link>
               <Link
                 href="#capabilities"
-                className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
               >
                 Explore Response Capabilities
               </Link>
@@ -336,7 +336,7 @@ export default function IncidentResponsePage() {
                 <div className="text-sm font-semibold text-white mb-1">
                   {stat.label}
                 </div>
-                <div className="text-xs text-[#A1A1AA]">{stat.description}</div>
+                <div className="text-xs text-text-secondary">{stat.description}</div>
               </div>
             ))}
           </div>
@@ -350,7 +350,7 @@ export default function IncidentResponsePage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Comprehensive Incident Response Capabilities
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our incident response methodology combines cutting-edge technology
               with human expertise to deliver rapid, effective incident
               resolution across all threat vectors.
@@ -361,7 +361,7 @@ export default function IncidentResponsePage() {
             {responseCapabilities.map((capability, index) => (
               <div
                 key={capability.category}
-                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-500 hover:transform hover:scale-105 group"
+                className="bg-gradient-to-br from-[#1A1A1A] to-[#2D2D2D]/50 p-8 rounded-2xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
@@ -369,7 +369,7 @@ export default function IncidentResponsePage() {
                       {capability.icon}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                         {capability.category}
                       </h3>
                       <div className="flex items-center gap-3">
@@ -385,12 +385,12 @@ export default function IncidentResponsePage() {
                                     ? 'bg-orange-500/20 text-orange-400 border border-orange-500/30'
                                     : capability.trend === 'COMPLIANCE'
                                       ? 'bg-yellow-500/20 text-yellow-400 border border-yellow-500/30'
-                                      : 'bg-[#8B5CF6]/20 text-[#8B5CF6] border border-[#8B5CF6]/30'
+                                      : 'bg-accent-500/20 text-accent-500 border border-accent-500/30'
                           }`}
                         >
                           {capability.trend}
                         </span>
-                        <span className="text-xs text-[#8B5CF6] font-semibold bg-[#8B5CF6]/10 px-2 py-1 rounded">
+                        <span className="text-xs text-accent-500 font-semibold bg-accent-500/10 px-2 py-1 rounded">
                           Response: {capability.responseTime}
                         </span>
                       </div>
@@ -398,7 +398,7 @@ export default function IncidentResponsePage() {
                   </div>
                 </div>
 
-                <p className="text-[#A1A1AA] mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 leading-relaxed group-hover:text-white transition-colors duration-300">
                   {capability.description}
                 </p>
 
@@ -409,8 +409,8 @@ export default function IncidentResponsePage() {
                       className="flex items-center gap-3 text-sm"
                       style={{ transitionDelay: `${itemIndex * 50}ms` }}
                     >
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
-                      <span className="text-[#A1A1AA] group-hover:text-white transition-colors duration-300">
+                      <div className="w-2 h-2 bg-accent-500 rounded-full flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></div>
+                      <span className="text-text-secondary group-hover:text-white transition-colors duration-300">
                         {item}
                       </span>
                     </div>
@@ -429,7 +429,7 @@ export default function IncidentResponsePage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Specialized Incident Response by Threat Type
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our expert teams specialize in handling specific types of security
               incidents with tailored methodologies and deep technical
               expertise.
@@ -440,7 +440,7 @@ export default function IncidentResponsePage() {
             {incidentTypes.map((incident, index) => (
               <div
                 key={incident.type}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-center justify-between mb-6">
                   <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
@@ -459,11 +459,11 @@ export default function IncidentResponsePage() {
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {incident.type}
                 </h3>
 
-                <p className="text-[#A1A1AA] mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {incident.description}
                 </p>
 
@@ -475,7 +475,7 @@ export default function IncidentResponsePage() {
                     {incident.threats.map((threat) => (
                       <div
                         key={threat}
-                        className="flex items-center gap-2 text-xs text-[#A1A1AA]"
+                        className="flex items-center gap-2 text-xs text-text-secondary"
                       >
                         <div className="w-1.5 h-1.5 bg-red-400 rounded-full flex-shrink-0"></div>
                         {threat}
@@ -485,10 +485,10 @@ export default function IncidentResponsePage() {
                 </div>
 
                 <div className="p-4 bg-[#0D0D0F]/50 rounded-lg">
-                  <h4 className="text-sm font-semibold text-[#8B5CF6] mb-2">
+                  <h4 className="text-sm font-semibold text-accent-500 mb-2">
                     Our Specialization:
                   </h4>
-                  <p className="text-xs text-[#A1A1AA]">
+                  <p className="text-xs text-text-secondary">
                     {incident.specialization}
                   </p>
                 </div>
@@ -505,7 +505,7 @@ export default function IncidentResponsePage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Expert Response Team
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our incident response team consists of world-class cybersecurity
               professionals with deep expertise across all aspects of incident
               management and digital forensics.
@@ -516,13 +516,13 @@ export default function IncidentResponsePage() {
             {responseTeam.map((member, index) => (
               <div
                 key={member.role}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {member.role}
                 </h3>
 
-                <p className="text-[#A1A1AA] mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-6 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {member.description}
                 </p>
 
@@ -534,7 +534,7 @@ export default function IncidentResponsePage() {
                     {member.certifications.map((cert) => (
                       <span
                         key={cert}
-                        className="px-2 py-1 bg-[#8B5CF6]/10 text-[#8B5CF6] text-xs rounded border border-[#8B5CF6]/20"
+                        className="px-2 py-1 bg-accent-500/10 text-accent-500 text-xs rounded border border-accent-500/20"
                       >
                         {cert}
                       </span>
@@ -561,7 +561,7 @@ export default function IncidentResponsePage() {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Incident Response Retainer Benefits
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Proactive incident response readiness with dedicated team
               allocation and priority support.
             </p>
@@ -571,19 +571,19 @@ export default function IncidentResponsePage() {
             {retainerBenefits.map((benefit, index) => (
               <div
                 key={benefit.title}
-                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-[#8B5CF6]/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
+                className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
                 <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
                   {benefit.icon}
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-[#8B5CF6] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
+                <p className="text-text-secondary mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {benefit.description}
                 </p>
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-[#8B5CF6]/30 rounded-full">
-                  <span className="text-[#8B5CF6] font-semibold text-sm">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
+                  <span className="text-accent-500 font-semibold text-sm">
                     {benefit.value}
                   </span>
                 </div>
@@ -602,7 +602,7 @@ export default function IncidentResponsePage() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Don't Wait for an Incident to Strike
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-12 leading-relaxed">
+          <p className="text-xl text-text-secondary mb-12 leading-relaxed">
             Secure your organization with proactive incident response planning
             and 24/7 emergency support. Our expert team is ready to respond
             within minutes when every second counts.
@@ -618,7 +618,7 @@ export default function IncidentResponsePage() {
             </Link>
             <Link
               href="/services/managed-security"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
             >
               Explore Proactive Security
             </Link>
@@ -629,17 +629,17 @@ export default function IncidentResponsePage() {
               <div className="text-2xl font-bold text-red-400 mb-2">
                 24/7/365
               </div>
-              <div className="text-sm text-[#A1A1AA]">Emergency Response</div>
+              <div className="text-sm text-text-secondary">Emergency Response</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-red-400 mb-2">
                 &lt; 15 MIN
               </div>
-              <div className="text-sm text-[#A1A1AA]">Response Time</div>
+              <div className="text-sm text-text-secondary">Response Time</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold text-red-400 mb-2">100%</div>
-              <div className="text-sm text-[#A1A1AA]">Incident Resolution</div>
+              <div className="text-sm text-text-secondary">Incident Resolution</div>
             </div>
           </div>
         </div>

@@ -4,17 +4,17 @@ export default function DefinitionsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-16 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            <span className="text-[#8B5CF6]">Definitions</span>
+            <span className="text-accent-500">Definitions</span>
           </h1>
-          <p className="text-lg text-[#A1A1AA] mb-6">
+          <p className="text-lg text-text-secondary mb-6">
             Privacy Policy Section 2: Legal Terms and Definitions
           </p>
           <Link
             href="/legal/privacy-policy"
-            className="text-[#8B5CF6] hover:text-white underline"
+            className="text-accent-500 hover:text-white underline"
           >
             ← Back to Privacy Policy
           </Link>
@@ -25,7 +25,7 @@ export default function DefinitionsPage() {
       <section className="py-16 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-6 text-[#A1A1AA]">
+            <div className="space-y-6 text-text-secondary">
               <p className="mb-8">
                 For the purposes of this Privacy Policy, the following
                 definitions apply. These terms are defined in accordance with
@@ -345,13 +345,13 @@ export default function DefinitionsPage() {
                 <div className="flex justify-between items-center">
                   <Link
                     href="/legal/privacy-policy/sections/introduction-scope"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     ← Previous: Introduction & Scope
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/information-collection"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     Next: Information Collection →
                   </Link>

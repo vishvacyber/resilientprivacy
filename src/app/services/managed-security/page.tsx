@@ -290,12 +290,12 @@ export default function ManagedSecurityPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Managed Security <span className="text-[#8B5CF6]">Services</span>
+            Managed Security <span className="text-accent-500">Services</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             24/7 security monitoring and threat response by certified experts.
             Get enterprise-grade security operations without the overhead of
             building your own SOC.
@@ -311,7 +311,7 @@ export default function ManagedSecurityPage() {
             </Link>
             <Link
               href="#pricing"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               View Pricing
             </Link>
@@ -324,13 +324,13 @@ export default function ManagedSecurityPage() {
                 key={index}
                 className="bg-[#1A1A1A]/50 backdrop-blur-sm p-4 rounded-lg border border-[#333]"
               >
-                <div className="text-2xl font-bold text-[#8B5CF6] mb-1">
+                <div className="text-2xl font-bold text-accent-500 mb-1">
                   {metric.metric}
                 </div>
                 <div className="text-sm font-semibold text-white mb-1">
                   {metric.label}
                 </div>
-                <div className="text-xs text-[#A1A1AA]">
+                <div className="text-xs text-text-secondary">
                   {metric.description}
                 </div>
               </div>
@@ -346,7 +346,7 @@ export default function ManagedSecurityPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Managed Security Service Portfolio
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Comprehensive security services designed to protect your
               organization from advanced threats with 24/7 monitoring and expert
               analysis.
@@ -357,28 +357,28 @@ export default function ManagedSecurityPage() {
             {managedSecurityServices.map((service) => (
               <div
                 key={service.category}
-                className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] hover:border-[#8B5CF6] transition-all duration-300"
+                className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.category}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4 text-sm">
+                <p className="text-text-secondary mb-4 text-sm">
                   {service.description}
                 </p>
                 <ul className="space-y-2 mb-4">
                   {service.services.map((item) => (
                     <li
                       key={item}
-                      className="text-[#8B5CF6] text-sm flex items-center"
+                      className="text-accent-500 text-sm flex items-center"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#8B5CF6] rounded-full mr-3"></span>
+                      <span className="w-1.5 h-1.5 bg-accent-500 rounded-full mr-3"></span>
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="border-t border-[#333] pt-4">
-                  <div className="text-sm text-[#A1A1AA]">Contact us for</div>
+                  <div className="text-sm text-text-secondary">Contact us for</div>
                   <div className="text-lg font-semibold text-white">
                     {service.pricing}
                   </div>
@@ -396,7 +396,7 @@ export default function ManagedSecurityPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               SOC Service Tiers
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Choose the right level of security operations for your
               organization. All tiers include our core SOC services with varying
               levels of coverage.
@@ -409,13 +409,13 @@ export default function ManagedSecurityPage() {
                 key={tier.tier}
                 className={`bg-[#0D0D0F] p-8 rounded-lg border transition-all duration-300 relative ${
                   tier.popular
-                    ? 'border-[#8B5CF6] ring-2 ring-[#8B5CF6]/20 transform scale-105'
-                    : 'border-[#333] hover:border-[#8B5CF6]'
+                    ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20 transform scale-105'
+                    : 'border-[#333] hover:border-accent-500'
                 }`}
               >
                 {tier.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-[#8B5CF6] text-white px-4 py-2 text-sm font-semibold rounded-full">
+                    <div className="bg-accent-500 text-white px-4 py-2 text-sm font-semibold rounded-full">
                       MOST POPULAR
                     </div>
                   </div>
@@ -425,22 +425,22 @@ export default function ManagedSecurityPage() {
                   <h3 className="text-2xl font-bold text-white mb-2">
                     {tier.tier}
                   </h3>
-                  <div className="text-4xl font-bold text-[#8B5CF6] mb-2">
+                  <div className="text-4xl font-bold text-accent-500 mb-2">
                     {tier.price}{' '}
-                    <span className="text-lg text-[#A1A1AA]">
+                    <span className="text-lg text-text-secondary">
                       {tier.period}
                     </span>
                   </div>
-                  <p className="text-[#A1A1AA] text-sm">{tier.description}</p>
+                  <p className="text-text-secondary text-sm">{tier.description}</p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
                   {tier.features.map((feature) => (
                     <li
                       key={feature}
-                      className="text-[#A1A1AA] text-sm flex items-center"
+                      className="text-text-secondary text-sm flex items-center"
                     >
-                      <span className="w-5 h-5 bg-[#8B5CF6] rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                      <span className="w-5 h-5 bg-accent-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
                         <span className="text-white text-xs">✓</span>
                       </span>
                       {feature}
@@ -454,8 +454,8 @@ export default function ManagedSecurityPage() {
                   rel="noopener noreferrer"
                   className={`w-full block text-center py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                     tier.popular
-                      ? 'bg-[#8B5CF6] text-white hover:bg-[#7C3AED]'
-                      : 'bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white'
+                      ? 'bg-accent-500 text-white hover:bg-[#7C3AED]'
+                      : 'bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white'
                   }`}
                 >
                   Get Started
@@ -473,7 +473,7 @@ export default function ManagedSecurityPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Security Technologies We Support
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our SOC team has expertise across leading security platforms and
               technologies to provide comprehensive monitoring and response.
             </p>
@@ -492,9 +492,9 @@ export default function ManagedSecurityPage() {
                   {tech.items.map((item) => (
                     <li
                       key={item}
-                      className="text-[#A1A1AA] text-sm flex items-center"
+                      className="text-text-secondary text-sm flex items-center"
                     >
-                      <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                       {item}
                     </li>
                   ))}
@@ -512,7 +512,7 @@ export default function ManagedSecurityPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Industry-Specific Compliance
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Specialized security monitoring and compliance reporting for
               regulated industries.
             </p>
@@ -527,14 +527,14 @@ export default function ManagedSecurityPage() {
                 <h3 className="text-xl font-bold text-white mb-3">
                   {industry.industry}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm mb-4">
+                <p className="text-text-secondary text-sm mb-4">
                   {industry.description}
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {industry.regulations.map((reg) => (
                     <span
                       key={reg}
-                      className="px-3 py-1 bg-[#8B5CF6]/10 text-[#8B5CF6] text-xs rounded-md border border-[#8B5CF6]/20"
+                      className="px-3 py-1 bg-accent-500/10 text-accent-500 text-xs rounded-md border border-accent-500/20"
                     >
                       {reg}
                     </span>
@@ -562,7 +562,7 @@ export default function ManagedSecurityPage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -570,12 +570,12 @@ export default function ManagedSecurityPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Enhance Your Security Operations?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Get 24/7 security monitoring and expert threat response. Start with
             a free security assessment to understand your current risk posture.
           </p>
@@ -590,7 +590,7 @@ export default function ManagedSecurityPage() {
             </Link>
             <Link
               href="/services"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               View All Services
             </Link>

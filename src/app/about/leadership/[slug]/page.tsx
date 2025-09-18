@@ -14,7 +14,7 @@ function Avatar({
   // Show actual image if it exists, otherwise show initials
   if (src) {
     return (
-      <div className="w-32 h-32 rounded-full border-2 border-[#8B5CF6] mx-auto overflow-hidden">
+      <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto overflow-hidden">
         <img src={src} alt={alt} className="w-full h-full object-cover" />
       </div>
     )
@@ -22,7 +22,7 @@ function Avatar({
 
   // Show initials as fallback
   return (
-    <div className="w-32 h-32 rounded-full border-2 border-[#8B5CF6] mx-auto bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center text-white text-2xl font-bold">
+    <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center text-white text-2xl font-bold">
       {initials}
     </div>
   )
@@ -51,12 +51,12 @@ export default async function LeaderDetailPage({
         <h1 className="text-4xl font-bold text-white mb-4">
           404 - Leader Not Found
         </h1>
-        <p className="text-lg text-[#A1A1AA] mb-8">
+        <p className="text-lg text-text-secondary mb-8">
           Sorry, we couldn't find the profile you're looking for.
         </p>
         <Link
           href="/about/leadership"
-          className="text-base font-medium text-white bg-[#8B5CF6] hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
+          className="text-base font-medium text-white bg-accent-500 hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
         >
           Back to Leadership
         </Link>
@@ -69,7 +69,7 @@ export default async function LeaderDetailPage({
       <div className="max-w-3xl mx-auto pt-20 pb-10 px-4">
         <Link
           href="/about/leadership"
-          className="text-[#8B5CF6] hover:underline mb-8 text-base font-medium"
+          className="text-accent-500 hover:underline mb-8 text-base font-medium"
         >
           &larr; Back to Leadership
         </Link>
@@ -92,7 +92,7 @@ export default async function LeaderDetailPage({
           <h2 className="text-3xl font-extrabold text-white mt-2 mb-2 tracking-tight">
             {leader.name}
           </h2>
-          <p className="text-[#8B5CF6] font-medium text-xl mb-4">
+          <p className="text-accent-500 font-medium text-xl mb-4">
             {leader.title}
           </p>
           {leader.linkedin && (
@@ -100,14 +100,14 @@ export default async function LeaderDetailPage({
               href={leader.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#8B5CF6] hover:text-white transition-colors text-lg mb-6 font-medium"
+              className="inline-flex items-center gap-2 text-accent-500 hover:text-white transition-colors text-lg mb-6 font-medium"
               aria-label={`LinkedIn profile of ${leader.name}`}
             >
               <User className="w-5 h-5" /> LinkedIn
             </a>
           )}
         </div>
-        <div className="bg-[#232336] rounded-2xl p-8 mt-4 text-left text-[#A1A1AA] shadow-lg">
+        <div className="bg-[#232336] rounded-2xl p-8 mt-4 text-left text-text-secondary shadow-lg">
           <h2 className="text-2xl font-bold text-white mb-4">
             About {leader.name.split(' ')[0]}
           </h2>
@@ -115,14 +115,14 @@ export default async function LeaderDetailPage({
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-semibold text-[#8B5CF6] mb-4">
+              <h3 className="text-xl font-semibold text-accent-500 mb-4">
                 Areas of Expertise
               </h3>
               <ul className="flex flex-wrap gap-3">
                 {leader.expertise.map((skill) => (
                   <li
                     key={skill}
-                    className="px-3 py-2 bg-[#8B5CF6] bg-opacity-20 text-[#8B5CF6] rounded-full text-sm font-medium"
+                    className="px-3 py-2 bg-accent-500 bg-opacity-20 text-accent-500 rounded-full text-sm font-medium"
                   >
                     {skill}
                   </li>
@@ -131,26 +131,26 @@ export default async function LeaderDetailPage({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-[#8B5CF6] mb-4">
+              <h3 className="text-xl font-semibold text-accent-500 mb-4">
                 Professional Highlights
               </h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-[#8B5CF6] mt-1">•</span>
+                  <span className="text-accent-500 mt-1">•</span>
                   <span>
                     Led transformative initiatives in enterprise security
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#8B5CF6] mt-1">•</span>
+                  <span className="text-accent-500 mt-1">•</span>
                   <span>Managed multi-million dollar security portfolios</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#8B5CF6] mt-1">•</span>
+                  <span className="text-accent-500 mt-1">•</span>
                   <span>Pioneered innovative cybersecurity solutions</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-[#8B5CF6] mt-1">•</span>
+                  <span className="text-accent-500 mt-1">•</span>
                   <span>Built high-performing global teams</span>
                 </li>
               </ul>
@@ -158,18 +158,18 @@ export default async function LeaderDetailPage({
           </div>
 
           <div className="border-t border-[#3F3F46] pt-6">
-            <h3 className="text-xl font-semibold text-[#8B5CF6] mb-4">
+            <h3 className="text-xl font-semibold text-accent-500 mb-4">
               Leadership Philosophy
             </h3>
-            <blockquote className="border-l-4 border-[#8B5CF6] pl-6 italic text-lg text-[#8B5CF6] bg-[#8B5CF6] bg-opacity-10 p-4 rounded-r-lg">
+            <blockquote className="border-l-4 border-accent-500 pl-6 italic text-lg text-accent-500 bg-accent-500 bg-opacity-10 p-4 rounded-r-lg">
               "{leader.quote}"
             </blockquote>
           </div>
         </div>
 
         {/* Additional Info Section */}
-        <div className="bg-[#232336] rounded-2xl p-8 mt-6 text-left text-[#A1A1AA] shadow-lg">
-          <h3 className="text-xl font-semibold text-[#8B5CF6] mb-4">
+        <div className="bg-[#232336] rounded-2xl p-8 mt-6 text-left text-text-secondary shadow-lg">
+          <h3 className="text-xl font-semibold text-accent-500 mb-4">
             Connect with {leader.name.split(' ')[0]}
           </h3>
           <div className="flex flex-wrap gap-4">
@@ -178,7 +178,7 @@ export default async function LeaderDetailPage({
                 href={leader.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[#8B5CF6] hover:text-white transition-colors text-base font-medium bg-[#8B5CF6] bg-opacity-20 px-4 py-2 rounded-lg"
+                className="inline-flex items-center gap-2 text-accent-500 hover:text-white transition-colors text-base font-medium bg-accent-500 bg-opacity-20 px-4 py-2 rounded-lg"
                 aria-label={`LinkedIn profile of ${leader.name}`}
               >
                 <User className="w-4 h-4" /> LinkedIn Profile

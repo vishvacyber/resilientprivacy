@@ -4,12 +4,12 @@ export default function ConsentPolicyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background-alt to-background">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Consent <span className="text-[#8B5CF6]">Policy</span>
+            Consent <span className="text-accent-500">Policy</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Understanding how we collect, process, and manage your consent for
             data processing activities.
           </p>
@@ -26,10 +26,10 @@ export default function ConsentPolicyPage() {
             <h2 className="text-3xl font-bold text-white mb-6">
               Consent Management Policy
             </h2>
-            <p className="text-[#A1A1AA] mb-6">
+            <p className="text-text-secondary mb-6">
               <strong>Last Updated:</strong> January 20, 2025
             </p>
-            <p className="text-[#A1A1AA] mb-6">
+            <p className="text-text-secondary mb-6">
               This Consent Policy explains how Resilient Privacy
               (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) collects,
               processes, and manages your consent for various data processing
@@ -43,7 +43,7 @@ export default function ConsentPolicyPage() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 What Information We Collect
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-2">
                     Essential Cookies
@@ -94,7 +94,7 @@ export default function ConsentPolicyPage() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 How We Process Your Consent
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-2">
                     Consent Collection
@@ -153,7 +153,7 @@ export default function ConsentPolicyPage() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 Legal Basis for Processing
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-2">
                     Consent (Article 6(1)(a) GDPR)
@@ -192,7 +192,7 @@ export default function ConsentPolicyPage() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 Your Rights Regarding Consent
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <div>
                   <h4 className="text-lg font-semibold text-white mb-2">
                     Right to Withdraw Consent
@@ -256,7 +256,7 @@ export default function ConsentPolicyPage() {
               <h3 className="text-2xl font-bold text-white mb-4">
                 Data Retention
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <p>
                   We retain your consent records and related data for the
                   following periods:
@@ -288,7 +288,7 @@ export default function ConsentPolicyPage() {
             {/* Contact Information */}
             <div className="bg-[#1A1A1A] rounded-lg border border-[#222] p-8">
               <h3 className="text-2xl font-bold text-white mb-4">Contact Us</h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <p>
                   If you have any questions about this Consent Policy or wish to
                   exercise your rights, please contact us:

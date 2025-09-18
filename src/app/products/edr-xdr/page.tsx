@@ -64,13 +64,13 @@ export default function EdrXdrPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Endpoint Detection &{' '}
-            <span className="text-[#8B5CF6]">Response</span>
+            <span className="text-accent-500">Response</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Advanced endpoint protection that detects, responds to, and
             automatically remediates threats across your entire organization.
           </p>
@@ -85,7 +85,7 @@ export default function EdrXdrPage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -101,7 +101,7 @@ export default function EdrXdrPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Next-Generation Endpoint Protection
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s EDR/XDR solution provides
                   comprehensive endpoint protection that goes beyond traditional
@@ -141,28 +141,28 @@ export default function EdrXdrPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Supported Platforms</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Supported Platforms</span>
+                  <span className="text-accent-500 font-semibold">
                     Windows/Mac/Linux
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Detection Rate</span>
-                  <span className="text-[#8B5CF6] font-semibold">99.9%</span>
+                  <span className="text-text-secondary">Detection Rate</span>
+                  <span className="text-accent-500 font-semibold">99.9%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Response Time</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Response Time</span>
+                  <span className="text-accent-500 font-semibold">
                     &lt;30 seconds
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">False Positive Rate</span>
-                  <span className="text-[#8B5CF6] font-semibold">&lt;0.1%</span>
+                  <span className="text-text-secondary">False Positive Rate</span>
+                  <span className="text-accent-500 font-semibold">&lt;0.1%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Deployment Time</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Deployment Time</span>
+                  <span className="text-accent-500 font-semibold">
                     1-2 Weeks
                   </span>
                 </div>
@@ -190,8 +190,8 @@ export default function EdrXdrPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2"></div>
-                      <p className="text-[#A1A1AA]">{feature}</p>
+                      <div className="w-2 h-2 bg-accent-500 rounded-full mt-2"></div>
+                      <p className="text-text-secondary">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -217,7 +217,7 @@ export default function EdrXdrPage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -225,12 +225,12 @@ export default function EdrXdrPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Protect Your Endpoints?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Deploy advanced endpoint protection that detects and responds to
             threats automatically across your entire organization.
           </p>
@@ -245,7 +245,7 @@ export default function EdrXdrPage() {
             </Link>
             <Link
               href="/products/cloud-security-posture"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Cloud Security
             </Link>

@@ -91,12 +91,12 @@ export default function LegalPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Legal & <span className="text-[#8B5CF6]">Compliance</span>
+            Legal & <span className="text-accent-500">Compliance</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Transparency and compliance are fundamental to our business. Access
             our legal documents and learn about our commitment to data
             protection and security.
@@ -107,7 +107,7 @@ export default function LegalPage() {
             </Link>
             <Link
               href="/compliance"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Compliance Center
             </Link>
@@ -123,7 +123,7 @@ export default function LegalPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Our Legal Commitment
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   At Resilient Privacy, we believe that transparency and legal
                   compliance are essential foundations for building trust with
@@ -159,28 +159,28 @@ export default function LegalPage() {
               <h3 className="text-2xl font-bold text-white mb-6">Legal Team</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">In-house legal counsel</span>
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">In-house legal counsel</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     External legal advisors
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">Compliance specialists</span>
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">Compliance specialists</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">
                     Data protection officers
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <div className="w-3 h-3 bg-[#8B5CF6] rounded-full"></div>
-                  <span className="text-[#A1A1AA]">Regular legal audits</span>
+                  <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
+                  <span className="text-text-secondary">Regular legal audits</span>
                 </div>
               </div>
             </div>
@@ -198,25 +198,25 @@ export default function LegalPage() {
             {legalDocuments.map((document) => (
               <div
                 key={document.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 <div className="flex items-center gap-2 mb-4">
-                  <span className="text-[#8B5CF6] text-sm font-semibold">
+                  <span className="text-accent-500 text-sm font-semibold">
                     {document.category}
                   </span>
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {document.title}
                 </h3>
-                <p className="text-[#A1A1AA] mb-6">{document.description}</p>
+                <p className="text-text-secondary mb-6">{document.description}</p>
                 <div className="flex justify-between items-center mb-6">
-                  <span className="text-[#A1A1AA] text-sm">
+                  <span className="text-text-secondary text-sm">
                     Last updated: {document.lastUpdated}
                   </span>
                 </div>
                 <Link
                   href={document.link}
-                  className="text-[#8B5CF6] hover:text-white transition-colors"
+                  className="text-accent-500 hover:text-white transition-colors"
                 >
                   Read Document →
                 </Link>
@@ -242,9 +242,9 @@ export default function LegalPage() {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {framework.name}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4">{framework.description}</p>
+                <p className="text-text-secondary mb-4">{framework.description}</p>
                 <div className="bg-[#0D0D0F] p-3 rounded">
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-accent-500 font-semibold">
                     {framework.status}
                   </span>
                 </div>
@@ -260,7 +260,7 @@ export default function LegalPage() {
           <h2 className="text-4xl font-bold text-white mb-6">
             Questions About Our Legal Documents?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Our legal team is available to answer questions about our policies,
             compliance status, or any legal matters related to our services.
           </p>
@@ -275,7 +275,7 @@ export default function LegalPage() {
             </Link>
             <Link
               href="/compliance"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Compliance Center
             </Link>

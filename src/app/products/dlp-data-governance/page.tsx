@@ -64,13 +64,13 @@ export default function DlpDataGovernancePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Data Loss Prevention &{' '}
-            <span className="text-[#8B5CF6]">Governance</span>
+            <span className="text-accent-500">Governance</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive data protection and governance platform that prevents
             data loss and ensures regulatory compliance across your
             organization.
@@ -86,7 +86,7 @@ export default function DlpDataGovernancePage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -102,7 +102,7 @@ export default function DlpDataGovernancePage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Complete Data Protection
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s Data Loss Prevention & Governance
                   platform provides comprehensive protection for your
@@ -142,24 +142,24 @@ export default function DlpDataGovernancePage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Data Types Supported</span>
-                  <span className="text-[#8B5CF6] font-semibold">100+</span>
+                  <span className="text-text-secondary">Data Types Supported</span>
+                  <span className="text-accent-500 font-semibold">100+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Compliance Frameworks</span>
-                  <span className="text-[#8B5CF6] font-semibold">25+</span>
+                  <span className="text-text-secondary">Compliance Frameworks</span>
+                  <span className="text-accent-500 font-semibold">25+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Detection Accuracy</span>
-                  <span className="text-[#8B5CF6] font-semibold">99.5%</span>
+                  <span className="text-text-secondary">Detection Accuracy</span>
+                  <span className="text-accent-500 font-semibold">99.5%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Scan Speed</span>
-                  <span className="text-[#8B5CF6] font-semibold">1TB/hour</span>
+                  <span className="text-text-secondary">Scan Speed</span>
+                  <span className="text-accent-500 font-semibold">1TB/hour</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Deployment Time</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Deployment Time</span>
+                  <span className="text-accent-500 font-semibold">
                     2-4 Weeks
                   </span>
                 </div>
@@ -187,8 +187,8 @@ export default function DlpDataGovernancePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2"></div>
-                      <p className="text-[#A1A1AA]">{feature}</p>
+                      <div className="w-2 h-2 bg-accent-500 rounded-full mt-2"></div>
+                      <p className="text-text-secondary">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -214,7 +214,7 @@ export default function DlpDataGovernancePage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -222,12 +222,12 @@ export default function DlpDataGovernancePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Protect Your Data?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Implement comprehensive data protection and governance to prevent
             data loss and ensure regulatory compliance.
           </p>
@@ -242,7 +242,7 @@ export default function DlpDataGovernancePage() {
             </Link>
             <Link
               href="/products/threat-intelligence-platform"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Threat Intelligence
             </Link>

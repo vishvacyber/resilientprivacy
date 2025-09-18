@@ -64,12 +64,12 @@ export default function ThreatIntelligencePlatformPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Threat Intelligence <span className="text-[#8B5CF6]">Platform</span>
+            Threat Intelligence <span className="text-accent-500">Platform</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Advanced threat detection and intelligence gathering platform that
             provides real-time insights into emerging threats and adversary
             tactics.
@@ -85,7 +85,7 @@ export default function ThreatIntelligencePlatformPage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -101,7 +101,7 @@ export default function ThreatIntelligencePlatformPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Comprehensive Threat Intelligence
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s Threat Intelligence Platform provides
                   organizations with unparalleled visibility into the global
@@ -142,28 +142,28 @@ export default function ThreatIntelligencePlatformPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Threat Feeds</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Threat Feeds</span>
+                  <span className="text-accent-500 font-semibold">
                     100+ Sources
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Update Frequency</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Update Frequency</span>
+                  <span className="text-accent-500 font-semibold">
                     Real-time
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Threat Actors Tracked</span>
-                  <span className="text-[#8B5CF6] font-semibold">500+</span>
+                  <span className="text-text-secondary">Threat Actors Tracked</span>
+                  <span className="text-accent-500 font-semibold">500+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Malware Families</span>
-                  <span className="text-[#8B5CF6] font-semibold">10,000+</span>
+                  <span className="text-text-secondary">Malware Families</span>
+                  <span className="text-accent-500 font-semibold">10,000+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Global Coverage</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Global Coverage</span>
+                  <span className="text-accent-500 font-semibold">
                     150+ Countries
                   </span>
                 </div>
@@ -191,8 +191,8 @@ export default function ThreatIntelligencePlatformPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2"></div>
-                      <p className="text-[#A1A1AA]">{feature}</p>
+                      <div className="w-2 h-2 bg-accent-500 rounded-full mt-2"></div>
+                      <p className="text-text-secondary">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -218,7 +218,7 @@ export default function ThreatIntelligencePlatformPage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -226,12 +226,12 @@ export default function ThreatIntelligencePlatformPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Stay Ahead of Threats?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Gain the intelligence advantage with comprehensive threat detection
             and analysis that keeps your organization protected from emerging
             cyber threats.
@@ -247,7 +247,7 @@ export default function ThreatIntelligencePlatformPage() {
             </Link>
             <Link
               href="/services"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Services
             </Link>

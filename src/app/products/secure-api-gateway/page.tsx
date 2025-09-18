@@ -216,14 +216,14 @@ export default function SecureAPIGatewayPage() {
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-2xl">
                 <Shield className="w-8 h-8 text-white" />
               </div>
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider bg-[#8B5CF6]/10 px-4 py-2 rounded-full">
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider bg-accent-500/10 px-4 py-2 rounded-full">
                 Enterprise API Security
               </span>
             </div>
             <h1 className="text-6xl md:text-7xl font-bold text-white mb-8 leading-tight">
               Secure API Gateway
             </h1>
-            <p className="text-2xl text-[#A1A1AA] mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-2xl text-text-secondary mb-12 max-w-4xl mx-auto leading-relaxed">
               Enterprise-grade API security platform that protects your digital
               assets with advanced threat detection, zero-trust authentication,
               and intelligent rate limiting.
@@ -240,7 +240,7 @@ export default function SecureAPIGatewayPage() {
               </Link>
               <Link
                 href="/contact"
-                className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
               >
                 Schedule Demo
               </Link>
@@ -251,12 +251,12 @@ export default function SecureAPIGatewayPage() {
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-6 h-6 text-[#8B5CF6]" />
+                    <stat.icon className="w-6 h-6 text-accent-500" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-2">
                     {stat.value}
                   </div>
-                  <div className="text-sm text-[#A1A1AA]">{stat.label}</div>
+                  <div className="text-sm text-text-secondary">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -269,16 +269,16 @@ export default function SecureAPIGatewayPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Star className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Why Choose Us
               </span>
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
+              <Star className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Enterprise-Grade API Security
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               Protect your APIs with cutting-edge security while maintaining
               exceptional performance and developer experience.
             </p>
@@ -288,7 +288,7 @@ export default function SecureAPIGatewayPage() {
             {features.map((feature, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-[#8B5CF6]/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${feature.color} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                   >
@@ -297,16 +297,16 @@ export default function SecureAPIGatewayPage() {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {feature.title}
                   </h3>
-                  <p className="text-[#A1A1AA] mb-8 leading-relaxed">
+                  <p className="text-text-secondary mb-8 leading-relaxed">
                     {feature.description}
                   </p>
                   <ul className="space-y-3">
                     {feature.benefits.map((benefit, idx) => (
                       <li
                         key={idx}
-                        className="flex items-center gap-3 text-sm text-[#A1A1AA]"
+                        className="flex items-center gap-3 text-sm text-text-secondary"
                       >
-                        <CheckCircle className="w-4 h-4 text-[#8B5CF6] flex-shrink-0" />
+                        <CheckCircle className="w-4 h-4 text-accent-500 flex-shrink-0" />
                         {benefit}
                       </li>
                     ))}
@@ -324,15 +324,15 @@ export default function SecureAPIGatewayPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 mb-6">
-                <Award className="w-5 h-5 text-[#8B5CF6]" />
-                <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+                <Award className="w-5 h-5 text-accent-500" />
+                <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                   Security Features
                 </span>
               </div>
               <h2 className="text-5xl font-bold text-white mb-8">
                 Comprehensive Security Capabilities
               </h2>
-              <p className="text-xl text-[#A1A1AA] mb-12 leading-relaxed">
+              <p className="text-xl text-text-secondary mb-12 leading-relaxed">
                 Our API Gateway provides enterprise-grade security features
                 designed to protect your APIs from modern threats while ensuring
                 compliance with industry standards.
@@ -343,8 +343,8 @@ export default function SecureAPIGatewayPage() {
                     key={index}
                     className="flex items-center gap-4 p-3 rounded-lg hover:bg-[#1A1A1A] transition-colors duration-200"
                   >
-                    <ShieldCheck className="w-5 h-5 text-[#8B5CF6] flex-shrink-0" />
-                    <span className="text-[#A1A1AA]">{capability}</span>
+                    <ShieldCheck className="w-5 h-5 text-accent-500 flex-shrink-0" />
+                    <span className="text-text-secondary">{capability}</span>
                   </div>
                 ))}
               </div>
@@ -353,41 +353,41 @@ export default function SecureAPIGatewayPage() {
               <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-10 rounded-3xl border border-[#333] shadow-2xl">
                 <div className="flex items-center gap-3 mb-8">
-                  <TrendingUp className="w-8 h-8 text-[#8B5CF6]" />
+                  <TrendingUp className="w-8 h-8 text-accent-500" />
                   <h3 className="text-3xl font-bold text-white">
                     Security Metrics
                   </h3>
                 </div>
                 <div className="space-y-8">
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Threat Detection Rate
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       99.9%
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       False Positive Rate
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       &lt;0.1%
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Response Time
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       &lt;10ms
                     </span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-[#0D0D0F] rounded-xl">
-                    <span className="text-[#A1A1AA] font-medium">
+                    <span className="text-text-secondary font-medium">
                       Uptime SLA
                     </span>
-                    <span className="text-[#8B5CF6] font-bold text-2xl">
+                    <span className="text-accent-500 font-bold text-2xl">
                       99.99%
                     </span>
                   </div>
@@ -403,16 +403,16 @@ export default function SecureAPIGatewayPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Globe className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Globe className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Industry Solutions
               </span>
-              <Globe className="w-5 h-5 text-[#8B5CF6]" />
+              <Globe className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Trusted Across Industries
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               Our Secure API Gateway is deployed across various industries,
               providing robust security and compliance for critical business
               operations.
@@ -423,21 +423,21 @@ export default function SecureAPIGatewayPage() {
             {useCases.map((useCase, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-[#8B5CF6]/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div className="flex items-center gap-6 mb-8">
                     <span className="text-5xl">{useCase.icon}</span>
                     <h3 className="text-3xl font-bold text-white">
                       {useCase.title}
                     </h3>
                   </div>
-                  <p className="text-[#A1A1AA] leading-relaxed mb-8 text-lg">
+                  <p className="text-text-secondary leading-relaxed mb-8 text-lg">
                     {useCase.description}
                   </p>
                   <div className="space-y-3">
                     {useCase.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-[#8B5CF6] rounded-full"></div>
-                        <span className="text-[#A1A1AA]">{feature}</span>
+                        <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
+                        <span className="text-text-secondary">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -453,11 +453,11 @@ export default function SecureAPIGatewayPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Star className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Customer Success
               </span>
-              <Star className="w-5 h-5 text-[#8B5CF6]" />
+              <Star className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               What Our Customers Say
@@ -479,12 +479,12 @@ export default function SecureAPIGatewayPage() {
                       <h4 className="text-xl font-bold text-white">
                         {testimonial.author}
                       </h4>
-                      <p className="text-[#8B5CF6]">
+                      <p className="text-accent-500">
                         {testimonial.role}, {testimonial.company}
                       </p>
                     </div>
                   </div>
-                  <blockquote className="text-[#A1A1AA] text-lg leading-relaxed italic">
+                  <blockquote className="text-text-secondary text-lg leading-relaxed italic">
                     "{testimonial.quote}"
                   </blockquote>
                 </div>
@@ -499,16 +499,16 @@ export default function SecureAPIGatewayPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <div className="inline-flex items-center gap-2 mb-6">
-              <Cpu className="w-5 h-5 text-[#8B5CF6]" />
-              <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+              <Cpu className="w-5 h-5 text-accent-500" />
+              <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                 Architecture
               </span>
-              <Cpu className="w-5 h-5 text-[#8B5CF6]" />
+              <Cpu className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
               Zero-Trust API Architecture
             </h2>
-            <p className="text-xl text-[#A1A1AA] max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
               Our API Gateway implements a zero-trust security model, ensuring
               every request is authenticated, authorized, and validated.
             </p>
@@ -516,7 +516,7 @@ export default function SecureAPIGatewayPage() {
 
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
-            <div className="relative bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] p-12 rounded-3xl border border-[#333] shadow-2xl">
+            <div className="relative bg-gradient-to-br from-background to-background-alt p-12 rounded-3xl border border-[#333] shadow-2xl">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                 <div className="text-center group">
                   <div className="w-20 h-20 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-3xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
@@ -525,7 +525,7 @@ export default function SecureAPIGatewayPage() {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Authentication
                   </h3>
-                  <p className="text-[#A1A1AA] leading-relaxed">
+                  <p className="text-text-secondary leading-relaxed">
                     Every request is authenticated using multiple factors
                     including API keys, JWT tokens, and OAuth 2.0.
                   </p>
@@ -537,7 +537,7 @@ export default function SecureAPIGatewayPage() {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Authorization
                   </h3>
-                  <p className="text-[#A1A1AA] leading-relaxed">
+                  <p className="text-text-secondary leading-relaxed">
                     Role-based access control ensures users only access the APIs
                     and data they're authorized to use.
                   </p>
@@ -549,7 +549,7 @@ export default function SecureAPIGatewayPage() {
                   <h3 className="text-2xl font-bold text-white mb-4">
                     Validation
                   </h3>
-                  <p className="text-[#A1A1AA] leading-relaxed">
+                  <p className="text-text-secondary leading-relaxed">
                     All requests and responses are validated against schemas and
                     security policies before processing.
                   </p>
@@ -565,18 +565,18 @@ export default function SecureAPIGatewayPage() {
         <div className="max-w-5xl mx-auto text-center">
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
-            <div className="relative bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] p-16 rounded-3xl border border-[#333] shadow-2xl">
+            <div className="relative bg-gradient-to-br from-background to-background-alt p-16 rounded-3xl border border-[#333] shadow-2xl">
               <div className="inline-flex items-center gap-2 mb-8">
-                <Award className="w-6 h-6 text-[#8B5CF6]" />
-                <span className="text-[#8B5CF6] font-semibold text-sm uppercase tracking-wider">
+                <Award className="w-6 h-6 text-accent-500" />
+                <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider">
                   Get Started Today
                 </span>
-                <Award className="w-6 h-6 text-[#8B5CF6]" />
+                <Award className="w-6 h-6 text-accent-500" />
               </div>
               <h2 className="text-5xl font-bold text-white mb-8">
                 Ready to Secure Your APIs?
               </h2>
-              <p className="text-xl text-[#A1A1AA] mb-12 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
                 Join thousands of organizations that trust our Secure API
                 Gateway to protect their digital assets and maintain compliance.
               </p>
@@ -592,7 +592,7 @@ export default function SecureAPIGatewayPage() {
                 </Link>
                 <Link
                   href="/contact"
-                  className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
                 >
                   Contact Sales
                 </Link>

@@ -4,17 +4,17 @@ export default function ContactInformationPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-16 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Contact <span className="text-[#8B5CF6]">Information</span>
+            Contact <span className="text-accent-500">Information</span>
           </h1>
-          <p className="text-lg text-[#A1A1AA] mb-6">
+          <p className="text-lg text-text-secondary mb-6">
             Privacy Policy Section 19: How to Contact Us About Privacy
           </p>
           <Link
             href="/legal/privacy-policy"
-            className="text-[#8B5CF6] hover:text-white underline"
+            className="text-accent-500 hover:text-white underline"
           >
             ← Back to Privacy Policy
           </Link>
@@ -25,7 +25,7 @@ export default function ContactInformationPage() {
       <section className="py-16 px-6 bg-[#0D0D0F]">
         <div className="max-w-4xl mx-auto">
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-            <div className="space-y-8 text-[#A1A1AA]">
+            <div className="space-y-8 text-text-secondary">
               <p className="text-lg mb-8">
                 We are committed to addressing your privacy questions and
                 concerns promptly. Please use the appropriate contact method
@@ -48,20 +48,20 @@ export default function ContactInformationPage() {
                         <strong className="text-white">Email:</strong>
                         <a
                           href="mailto:privacy@resilientprivacy.com"
-                          className="block text-[#8B5CF6] hover:text-white underline mt-1"
+                          className="block text-accent-500 hover:text-white underline mt-1"
                         >
                           privacy@resilientprivacy.com
                         </a>
                       </div>
                       <div>
                         <strong className="text-white">Response Time:</strong>
-                        <span className="block text-[#A1A1AA] mt-1">
+                        <span className="block text-text-secondary mt-1">
                           Within 48 hours
                         </span>
                       </div>
                       <div>
                         <strong className="text-white">Languages:</strong>
-                        <span className="block text-[#A1A1AA] mt-1">
+                        <span className="block text-text-secondary mt-1">
                           English, Hindi, Spanish
                         </span>
                       </div>
@@ -77,20 +77,20 @@ export default function ContactInformationPage() {
                         <strong className="text-white">Email:</strong>
                         <a
                           href="mailto:dpo@resilientprivacy.com"
-                          className="block text-[#8B5CF6] hover:text-white underline mt-1"
+                          className="block text-accent-500 hover:text-white underline mt-1"
                         >
                           dpo@resilientprivacy.com
                         </a>
                       </div>
                       <div>
                         <strong className="text-white">Jurisdiction:</strong>
-                        <span className="block text-[#A1A1AA] mt-1">
+                        <span className="block text-text-secondary mt-1">
                           EU/EEA residents
                         </span>
                       </div>
                       <div>
                         <strong className="text-white">Response Time:</strong>
-                        <span className="block text-[#A1A1AA] mt-1">
+                        <span className="block text-text-secondary mt-1">
                           Within 72 hours
                         </span>
                       </div>
@@ -120,12 +120,12 @@ export default function ContactInformationPage() {
                         <h4 className="text-white font-medium mb-2">
                           Online Form
                         </h4>
-                        <p className="text-sm text-[#A1A1AA] mb-2">
+                        <p className="text-sm text-text-secondary mb-2">
                           Fastest and most secure method
                         </p>
                         <Link
                           href="/privacy-request"
-                          className="bg-[#8B5CF6] hover:bg-purple-700 text-white px-4 py-2 rounded text-sm transition-colors duration-200 inline-block"
+                          className="bg-accent-500 hover:bg-purple-700 text-white px-4 py-2 rounded text-sm transition-colors duration-200 inline-block"
                         >
                           Submit Privacy Request
                         </Link>
@@ -133,12 +133,12 @@ export default function ContactInformationPage() {
 
                       <div>
                         <h4 className="text-white font-medium mb-2">Email</h4>
-                        <p className="text-sm text-[#A1A1AA] mb-2">
+                        <p className="text-sm text-text-secondary mb-2">
                           Include full name and request details
                         </p>
                         <a
                           href="mailto:rights@resilientprivacy.com"
-                          className="text-[#8B5CF6] hover:text-white underline text-sm"
+                          className="text-accent-500 hover:text-white underline text-sm"
                         >
                           rights@resilientprivacy.com
                         </a>
@@ -159,20 +159,20 @@ export default function ContactInformationPage() {
                         <strong className="text-white">Phone:</strong>
                         <a
                           href="tel:+14696660131"
-                          className="text-[#8B5CF6] hover:text-white underline ml-2"
+                          className="text-accent-500 hover:text-white underline ml-2"
                         >
                           +1 (469) 666-0131
                         </a>
                       </div>
                       <div>
                         <strong className="text-white">Hours:</strong>
-                        <span className="text-[#A1A1AA] ml-2">
+                        <span className="text-text-secondary ml-2">
                           Monday-Friday, 9:00 AM - 6:00 PM EST
                         </span>
                       </div>
                       <div>
                         <strong className="text-white">Emergency:</strong>
-                        <span className="text-[#A1A1AA] ml-2">
+                        <span className="text-text-secondary ml-2">
                           24/7 for data breach concerns
                         </span>
                       </div>
@@ -254,21 +254,21 @@ export default function ContactInformationPage() {
                         <strong className="text-white">Email:</strong>
                         <a
                           href="mailto:appeals@resilientprivacy.com"
-                          className="text-[#8B5CF6] hover:text-white underline ml-2"
+                          className="text-accent-500 hover:text-white underline ml-2"
                         >
                           appeals@resilientprivacy.com
                         </a>
                       </div>
                       <div>
                         <strong className="text-white">Include:</strong>
-                        <span className="text-[#A1A1AA] ml-2">
+                        <span className="text-text-secondary ml-2">
                           Original request reference number and reason for
                           appeal
                         </span>
                       </div>
                       <div>
                         <strong className="text-white">Response Time:</strong>
-                        <span className="text-[#A1A1AA] ml-2">
+                        <span className="text-text-secondary ml-2">
                           Within 30 days
                         </span>
                       </div>
@@ -288,7 +288,7 @@ export default function ContactInformationPage() {
                         <h4 className="text-white font-medium mb-2">
                           United States
                         </h4>
-                        <ul className="space-y-1 text-[#A1A1AA]">
+                        <ul className="space-y-1 text-text-secondary">
                           <li>• California Attorney General</li>
                           <li>• Virginia Attorney General</li>
                           <li>• Colorado Attorney General</li>
@@ -299,7 +299,7 @@ export default function ContactInformationPage() {
                         <h4 className="text-white font-medium mb-2">
                           International
                         </h4>
-                        <ul className="space-y-1 text-[#A1A1AA]">
+                        <ul className="space-y-1 text-text-secondary">
                           <li>• EU: Local Data Protection Authority</li>
                           <li>• US: State Attorney General Offices</li>
                         </ul>
@@ -442,10 +442,10 @@ export default function ContactInformationPage() {
                     <h4 className="text-white font-semibold mb-4">
                       Resilient Privacy LLC
                     </h4>
-                    <div className="space-y-1 text-[#A1A1AA]">
+                    <div className="space-y-1 text-text-secondary">
                       <p>Privacy Officer</p>
                     </div>
-                    <p className="mt-4 text-sm text-[#A1A1AA]">
+                    <p className="mt-4 text-sm text-text-secondary">
                       For privacy-related correspondence only. Please include
                       "PRIVACY REQUEST" in the subject line or envelope marking.
                     </p>
@@ -458,13 +458,13 @@ export default function ContactInformationPage() {
                 <div className="flex justify-between items-center">
                   <Link
                     href="/legal/privacy-policy/sections/updates-to-policy"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     ← Previous: Updates to Policy
                   </Link>
                   <Link
                     href="/legal/privacy-policy/sections/governing-law"
-                    className="text-[#8B5CF6] hover:text-white underline"
+                    className="text-accent-500 hover:text-white underline"
                   >
                     Next: Governing Law →
                   </Link>

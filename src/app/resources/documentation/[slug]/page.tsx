@@ -866,33 +866,33 @@ export default async function GuidePage({
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+    <div className="min-h-screen bg-gradient-to-br from-background to-background-alt">
       {/* Header */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto">
           <Link
             href="/resources/documentation"
-            className="inline-flex items-center text-[#8B5CF6] hover:text-white transition-colors mb-6"
+            className="inline-flex items-center text-accent-500 hover:text-white transition-colors mb-6"
           >
             ← Back to Documentation
           </Link>
 
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] mb-8">
             <div className="flex items-center gap-4 mb-4">
-              <span className="px-3 py-1 bg-[#8B5CF6] bg-opacity-20 text-[#8B5CF6] rounded text-sm">
+              <span className="px-3 py-1 bg-accent-500 bg-opacity-20 text-accent-500 rounded text-sm">
                 {guide.category}
               </span>
               <span className="px-3 py-1 bg-red-500 bg-opacity-20 text-red-400 rounded text-sm">
                 {guide.difficulty}
               </span>
-              <span className="text-[#A1A1AA] text-sm">{guide.time}</span>
+              <span className="text-text-secondary text-sm">{guide.time}</span>
             </div>
 
             <h1 className="text-4xl font-bold text-white mb-4">
               {guide.title}
             </h1>
 
-            <p className="text-[#A1A1AA] mb-4">
+            <p className="text-text-secondary mb-4">
               Last updated: {guide.lastUpdated}
             </p>
           </div>
@@ -900,7 +900,7 @@ export default async function GuidePage({
           {/* Overview */}
           <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] mb-8">
             <h2 className="text-2xl font-bold text-white mb-4">Overview</h2>
-            <p className="text-[#A1A1AA] leading-relaxed">
+            <p className="text-text-secondary leading-relaxed">
               {guide.content.overview}
             </p>
           </div>
@@ -913,8 +913,8 @@ export default async function GuidePage({
             <ul className="space-y-2">
               {guide.content.prerequisites.map((prereq, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-[#8B5CF6] mt-1">•</span>
-                  <span className="text-[#A1A1AA]">{prereq}</span>
+                  <span className="text-accent-500 mt-1">•</span>
+                  <span className="text-text-secondary">{prereq}</span>
                 </li>
               ))}
             </ul>
@@ -930,7 +930,7 @@ export default async function GuidePage({
                 <h2 className="text-2xl font-bold text-white mb-4">
                   {section.title}
                 </h2>
-                <div className="text-[#A1A1AA] leading-relaxed whitespace-pre-line">
+                <div className="text-text-secondary leading-relaxed whitespace-pre-line">
                   {section.content}
                 </div>
               </div>
@@ -943,8 +943,8 @@ export default async function GuidePage({
             <ol className="space-y-2">
               {guide.content.nextSteps.map((step, index) => (
                 <li key={index} className="flex items-start gap-3">
-                  <span className="text-[#8B5CF6] font-bold">{index + 1}.</span>
-                  <span className="text-[#A1A1AA]">{step}</span>
+                  <span className="text-accent-500 font-bold">{index + 1}.</span>
+                  <span className="text-text-secondary">{step}</span>
                 </li>
               ))}
             </ol>
@@ -963,7 +963,7 @@ export default async function GuidePage({
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-[#8B5CF6] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-white text-accent-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Contact Our Team
             </Link>

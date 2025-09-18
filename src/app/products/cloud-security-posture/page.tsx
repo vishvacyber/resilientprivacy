@@ -64,12 +64,12 @@ export default function CloudSecurityPosturePage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Cloud Security <span className="text-[#8B5CF6]">Posture</span>
+            Cloud Security <span className="text-accent-500">Posture</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive cloud security and compliance management platform that
             protects your cloud environments and ensures regulatory compliance.
           </p>
@@ -84,7 +84,7 @@ export default function CloudSecurityPosturePage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -100,7 +100,7 @@ export default function CloudSecurityPosturePage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Complete Cloud Security
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s Cloud Security Posture platform
                   provides comprehensive protection for your cloud environments,
@@ -139,28 +139,28 @@ export default function CloudSecurityPosturePage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Supported Clouds</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Supported Clouds</span>
+                  <span className="text-accent-500 font-semibold">
                     AWS/Azure/GCP
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Security Controls</span>
-                  <span className="text-[#8B5CF6] font-semibold">500+</span>
+                  <span className="text-text-secondary">Security Controls</span>
+                  <span className="text-accent-500 font-semibold">500+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Compliance Frameworks</span>
-                  <span className="text-[#8B5CF6] font-semibold">20+</span>
+                  <span className="text-text-secondary">Compliance Frameworks</span>
+                  <span className="text-accent-500 font-semibold">20+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Scan Frequency</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Scan Frequency</span>
+                  <span className="text-accent-500 font-semibold">
                     Real-time
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Deployment Time</span>
-                  <span className="text-[#8B5CF6] font-semibold">1-3 Days</span>
+                  <span className="text-text-secondary">Deployment Time</span>
+                  <span className="text-accent-500 font-semibold">1-3 Days</span>
                 </div>
               </div>
             </div>
@@ -186,8 +186,8 @@ export default function CloudSecurityPosturePage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {category.features.map((feature) => (
                     <div key={feature} className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2"></div>
-                      <p className="text-[#A1A1AA]">{feature}</p>
+                      <div className="w-2 h-2 bg-accent-500 rounded-full mt-2"></div>
+                      <p className="text-text-secondary">{feature}</p>
                     </div>
                   ))}
                 </div>
@@ -213,7 +213,7 @@ export default function CloudSecurityPosturePage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -221,12 +221,12 @@ export default function CloudSecurityPosturePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Secure Your Cloud?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Protect your cloud environments with comprehensive security controls
             and automated compliance management.
           </p>
@@ -241,7 +241,7 @@ export default function CloudSecurityPosturePage() {
             </Link>
             <Link
               href="/products/dlp-data-governance"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Data Protection
             </Link>

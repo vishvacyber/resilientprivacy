@@ -215,12 +215,12 @@ export default function DataCenterPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Data Center <span className="text-[#8B5CF6]">Services</span>
+            Data Center <span className="text-accent-500">Services</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Enterprise-grade data center solutions with high availability,
             security, and performance. From colocation to managed private cloud
             hosting.
@@ -236,7 +236,7 @@ export default function DataCenterPage() {
             </Link>
             <Link
               href="#services"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Services
             </Link>
@@ -251,7 +251,7 @@ export default function DataCenterPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Tier III+ Data Center Specifications
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our state-of-the-art facilities meet the highest standards for
               reliability, security, and performance with enterprise-grade
               infrastructure.
@@ -264,13 +264,13 @@ export default function DataCenterPage() {
                 key={spec.specification}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] text-center"
               >
-                <div className="text-3xl font-bold text-[#8B5CF6] mb-2">
+                <div className="text-3xl font-bold text-accent-500 mb-2">
                   {spec.value}
                 </div>
                 <h3 className="text-lg font-bold text-white mb-2">
                   {spec.specification}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{spec.description}</p>
+                <p className="text-text-secondary text-sm">{spec.description}</p>
               </div>
             ))}
           </div>
@@ -287,28 +287,28 @@ export default function DataCenterPage() {
             {dataCenterServices.map((service) => (
               <div
                 key={service.category}
-                className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] hover:border-[#8B5CF6] transition-all duration-300"
+                className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.category}
                 </h3>
-                <p className="text-[#A1A1AA] mb-4 text-sm">
+                <p className="text-text-secondary mb-4 text-sm">
                   {service.description}
                 </p>
                 <ul className="space-y-2 mb-4">
                   {service.services.map((item) => (
                     <li
                       key={item}
-                      className="text-[#8B5CF6] text-sm flex items-center"
+                      className="text-accent-500 text-sm flex items-center"
                     >
-                      <span className="w-1.5 h-1.5 bg-[#8B5CF6] rounded-full mr-3"></span>
+                      <span className="w-1.5 h-1.5 bg-accent-500 rounded-full mr-3"></span>
                       {item}
                     </li>
                   ))}
                 </ul>
                 <div className="border-t border-[#333] pt-4">
-                  <div className="text-sm text-[#A1A1AA]">Contact us for</div>
+                  <div className="text-sm text-text-secondary">Contact us for</div>
                   <div className="text-lg font-semibold text-white">
                     {service.pricing}
                   </div>
@@ -326,7 +326,7 @@ export default function DataCenterPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Connectivity & Network Options
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Multiple connectivity options to ensure your data center services
               are always accessible and performant.
             </p>
@@ -345,9 +345,9 @@ export default function DataCenterPage() {
                   {connectivity.options.map((option) => (
                     <li
                       key={option}
-                      className="text-[#A1A1AA] text-sm flex items-center"
+                      className="text-text-secondary text-sm flex items-center"
                     >
-                      <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                      <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                       {option}
                     </li>
                   ))}
@@ -365,7 +365,7 @@ export default function DataCenterPage() {
             <h2 className="text-4xl font-bold text-white mb-6">
               Compliance & Certifications
             </h2>
-            <p className="text-lg text-[#A1A1AA] max-w-3xl mx-auto">
+            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
               Our data centers meet stringent compliance requirements for
               regulated industries and government organizations.
             </p>
@@ -381,7 +381,7 @@ export default function DataCenterPage() {
                 <h3 className="text-lg font-bold text-white mb-3">
                   {standard.standard}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{standard.description}</p>
+                <p className="text-text-secondary text-sm">{standard.description}</p>
               </div>
             ))}
           </div>
@@ -404,7 +404,7 @@ export default function DataCenterPage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{benefit.description}</p>
+                <p className="text-text-secondary text-sm">{benefit.description}</p>
               </div>
             ))}
           </div>
@@ -419,7 +419,7 @@ export default function DataCenterPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Seamless Migration Support
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Our experienced migration team ensures a smooth transition to
                   our data center facilities with minimal downtime and zero data
@@ -427,7 +427,7 @@ export default function DataCenterPage() {
                 </p>
                 <div className="space-y-4">
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm font-bold">1</span>
                     </div>
                     <div>
@@ -442,7 +442,7 @@ export default function DataCenterPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm font-bold">2</span>
                     </div>
                     <div>
@@ -457,7 +457,7 @@ export default function DataCenterPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm font-bold">3</span>
                     </div>
                     <div>
@@ -472,7 +472,7 @@ export default function DataCenterPage() {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="w-8 h-8 bg-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <div className="w-8 h-8 bg-accent-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                       <span className="text-white text-sm font-bold">4</span>
                     </div>
                     <div>
@@ -495,28 +495,28 @@ export default function DataCenterPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center border-b border-[#333] pb-2">
-                  <span className="text-[#A1A1AA]">Typical Downtime</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Typical Downtime</span>
+                  <span className="text-accent-500 font-semibold">
                     &lt; 4 hours
                   </span>
                 </div>
                 <div className="flex justify-between items-center border-b border-[#333] pb-2">
-                  <span className="text-[#A1A1AA]">Data Loss Risk</span>
-                  <span className="text-[#8B5CF6] font-semibold">Zero</span>
+                  <span className="text-text-secondary">Data Loss Risk</span>
+                  <span className="text-accent-500 font-semibold">Zero</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-[#333] pb-2">
-                  <span className="text-[#A1A1AA]">Migration Support</span>
-                  <span className="text-[#8B5CF6] font-semibold">24/7</span>
+                  <span className="text-text-secondary">Migration Support</span>
+                  <span className="text-accent-500 font-semibold">24/7</span>
                 </div>
                 <div className="flex justify-between items-center border-b border-[#333] pb-2">
-                  <span className="text-[#A1A1AA]">Project Management</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Project Management</span>
+                  <span className="text-accent-500 font-semibold">
                     Dedicated PM
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Post-Migration Support</span>
-                  <span className="text-[#8B5CF6] font-semibold">30 days</span>
+                  <span className="text-text-secondary">Post-Migration Support</span>
+                  <span className="text-accent-500 font-semibold">30 days</span>
                 </div>
               </div>
             </div>
@@ -525,12 +525,12 @@ export default function DataCenterPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Move to Enterprise Data Centers?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Get a custom quote for your data center requirements and discover
             how our enterprise-grade facilities can support your business
             growth.
@@ -546,7 +546,7 @@ export default function DataCenterPage() {
             </Link>
             <Link
               href="/services"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               View All Services
             </Link>

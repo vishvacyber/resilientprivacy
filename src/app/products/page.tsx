@@ -179,7 +179,7 @@ export default function ProductsPage() {
               <h2 className="text-4xl font-bold text-white mb-8">
                 Comprehensive Security Portfolio
               </h2>
-              <div className="space-y-6 text-[#A1A1AA]">
+              <div className="space-y-6 text-text-secondary">
                 <p>
                   Resilient Privacy&apos;s product portfolio represents the most
                   advanced cybersecurity solutions available today. Our products
@@ -218,26 +218,26 @@ export default function ProductsPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Product Categories</span>
-                  <span className="text-[#8B5CF6] font-semibold">6</span>
+                  <span className="text-text-secondary">Product Categories</span>
+                  <span className="text-accent-500 font-semibold">6</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Integration APIs</span>
-                  <span className="text-[#8B5CF6] font-semibold">100+</span>
+                  <span className="text-text-secondary">Integration APIs</span>
+                  <span className="text-accent-500 font-semibold">100+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Deployment Options</span>
-                  <span className="text-[#8B5CF6] font-semibold">
+                  <span className="text-text-secondary">Deployment Options</span>
+                  <span className="text-accent-500 font-semibold">
                     Cloud/On-Prem
                   </span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Compliance Frameworks</span>
-                  <span className="text-[#8B5CF6] font-semibold">25+</span>
+                  <span className="text-text-secondary">Compliance Frameworks</span>
+                  <span className="text-accent-500 font-semibold">25+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A1A1AA]">Uptime SLA</span>
-                  <span className="text-[#8B5CF6] font-semibold">99.99%</span>
+                  <span className="text-text-secondary">Uptime SLA</span>
+                  <span className="text-accent-500 font-semibold">99.99%</span>
                 </div>
               </div>
             </div>
@@ -296,7 +296,7 @@ export default function ProductsPage() {
                 <h3 className="text-xl font-bold text-white mb-4">
                   {highlight.title}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">
+                <p className="text-text-secondary text-sm">
                   {highlight.description}
                 </p>
               </div>
@@ -319,19 +319,19 @@ export default function ProductsPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-[#1A1A1A] rounded">
                   <div className="text-2xl mb-2">🔵</div>
-                  <span className="text-[#A1A1AA] text-sm">Microsoft</span>
+                  <span className="text-text-secondary text-sm">Microsoft</span>
                 </div>
                 <div className="text-center p-4 bg-[#1A1A1A] rounded">
                   <div className="text-2xl mb-2">🟠</div>
-                  <span className="text-[#A1A1AA] text-sm">AWS</span>
+                  <span className="text-text-secondary text-sm">AWS</span>
                 </div>
                 <div className="text-center p-4 bg-[#1A1A1A] rounded">
                   <div className="text-2xl mb-2">🔴</div>
-                  <span className="text-[#A1A1AA] text-sm">Google Cloud</span>
+                  <span className="text-text-secondary text-sm">Google Cloud</span>
                 </div>
                 <div className="text-center p-4 bg-[#1A1A1A] rounded">
                   <div className="text-2xl mb-2">🟢</div>
-                  <span className="text-[#A1A1AA] text-sm">Salesforce</span>
+                  <span className="text-text-secondary text-sm">Salesforce</span>
                 </div>
               </div>
             </div>
@@ -339,7 +339,7 @@ export default function ProductsPage() {
               <h3 className="text-2xl font-bold text-white mb-6">
                 Deployment Options
               </h3>
-              <div className="space-y-4 text-[#A1A1AA]">
+              <div className="space-y-4 text-text-secondary">
                 <p>
                   Our products support multiple deployment models to meet your
                   infrastructure and security requirements.
@@ -363,12 +363,12 @@ export default function ProductsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+      <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Explore our comprehensive security portfolio and discover how our
             solutions can protect your organization.
           </p>
@@ -383,7 +383,7 @@ export default function ProductsPage() {
             </Link>
             <Link
               href="/services"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Explore Services
             </Link>

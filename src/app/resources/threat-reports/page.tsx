@@ -160,12 +160,12 @@ export default function ThreatReportsPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Threat <span className="text-[#8B5CF6]">Reports</span>
+            Threat <span className="text-accent-500">Reports</span>
           </h1>
-          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
             Comprehensive threat intelligence reports providing deep insights
             into emerging cyber threats, attack patterns, and defense
             strategies.
@@ -176,7 +176,7 @@ export default function ThreatReportsPage() {
             </Link>
             <Link
               href="#subscribe"
-              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
             >
               Subscribe to Updates
             </Link>
@@ -196,33 +196,33 @@ export default function ThreatReportsPage() {
               .map((report) => (
                 <div
                   key={report.title}
-                  className="bg-[#1A1A1A] rounded-lg border border-[#222] overflow-hidden hover:border-[#8B5CF6] transition-colors"
+                  className="bg-[#1A1A1A] rounded-lg border border-[#222] overflow-hidden hover:border-accent-500 transition-colors"
                 >
                   <div className="p-8">
                     <div className="flex items-center gap-2 mb-4">
-                      <span className="px-3 py-1 bg-[#8B5CF6] bg-opacity-20 text-[#8B5CF6] rounded-full text-sm">
+                      <span className="px-3 py-1 bg-accent-500 bg-opacity-20 text-accent-500 rounded-full text-sm">
                         {report.category}
                       </span>
-                      <span className="text-[#A1A1AA] text-sm">
+                      <span className="text-text-secondary text-sm">
                         {report.pages} pages
                       </span>
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4">
                       {report.title}
                     </h3>
-                    <p className="text-[#A1A1AA] mb-6">{report.description}</p>
+                    <p className="text-text-secondary mb-6">{report.description}</p>
 
                     <div className="mb-6">
-                      <h4 className="text-[#8B5CF6] font-semibold mb-3">
+                      <h4 className="text-accent-500 font-semibold mb-3">
                         Key Highlights
                       </h4>
                       <ul className="space-y-2">
                         {report.highlights.map((highlight) => (
                           <li
                             key={highlight}
-                            className="text-[#A1A1AA] text-sm flex items-start gap-3"
+                            className="text-text-secondary text-sm flex items-start gap-3"
                           >
-                            <div className="w-2 h-2 bg-[#8B5CF6] rounded-full mt-2 flex-shrink-0"></div>
+                            <div className="w-2 h-2 bg-accent-500 rounded-full mt-2 flex-shrink-0"></div>
                             {highlight}
                           </li>
                         ))}
@@ -230,13 +230,13 @@ export default function ThreatReportsPage() {
                     </div>
 
                     <div className="flex items-center justify-between mb-4">
-                      <div className="text-[#A1A1AA] text-sm">
+                      <div className="text-text-secondary text-sm">
                         <span className="font-semibold">
                           {report.downloadCount}
                         </span>{' '}
                         downloads
                       </div>
-                      <div className="text-[#A1A1AA] text-sm">
+                      <div className="text-text-secondary text-sm">
                         {report.fileSize}
                       </div>
                     </div>
@@ -260,13 +260,13 @@ export default function ThreatReportsPage() {
                 key={metric.metric}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl font-bold text-[#8B5CF6] mb-4">
+                <div className="text-4xl font-bold text-accent-500 mb-4">
                   {metric.value}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {metric.metric}
                 </h3>
-                <p className="text-[#A1A1AA] text-sm">{metric.description}</p>
+                <p className="text-text-secondary text-sm">{metric.description}</p>
               </div>
             ))}
           </div>
@@ -286,7 +286,7 @@ export default function ThreatReportsPage() {
                     key={category}
                     className="w-full text-left px-4 py-3 rounded-lg hover:bg-[#1A1A1A] transition-colors"
                   >
-                    <span className="text-[#A1A1AA] hover:text-white">
+                    <span className="text-text-secondary hover:text-white">
                       {category}
                     </span>
                   </button>
@@ -303,29 +303,29 @@ export default function ThreatReportsPage() {
                 {threatReports.map((report) => (
                   <div
                     key={report.title}
-                    className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+                    className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
                   >
                     <div className="flex flex-col lg:flex-row gap-6">
                       <div className="lg:w-2/3">
                         <div className="flex items-center gap-2 mb-3">
-                          <span className="px-3 py-1 bg-[#8B5CF6] bg-opacity-20 text-[#8B5CF6] rounded-full text-sm">
+                          <span className="px-3 py-1 bg-accent-500 bg-opacity-20 text-accent-500 rounded-full text-sm">
                             {report.category}
                           </span>
-                          <span className="text-[#A1A1AA] text-sm">
+                          <span className="text-text-secondary text-sm">
                             {report.pages} pages
                           </span>
                         </div>
                         <h4 className="text-xl font-bold text-white mb-3">
                           {report.title}
                         </h4>
-                        <p className="text-[#A1A1AA] mb-4">
+                        <p className="text-text-secondary mb-4">
                           {report.description}
                         </p>
                         <div className="flex flex-wrap gap-2 mb-4">
                           {report.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="px-2 py-1 bg-[#222] text-[#A1A1AA] rounded text-xs"
+                              className="px-2 py-1 bg-[#222] text-text-secondary rounded text-xs"
                             >
                               {tag}
                             </span>
@@ -334,7 +334,7 @@ export default function ThreatReportsPage() {
                       </div>
                       <div className="lg:w-1/3">
                         <div className="flex items-center gap-3 mb-3">
-                          <div className="w-10 h-10 bg-[#8B5CF6] rounded-full flex items-center justify-center text-white font-bold text-sm">
+                          <div className="w-10 h-10 bg-accent-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
                             {report.author
                               .split(' ')
                               .map((n) => n[0])
@@ -344,19 +344,19 @@ export default function ThreatReportsPage() {
                             <div className="text-white font-semibold text-sm">
                               {report.author}
                             </div>
-                            <div className="text-[#A1A1AA] text-xs">
+                            <div className="text-text-secondary text-xs">
                               {report.date}
                             </div>
                           </div>
                         </div>
                         <div className="space-y-2 mb-4">
-                          <div className="text-[#A1A1AA] text-sm">
+                          <div className="text-text-secondary text-sm">
                             <span className="font-semibold">
                               {report.downloadCount}
                             </span>{' '}
                             downloads
                           </div>
-                          <div className="text-[#A1A1AA] text-sm">
+                          <div className="text-text-secondary text-sm">
                             {report.fileSize}
                           </div>
                         </div>
@@ -376,13 +376,13 @@ export default function ThreatReportsPage() {
       {/* Subscribe Section */}
       <section
         id="subscribe"
-        className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]"
+        className="py-20 px-6 bg-gradient-to-br from-background to-background-alt"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
             Stay Ahead of Threats
           </h2>
-          <p className="text-xl text-[#A1A1AA] mb-8">
+          <p className="text-xl text-text-secondary mb-8">
             Get the latest threat intelligence reports and security insights
             delivered directly to your inbox.
           </p>
@@ -390,11 +390,11 @@ export default function ThreatReportsPage() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-[#1A1A1A] border border-[#222] rounded-lg text-white placeholder-[#A1A1AA] focus:border-[#8B5CF6] focus:outline-none"
+              className="flex-1 px-4 py-3 bg-[#1A1A1A] border border-[#222] rounded-lg text-white placeholder-[#A1A1AA] focus:border-accent-500 focus:outline-none"
             />
             <button className="btn px-8 py-3">Subscribe</button>
           </div>
-          <p className="text-[#A1A1AA] text-sm mt-4">
+          <p className="text-text-secondary text-sm mt-4">
             No spam, unsubscribe at any time. We respect your privacy.
           </p>
         </div>

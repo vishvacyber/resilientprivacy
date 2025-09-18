@@ -57,7 +57,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             About <span className="text-white">Resilient </span>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   <Link
                     href="/about/leadership"
-                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-[#8B5CF6] transition-all duration-300 hover:shadow-lg hover:shadow-[#8B5CF6]/20"
+                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-accent-500 transition-all duration-300 hover:shadow-lg hover:shadow-[#8B5CF6]/20"
                   >
                     <div className="w-12 h-12 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Users className="w-6 h-6 text-white" />
@@ -179,7 +179,7 @@ export default function AboutPage() {
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-[#8B5CF6] transition-all duration-300">
+            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <ShieldCheck className="w-8 h-8 text-white" />
               </div>
@@ -192,7 +192,7 @@ export default function AboutPage() {
                 their security posture.
               </p>
             </div>
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-[#8B5CF6] transition-all duration-300">
+            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Zap className="w-8 h-8 text-white" />
               </div>
@@ -205,7 +205,7 @@ export default function AboutPage() {
                 of the curve.
               </p>
             </div>
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-[#8B5CF6] transition-all duration-300">
+            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
               <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
@@ -228,7 +228,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0F] via-[#1A1A1A] to-[#0D0D0F]">
           {/* Subtle animated elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-[#8B5CF6] rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-20 left-10 w-32 h-32 bg-accent-500 rounded-full blur-3xl animate-pulse"></div>
             <div
               className="absolute bottom-20 right-10 w-40 h-40 bg-[#A78BFA] rounded-full blur-3xl animate-pulse"
               style={{ animationDelay: '3s' }}
@@ -333,7 +333,7 @@ export default function AboutPage() {
           {/* Sleek Office Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {/* Delaware, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-[#8B5CF6]/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
@@ -352,7 +352,7 @@ export default function AboutPage() {
                       <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Delaware, USA
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
                         Corporate Headquarters
                       </div>
                     </div>
@@ -381,7 +381,7 @@ export default function AboutPage() {
             </div>
 
             {/* Dallas, Texas, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-[#8B5CF6]/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
@@ -400,7 +400,7 @@ export default function AboutPage() {
                       <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Dallas, Texas, USA
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
                         Regional Operations
                       </div>
                     </div>
@@ -429,7 +429,7 @@ export default function AboutPage() {
             </div>
 
             {/* Surat, India */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-[#8B5CF6]/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
@@ -448,7 +448,7 @@ export default function AboutPage() {
                       <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
                         Surat, India
                       </h3>
-                      <div className="inline-flex items-center bg-[#8B5CF6]/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-[#8B5CF6]/25 shadow-sm">
+                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
                         Asia Operations
                       </div>
                     </div>
@@ -463,7 +463,7 @@ export default function AboutPage() {
                   cybersecurity expertise and innovative solutions across the
                   Asian continent with local market knowledge.
                 </p>
-                <p className="text-accent-500 text-sm font-mono mb-3 bg-[#8B5CF6]/5 px-4 py-2 rounded-lg border border-[#8B5CF6]/10">
+                <p className="text-accent-500 text-sm font-mono mb-3 bg-accent-500/5 px-4 py-2 rounded-lg border border-accent-500/10">
                   Surat, Gujarat, India
                 </p>
 
