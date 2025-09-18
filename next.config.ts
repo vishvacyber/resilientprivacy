@@ -27,4 +27,4 @@ const nextConfig: NextConfig = {
   },
 }
 
-export default nextConfig
+export default nextConfig// Vercel deployment trigger - Wed Sep 17 23:50:42 CDT 2025
