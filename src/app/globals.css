@@ -57,22 +57,54 @@ div[hidden][id^='S:'] {
   overflow: hidden;
 }
 
+/* Fxology-inspired utility classes */
+@layer utilities {
+  .fxology-gradient {
+    background: linear-gradient(135deg, #0087FF 0%, #0EA5E9 100%);
+  }
+  
+  .fxology-card {
+    background: rgba(26, 35, 50, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(51, 65, 85, 0.3);
+    border-radius: 12px;
+  }
+  
+  .fxology-glass {
+    background: rgba(20, 27, 35, 0.6);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(51, 65, 85, 0.2);
+  }
+  
+  .fxology-shadow {
+    box-shadow: 0 8px 32px rgba(0, 135, 255, 0.1);
+  }
+  
+  .fxology-text-gradient {
+    background: linear-gradient(135deg, #0087FF 0%, #0EA5E9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
 @layer base {
   :root {
-    --background: #0a0a0f;
-    --background-alt: #111118;
-    --background-card: #1a1a24;
-    --background-light: #2a2a35;
-    --accent-primary: #9333ea;
-    --accent-secondary: #7c3aed;
-    --accent-tertiary: #a855f7;
+    /* Fxology-inspired color scheme */
+    --background: #0B0E14;
+    --background-alt: #141B23;
+    --background-card: #1A2332;
+    --background-light: #243447;
+    --accent-primary: #0087FF;
+    --accent-secondary: #0EA5E9;
+    --accent-tertiary: #38BDF8;
     --text-primary: #ffffff;
-    --text-secondary: #e2e8f0;
-    --text-tertiary: #94a3b8;
-    --text-muted: #64748b;
+    --text-secondary: #CBD5E1;
+    --text-tertiary: #94A3B8;
+    --text-muted: #64748B;
     --border-light: #334155;
     --border-medium: #475569;
-    --border-dark: #1e293b;
+    --border-dark: #1E293B;
     --font-sans: 'Inter', Helvetica, Arial, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
   }

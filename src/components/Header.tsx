@@ -86,7 +86,7 @@ export default function Header() {
   if (!mounted) {
     return (
       <header
-        className="w-full z-50 sticky top-0 transition-all duration-700 ease-out bg-gradient-to-r from-background/85 via-background-alt/85 to-background/85 backdrop-blur-xl border-b border-border-light/40 py-3"
+        className="w-full z-50 sticky top-0 transition-all duration-700 ease-out fxology-glass border-b border-border-light/40 py-3"
         style={{
           transform: 'translateY(0)',
           boxShadow:
@@ -179,8 +179,8 @@ export default function Header() {
       ref={headerRef}
       className={`w-full z-50 sticky top-0 transition-all duration-700 ease-out ${
         isScrolled
-          ? 'bg-gradient-to-r from-background/98 via-background-alt/98 to-background/98 backdrop-blur-2xl shadow-2xl shadow-accent-500/25 border-b border-border-light/60 py-2'
-          : 'bg-gradient-to-r from-background/85 via-background-alt/85 to-background/85 backdrop-blur-xl border-b border-border-light/40 py-3'
+          ? 'fxology-glass fxology-shadow border-b border-border-light/60 py-2'
+          : 'fxology-glass border-b border-border-light/40 py-3'
       }`}
       style={{
         transform: isScrolled ? 'translateY(0)' : 'translateY(0)',
@@ -619,7 +619,7 @@ export default function Header() {
 
         {/* Enhanced Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="xl:hidden absolute top-full left-0 right-0 bg-gradient-to-br from-background-card/95 to-background-alt/95 border-t border-border-light/50 backdrop-blur-2xl shadow-2xl animate-in slide-in-from-top-2 fade-in duration-300">
+          <div className="xl:hidden absolute top-full left-0 right-0 fxology-glass border-t border-border-light/50 fxology-shadow animate-in slide-in-from-top-2 fade-in duration-300">
             <div className="px-4 py-6 space-y-2">
               <Link
                 href="/"
