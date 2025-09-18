@@ -232,7 +232,7 @@ export default function TrainingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
             {certifications.map((cert, index) => (
               <div key={index} className="card group hover-lift">
-                <div className="w-16 h-16 bg-gradient-purple rounded-xl mb-6 flex items-center justify-center shadow-purple group-hover:shadow-purple-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mb-6 flex items-center justify-center shadow-purple group-hover:shadow-purple-lg transition-all duration-300">
                   <span className="text-white font-bold text-xl">R</span>
                 </div>
 
@@ -284,7 +284,7 @@ export default function TrainingPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-purple rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
+              <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
                 <span className="text-white font-bold text-xl">👨‍🏫</span>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-3 sm:mb-4">
@@ -297,7 +297,7 @@ export default function TrainingPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-purple rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
+              <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
                 <span className="text-white font-bold text-xl">🖥️</span>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-3 sm:mb-4">
@@ -310,7 +310,7 @@ export default function TrainingPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-purple rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
+              <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
                 <span className="text-white font-bold text-xl">📚</span>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-3 sm:mb-4">
@@ -323,7 +323,7 @@ export default function TrainingPage() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-purple rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
+              <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mb-6 mx-auto flex items-center justify-center shadow-purple">
                 <span className="text-white font-bold text-xl">🎯</span>
               </div>
               <h3 className="text-xl font-bold text-text-primary mb-3 sm:mb-4">

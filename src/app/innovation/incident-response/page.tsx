@@ -444,7 +444,7 @@ export default function IncidentResponsePage() {
                       type="text"
                       required
                       placeholder="Enter your full name"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[accent-500] focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                       value={report.name}
                       onChange={(e) =>
                         setReport({ ...report, name: e.target.value })
@@ -464,7 +464,7 @@ export default function IncidentResponsePage() {
                       type="email"
                       required
                       placeholder="Enter your email address"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[accent-500] focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                       value={report.email}
                       onChange={(e) =>
                         setReport({ ...report, email: e.target.value })
@@ -483,7 +483,7 @@ export default function IncidentResponsePage() {
                       id="company"
                       type="text"
                       placeholder="Enter your company name"
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[accent-500] focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                       value={report.company}
                       onChange={(e) =>
                         setReport({ ...report, company: e.target.value })
@@ -501,7 +501,7 @@ export default function IncidentResponsePage() {
                     <select
                       id="incidentType"
                       required
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                       value={report.incidentType}
                       onChange={(e) =>
                         setReport({
@@ -538,7 +538,7 @@ export default function IncidentResponsePage() {
                     <select
                       id="severity"
                       required
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                       value={report.severity}
                       onChange={(e) =>
                         setReport({
@@ -578,7 +578,7 @@ export default function IncidentResponsePage() {
                       required
                       placeholder="Describe the incident in detail. Include what happened, when it occurred, and any immediate actions taken."
                       rows={4}
-                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none resize-none"
+                      className="w-full px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[accent-500] focus:ring-2 focus:ring-[accent-500] focus:outline-none resize-none"
                       value={report.description}
                       onChange={(e) =>
                         setReport({ ...report, description: e.target.value })

@@ -151,7 +151,7 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   <Link
                     href="/about/leadership"
-                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-accent-500 transition-all duration-300 hover:shadow-lg hover:shadow-[#8B5CF6]/20"
+                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-accent-500 transition-all duration-300 hover:shadow-lg hover:shadow-[accent-500]/20"
                   >
                     <div className="w-12 h-12 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Users className="w-6 h-6 text-white" />
@@ -230,7 +230,7 @@ export default function AboutPage() {
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
             <div className="absolute top-20 left-10 w-32 h-32 bg-accent-500 rounded-full blur-3xl animate-pulse"></div>
             <div
-              className="absolute bottom-20 right-10 w-40 h-40 bg-[#A78BFA] rounded-full blur-3xl animate-pulse"
+              className="absolute bottom-20 right-10 w-40 h-40 bg-[accent-600] rounded-full blur-3xl animate-pulse"
               style={{ animationDelay: '3s' }}
             ></div>
           </div>
@@ -241,7 +241,7 @@ export default function AboutPage() {
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <div className="inline-flex items-center gap-3 sm:gap-4 mb-6">
               <div className="relative">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-lg shadow-[#8B5CF6]/25">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-lg shadow-[accent-500]/25">
                   <Globe className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                 </div>
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl blur opacity-30"></div>
@@ -333,14 +333,14 @@ export default function AboutPage() {
           {/* Sleek Office Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {/* Delaware, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
@@ -381,14 +381,14 @@ export default function AboutPage() {
             </div>
 
             {/* Dallas, Texas, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
@@ -429,14 +429,14 @@ export default function AboutPage() {
             </div>
 
             {/* Surat, India */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
+            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
               <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 

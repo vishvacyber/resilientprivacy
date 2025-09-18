@@ -259,14 +259,14 @@ export default function ITConsultingPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link
                 href="/contact"
-                className="btn text-lg px-10 py-5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                className="btn text-lg px-10 py-5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
               >
                 Get Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
               <Link
                 href="/resources"
-                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
               >
                 View Resources
               </Link>
@@ -315,7 +315,7 @@ export default function ITConsultingPage() {
             {services.map((service, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[accent-500]/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
                   >
@@ -450,7 +450,7 @@ export default function ITConsultingPage() {
             {industries.map((industry, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[accent-500]/10">
                   <div className="flex items-center gap-6 mb-8">
                     <span className="text-5xl">{industry.icon}</span>
                     <h3 className="text-3xl font-bold text-white">
@@ -499,7 +499,7 @@ export default function ITConsultingPage() {
             {process.map((step, index) => (
               <div key={index} className="group relative">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-                <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
+                <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[accent-500]/10">
                   <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
@@ -588,14 +588,14 @@ export default function ITConsultingPage() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/contact"
-                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
                 >
                   Get Free Consultation
                   <ArrowUpRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
                 >
                   Schedule a Call
                 </Link>

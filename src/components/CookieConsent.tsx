@@ -116,7 +116,7 @@ export default function CookieConsent() {
     <>
       {/* Main Consent Banner */}
       {showBanner && (
-        <div className="fixed bottom-0 left-0 right-0 bg-[#0D0D0F] border-t border-[#8B5CF6] z-50 p-6">
+        <div className="fixed bottom-0 left-0 right-0 bg-[#0D0D0F] border-t border-[accent-500] z-50 p-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-center">
               <div className="flex-1">
@@ -131,7 +131,7 @@ export default function CookieConsent() {
                   our{' '}
                   <Link
                     href="/legal/consent-policy"
-                    className="text-[#8B5CF6] hover:underline"
+                    className="text-[accent-500] hover:underline"
                   >
                     Consent Policy
                   </Link>
@@ -141,7 +141,7 @@ export default function CookieConsent() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
                   onClick={handleAcceptAll}
-                  className="bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="bg-[accent-500] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                 >
                   <Check className="w-4 h-4" />
                   Accept All
@@ -154,7 +154,7 @@ export default function CookieConsent() {
                 </button>
                 <button
                   onClick={() => setShowSettings(true)}
-                  className="bg-transparent border border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="bg-transparent border border-[accent-500] text-[accent-500] hover:bg-[accent-500] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
                 >
                   <Settings className="w-4 h-4" />
                   Customize
@@ -168,7 +168,7 @@ export default function CookieConsent() {
       {/* Settings Modal */}
       {showSettings && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="bg-[#0D0D0F] border border-[#8B5CF6] rounded-lg max-w-md w-full p-6">
+          <div className="bg-[#0D0D0F] border border-[accent-500] rounded-lg max-w-md w-full p-6">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-xl font-bold text-white flex items-center gap-2">
                 <Settings className="w-5 h-5" />
@@ -198,7 +198,7 @@ export default function CookieConsent() {
                     type="checkbox"
                     checked={preferences.essential}
                     disabled
-                    className="w-4 h-4 text-[#8B5CF6] bg-gray-700 border-gray-600 rounded focus:ring-[#8B5CF6] focus:ring-2"
+                    className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
                   />
                   <span className="ml-2 text-xs text-gray-500">
                     Always Active
@@ -222,7 +222,7 @@ export default function CookieConsent() {
                   onChange={(e) =>
                     handlePreferenceChange('analytics', e.target.checked)
                   }
-                  className="w-4 h-4 text-[#8B5CF6] bg-gray-700 border-gray-600 rounded focus:ring-[#8B5CF6] focus:ring-2"
+                  className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
                 />
               </div>
 
@@ -242,7 +242,7 @@ export default function CookieConsent() {
                   onChange={(e) =>
                     handlePreferenceChange('marketing', e.target.checked)
                   }
-                  className="w-4 h-4 text-[#8B5CF6] bg-gray-700 border-gray-600 rounded focus:ring-[#8B5CF6] focus:ring-2"
+                  className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
                 />
               </div>
             </div>
@@ -250,7 +250,7 @@ export default function CookieConsent() {
             <div className="flex gap-3">
               <button
                 onClick={handleSavePreferences}
-                className="flex-1 bg-[#8B5CF6] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                className="flex-1 bg-[accent-500] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
               >
                 Save Preferences
               </button>

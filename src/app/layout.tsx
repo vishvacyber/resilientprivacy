@@ -166,9 +166,9 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-status-bar-style': 'black-translucent',
     'apple-mobile-web-app-title': 'Resilient Privacy',
     'mobile-web-app-capable': 'yes',
-    'msapplication-TileColor': '#8B5CF6',
+    'msapplication-TileColor': 'accent-500',
     'msapplication-config': '/browserconfig.xml',
-    'theme-color': '#8B5CF6',
+    'theme-color': 'accent-500',
   },
 }
 
@@ -660,8 +660,8 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
 
         {/* Theme and App Configuration */}
-        <meta name="theme-color" content="#8B5CF6" />
-        <meta name="msapplication-TileColor" content="#8B5CF6" />
+        <meta name="theme-color" content="accent-500" />
+        <meta name="msapplication-TileColor" content="accent-500" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
 
         {/* Apple Web App Meta Tags */}

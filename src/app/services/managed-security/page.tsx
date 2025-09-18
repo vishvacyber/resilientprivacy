@@ -409,7 +409,7 @@ export default function ManagedSecurityPage() {
                 key={tier.tier}
                 className={`bg-[#0D0D0F] p-8 rounded-lg border transition-all duration-300 relative ${
                   tier.popular
-                    ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20 transform scale-105'
+                    ? 'border-accent-500 ring-2 ring-[accent-500]/20 transform scale-105'
                     : 'border-[#333] hover:border-accent-500'
                 }`}
               >

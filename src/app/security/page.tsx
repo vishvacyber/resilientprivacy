@@ -9,7 +9,7 @@ export default function SecurityPage() {
           Security at Resilient{' '}
           <span
             style={{
-              color: '#8B5CF6',
+              color: 'accent-500',
               fontWeight: 700,
             }}
           >

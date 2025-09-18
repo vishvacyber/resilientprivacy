@@ -405,7 +405,7 @@ export default function Home() {
                     zero trust implementation reduced our attack surface by 80%.
                   </p>
                   <div className="flex items-center">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-purple rounded-full mr-2 sm:mr-3 md:mr-4"></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mr-2 sm:mr-3 md:mr-4"></div>
                     <div>
                       <div className="text-text-primary font-semibold text-xs sm:text-sm md:text-base">
                         Meet Chauhan
@@ -425,7 +425,7 @@ export default function Home() {
                     insights that have prevented multiple attacks.
                   </p>
                   <div className="flex items-center">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-purple rounded-full mr-2 sm:mr-3 md:mr-4"></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mr-2 sm:mr-3 md:mr-4"></div>
                     <div>
                       <div className="text-text-primary font-semibold text-xs sm:text-sm md:text-base">
                         Ashley Patel
@@ -445,7 +445,7 @@ export default function Home() {
                     monitoring with 15-minute response times.
                   </p>
                   <div className="flex items-center">
-                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-purple rounded-full mr-2 sm:mr-3 md:mr-4"></div>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-14 md:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full mr-2 sm:mr-3 md:mr-4"></div>
                     <div>
                       <div className="text-text-primary font-semibold text-xs sm:text-sm md:text-base">
                         Mihir Mehta

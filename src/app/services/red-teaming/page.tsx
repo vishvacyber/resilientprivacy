@@ -453,7 +453,7 @@ export default function RedTeamingPage() {
                 key={tier.tier}
                 className={`bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border transition-all duration-300 hover:transform hover:scale-105 group ${
                   tier.popular
-                    ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20'
+                    ? 'border-accent-500 ring-2 ring-[accent-500]/20'
                     : 'border-[#333]/50 hover:border-accent-500/50'
                 }`}
               >

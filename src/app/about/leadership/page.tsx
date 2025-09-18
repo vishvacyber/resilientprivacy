@@ -18,7 +18,7 @@ function Avatar({
   // If image fails to load or doesn't exist, show initials
   if (imgError || !src) {
     return (
-      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300">
+      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[accent-500]/30 transition-all duration-300">
         <span className="text-white font-bold text-2xl">{initials}</span>
       </div>
     )
@@ -26,7 +26,7 @@ function Avatar({
 
   // Show actual image if it exists
   return (
-    <div className="w-24 h-24 rounded-full border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 overflow-hidden">
+    <div className="w-24 h-24 rounded-full border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[accent-500]/30 transition-all duration-300 overflow-hidden">
       <img
         src={src}
         alt={alt}
@@ -102,7 +102,7 @@ export default function LeadershipPage() {
               .map((leader) => (
                 <div
                   key={leader.name}
-                  className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl border border-[#232336] shadow-sm hover:shadow-xl hover:shadow-[#8B5CF6]/20 transition-all duration-300 flex flex-col items-center px-8 py-10 w-full group cursor-pointer hover:border-accent-500 hover:bg-[#18181B]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-105"
+                  className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl border border-[#232336] shadow-sm hover:shadow-xl hover:shadow-[accent-500]/20 transition-all duration-300 flex flex-col items-center px-8 py-10 w-full group cursor-pointer hover:border-accent-500 hover:bg-[#18181B]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-105"
                   onClick={() =>
                     router.push(`/about/leadership/${slugify(leader.name)}`)
                   }
@@ -218,7 +218,7 @@ export default function LeadershipPage() {
               ].map((advisor) => (
                 <div
                   key={advisor.id}
-                  className="group bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A] hover:border-accent-500 transition-all duration-300 hover:shadow-2xl hover:shadow-[#8B5CF6]/20 hover:-translate-y-2"
+                  className="group bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A] hover:border-accent-500 transition-all duration-300 hover:shadow-2xl hover:shadow-[accent-500]/20 hover:-translate-y-2"
                 >
                   {/* Enhanced Profile Photo */}
                   <div className="flex justify-center mb-6">
@@ -227,7 +227,7 @@ export default function LeadershipPage() {
                         <img
                           src={advisor.image}
                           alt={`${advisor.name} profile`}
-                          className="w-24 h-24 rounded-full object-cover object-center border-4 border-accent-500 shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 filter group-hover:brightness-110"
+                          className="w-24 h-24 rounded-full object-cover object-center border-4 border-accent-500 shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[accent-500]/30 transition-all duration-300 filter group-hover:brightness-110"
                           loading="lazy"
                           width="96"
                           height="96"
@@ -242,7 +242,7 @@ export default function LeadershipPage() {
                         />
                       ) : null}
                       <div
-                        className={`w-24 h-24 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 mx-auto mb-4 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
+                        className={`w-24 h-24 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 mx-auto mb-4 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[accent-500]/30 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
                       >
                         <span className="text-white text-2xl font-bold drop-shadow-lg">
                           {advisor.id}
@@ -259,7 +259,7 @@ export default function LeadershipPage() {
                     <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
                       {advisor.name}
                     </h3>
-                    <p className="text-[#A78BFA] mb-3 font-semibold">
+                    <p className="text-[accent-600] mb-3 font-semibold">
                       {advisor.title}
                     </p>
                     <p className="text-text-secondary text-sm leading-relaxed mb-4">

@@ -447,7 +447,7 @@ div[hidden][id^='S:'] {
     background-clip: text;
   }
 
-  .bg-gradient-purple {
+  .bg-gradient-to-r from-accent-500 to-accent-600 {
     background: linear-gradient(135deg, #9333ea 0%, #7c3aed 100%);
   }
 

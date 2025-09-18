@@ -381,7 +381,7 @@ export default function ServicesPage() {
                 <div
                   className={`bg-[#1A1A1A] p-8 rounded-lg border transition-all duration-300 group-hover:transform group-hover:scale-105 relative overflow-hidden ${
                     service.popular
-                      ? 'border-accent-500 ring-2 ring-[#8B5CF6]/20'
+                      ? 'border-accent-500 ring-2 ring-[accent-500]/20'
                       : 'border-[#333] hover:border-accent-500'
                   }`}
                 >
@@ -549,7 +549,7 @@ export default function ServicesPage() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-[#1A1A1A]/90 to-[#2D2D2D]/90 backdrop-blur-xl p-10 rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
+            <div className="bg-gradient-to-br from-[#1A1A1A]/90 to-[#2D2D2D]/90 backdrop-blur-xl p-10 rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[accent-500]/10">
               <h3 className="text-3xl font-bold text-white mb-8 text-center">
                 Service Level{' '}
                 <span className="bg-gradient-to-r from-accent-500 to-[#EC4899] bg-clip-text text-transparent">
@@ -643,7 +643,7 @@ export default function ServicesPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden bg-gradient-to-r from-accent-500 to-[#EC4899] text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#8B5CF6]/25 transform hover:-translate-y-1"
+              className="group relative overflow-hidden bg-gradient-to-r from-accent-500 to-[#EC4899] text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[accent-500]/25 transform hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>Get Free Consultation</span>
@@ -655,7 +655,7 @@ export default function ServicesPage() {
             </Link>
             <Link
               href="/services/managed-security"
-              className="group relative overflow-hidden border-3 border-accent-500 text-accent-500 px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-accent-500 hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[#8B5CF6]/25 hover:border-transparent transform hover:-translate-y-1"
+              className="group relative overflow-hidden border-3 border-accent-500 text-accent-500 px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-accent-500 hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[accent-500]/25 hover:border-transparent transform hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>View Popular Service</span>
@@ -666,7 +666,7 @@ export default function ServicesPage() {
             </Link>
           </div>
 
-          <div className="p-8 bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/80 backdrop-blur-xl rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
+          <div className="p-8 bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/80 backdrop-blur-xl rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[accent-500]/10">
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
               {[
                 {

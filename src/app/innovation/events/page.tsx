@@ -151,7 +151,7 @@ export default function EventsPage() {
         <input
           type="text"
           placeholder="Search events..."
-          className="px-4 py-2 rounded-lg bg-[#232336] border border-accent-500/30 text-white placeholder-[#A1A1AA] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+          className="px-4 py-2 rounded-lg bg-[#232336] border border-accent-500/30 text-white placeholder-[#A1A1AA] focus:ring-2 focus:ring-[accent-500] focus:outline-none"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
@@ -281,7 +281,7 @@ export default function EventsPage() {
                 type="email"
                 required
                 placeholder="Your email address"
-                className="px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[#8B5CF6] focus:ring-2 focus:ring-[#8B5CF6] focus:outline-none"
+                className="px-4 py-2 rounded-lg bg-[#18181B] border border-accent-500/30 text-white placeholder-[accent-500] focus:ring-2 focus:ring-[accent-500] focus:outline-none"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
