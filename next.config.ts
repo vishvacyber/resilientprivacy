@@ -152,8 +152,8 @@ const nextConfig: NextConfig = {
 
   // Webpack configuration for better asset handling and CI/CD reliability
   webpack: (config, { dev, isServer }) => {
-    // Fix webpack caching issues for CI/CD
-    if (process.env.CI) {
+    // Fix webpack caching issues for CI/CD and Vercel
+    if (process.env.CI || process.env.VERCEL) {
       config.cache = false
     } else {
       config.cache = {

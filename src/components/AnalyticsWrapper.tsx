@@ -15,10 +15,5 @@ export default function AnalyticsWrapper() {
     return null
   }
 
-  try {
-    return <Analytics />
-  } catch (error) {
-    console.warn('Analytics component failed to load:', error)
-    return null
-  }
+  return <Analytics />
 }
