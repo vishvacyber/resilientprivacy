@@ -112,9 +112,9 @@ export default function Header() {
                   <span className="text-white transition-all duration-500">
                     Resilient{' '}
                   </span>
-                  <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent drop-shadow-lg transition-all duration-500">
-                    Privacy
-                  </span>
+                <span className="fxology-text-gradient drop-shadow-lg transition-all duration-500">
+                  Privacy
+                </span>
                 </span>
                 <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 transition-all duration-500 ease-out rounded-full"></div>
               </div>
@@ -202,7 +202,7 @@ export default function Header() {
               className="absolute w-96 h-96 rounded-full opacity-25 blur-3xl transition-all duration-1000 ease-out"
               style={{
                 background:
-                  'radial-gradient(circle, rgba(139, 92, 246, 0.4) 0%, rgba(167, 139, 250, 0.3) 50%, transparent 70%)',
+                  'radial-gradient(circle, rgba(34, 197, 94, 0.4) 0%, rgba(22, 163, 74, 0.3) 50%, transparent 70%)',
                 transform: `translate(${mousePosition.x - 192}px, ${mousePosition.y - 192}px)`,
                 left: 0,
                 top: 0,
@@ -213,7 +213,7 @@ export default function Header() {
               className="absolute w-64 h-64 rounded-full opacity-15 blur-2xl transition-all duration-1500 ease-out"
               style={{
                 background:
-                  'radial-gradient(circle, rgba(167, 139, 250, 0.3) 0%, rgba(196, 181, 253, 0.2) 50%, transparent 70%)',
+                  'radial-gradient(circle, rgba(22, 163, 74, 0.3) 0%, rgba(34, 197, 94, 0.2) 50%, transparent 70%)',
                 transform: `translate(${(mousePosition.x - 128) * 0.7}px, ${(mousePosition.y - 128) * 0.7}px)`,
                 left: 0,
                 top: 0,
@@ -268,7 +268,7 @@ export default function Header() {
                 <span className="text-white transition-all duration-500 group-hover:text-gray-100">
                   Resilient{' '}
                 </span>
-                <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent drop-shadow-lg transition-all duration-500 group-hover:from-[#a78bfa] group-hover:via-[#c4b5fd] group-hover:to-[#a78bfa]">
+                <span className="fxology-text-gradient drop-shadow-lg transition-all duration-500 group-hover:scale-105">
                   Privacy
                 </span>
               </span>

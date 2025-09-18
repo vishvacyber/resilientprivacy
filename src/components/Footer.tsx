@@ -49,7 +49,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-gradient-to-br from-[#0A0A0F] via-[#1A1A1A] to-[#0D0D0F] text-white border-t border-[#333]/50">
+    <footer className="bg-gradient-to-br from-background via-background-alt to-background-card text-white border-t border-border-light/50">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         {/* Top Section - Logo and Contact */}
@@ -59,13 +59,13 @@ export default function Footer() {
             <div className="mb-6">
               <h2 className="text-2xl font-bold mb-2">
                 <span className="text-white">Resilient </span>
-                <span className="bg-gradient-to-r from-[#8B5CF6] via-[#A78BFA] to-[#8B5CF6] bg-clip-text text-transparent">
+                <span className="fxology-text-gradient">
                   Privacy
                 </span>
               </h2>
-              <div className="w-12 h-0.5 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-full"></div>
+              <div className="w-12 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full"></div>
             </div>
-            <p className="text-[#A1A1AA] text-sm leading-relaxed mb-6">
+            <p className="text-text-secondary text-sm leading-relaxed mb-6">
               Next-generation cybersecurity company redefining digital trust. We
               design intelligent, adaptive security ecosystems that protect the
               world's most critical organizations.
@@ -73,9 +73,9 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-[#8B5CF6]/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-accent-500/10 rounded-lg flex items-center justify-center">
                   <svg
-                    className="w-4 h-4 text-[#8B5CF6]"
+                    className="w-4 h-4 text-accent-500"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -88,19 +88,19 @@ export default function Footer() {
                     />
                   </svg>
                 </div>
-                <span className="text-[#A1A1AA] text-sm">
+                <span className="text-text-secondary text-sm">
                   <a
                     href="tel:+14696660131"
-                    className="text-white hover:text-[#8B5CF6] transition-colors"
+                    className="text-white hover:text-accent-500 transition-colors"
                   >
                     +1 (469) 666-0131
                   </a>
                 </span>
               </div>
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-[#8B5CF6]/10 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-accent-500/10 rounded-lg flex items-center justify-center">
                   <svg
-                    className="w-4 h-4 text-[#8B5CF6]"
+                    className="w-4 h-4 text-accent-500"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -113,10 +113,10 @@ export default function Footer() {
                     />
                   </svg>
                 </div>
-                <span className="text-[#A1A1AA] text-sm">
+                <span className="text-text-secondary text-sm">
                   <a
                     href="mailto:info@resilientprivacy.com"
-                    className="text-white hover:text-[#8B5CF6] transition-colors"
+                    className="text-white hover:text-accent-500 transition-colors"
                   >
                     info@resilientprivacy.com
                   </a>
@@ -132,12 +132,12 @@ export default function Footer() {
                   href="https://www.linkedin.com/company/resilientprivacy/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-[#1A1A1A] hover:bg-[#8B5CF6]/10 rounded-lg flex items-center justify-center transition-all duration-300 group border border-[#333] hover:border-[#8B5CF6]/30"
+                  className="w-9 h-9 bg-background-card hover:bg-accent-500/10 rounded-lg flex items-center justify-center transition-all duration-300 group border border-border-light hover:border-accent-500/30"
                   title="LinkedIn"
                   aria-label="LinkedIn"
                 >
                   <svg
-                    className="w-4 h-4 text-[#A1A1AA] group-hover:text-[#8B5CF6] transition-colors duration-300"
+                    className="w-4 h-4 text-text-secondary group-hover:text-accent-500 transition-colors duration-300"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -148,12 +148,12 @@ export default function Footer() {
                   href="https://www.instagram.com/resilientprivacy"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-9 h-9 bg-[#1A1A1A] hover:bg-[#8B5CF6]/10 rounded-lg flex items-center justify-center transition-all duration-300 group border border-[#333] hover:border-[#8B5CF6]/30"
+                  className="w-9 h-9 bg-background-card hover:bg-accent-500/10 rounded-lg flex items-center justify-center transition-all duration-300 group border border-border-light hover:border-accent-500/30"
                   title="Instagram"
                   aria-label="Instagram"
                 >
                   <svg
-                    className="w-4 h-4 text-[#A1A1AA] group-hover:text-[#8B5CF6] transition-colors duration-300"
+                    className="w-4 h-4 text-text-secondary group-hover:text-accent-500 transition-colors duration-300"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
@@ -166,7 +166,7 @@ export default function Footer() {
               <div>
                 <button
                   onClick={openCookieSettings}
-                  className="text-[#A1A1AA] hover:text-white transition-colors duration-300 text-sm hover:underline text-left"
+                  className="text-text-secondary hover:text-white transition-colors duration-300 text-sm hover:underline text-left"
                   aria-label="Cookie Settings"
                 >
                   Cookie Settings
@@ -182,18 +182,18 @@ export default function Footer() {
                 <div key={col.heading}>
                   <h3 className="text-lg font-semibold text-white mb-6 relative">
                     {col.heading}
-                    <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-full"></div>
+                    <div className="absolute -bottom-2 left-0 w-8 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full"></div>
                   </h3>
                   <ul className="space-y-4">
                     {col.links.map((link, index) => (
                       <li key={`${link.href}-${index}`}>
                         <Link
                           href={link.href}
-                          className="text-[#A1A1AA] hover:text-white transition-all duration-300 text-sm group flex items-center"
+                          className="text-text-secondary hover:text-white transition-all duration-300 text-sm group flex items-center"
                         >
                           <span className="relative">
                             {link.label}
-                            <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-[#8B5CF6] transition-all duration-300 group-hover:w-full"></span>
+                            <span className="absolute -bottom-0.5 left-0 w-0 h-0.5 bg-accent-500 transition-all duration-300 group-hover:w-full"></span>
                           </span>
                         </Link>
                       </li>
@@ -206,12 +206,12 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-gradient-to-r from-transparent via-[#333] to-transparent mb-12"></div>
+        <div className="h-px bg-gradient-to-r from-transparent via-border-light to-transparent mb-12"></div>
 
         {/* Bottom Section */}
         <div className="flex justify-center">
           {/* Copyright */}
-          <div className="text-[#A1A1AA] text-sm">
+          <div className="text-text-secondary text-sm">
             © 2025 Resilient Privacy. All rights reserved.
           </div>
         </div>
