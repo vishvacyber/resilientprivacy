@@ -108,20 +108,15 @@ export default function Header() {
               className="group flex flex-col items-start justify-center space-y-1 relative overflow-hidden"
             >
               <div className="relative">
-                <span className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight relative z-10 transition-all duration-500 ease-out">
-                  <span className="text-white transition-all duration-500">
-                    Resilient{' '}
-                  </span>
-                <span className="fxology-text-gradient drop-shadow-lg transition-all duration-500">
-                  Privacy
-                </span>
-                </span>
-                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 transition-all duration-500 ease-out rounded-full"></div>
+                <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-text-primary transition-all duration-500 ease-out group-hover:scale-105">
+                  Resilient Privacy
+                </h1>
+                <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 transition-all duration-500 ease-out group-hover:w-full rounded-full"></div>
               </div>
-              <span className="text-xs sm:text-sm text-text-tertiary font-medium tracking-wide transition-all duration-500 transform">
+              <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-text-tertiary font-medium tracking-wide group-hover:text-text-secondary transition-all duration-500 transform group-hover:translate-x-1 hidden sm:block">
                 We Don&apos;t Chase Threats. We Preempt Them.
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 to-transparent opacity-0 transition-opacity duration-500 rounded-lg blur-sm"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg blur-sm"></div>
             </Link>
             <div className="hidden xl:flex items-center space-x-1">
               <Link
@@ -258,24 +253,19 @@ export default function Header() {
           role="navigation"
           aria-label="Main Navigation"
         >
-          {/* Clean Company Logo */}
+          {/* Company Logo */}
           <Link
             href="/"
             className="group flex flex-col items-start justify-center space-y-1 relative overflow-hidden"
           >
             <div className="relative">
-              <span className="text-xl sm:text-2xl lg:text-3xl font-bold leading-tight relative z-10 transition-all duration-500 ease-out group-hover:scale-105">
-                <span className="text-white transition-all duration-500 group-hover:text-gray-100">
-                  Resilient{' '}
-                </span>
-                <span className="fxology-text-gradient drop-shadow-lg transition-all duration-500 group-hover:scale-105">
-                  Privacy
-                </span>
-              </span>
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-text-primary transition-all duration-500 ease-out group-hover:scale-105">
+                Resilient Privacy
+              </h1>
               {/* Animated underline */}
               <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-accent-500 to-accent-600 transition-all duration-500 ease-out group-hover:w-full rounded-full"></div>
             </div>
-            <span className="text-xs sm:text-sm text-text-tertiary font-medium tracking-wide group-hover:text-text-secondary transition-all duration-500 transform group-hover:translate-x-1">
+            <span className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-text-tertiary font-medium tracking-wide group-hover:text-text-secondary transition-all duration-500 transform group-hover:translate-x-1 hidden sm:block">
               We Don&apos;t Chase Threats. We Preempt Them.
             </span>
             {/* Subtle glow effect */}
@@ -619,11 +609,11 @@ export default function Header() {
 
         {/* Enhanced Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="xl:hidden absolute top-full left-0 right-0 fxology-glass border-t border-border-light/50 fxology-shadow animate-in slide-in-from-top-2 fade-in duration-300">
-            <div className="px-4 py-6 space-y-2">
+          <div className="xl:hidden absolute top-full left-0 right-0 fxology-glass border-t border-border-light/50 fxology-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[80vh] overflow-y-auto">
+            <div className="px-4 py-6 space-y-3">
               <Link
                 href="/"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base"
+                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
                 onClick={closeAllDropdowns}
               >
                 Home
@@ -632,7 +622,7 @@ export default function Header() {
               {/* About */}
               <div>
                 <button
-                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base font-medium"
                   onClick={() => handleDropdownToggle('mobile-about')}
                 >
                   <span>About</span>
@@ -680,7 +670,7 @@ export default function Header() {
               {/* Products & Services */}
               <div>
                 <button
-                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base font-medium"
                   onClick={() =>
                     handleDropdownToggle('mobile-products-services')
                   }
@@ -785,7 +775,7 @@ export default function Header() {
               {/* Resources */}
               <div>
                 <button
-                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base"
+                  className="w-full text-left px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors flex items-center justify-between text-base font-medium"
                   onClick={() => handleDropdownToggle('mobile-resources')}
                 >
                   <span>Resources</span>
@@ -851,7 +841,7 @@ export default function Header() {
 
               <Link
                 href="/contact"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base"
+                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
                 onClick={closeAllDropdowns}
               >
                 Contact
