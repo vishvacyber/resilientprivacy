@@ -316,5 +316,4 @@ export default function LeadershipPage() {
       </div>
     </div>
   )
-}
-<!-- Cache bust: Wed Sep 17 23:19:20 CDT 2025 -->
+  }
