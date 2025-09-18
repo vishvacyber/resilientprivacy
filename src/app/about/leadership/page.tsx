@@ -187,7 +187,7 @@ export default function LeadershipPage() {
             </div>
 
             {/* Advisor Cards Grid - Professional Design */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               {[
                 {
                   id: 1,
@@ -206,42 +206,6 @@ export default function LeadershipPage() {
                   description:
                     'Cybersecurity consultant specializing in automotive industry security at Toyota Motors North America, focusing on connected vehicle security and manufacturing systems protection.',
                   image: '/images/advisors/falguni-patel.jpg',
-                },
-                {
-                  id: 3,
-                  name: 'Dr. Emily Watson',
-                  title: 'AI & Security Research Director',
-                  expertise: 'AI Security & Research',
-                  description:
-                    'Expert in AI Security & Research with extensive experience in enterprise cybersecurity and strategic leadership.',
-                  image: '/images/advisors/emily-watson.jpg',
-                },
-                {
-                  id: 4,
-                  name: 'James Thompson',
-                  title: 'Global Security Operations Expert',
-                  expertise: 'Critical Infrastructure & Incident Response',
-                  description:
-                    'Expert in Critical Infrastructure & Incident Response with extensive experience in enterprise cybersecurity and strategic leadership.',
-                  image: '/images/advisors/james-thompson.jpg',
-                },
-                {
-                  id: 5,
-                  name: 'Michael Rodriguez',
-                  title: 'Digital Transformation Advisor',
-                  expertise: 'Cloud Security & Digital Strategy',
-                  description:
-                    'Technology executive with deep experience in cloud security and digital transformation. Advises Fortune 100 companies on security-first digital strategies.',
-                  image: '/images/advisors/michael-rodriguez.jpg',
-                },
-                {
-                  id: 6,
-                  name: 'Dr. Sarah Chen',
-                  title: 'Chief Cybersecurity Strategist',
-                  expertise: 'Zero Trust & Threat Intelligence',
-                  description:
-                    'Former CISO at Fortune 500 companies with 20+ years in enterprise security. Expert in zero-trust architecture and threat intelligence frameworks.',
-                  image: '/images/advisors/sarah-chen.jpg',
                 },
               ].map((advisor) => (
                 <div

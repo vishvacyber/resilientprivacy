@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Comprehensive analysis of how artificial intelligence is being weaponized by threat actors and the emerging defense strategies to counter these sophisticated attacks.',
     category: 'AI & ML Security',
-    author: 'Dr. Sarah Chen',
+    author: 'Resilient Privacy Research Team',
     date: 'January 20, 2025',
     readTime: '12 min read',
     featured: true,
@@ -122,7 +122,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       "Strategic guide for organizations to prepare for quantum computing threats and implement quantum-resistant cryptography before it's too late.",
     category: 'Quantum Security',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'January 15, 2025',
     readTime: '15 min read',
     featured: true,
@@ -289,7 +289,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Analysis of the evolving supply chain attack landscape and comprehensive strategies for protecting third-party relationships and dependencies.',
     category: 'Supply Chain Security',
-    author: 'Michael Rodriguez',
+    author: 'Resilient Privacy Research Team',
     date: 'January 10, 2025',
     readTime: '10 min read',
     featured: true,
@@ -669,7 +669,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Comprehensive guide to securing cloud-native applications, containers, and microservices in multi-cloud environments.',
     category: 'Cloud Security',
-    author: 'Dr. Sarah Chen',
+    author: 'Resilient Privacy Research Team',
     date: 'December 28, 2024',
     readTime: '11 min read',
     featured: false,
@@ -900,7 +900,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'How AI and automation are transforming identity governance and access management in modern enterprise environments.',
     category: 'Identity Security',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'December 20, 2024',
     readTime: '9 min read',
     featured: false,
@@ -1109,7 +1109,7 @@ export const blogPosts: BlogPost[] = [
     excerpt:
       'Analysis of the latest ransomware tactics, including AI-powered targeting and the rise of ransomware-as-a-service platforms.',
     category: 'Threat Intelligence',
-    author: 'Michael Rodriguez',
+    author: 'Resilient Privacy Research Team',
     date: 'December 15, 2024',
     readTime: '13 min read',
     featured: false,

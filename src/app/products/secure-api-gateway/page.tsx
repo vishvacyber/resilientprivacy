@@ -197,7 +197,7 @@ const testimonials = [
   {
     quote:
       'Implementation was seamless and the developer experience is outstanding. Our team can now focus on building features instead of security concerns.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     role: 'VP of Engineering',
     company: 'HealthTech Systems',
   },

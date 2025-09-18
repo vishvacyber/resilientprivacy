@@ -84,7 +84,7 @@ const featuredResources = [
     description:
       'Comprehensive framework for implementing quantum-resistant cryptography and preparing organizations for the post-quantum computing era',
     readTime: '25 min read',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
   },
   {
     title: 'Q4 2024 Threat Intelligence Report: AI-Powered Attacks',
@@ -92,7 +92,7 @@ const featuredResources = [
     description:
       'Comprehensive analysis of AI-powered cyber threats, attack patterns, and emerging risks in Q4 2024',
     readTime: '20 min read',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
   },
 ]
 

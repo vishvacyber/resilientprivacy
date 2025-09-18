@@ -5,7 +5,7 @@ const threatReports = [
     title: 'Q4 2024 Threat Intelligence Report: AI-Powered Attacks',
     description:
       'Comprehensive analysis of AI-powered cyber threats, attack patterns, and emerging risks in Q4 2024, including machine learning-based attacks and automated threat campaigns.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'January 2025',
     pages: '95',
     fileSize: '5.2 MB',
@@ -24,7 +24,7 @@ const threatReports = [
     title: 'Quantum Computing Threats: Preparing for the Future',
     description:
       'Analysis of emerging quantum computing threats and their potential impact on current cryptographic systems and security infrastructure.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'December 2024',
     pages: '78',
     fileSize: '4.8 MB',
@@ -48,7 +48,7 @@ const threatReports = [
     title: 'Supply Chain Attacks: The New Normal in 2025',
     description:
       'Comprehensive analysis of supply chain attack patterns, third-party vulnerabilities, and strategies for protecting digital ecosystems.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'November 2024',
     pages: '65',
     fileSize: '3.9 MB',
@@ -67,7 +67,7 @@ const threatReports = [
     title: 'Q3 2024 Threat Intelligence Report: Cloud Security Landscape',
     description:
       'Quarterly analysis of cloud security threats, vulnerabilities, and emerging attack vectors in cloud-native environments.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'October 2024',
     pages: '88',
     fileSize: '4.5 MB',
@@ -86,7 +86,7 @@ const threatReports = [
     title: 'AI and Machine Learning in Cyber Attacks: 2025 Analysis',
     description:
       'Deep dive into how AI and ML are being weaponized in cyber attacks and the corresponding defense strategies and countermeasures.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'September 2024',
     pages: '72',
     fileSize: '4.2 MB',
@@ -105,7 +105,7 @@ const threatReports = [
     title: 'Q2 2024 Threat Intelligence Report: Zero-Day Exploits',
     description:
       'Second quarter analysis of zero-day vulnerabilities, exploit techniques, and emerging threat actor capabilities.',
-    author: 'Dr. Emily Watson',
+    author: 'Resilient Privacy Research Team',
     date: 'July 2024',
     pages: '82',
     fileSize: '4.1 MB',
