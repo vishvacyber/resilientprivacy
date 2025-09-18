@@ -18,15 +18,15 @@ function Avatar({
   // If image fails to load or doesn't exist, show initials
   if (imgError || !src) {
     return (
-      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[accent-500]/30 transition-all duration-300">
-        <span className="text-white font-bold text-2xl">{initials}</span>
+      <div className="w-32 h-32 rounded-full bg-gradient-to-br from-accent-500 to-accent-600 flex items-center justify-center mx-auto border-4 border-accent-500/20 shadow-2xl group-hover:shadow-3xl group-hover:shadow-accent-500/40 transition-all duration-500 group-hover:scale-105">
+        <span className="text-white font-bold text-3xl tracking-wide">{initials}</span>
       </div>
     )
   }
 
   // Show actual image if it exists
   return (
-    <div className="w-24 h-24 rounded-full border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[accent-500]/30 transition-all duration-300 overflow-hidden">
+    <div className="w-32 h-32 rounded-full border-4 border-accent-500/20 shadow-2xl group-hover:shadow-3xl group-hover:shadow-accent-500/40 transition-all duration-500 overflow-hidden group-hover:scale-105">
       <img
         src={src}
         alt={alt}
@@ -40,125 +40,153 @@ function Avatar({
 export default function LeadershipPage() {
   const router = useRouter()
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 pb-20 px-2">
+    <div className="min-h-screen w-full bg-gradient-to-br from-background via-background-alt to-background-card">
       {/* Add skip-to-content link for accessibility at the top of the page */}
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only absolute left-2 top-2 z-50 bg-accent-500 text-white px-4 py-2 rounded focus:outline-none focus:ring-2 focus:ring-accent-500"
+        className="sr-only focus:not-sr-only absolute left-2 top-2 z-50 bg-accent-500 text-white px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-accent-500"
       >
         Skip to main content
       </a>
 
       <div id="main-content">
-        {/* Leadership Philosophy at Top */}
+        {/* Hero Section with Professional Design */}
         <section
-          className="py-16 px-2 border-b border-[#232336]"
+          className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
           role="region"
           aria-labelledby="leadership-hero-heading"
         >
-          <div className="max-w-3xl mx-auto text-center">
+          {/* Background Pattern */}
+          <div className="absolute inset-0 bg-gradient-to-br from-background/50 via-background-alt/30 to-accent-500/10"></div>
+          <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%2322C55E%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-40"></div>
+          
+          <div className="relative max-w-6xl mx-auto text-center">
+            <div className="inline-flex items-center px-4 py-2 bg-accent-500/10 border border-accent-500/20 rounded-full mb-8">
+              <span className="text-accent-500 text-sm font-semibold uppercase tracking-wider">Leadership Excellence</span>
+            </div>
+            
             <h1
               id="leadership-hero-heading"
-              className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight"
+              className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 tracking-tight"
             >
-              <span className="text-white">Resilient </span>
-              <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
-                Privacy
-              </span>
-              <span className="text-white"> Leadership</span>
+              <span className="text-white block mb-2">Meet Our</span>
+              <span className="fxology-text-gradient block">Leadership Team</span>
             </h1>
-            <p className="text-2xl text-text-secondary mb-6 font-medium">
-              Exceptional leadership is the cornerstone of building a
-              world-class cybersecurity organization.
+            
+            <p className="text-xl sm:text-2xl text-text-secondary mb-8 font-light max-w-4xl mx-auto leading-relaxed">
+              Visionary leaders driving the future of cybersecurity through innovation, expertise, and unwavering commitment to digital trust.
             </p>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
-              Our leadership team doesn't just lead, we revolutionize. We are
-              the architects of digital trust, the guardians of innovation, and
-              the catalysts of transformation. With unshakeable integrity and
-              relentless pursuit of excellence, we don't follow industry
-              standards, we set them. Every decision we make, every strategy we
-              craft, and every innovation we pioneer is driven by one unwavering
-              mission: to protect what matters most in an increasingly complex
-              digital world. Our collective expertise spans decades of
-              cybersecurity mastery, technological breakthroughs, and business
-              transformation, united by a shared vision to deliver solutions
-              that don't just meet expectations, but redefine them entirely.
-            </p>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold fxology-text-gradient mb-2">15+</div>
+                <div className="text-text-secondary text-sm font-medium">Years Combined Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold fxology-text-gradient mb-2">100%</div>
+                <div className="text-text-secondary text-sm font-medium">Industry Certified</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl sm:text-4xl font-bold fxology-text-gradient mb-2">24/7</div>
+                <div className="text-text-secondary text-sm font-medium">Strategic Leadership</div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Leadership Grid - Themed, Clickable */}
+        {/* Leadership Grid - Professional Design */}
         <section
-          className="py-16 px-2"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background-alt/50 to-background/80"
           role="region"
           aria-labelledby="leadership-grid-heading"
         >
-          <h2 id="leadership-grid-heading" className="sr-only">
-            Leadership Team
-          </h2>
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
-            {leadership
-              .filter((leader) => !leader.hidden)
-              .map((leader) => (
-                <div
-                  key={leader.name}
-                  className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl border border-[#232336] shadow-sm hover:shadow-xl hover:shadow-[accent-500]/20 transition-all duration-300 flex flex-col items-center px-8 py-10 w-full group cursor-pointer hover:border-accent-500 hover:bg-[#18181B]/80 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-105"
-                  onClick={() =>
-                    router.push(`/about/leadership/${slugify(leader.name)}`)
-                  }
-                  tabIndex={0}
-                  role="button"
-                  aria-label={`View profile for ${leader.name}`}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ')
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 id="leadership-grid-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+                Executive <span className="fxology-text-gradient">Leadership</span>
+              </h2>
+              <p className="text-lg text-text-secondary max-w-3xl mx-auto">
+                Meet the visionary leaders who are shaping the future of cybersecurity through strategic innovation and unwavering commitment to excellence.
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+              {leadership
+                .filter((leader) => !leader.hidden)
+                .map((leader) => (
+                  <div
+                    key={leader.name}
+                    className="group fxology-card p-8 lg:p-10 hover:fxology-shadow transition-all duration-500 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 min-w-[44px] min-h-[44px] transform hover:scale-[1.02] hover:-translate-y-2"
+                    onClick={() =>
                       router.push(`/about/leadership/${slugify(leader.name)}`)
-                  }}
-                >
-                  <Avatar
-                    src={leader.photo}
-                    alt={leader.name}
-                    initials={leader.name
-                      .split(' ')
-                      .map((n) => n[0])
-                      .join('')}
-                  />
-                  <h3 className="text-2xl font-semibold text-white mt-6 mb-1 text-center tracking-tight group-hover:text-accent-500 transition-colors">
-                    {leader.name}
-                  </h3>
-                  <p className="text-accent-500 font-medium text-base mb-4 text-center">
-                    {leader.title}
-                  </p>
-
-                  <div className="text-accent-500 text-sm font-medium group-hover:text-white transition-colors">
-                    Click to read full profile →
+                    }
+                    tabIndex={0}
+                    role="button"
+                    aria-label={`View profile for ${leader.name}`}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ')
+                        router.push(`/about/leadership/${slugify(leader.name)}`)
+                    }}
+                  >
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6">
+                      <div className="flex-shrink-0">
+                        <Avatar
+                          src={leader.photo}
+                          alt={leader.name}
+                          initials={leader.name
+                            .split(' ')
+                            .map((n) => n[0])
+                            .join('')}
+                        />
+                      </div>
+                      
+                      <div className="flex-1 text-center lg:text-left">
+                        <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2 group-hover:fxology-text-gradient transition-all duration-300">
+                          {leader.name}
+                        </h3>
+                        <p className="text-accent-500 font-semibold text-lg mb-4">
+                          {leader.title}
+                        </p>
+                        
+                        <div className="mb-6">
+                          <div className="inline-flex items-center px-3 py-1 bg-accent-500/10 border border-accent-500/20 rounded-full">
+                            <span className="text-accent-500 text-sm font-medium">View Profile</span>
+                            <svg className="w-4 h-4 ml-2 text-accent-500 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              ))}
+                ))}
+            </div>
           </div>
         </section>
 
-        {/* Advisor Board Section */}
+        {/* Advisory Board Section - Professional Design */}
         <section
-          className="py-16 px-2 border-t border-[#232336] mt-8"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background to-background-alt"
           role="region"
           aria-labelledby="advisor-board-heading"
         >
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
+              <div className="inline-flex items-center px-4 py-2 bg-accent-500/10 border border-accent-500/20 rounded-full mb-6">
+                <span className="text-accent-500 text-sm font-semibold uppercase tracking-wider">Strategic Advisors</span>
+              </div>
               <h2
                 id="advisor-board-heading"
-                className="text-4xl font-bold text-accent-500 mb-6"
+                className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
               >
-                Advisory Board
+                Advisory <span className="fxology-text-gradient">Board</span>
               </h2>
-              <p className="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
-                Our distinguished Advisory Board brings together industry
-                leaders, cybersecurity experts, and strategic visionaries who
-                guide our mission to redefine digital trust and security.
+              <p className="text-lg text-text-secondary max-w-4xl mx-auto leading-relaxed">
+                Our distinguished Advisory Board brings together industry leaders, cybersecurity experts, and strategic visionaries who guide our mission to redefine digital trust and security.
               </p>
             </div>
 
-            {/* Advisor Cards Grid */}
+            {/* Advisor Cards Grid - Professional Design */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 {
@@ -218,56 +246,51 @@ export default function LeadershipPage() {
               ].map((advisor) => (
                 <div
                   key={advisor.id}
-                  className="group bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A] hover:border-accent-500 transition-all duration-300 hover:shadow-2xl hover:shadow-[accent-500]/20 hover:-translate-y-2"
+                  className="group fxology-card p-6 lg:p-8 hover:fxology-shadow transition-all duration-500 hover:-translate-y-2"
                 >
-                  {/* Enhanced Profile Photo */}
+                  {/* Professional Profile Photo */}
                   <div className="flex justify-center mb-6">
                     <div className="relative">
                       {advisor.image ? (
                         <img
                           src={advisor.image}
                           alt={`${advisor.name} profile`}
-                          className="w-24 h-24 rounded-full object-cover object-center border-4 border-accent-500 shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[accent-500]/30 transition-all duration-300 filter group-hover:brightness-110"
+                          className="w-20 h-20 rounded-full object-cover object-center border-2 border-accent-500/30 shadow-lg group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-accent-500/20 transition-all duration-300"
                           loading="lazy"
-                          width="96"
-                          height="96"
+                          width="80"
+                          height="80"
                           onError={(e) => {
-                            // Fallback to placeholder if image doesn't exist
                             const target = e.currentTarget as HTMLImageElement
-                            const fallback =
-                              target.nextElementSibling as HTMLElement
+                            const fallback = target.nextElementSibling as HTMLElement
                             target.style.display = 'none'
                             if (fallback) fallback.style.display = 'flex'
                           }}
                         />
                       ) : null}
                       <div
-                        className={`w-24 h-24 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 mx-auto mb-4 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[accent-500]/30 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
+                        className={`w-20 h-20 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 flex items-center justify-center shadow-lg group-hover:scale-105 group-hover:shadow-xl group-hover:shadow-accent-500/20 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
                       >
-                        <span className="text-white text-2xl font-bold drop-shadow-lg">
-                          {advisor.id}
+                        <span className="text-white text-xl font-bold">
+                          {advisor.name.split(' ').map(n => n[0]).join('')}
                         </span>
-                      </div>
-                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full p-2 shadow-lg">
-                        <div className="w-4 h-4 bg-white rounded-full"></div>
                       </div>
                     </div>
                   </div>
 
-                  {/* Enhanced Advisor Info */}
+                  {/* Professional Advisor Info */}
                   <div className="text-center">
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:fxology-text-gradient transition-colors duration-300">
                       {advisor.name}
                     </h3>
-                    <p className="text-[accent-600] mb-3 font-semibold">
+                    <p className="text-accent-500 font-semibold text-sm mb-3">
                       {advisor.title}
                     </p>
-                    <p className="text-text-secondary text-sm leading-relaxed mb-4">
+                    <p className="text-text-secondary text-sm leading-relaxed mb-4 line-clamp-3">
                       {advisor.description}
                     </p>
 
-                    {/* Enhanced Expertise Badge */}
-                    <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#232336] to-[#2A2A3A] border border-[#3A3A4A] rounded-full">
+                    {/* Professional Expertise Badge */}
+                    <div className="inline-block px-3 py-1 bg-accent-500/10 border border-accent-500/20 rounded-full">
                       <span className="text-accent-500 text-xs font-medium">
                         {advisor.expertise}
                       </span>
@@ -279,37 +302,49 @@ export default function LeadershipPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
+        {/* CTA Section - Professional Design */}
         <section
-          className="py-16 px-2 border-t border-[#232336] mt-8"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background-card to-background-alt"
           role="region"
           aria-labelledby="leadership-cta-heading"
         >
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center px-4 py-2 bg-accent-500/10 border border-accent-500/20 rounded-full mb-8">
+              <span className="text-accent-500 text-sm font-semibold uppercase tracking-wider">Join Our Mission</span>
+            </div>
+            
             <h2
               id="leadership-cta-heading"
-              className="text-3xl font-bold text-white mb-4"
+              className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6"
             >
-              Join Our Leadership Team
+              Ready to Lead the <span className="fxology-text-gradient">Future</span>?
             </h2>
-            <p className="text-lg text-text-secondary mb-6">
-              We're always looking for exceptional leaders to join our mission.
-              Explore opportunities to make a difference in cybersecurity.
+            
+            <p className="text-lg sm:text-xl text-text-secondary mb-12 max-w-3xl mx-auto leading-relaxed">
+              We're always looking for exceptional leaders to join our mission. Explore opportunities to make a difference in cybersecurity and help shape the future of digital trust.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/about/careers"
-                className="inline-block text-base font-medium text-white bg-accent-500 hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
+                className="group inline-flex items-center px-8 py-4 bg-accent-500 hover:bg-accent-600 text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-accent-500/25 hover:-translate-y-1"
               >
-                View Careers
+                <span>View Career Opportunities</span>
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </Link>
+              
               <Link
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-base font-medium text-white border border-accent-500 hover:bg-[#232336] px-6 py-2 rounded-lg transition-colors"
+                className="group inline-flex items-center px-8 py-4 border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-xl hover:shadow-accent-500/25 hover:-translate-y-1"
               >
-                Contact Us
+                <span>Contact Our Team</span>
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
               </Link>
             </div>
           </div>
