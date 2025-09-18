@@ -1,0 +1,353 @@
+import Link from 'next/link'
+
+const resourceCategories = [
+  {
+    title: 'Blog',
+    description: 'Latest insights and analysis from our security experts',
+    icon: '📝',
+    link: '/resources/blog',
+    count: '75+ articles',
+    featured: [
+      'AI-Powered Cyber Threats 2025',
+      'Quantum Computing Security Guide',
+      'Supply Chain Attacks: The New Normal',
+    ],
+  },
+
+  {
+    title: 'Threat Reports',
+    description: 'In-depth analysis of emerging threats and attack patterns',
+    icon: '🔍',
+    link: '/resources/threat-reports',
+    count: 'Monthly reports',
+    featured: [
+      'Ransomware Analysis',
+      'APT Group Tracking',
+      'Vulnerability Research',
+      'Threat Intelligence',
+      'Attack Pattern Analysis',
+    ],
+  },
+  {
+    title: 'Documentation',
+    description: 'Technical documentation and implementation guides',
+    icon: '📚',
+    link: '/resources/documentation',
+    count: '150+ guides',
+    featured: ['API Reference', 'Deployment Guide', 'Troubleshooting'],
+  },
+  {
+    title: 'Training',
+    description: 'Security awareness and technical training',
+    icon: '🎓',
+    link: '/resources/training',
+    count: '30+ courses',
+    featured: [
+      'AI Security Fundamentals',
+      'Quantum Security Awareness',
+      'Cloud-Native Security Training',
+    ],
+  },
+]
+
+const latestInsights = [
+  {
+    title: 'AI-Powered Cyber Threats: The 2025 Landscape',
+    category: 'AI & ML Security',
+    date: 'January 20, 2025',
+    readTime: '12 min read',
+    excerpt:
+      'Comprehensive analysis of how artificial intelligence is being weaponized by threat actors and the emerging defense strategies to counter these sophisticated attacks.',
+  },
+  {
+    title: 'Quantum Computing Security: Preparing for the Post-Quantum Era',
+    category: 'Quantum Security',
+    date: 'January 15, 2025',
+    readTime: '15 min read',
+    excerpt:
+      "Strategic guide for organizations to prepare for quantum computing threats and implement quantum-resistant cryptography before it's too late.",
+  },
+  {
+    title: 'Supply Chain Attacks: The New Normal in 2025',
+    category: 'Supply Chain Security',
+    date: 'January 10, 2025',
+    readTime: '10 min read',
+    excerpt:
+      'Analysis of the evolving supply chain attack landscape and comprehensive strategies for protecting third-party relationships and dependencies.',
+  },
+]
+
+const featuredResources = [
+  {
+    title: 'Quantum-Resistant Security Framework: 2025 Edition',
+    type: 'White Paper',
+    description:
+      'Comprehensive framework for implementing quantum-resistant cryptography and preparing organizations for the post-quantum computing era',
+    readTime: '25 min read',
+    author: 'Dr. Emily Watson',
+  },
+  {
+    title: 'Q4 2024 Threat Intelligence Report: AI-Powered Attacks',
+    type: 'Threat Report',
+    description:
+      'Comprehensive analysis of AI-powered cyber threats, attack patterns, and emerging risks in Q4 2024',
+    readTime: '20 min read',
+    author: 'Dr. Emily Watson',
+  },
+]
+
+export default function ResourcesPage() {
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A] py-20 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Cybersecurity <span className="text-[#8B5CF6]">Resources</span>
+          </h1>
+          <p className="text-xl text-[#A1A1AA] mb-8 max-w-4xl mx-auto">
+            Access our comprehensive library of cybersecurity insights,
+            research, and educational content to stay ahead of evolving threats
+            and industry trends.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="#resources" className="btn text-lg px-8 py-4">
+              Explore Resources
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources Overview */}
+      <section className="py-20 px-6 bg-[#0D0D0F]">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-white mb-8">
+                Knowledge is Power
+              </h2>
+              <div className="space-y-6 text-[#A1A1AA]">
+                <p>
+                  At Resilient Privacy, we believe that knowledge sharing is
+                  essential to building a more secure digital world. Our
+                  comprehensive resource library provides cybersecurity
+                  professionals, IT leaders, and business executives with the
+                  insights, tools, and guidance they need to make informed
+                  security decisions.
+                </p>
+                <p>
+                  Our team of security experts, researchers, and analysts
+                  continuously monitor the threat landscape, analyze emerging
+                  trends, and develop practical guidance based on real-world
+                  experience. We share this knowledge through various formats
+                  including detailed white papers, technical documentation, case
+                  studies, and educational content.
+                </p>
+                <p>
+                  Whether you&apos;re looking for strategic guidance on
+                  implementing zero trust architecture, tactical advice on
+                  responding to ransomware attacks, or educational content to
+                  improve your team&apos;s security awareness, our resources are
+                  designed to provide actionable insights that you can apply
+                  immediately to improve your organization&apos;s security
+                  posture.
+                </p>
+                <p>
+                  We&apos;re committed to keeping our content current and
+                  relevant. Our resources are regularly updated to reflect the
+                  latest threats, technologies, and best practices.
+                </p>
+              </div>
+            </div>
+            <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
+              <h3 className="text-2xl font-bold text-white mb-6">
+                Resource Library Stats
+              </h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA]">Total Resources</span>
+                  <span className="text-[#8B5CF6] font-semibold">250+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA]">Monthly Downloads</span>
+                  <span className="text-[#8B5CF6] font-semibold">15,000+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA]">Expert Contributors</span>
+                  <span className="text-[#8B5CF6] font-semibold">50+</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA]">Languages</span>
+                  <span className="text-[#8B5CF6] font-semibold">8</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resource Categories */}
+      <section id="resources" className="py-20 px-6 bg-[#1A1A1A]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-white mb-16">
+            Resource Categories
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {resourceCategories.map((category) => (
+              <div
+                key={category.title}
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+              >
+                <div className="text-4xl mb-4">{category.icon}</div>
+                <h3 className="text-2xl font-bold text-white mb-4">
+                  {category.title}
+                </h3>
+                <p className="text-[#A1A1AA] mb-4">{category.description}</p>
+                <p className="text-[#8B5CF6] font-semibold mb-6">
+                  {category.count}
+                </p>
+                <div className="mb-6">
+                  <h4 className="text-[#8B5CF6] font-semibold mb-3">
+                    Featured Content
+                  </h4>
+                  <ul className="space-y-2">
+                    {category.featured.map((item) => (
+                      <li
+                        key={item}
+                        className="text-[#A1A1AA] text-sm flex items-center"
+                      >
+                        <span className="w-2 h-2 bg-[#8B5CF6] rounded-full mr-3"></span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Link
+                  href={category.link}
+                  className="text-[#8B5CF6] hover:text-white transition-colors"
+                >
+                  Browse {category.title} →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Insights */}
+      <section className="py-20 px-6 bg-[#0D0D0F]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-white mb-16">
+            Latest Insights
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {latestInsights.map((insight) => (
+              <div
+                key={insight.title}
+                className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-[#8B5CF6] text-sm font-semibold">
+                    {insight.category}
+                  </span>
+                  <span className="text-[#A1A1AA] text-sm">•</span>
+                  <span className="text-[#A1A1AA] text-sm">{insight.date}</span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {insight.title}
+                </h3>
+                <p className="text-[#A1A1AA] mb-4">{insight.excerpt}</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA] text-sm">
+                    {insight.readTime}
+                  </span>
+                  <Link
+                    href="/resources/blog"
+                    className="text-[#8B5CF6] hover:text-white transition-colors text-sm"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Featured Resources */}
+      <section className="py-20 px-6 bg-[#1A1A1A]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-white mb-16">
+            Featured Resources
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredResources.map((resource) => (
+              <div
+                key={resource.title}
+                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-[#8B5CF6] transition-colors"
+              >
+                <div className="flex items-center gap-2 mb-4">
+                  <span className="text-[#8B5CF6] text-sm font-semibold">
+                    {resource.type}
+                  </span>
+                  <span className="text-[#A1A1AA] text-sm">•</span>
+                  <span className="text-[#A1A1AA] text-sm">
+                    {resource.readTime}
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">
+                  {resource.title}
+                </h3>
+                <p className="text-[#A1A1AA] mb-6">{resource.description}</p>
+                <div className="flex justify-between items-center">
+                  <span className="text-[#A1A1AA] text-sm">
+                    {resource.author}
+                  </span>
+                  <Link
+                    href={
+                      resource.type === 'White Paper'
+                        ? '/resources/white-papers'
+                        : '#'
+                    }
+                    className="text-[#8B5CF6] hover:text-white transition-colors text-sm"
+                  >
+                    Read More →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-6 bg-gradient-to-br from-[#0D0D0F] to-[#1A1A1A]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-bold text-white mb-6">
+            Need Custom Research or Analysis?
+          </h2>
+          <p className="text-xl text-[#A1A1AA] mb-8">
+            Our team can provide custom research, analysis, and guidance
+            tailored to your specific security challenges and requirements.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn text-lg px-8 py-4"
+            >
+              Request Custom Research
+            </Link>
+            <Link
+              href="/services/cybersecurity-consulting"
+              className="btn bg-transparent border-2 border-[#8B5CF6] text-[#8B5CF6] hover:bg-[#8B5CF6] hover:text-white text-lg px-8 py-4"
+            >
+              Consulting Services
+            </Link>
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}

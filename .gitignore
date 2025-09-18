@@ -1,0 +1,213 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+.next/
+out/
+dist/
+build/
+
+# Environment variables - CRITICAL: Never commit these!
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+
+# Logs
+*.log
+dev.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database files - CRITICAL: Never commit these!
+*.db
+*.sqlite
+*.sqlite3
+sqlite.db
+data/
+data/secure.db
+data/backups/
+
+# Generated reports
+lighthouse-report.html
+*-report.md
+*_REPORT.md
+GITHUB_FAILURE_REPORT.md
+WEBSITE_CLEANUP_REPORT.md
+MISSING_NAVIGATION_REPORT.md
+
+# Security Documentation - CRITICAL: Never commit these!
+SECURITY_AUDIT_*.md
+OWASP_*.md
+*_SECURITY_*.md
+*_AUDIT_*.md
+*_COMPLIANCE_*.md
+HYDRATION_FIX.md
+TROUBLESHOOTING.md
+
+# Generated sitemap
+public/sitemap.xml
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tsconfig.tsbuildinfo
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+.next/cache
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local Netlify folder
+.netlify
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+
+# Security files - CRITICAL: Never commit these!
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.p8
+*.pem
+id_rsa
+id_rsa.pub
+*.keystore
+*.jks
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Database backups
+backups/
+*.backup.db
+
+# 🔐 SECURITY: Additional sensitive files
+secrets/
+credentials/
+keys/
+tokens/
+auth/
+config/secrets/
+
+# Security and debugging utilities - CRITICAL: Never commit these!
+src/lib/debug.ts
+src/lib/security.ts
+src/lib/hooks.ts
+src/components/HydrationHandler.tsx
+src/components/ErrorBoundary.tsx
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.dump
+# TestSprite
+.testsprite.json
+testsprite_*
+run-testsprite.js

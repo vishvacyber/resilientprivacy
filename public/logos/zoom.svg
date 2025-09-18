@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100">
+  <!-- Zoom video camera icon with better detail -->
+  <rect x="15" y="30" width="35" height="25" rx="4" fill="#2D8CFF"/>
+  <rect x="18" y="33" width="29" height="19" rx="2" fill="#FFFFFF"/>
+  
+  <!-- Camera lens -->
+  <circle cx="32.5" cy="42.5" r="6" fill="#2D8CFF"/>
+  <circle cx="32.5" cy="42.5" r="4" fill="#FFFFFF"/>
+  <circle cx="32.5" cy="42.5" r="2" fill="#2D8CFF"/>
+  <circle cx="32.5" cy="42.5" r="1" fill="#FFFFFF"/>
+  
+  <!-- Camera stand -->
+  <rect x="50" y="38" width="4" height="8" fill="#2D8CFF"/>
+  <rect x="54" y="36" width="4" height="12" fill="#2D8CFF"/>
+  <rect x="58" y="34" width="3" height="16" fill="#2D8CFF"/>
+  
+  <!-- Camera details -->
+  <rect x="20" y="35" width="3" height="2" fill="#2D8CFF"/>
+  <rect x="25" y="35" width="2" height="2" fill="#2D8CFF"/>
+  <rect x="40" y="35" width="3" height="2" fill="#2D8CFF"/>
+  
+  <!-- Zoom text -->
+  <text x="75" y="50" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="bold" fill="#2D8CFF">Zoom</text>
+  
+  <!-- Additional branding elements -->
+  <path d="M75 60 L105 60" stroke="#2D8CFF" stroke-width="2" opacity="0.3"/>
+  <path d="M75 65 L100 65" stroke="#2D8CFF" stroke-width="1" opacity="0.2"/>
+</svg>

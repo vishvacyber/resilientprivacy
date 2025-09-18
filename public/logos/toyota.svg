@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Toyota Logo - Simplified version -->
+  <g transform="translate(100, 100)">
+    <!-- Main oval shape -->
+    <ellipse cx="0" cy="0" rx="60" ry="35" fill="none" stroke="#E60012" stroke-width="4"/>
+    
+    <!-- Inner oval -->
+    <ellipse cx="0" cy="0" rx="40" ry="25" fill="none" stroke="#E60012" stroke-width="4"/>
+    
+    <!-- Horizontal line -->
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#E60012" stroke-width="4"/>
+    
+    <!-- Vertical line -->
+    <line x1="0" y1="-30" x2="0" y2="30" stroke="#E60012" stroke-width="4"/>
+    
+    <!-- Toyota text -->
+    <text x="0" y="55" text-anchor="middle" fill="#E60012" font-family="Arial, sans-serif" font-size="16" font-weight="bold">TOYOTA</text>
+  </g>
+</svg> 

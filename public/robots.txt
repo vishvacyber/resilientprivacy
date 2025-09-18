@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /protected/
+Disallow: /api/
+
+# Host
+Host: https://resilientprivacy.com
+
+# Sitemaps
+Sitemap: https://resilientprivacy.com/sitemap.xml
