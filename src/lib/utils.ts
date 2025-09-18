@@ -247,7 +247,16 @@ export function validateCSRFToken(
   expectedToken: string
 ): boolean {
   if (!token || !expectedToken) return false
-  return token === expectedToken
+  
+  // Use constant-time comparison to prevent timing attacks
+  if (token.length !== expectedToken.length) return false
+  
+  let result = 0
+  for (let i = 0; i < token.length; i++) {
+    result |= token.charCodeAt(i) ^ expectedToken.charCodeAt(i)
+  }
+  
+  return result === 0
 }
 
 // Input validation patterns
