@@ -582,7 +582,7 @@ export default function IncidentResponsePage() {
                 <p className="text-text-secondary mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {benefit.description}
                 </p>
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-accent-500/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
                   <span className="text-accent-500 font-semibold text-sm">
                     {benefit.value}
                   </span>

@@ -18,7 +18,7 @@ function Avatar({
   // If image fails to load or doesn't exist, show initials
   if (imgError || !src) {
     return (
-      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300">
+      <div className="w-24 h-24 rounded-full bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center mx-auto border-2 border-accent-500 shadow-lg group-hover:shadow-xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300">
         <span className="text-white font-bold text-2xl">{initials}</span>
       </div>
     )
@@ -40,7 +40,7 @@ function Avatar({
 export default function LeadershipPage() {
   const router = useRouter()
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-[#8B5CF6] pb-20 px-2">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 pb-20 px-2">
       {/* Add skip-to-content link for accessibility at the top of the page */}
       <a
         href="#main-content"
@@ -62,7 +62,7 @@ export default function LeadershipPage() {
               className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight"
             >
               <span className="text-white">Resilient </span>
-              <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent drop-shadow-lg">
+              <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
                 Privacy
               </span>
               <span className="text-white"> Leadership</span>
@@ -242,13 +242,13 @@ export default function LeadershipPage() {
                         />
                       ) : null}
                       <div
-                        className={`w-24 h-24 rounded-full bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] mx-auto mb-4 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
+                        className={`w-24 h-24 rounded-full bg-gradient-to-r from-accent-500 to-accent-600 mx-auto mb-4 flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/30 transition-all duration-300 ${advisor.image ? 'hidden' : ''}`}
                       >
                         <span className="text-white text-2xl font-bold drop-shadow-lg">
                           {advisor.id}
                         </span>
                       </div>
-                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-full p-2 shadow-lg">
+                      <div className="absolute -bottom-2 -right-2 bg-gradient-to-r from-accent-500 to-accent-600 rounded-full p-2 shadow-lg">
                         <div className="w-4 h-4 bg-white rounded-full"></div>
                       </div>
                     </div>

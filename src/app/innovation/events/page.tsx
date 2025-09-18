@@ -126,7 +126,7 @@ export default function EventsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#18181B] via-[#232336] to-[#8B5CF6]/10 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500/10 py-16 px-4">
       <section className="max-w-5xl mx-auto text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
           Events & Webinars
@@ -211,7 +211,7 @@ export default function EventsPage() {
                       e.preventDefault()
                       handleRegister(event)
                     }}
-                    className="px-5 py-2 rounded-xl font-semibold bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white hover:from-[#a78bfa] hover:to-[#8B5CF6] transition"
+                    className="px-5 py-2 rounded-xl font-semibold bg-gradient-to-r from-accent-500 to-accent-600 text-white hover:from-accent-600 hover:to-accent-500 transition"
                   >
                     {event.action}
                   </a>
@@ -258,7 +258,7 @@ export default function EventsPage() {
         </p>
         <a
           href="#"
-          className="inline-block bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white px-8 py-3 rounded-xl font-semibold hover:from-[#a78bfa] hover:to-[#8B5CF6] transition shadow-lg"
+          className="inline-block bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition shadow-lg"
         >
           Submit Event/Webinar Idea
         </a>
@@ -287,7 +287,7 @@ export default function EventsPage() {
               />
               <button
                 type="submit"
-                className="bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white px-6 py-2 rounded-xl font-semibold hover:from-[#a78bfa] hover:to-[#8B5CF6] transition"
+                className="bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-2 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition"
               >
                 Confirm Registration
               </button>

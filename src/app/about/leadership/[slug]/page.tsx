@@ -22,7 +22,7 @@ function Avatar({
 
   // Show initials as fallback
   return (
-    <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto bg-gradient-to-br from-[#8B5CF6] to-[#7C3AED] flex items-center justify-center text-white text-2xl font-bold">
+    <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center text-white text-2xl font-bold">
       {initials}
     </div>
   )
@@ -47,7 +47,7 @@ export default async function LeaderDetailPage({
 
   if (!leader || leader.hidden) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#18181B] via-[#232336] to-[#8B5CF6] px-4">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 px-4">
         <h1 className="text-4xl font-bold text-white mb-4">
           404 - Leader Not Found
         </h1>
@@ -65,7 +65,7 @@ export default async function LeaderDetailPage({
   }
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-[#8B5CF6] pb-20 px-2">
+    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 pb-20 px-2">
       <div className="max-w-3xl mx-auto pt-20 pb-10 px-4">
         <Link
           href="/about/leadership"
@@ -84,7 +84,7 @@ export default async function LeaderDetailPage({
           />
           <h1 className="text-4xl font-extrabold mt-6 mb-2 tracking-tight">
             <span className="text-white">Resilient </span>
-            <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
               Privacy
             </span>
             <span className="text-white"> Leadership</span>

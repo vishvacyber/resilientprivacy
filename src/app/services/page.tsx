@@ -552,7 +552,7 @@ export default function ServicesPage() {
             <div className="bg-gradient-to-br from-[#1A1A1A]/90 to-[#2D2D2D]/90 backdrop-blur-xl p-10 rounded-3xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-[#8B5CF6]/10">
               <h3 className="text-3xl font-bold text-white mb-8 text-center">
                 Service Level{' '}
-                <span className="bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-accent-500 to-[#EC4899] bg-clip-text text-transparent">
                   Agreements
                 </span>
               </h3>
@@ -604,7 +604,7 @@ export default function ServicesPage() {
                   {certifications.slice(0, 8).map((cert, index) => (
                     <span
                       key={cert}
-                      className="px-3 py-2 bg-gradient-to-r from-[#8B5CF6]/10 to-[#EC4899]/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-[#8B5CF6]/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
+                      className="px-3 py-2 bg-gradient-to-r from-accent-500/10 to-[#EC4899]/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-accent-500/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
                       style={{ transitionDelay: `${index * 50}ms` }}
                     >
                       {cert}
@@ -622,14 +622,14 @@ export default function ServicesPage() {
 
       {/* Enhanced CTA Section */}
       <section className="relative py-24 px-6 bg-gradient-to-br from-[#0D0D0F]/80 via-[#1A1A1A]/60 to-[#0D0D0F]/80 backdrop-blur-xl">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6]/5 via-transparent to-[#EC4899]/5"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 via-transparent to-[#EC4899]/5"></div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="mb-8">
             <span className="text-6xl animate-bounce">🎯</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
             Ready to Transform Your{' '}
-            <span className="bg-gradient-to-r from-[#8B5CF6] via-[#EC4899] to-[#06B6D4] bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-accent-500 via-[#EC4899] to-[#06B6D4] bg-clip-text text-transparent">
               IT & Security?
             </span>
           </h2>
@@ -643,7 +643,7 @@ export default function ServicesPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative overflow-hidden bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#8B5CF6]/25 transform hover:-translate-y-1"
+              className="group relative overflow-hidden bg-gradient-to-r from-accent-500 to-[#EC4899] text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-[#8B5CF6]/25 transform hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>Get Free Consultation</span>
@@ -651,11 +651,11 @@ export default function ServicesPage() {
                   💬
                 </span>
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#EC4899] to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Link>
             <Link
               href="/services/managed-security"
-              className="group relative overflow-hidden border-3 border-accent-500 text-accent-500 px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-[#8B5CF6] hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[#8B5CF6]/25 hover:border-transparent transform hover:-translate-y-1"
+              className="group relative overflow-hidden border-3 border-accent-500 text-accent-500 px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-500 hover:scale-110 hover:bg-gradient-to-r hover:from-accent-500 hover:to-[#EC4899] hover:text-white hover:shadow-2xl hover:shadow-[#8B5CF6]/25 hover:border-transparent transform hover:-translate-y-1"
             >
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>View Popular Service</span>

@@ -61,7 +61,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             About <span className="text-white">Resilient </span>
-            <span className="bg-gradient-to-r from-[#8B5CF6] via-[#a78bfa] to-[#8B5CF6] bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
               Privacy
             </span>
           </h1>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                     href="/about/leadership"
                     className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-accent-500 transition-all duration-300 hover:shadow-lg hover:shadow-[#8B5CF6]/20"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <ShieldCheck className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
@@ -193,7 +193,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Zap className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
@@ -206,7 +206,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
@@ -241,10 +241,10 @@ export default function AboutPage() {
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <div className="inline-flex items-center gap-3 sm:gap-4 mb-6">
               <div className="relative">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-lg shadow-[#8B5CF6]/25">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-lg shadow-[#8B5CF6]/25">
                   <Globe className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                 </div>
-                <div className="absolute -inset-1 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] rounded-2xl blur opacity-30"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl blur opacity-30"></div>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-white via-[#F8FAFC] to-[#E2E8F0] bg-clip-text text-transparent">
                 Global Presence
@@ -283,10 +283,10 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#8B5CF6] via-[#A78BFA] to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         3
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Strategic Locations
@@ -298,10 +298,10 @@ export default function AboutPage() {
 
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#8B5CF6] via-[#A78BFA] to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         24/7
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Global Operations
@@ -313,10 +313,10 @@ export default function AboutPage() {
 
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-[#8B5CF6] via-[#A78BFA] to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         5+
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Security Domains
@@ -334,13 +334,13 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {/* Delaware, USA */}
             <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
@@ -382,13 +382,13 @@ export default function AboutPage() {
 
             {/* Dallas, Texas, USA */}
             <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
@@ -430,13 +430,13 @@ export default function AboutPage() {
 
             {/* Surat, India */}
             <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[#8B5CF6]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[#8B5CF6]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
@@ -483,7 +483,7 @@ export default function AboutPage() {
           {/* Modern Coverage Statement */}
           <div className="mt-12 sm:mt-16 lg:mt-20">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-2xl sm:rounded-3xl blur-xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-accent-500/10 to-accent-600/10 rounded-2xl sm:rounded-3xl blur-xl"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-[#333]/30 p-8 sm:p-12 max-w-5xl mx-auto text-center">
                 <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-[#E2E8F0] bg-clip-text text-transparent mb-6">
                   Comprehensive Global Coverage

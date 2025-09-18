@@ -493,7 +493,7 @@ export default function DataProcessingAgreement() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED] py-16 px-6">
+      <section className="bg-gradient-to-r from-accent-500 to-[#7C3AED] py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
             Questions About Data Processing?

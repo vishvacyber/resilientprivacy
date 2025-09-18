@@ -337,7 +337,7 @@ export default function TrainingPage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn text-lg px-10 py-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+                className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
               >
                 Start Free Trial
               </Link>
@@ -486,7 +486,7 @@ export default function TrainingPage() {
                   <p className="text-text-secondary mb-4 leading-relaxed group-hover:text-white transition-colors duration-300">
                     {modality.description}
                   </p>
-                  <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full mb-4">
+                  <div className="inline-block px-4 py-2 bg-gradient-to-r from-accent-500/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full mb-4">
                     <span className="text-accent-500 font-semibold text-sm">
                       {modality.effectiveness}
                     </span>
@@ -538,7 +538,7 @@ export default function TrainingPage() {
               >
                 {tier.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <div className="bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-white px-4 py-1 text-sm font-bold rounded-full">
+                    <div className="bg-gradient-to-r from-accent-500 to-[#EC4899] text-white px-4 py-1 text-sm font-bold rounded-full">
                       ⭐ MOST POPULAR
                     </div>
                   </div>
@@ -715,7 +715,7 @@ export default function TrainingPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn text-lg px-10 py-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+              className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
             >
               Start Free 30-Day Trial
             </Link>

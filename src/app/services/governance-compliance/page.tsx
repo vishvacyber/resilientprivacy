@@ -571,7 +571,7 @@ export default function GovernanceCompliance() {
 
       {/* CTA Section */}
       <section className="relative py-20 px-6">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8B5CF6] to-[#7C3AED]"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-accent-500 to-[#7C3AED]"></div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Ready for 2025 Compliance Excellence?

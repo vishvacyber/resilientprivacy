@@ -236,12 +236,12 @@ export default function ITConsultingPage() {
     <div className="min-h-screen bg-gradient-to-br from-[#0A0A0F] via-[#1A1A1A] to-[#0D0D0F]">
       {/* Hero Section */}
       <section className="relative py-24 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 via-transparent to-[#A78BFA]/10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-accent-500/10 via-transparent to-accent-600/10"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%238B5CF6%22%20fill-opacity%3D%220.03%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 mb-8">
-              <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center shadow-2xl">
+              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-2xl">
                 <Briefcase className="w-8 h-8 text-white" />
               </div>
               <span className="text-accent-500 font-semibold text-sm uppercase tracking-wider bg-accent-500/10 px-4 py-2 rounded-full">
@@ -259,7 +259,7 @@ export default function ITConsultingPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link
                 href="/contact"
-                className="btn text-lg px-10 py-5 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] hover:from-[#7C3AED] hover:to-[#8B5CF6] shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                className="btn text-lg px-10 py-5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
               >
                 Get Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
@@ -276,7 +276,7 @@ export default function ITConsultingPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#8B5CF6]/20 to-[#A78BFA]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-12 h-12 bg-gradient-to-br from-accent-500/20 to-accent-600/20 rounded-xl flex items-center justify-center mx-auto mb-4">
                     <stat.icon className="w-6 h-6 text-accent-500" />
                   </div>
                   <div className="text-3xl font-bold text-white mb-2">
@@ -314,7 +314,7 @@ export default function ITConsultingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                 <div className="relative bg-[#0D0D0F] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div
                     className={`w-16 h-16 bg-gradient-to-br ${service.color} rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-300 shadow-lg`}
@@ -377,7 +377,7 @@ export default function ITConsultingPage() {
               </div>
             </div>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/10 to-accent-600/10 rounded-3xl blur-2xl"></div>
               <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-10 rounded-3xl border border-[#333] shadow-2xl">
                 <div className="flex items-center gap-3 mb-8">
                   <TrendingUp className="w-8 h-8 text-accent-500" />
@@ -449,7 +449,7 @@ export default function ITConsultingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {industries.map((industry, index) => (
               <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                 <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
                   <div className="flex items-center gap-6 mb-8">
                     <span className="text-5xl">{industry.icon}</span>
@@ -498,9 +498,9 @@ export default function ITConsultingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
               <div key={index} className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                 <div className="relative bg-gradient-to-br from-[#1A1A1A] to-[#232336] p-8 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[#8B5CF6]/10">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
+                  <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-2xl">
                     <step.icon className="w-8 h-8 text-white" />
                   </div>
                   <div className="text-sm font-bold text-accent-500 mb-4">
@@ -538,10 +538,10 @@ export default function ITConsultingPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
               <div key={index} className="relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-[#A78BFA]/5 rounded-2xl blur-xl"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl"></div>
                 <div className="relative bg-gradient-to-br from-background to-background-alt p-10 rounded-2xl border border-[#333] shadow-2xl">
                   <div className="flex items-start gap-4 mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full flex items-center justify-center flex-shrink-0">
                       <span className="text-white font-bold text-lg">
                         {testimonial.author.charAt(0)}
                       </span>
@@ -569,7 +569,7 @@ export default function ITConsultingPage() {
       <section className="py-24 px-6 bg-gradient-to-br from-[#18181B] to-[#232336]">
         <div className="max-w-5xl mx-auto text-center">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/10 to-[#A78BFA]/10 rounded-3xl blur-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-accent-500/10 to-accent-600/10 rounded-3xl blur-2xl"></div>
             <div className="relative bg-gradient-to-br from-background to-background-alt p-16 rounded-3xl border border-[#333] shadow-2xl">
               <div className="inline-flex items-center gap-2 mb-8">
                 <Award className="w-6 h-6 text-accent-500" />
@@ -588,7 +588,7 @@ export default function ITConsultingPage() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/contact"
-                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-[#8B5CF6] to-[#A78BFA] hover:from-[#7C3AED] hover:to-[#8B5CF6] shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
+                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[#8B5CF6]/25 transition-all duration-300"
                 >
                   Get Free Consultation
                   <ArrowUpRight className="w-5 h-5 ml-2" />

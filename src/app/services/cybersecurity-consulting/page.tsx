@@ -279,7 +279,7 @@ export default function CybersecurityConsultingPage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn text-lg px-10 py-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+                className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
               >
                 Schedule Strategic Consultation
               </Link>
@@ -494,7 +494,7 @@ export default function CybersecurityConsultingPage() {
                 <p className="text-text-secondary mb-4 text-sm leading-relaxed group-hover:text-white transition-colors duration-300">
                   {benefit.description}
                 </p>
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-[#8B5CF6]/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-accent-500/20 to-[#EC4899]/20 border border-accent-500/30 rounded-full">
                   <span className="text-accent-500 font-semibold text-sm">
                     {benefit.value}
                   </span>
@@ -524,7 +524,7 @@ export default function CybersecurityConsultingPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn text-lg px-10 py-4 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+              className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
             >
               Schedule Free Strategic Assessment
             </Link>

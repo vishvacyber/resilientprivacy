@@ -161,7 +161,7 @@ export default function IncidentResponsePage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#18181B] via-[#232336] to-[#8B5CF6]/10 py-16 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500/10 py-16 px-4">
       {/* Add skip-to-content link for accessibility at the top of the page */}
       <a
         href="#main-content"
@@ -224,7 +224,7 @@ export default function IncidentResponsePage() {
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <button
               onClick={() => setShowHotline(true)}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white px-8 py-4 rounded-xl font-semibold hover:from-[#a78bfa] hover:to-[#8B5CF6] transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
               aria-label="Call 24/7 AI-Enhanced Emergency Hotline"
             >
               <Phone className="w-5 h-5" /> 24/7 AI Emergency Response
@@ -364,7 +364,7 @@ export default function IncidentResponsePage() {
               </p>
               <a
                 href="tel:+14696660131"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#a78bfa] hover:to-[#8B5CF6] transition text-lg shadow-lg"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition text-lg shadow-lg"
               >
                 <Brain className="w-5 h-5" /> +1 (469) 666-0131
               </a>
@@ -595,7 +595,7 @@ export default function IncidentResponsePage() {
                   <button
                     type="submit"
                     disabled={submitting}
-                    className="bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] text-white px-6 py-3 rounded-xl font-semibold hover:from-[#a78bfa] hover:to-[#8B5CF6] transition min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                    className="bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     aria-label="Submit Incident Report"
                   >
                     {submitting ? (

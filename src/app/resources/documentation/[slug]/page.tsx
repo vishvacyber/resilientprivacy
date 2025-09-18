@@ -951,7 +951,7 @@ export default async function GuidePage({
           </div>
 
           {/* CTA */}
-          <div className="bg-gradient-to-r from-[#8B5CF6] to-[#a78bfa] p-8 rounded-lg mt-8 text-center">
+          <div className="bg-gradient-to-r from-accent-500 to-accent-600 p-8 rounded-lg mt-8 text-center">
             <h3 className="text-2xl font-bold text-white mb-4">
               Need Help with Implementation?
             </h3>
