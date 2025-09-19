@@ -134,8 +134,8 @@ export default function AboutPage() {
                     assets—we engineer trust, enable innovation, and build
                     cyber-resilient enterprises.
                   </p>
-                  <p className="font-semibold text-accent-500 mt-4 text-lg">
-                    Let’s shape a safer digital future—together.
+                  <p className="font-semibold text-primary-500 mt-4 text-lg">
+                    Let's shape a safer digital future—together.
                   </p>
                 </div>
               </div>
@@ -143,21 +143,21 @@ export default function AboutPage() {
 
             {/* Right Column - Company Navigation */}
             <div className="lg:col-start-2">
-              <div className="bg-gradient-to-br from-[#232336] to-[#18181B] rounded-2xl p-8 border border-[#2A2A3A]">
-                <h3 className="text-2xl font-bold text-accent-500 mb-6 flex items-center gap-3">
-                  <Users className="w-6 h-6 text-accent-500" />
+              <div className="bg-gradient-to-br from-background-card to-background-alt rounded-2xl p-8 border border-border-light/20">
+                <h3 className="text-2xl font-bold text-primary-500 mb-6 flex items-center gap-3">
+                  <Users className="w-6 h-6 text-primary-500" />
                   Learn More About Us
                 </h3>
                 <div className="space-y-4">
                   <Link
                     href="/about/leadership"
-                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-[#1A1A1A] to-[#2A2A3A] rounded-xl border border-[#3A3A4A] hover:border-accent-500 transition-all duration-300 hover:shadow-lg hover:shadow-[accent-500]/20"
+                    className="group flex items-center gap-4 p-4 bg-gradient-to-r from-background to-background-card rounded-xl border border-border-light/30 hover:border-primary-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/20"
                   >
-                    <div className="w-12 h-12 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-r from-primary-500 to-primary-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <Users className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold text-white group-hover:text-accent-500 transition-colors duration-300">
+                      <h4 className="text-lg font-semibold text-white group-hover:text-primary-500 transition-colors duration-300">
                         Leadership & Advisory Board
                       </h4>
                       <p className="text-text-secondary text-sm">
@@ -173,17 +173,17 @@ export default function AboutPage() {
       </section>
 
       {/* Core Values */}
-      <section className="py-20 px-6 bg-[#1A1A1A]">
+      <section className="py-20 px-6 bg-background-alt">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">
             Our Core Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+            <div className="bg-background-card p-8 rounded-lg border border-border-light/20 text-center group hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple/10">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <ShieldCheck className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-500 transition-colors duration-300">
                 Resilience
               </h3>
               <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
@@ -192,11 +192,11 @@ export default function AboutPage() {
                 their security posture.
               </p>
             </div>
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+            <div className="bg-background-card p-8 rounded-lg border border-border-light/20 text-center group hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple/10">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Zap className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-500 transition-colors duration-300">
                 Innovation
               </h3>
               <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
@@ -205,11 +205,11 @@ export default function AboutPage() {
                 of the curve.
               </p>
             </div>
-            <div className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center group hover:border-accent-500 transition-all duration-300">
-              <div className="w-16 h-16 bg-gradient-to-br from-accent-500 to-accent-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+            <div className="bg-background-card p-8 rounded-lg border border-border-light/20 text-center group hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple/10">
+              <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full mx-auto mb-6 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <Users className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-primary-500 transition-colors duration-300">
                 Trust
               </h3>
               <p className="text-text-secondary group-hover:text-white transition-colors duration-300">
@@ -225,12 +225,12 @@ export default function AboutPage() {
       {/* Global Presence */}
       <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 relative overflow-hidden">
         {/* Modern Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0D0D0F] via-[#1A1A1A] to-[#0D0D0F]">
+        <div className="absolute inset-0 bg-gradient-to-br from-background via-background-alt to-background">
           {/* Subtle animated elements */}
           <div className="absolute top-0 left-0 w-full h-full opacity-20">
-            <div className="absolute top-20 left-10 w-32 h-32 bg-accent-500 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-20 left-10 w-32 h-32 bg-primary-500 rounded-full blur-3xl animate-pulse"></div>
             <div
-              className="absolute bottom-20 right-10 w-40 h-40 bg-[accent-600] rounded-full blur-3xl animate-pulse"
+              className="absolute bottom-20 right-10 w-40 h-40 bg-primary-600 rounded-full blur-3xl animate-pulse"
               style={{ animationDelay: '3s' }}
             ></div>
           </div>
@@ -241,18 +241,18 @@ export default function AboutPage() {
           <div className="text-center mb-12 sm:mb-16 lg:mb-20">
             <div className="inline-flex items-center gap-3 sm:gap-4 mb-6">
               <div className="relative">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-lg shadow-[accent-500]/25">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-lg shadow-primary-500/25">
                   <Globe className="w-6 h-6 sm:w-7 sm:h-7 text-white" />
                 </div>
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent-500 to-accent-600 rounded-2xl blur opacity-30"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-primary-500 to-primary-600 rounded-2xl blur opacity-30"></div>
               </div>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-white via-[#F8FAFC] to-[#E2E8F0] bg-clip-text text-transparent">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold darkfire-text-gradient">
                 Global Presence
               </h2>
             </div>
             <p className="text-lg sm:text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
               Our strategically positioned offices form a{' '}
-              <span className="text-accent-500 font-semibold">
+              <span className="text-primary-500 font-semibold">
                 connected security ecosystem
               </span>
               , delivering world-class cybersecurity services across continents
@@ -262,10 +262,10 @@ export default function AboutPage() {
 
           {/* Enhanced Stats Bar with World Map Visual */}
           <div className="mb-12 sm:mb-16 lg:mb-20">
-            <div className="relative bg-gradient-to-r from-[#1A1A1A]/60 to-[#2D2D2D]/60 backdrop-blur-sm rounded-3xl border border-[#333]/50 p-8 sm:p-12 overflow-hidden">
+            <div className="relative bg-gradient-to-r from-background-card/60 to-background-alt/60 backdrop-blur-sm rounded-3xl border border-border-light/30 p-8 sm:p-12 overflow-hidden">
               {/* Decorative World Map Background */}
               <div className="absolute inset-0 opacity-5">
-                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[200px] sm:text-[300px] text-accent-500">
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[200px] sm:text-[300px] text-primary-500">
                   🌍
                 </div>
               </div>
@@ -283,45 +283,45 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-12">
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         3
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-primary-500/20 to-primary-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Strategic Locations
                     </div>
-                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-primary-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       North America & Asia
                     </div>
                   </div>
 
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         24/7
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-primary-500/20 to-primary-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Global Operations
                     </div>
-                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-primary-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Never Sleep Security
                     </div>
                   </div>
 
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-4">
-                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-accent-500 via-accent-600 to-[#C084FC] bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
+                      <div className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-all duration-500">
                         5+
                       </div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-accent-500/20 to-accent-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <div className="absolute -inset-2 bg-gradient-to-r from-primary-500/20 to-primary-600/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                     </div>
                     <div className="text-sm sm:text-base text-text-secondary font-semibold group-hover:text-white transition-colors duration-300">
                       Security Domains
                     </div>
-                    <div className="text-xs text-accent-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="text-xs text-primary-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       Consultation
                     </div>
                   </div>
@@ -333,26 +333,26 @@ export default function AboutPage() {
           {/* Sleek Office Cards Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {/* Delaware, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="group relative bg-gradient-to-br from-background-card to-background-alt backdrop-blur-sm rounded-2xl border border-border-light/30 p-8 hover:border-primary-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary-500/10 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl shadow-primary-500/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
-                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-[#0F0F0F] shadow-lg">
+                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-background-card shadow-lg">
                         <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse m-0.5"></div>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-primary-500 transition-colors duration-300 mb-2">
                         Delaware, USA
                       </h3>
-                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
+                      <div className="inline-flex items-center bg-primary-500/15 text-primary-500 px-4 py-2 rounded-xl text-sm font-semibold border border-primary-500/25 shadow-sm">
                         Corporate Headquarters
                       </div>
                     </div>
@@ -369,7 +369,7 @@ export default function AboutPage() {
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
+                  <div className="flex items-center gap-3 text-sm text-primary-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>Eastern Time • Primary Office</span>
                   </div>
@@ -381,26 +381,26 @@ export default function AboutPage() {
             </div>
 
             {/* Dallas, Texas, USA */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="group relative bg-gradient-to-br from-background-card to-background-alt backdrop-blur-sm rounded-2xl border border-border-light/30 p-8 hover:border-primary-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary-500/10 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl shadow-primary-500/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
-                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-[#0F0F0F] shadow-lg">
+                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-background-card shadow-lg">
                         <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse m-0.5"></div>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-primary-500 transition-colors duration-300 mb-2">
                         Dallas, Texas, USA
                       </h3>
-                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
+                      <div className="inline-flex items-center bg-primary-500/15 text-primary-500 px-4 py-2 rounded-xl text-sm font-semibold border border-primary-500/25 shadow-sm">
                         Regional Operations
                       </div>
                     </div>
@@ -417,7 +417,7 @@ export default function AboutPage() {
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
+                  <div className="flex items-center gap-3 text-sm text-primary-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>Central Time • Operations Center</span>
                   </div>
@@ -429,26 +429,26 @@ export default function AboutPage() {
             </div>
 
             {/* Surat, India */}
-            <div className="group relative bg-gradient-to-br from-[#0F0F0F] to-[#1A1A1A] backdrop-blur-sm rounded-2xl border border-[#333]/30 p-8 hover:border-accent-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-[accent-500]/10 cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="group relative bg-gradient-to-br from-background-card to-background-alt backdrop-blur-sm rounded-2xl border border-border-light/30 p-8 hover:border-primary-500/40 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-primary-500/10 cursor-pointer">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-start gap-5">
                     <div className="relative">
-                      <div className="w-14 h-14 bg-gradient-to-br from-accent-500 to-accent-600 rounded-2xl flex items-center justify-center shadow-xl shadow-[accent-500]/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
+                      <div className="w-14 h-14 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center shadow-xl shadow-primary-500/25 group-hover:rotate-6 group-hover:scale-110 transition-all duration-500">
                         <Building className="w-7 h-7 text-white" />
                       </div>
 
-                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-[#0F0F0F] shadow-lg">
+                      <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-emerald-500 rounded-full border-2 border-background-card shadow-lg">
                         <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse m-0.5"></div>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white group-hover:text-accent-500 transition-colors duration-300 mb-2">
+                      <h3 className="text-xl font-bold text-white group-hover:text-primary-500 transition-colors duration-300 mb-2">
                         Surat, India
                       </h3>
-                      <div className="inline-flex items-center bg-accent-500/15 text-accent-500 px-4 py-2 rounded-xl text-sm font-semibold border border-accent-500/25 shadow-sm">
+                      <div className="inline-flex items-center bg-primary-500/15 text-primary-500 px-4 py-2 rounded-xl text-sm font-semibold border border-primary-500/25 shadow-sm">
                         Asia Operations
                       </div>
                     </div>
@@ -463,12 +463,12 @@ export default function AboutPage() {
                   cybersecurity expertise and innovative solutions across the
                   Asian continent with local market knowledge.
                 </p>
-                <p className="text-accent-500 text-sm font-mono mb-3 bg-accent-500/5 px-4 py-2 rounded-lg border border-accent-500/10">
+                <p className="text-primary-500 text-sm font-mono mb-3 bg-primary-500/5 px-4 py-2 rounded-lg border border-primary-500/10">
                   Surat, Gujarat, India
                 </p>
 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-3 text-sm text-accent-500 font-medium">
+                  <div className="flex items-center gap-3 text-sm text-primary-500 font-medium">
                     <Clock className="w-4 h-4" />
                     <span>India Time • Asia Hub</span>
                   </div>
@@ -483,14 +483,14 @@ export default function AboutPage() {
           {/* Modern Coverage Statement */}
           <div className="mt-12 sm:mt-16 lg:mt-20">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-accent-500/10 to-accent-600/10 rounded-2xl sm:rounded-3xl blur-xl"></div>
-              <div className="relative bg-gradient-to-br from-[#1A1A1A]/80 to-[#2D2D2D]/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-[#333]/30 p-8 sm:p-12 max-w-5xl mx-auto text-center">
-                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-[#E2E8F0] bg-clip-text text-transparent mb-6">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-primary-600/10 rounded-2xl sm:rounded-3xl blur-xl"></div>
+              <div className="relative bg-gradient-to-br from-background-card/80 to-background-alt/40 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-border-light/30 p-8 sm:p-12 max-w-5xl mx-auto text-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold darkfire-text-gradient mb-6">
                   Comprehensive Global Coverage
                 </h3>
                 <p className="text-text-secondary leading-relaxed text-base sm:text-lg">
                   With offices strategically positioned across{' '}
-                  <span className="text-accent-500 font-semibold">
+                  <span className="text-primary-500 font-semibold">
                     North America and Asia
                   </span>
                   , Resilient Privacy delivers consistent, high-quality
