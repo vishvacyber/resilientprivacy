@@ -61,7 +61,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             About <span className="text-white">Resilient </span>
-            <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
+            <span className="darkfire-text-gradient">
               Privacy
             </span>
           </h1>
@@ -81,14 +81,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-4xl font-bold fxology-text-gradient mb-8 flex items-center gap-3">
-                <ShieldCheck className="w-8 h-8 text-accent-500 drop-shadow" />{' '}
+              <h2 className="text-4xl font-bold darkfire-text-gradient mb-8 flex items-center gap-3">
+                <ShieldCheck className="w-8 h-8 text-primary-500 drop-shadow" />{' '}
                 Company Overview
               </h2>
               <div className="space-y-6 text-text-secondary">
                 <div className="mb-4 text-lg">
                   <span className="font-semibold text-white">Resilient </span>
-                  <span className="fxology-text-gradient font-semibold">
+                  <span className="darkfire-text-gradient font-semibold">
                     Privacy
                   </span>{' '}
                   , founded in <span className="font-semibold">2025</span> by
@@ -97,32 +97,32 @@ export default function AboutPage() {
                   the world's most critical organizations—keeping them secure,
                   resilient, and always one step ahead of threats.
                 </div>
-                <div className="my-4 p-6 bg-gradient-to-r from-background-card to-background-alt border-l-4 border-accent-500 rounded-xl shadow-lg">
-                  <h3 className="text-xl font-bold text-accent-500 mb-1 flex items-center gap-2">
-                    <Zap className="w-5 h-5 text-accent-500" /> Our Mission
+                <div className="my-4 p-6 bg-gradient-to-r from-background-card to-background-alt border-l-4 border-primary-500 rounded-xl shadow-lg">
+                  <h3 className="text-xl font-bold text-primary-500 mb-1 flex items-center gap-2">
+                    <Zap className="w-5 h-5 text-primary-500" /> Our Mission
                   </h3>
-                  <p className="mb-2 text-base">
+                  <p className="mb-2 text-base text-text-secondary">
                     Empower organizations to anticipate threats and strengthen
                     digital trust.
                   </p>
-                  <blockquote className="italic text-accent-500 border-l-2 border-accent-500 pl-4 text-lg font-semibold mt-2">
-                    We Don’t Chase Threats. We Preempt Them.
+                  <blockquote className="italic text-primary-500 border-l-2 border-primary-500 pl-4 text-lg font-semibold mt-2">
+                    We Don't Chase Threats. We Preempt Them.
                   </blockquote>
                 </div>
                 <div className="mb-4">
                   <span className="font-semibold">What Sets Us Apart:</span>
                   <ul className="list-none mt-2 space-y-3">
                     <li className="flex items-center gap-3">
-                      <Target className="w-5 h-5 text-accent-500" />{' '}
+                      <Target className="w-5 h-5 text-primary-500" />{' '}
                       Identity-first security & zero trust architecture
                     </li>
                     <li className="flex items-center gap-3">
-                      <Globe className="w-5 h-5 text-accent-500" /> Advanced
+                      <Globe className="w-5 h-5 text-primary-500" /> Advanced
                       threat intelligence & bespoke consulting
                     </li>
 
                     <li className="flex items-center gap-3">
-                      <Settings className="w-5 h-5 text-accent-500" /> Serving
+                      <Settings className="w-5 h-5 text-primary-500" /> Serving
                       healthcare, finance, energy, and more
                     </li>
                   </ul>

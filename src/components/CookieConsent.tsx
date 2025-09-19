@@ -116,14 +116,14 @@ export default function CookieConsent() {
     <>
       {/* Main Consent Banner */}
       {showBanner && (
-        <div className="fixed bottom-0 left-0 right-0 bg-[#0D0D0F] border-t border-[accent-500] z-50 p-6">
+        <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-primary-500 z-50 p-6">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-center">
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-white mb-2">
                   🍪 We use cookies to enhance your experience
                 </h3>
-                <p className="text-[#A1A1AA] mb-4">
+                <p className="text-text-secondary mb-4">
                   We use cookies and similar technologies to provide, protect,
                   and improve our services. By clicking &quot;Accept All&quot;,
                   you consent to our use of cookies for analytics and marketing
@@ -131,7 +131,7 @@ export default function CookieConsent() {
                   our{' '}
                   <Link
                     href="/legal/consent-policy"
-                    className="text-[accent-500] hover:underline"
+                    className="text-primary-500 hover:underline"
                   >
                     Consent Policy
                   </Link>

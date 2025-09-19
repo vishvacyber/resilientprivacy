@@ -317,21 +317,29 @@ export default function ProductsPage() {
                 Supported Platforms
               </h3>
               <div className="grid grid-cols-2 gap-4">
-                <div className="text-center p-4 bg-[#1A1A1A] rounded">
-                  <div className="text-2xl mb-2">🔵</div>
-                  <span className="text-text-secondary text-sm">Microsoft</span>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-white/5 rounded-lg p-2">
+                    <img src="/logos/microsoft.svg" alt="Microsoft" className="w-8 h-8 filter brightness-0 invert" />
+                  </div>
+                  <span className="text-white text-sm font-medium">Microsoft</span>
                 </div>
-                <div className="text-center p-4 bg-[#1A1A1A] rounded">
-                  <div className="text-2xl mb-2">🟠</div>
-                  <span className="text-text-secondary text-sm">AWS</span>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-white/5 rounded-lg p-2">
+                    <img src="/logos/amazon.svg" alt="AWS" className="w-8 h-8 filter brightness-0 invert" />
+                  </div>
+                  <span className="text-white text-sm font-medium">AWS</span>
                 </div>
-                <div className="text-center p-4 bg-[#1A1A1A] rounded">
-                  <div className="text-2xl mb-2">🔴</div>
-                  <span className="text-text-secondary text-sm">Google Cloud</span>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-white/5 rounded-lg p-2">
+                    <img src="/logos/google.svg" alt="Google Cloud" className="w-8 h-8 filter brightness-0 invert" />
+                  </div>
+                  <span className="text-white text-sm font-medium">Google Cloud</span>
                 </div>
-                <div className="text-center p-4 bg-[#1A1A1A] rounded">
-                  <div className="text-2xl mb-2">🟢</div>
-                  <span className="text-text-secondary text-sm">Salesforce</span>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <div className="w-12 h-12 mx-auto mb-3 flex items-center justify-center bg-white/5 rounded-lg p-2">
+                    <img src="/logos/salesforce.svg" alt="Salesforce" className="w-8 h-8 filter brightness-0 invert" />
+                  </div>
+                  <span className="text-white text-sm font-medium">Salesforce</span>
                 </div>
               </div>
             </div>
