@@ -2,10 +2,12 @@
 
 import Link from 'next/link'
 import { useState, useEffect, useRef } from 'react'
+import { ChevronDown, ChevronRight } from 'lucide-react'
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
   const headerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
@@ -14,8 +16,19 @@ export default function Header() {
       setIsScrolled(scrollTop > 20)
     }
 
+    const handleClickOutside = (event: MouseEvent) => {
+      if (headerRef.current && !headerRef.current.contains(event.target as Node)) {
+        setActiveDropdown(null)
+      }
+    }
+
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    document.addEventListener('mousedown', handleClickOutside)
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      document.removeEventListener('mousedown', handleClickOutside)
+    }
   }, [])
 
   const toggleMobileMenu = () => {
@@ -24,6 +37,14 @@ export default function Header() {
 
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false)
+  }
+
+  const toggleDropdown = (dropdown: string) => {
+    setActiveDropdown(activeDropdown === dropdown ? null : dropdown)
+  }
+
+  const closeDropdown = () => {
+    setActiveDropdown(null)
   }
 
   return (
@@ -52,7 +73,7 @@ export default function Header() {
             </h1>
           </Link>
 
-          {/* Desktop Navigation - Cybersecurity Focus */}
+          {/* Desktop Navigation with Dropdowns */}
           <div className="hidden xl:flex items-center space-x-8">
             <Link
               href="/"
@@ -60,30 +81,195 @@ export default function Header() {
             >
               Home
             </Link>
-            <Link
-              href="/about"
-              className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
-            >
-              About
-            </Link>
-            <Link
-              href="/products"
-              className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
-            >
-              Products
-            </Link>
-            <Link
-              href="/services"
-              className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
-            >
-              Services
-            </Link>
-            <Link
-              href="/resources/blog"
-              className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
-            >
-              Resources
-            </Link>
+            
+            {/* About Dropdown */}
+            <div className="relative group">
+              <button
+                onClick={() => toggleDropdown('about')}
+                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+              >
+                <span>About</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'about' ? 'rotate-180' : ''}`} />
+              </button>
+              {activeDropdown === 'about' && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
+                  <div className="p-4 space-y-3">
+                    <Link
+                      href="/about"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">About Us</div>
+                      <div className="text-sm text-text-secondary">Our mission and vision</div>
+                    </Link>
+                    <Link
+                      href="/about/leadership"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Leadership</div>
+                      <div className="text-sm text-text-secondary">Meet our executive team</div>
+                    </Link>
+                    <Link
+                      href="/about/careers"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Careers</div>
+                      <div className="text-sm text-text-secondary">Join our team</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Products Dropdown */}
+            <div className="relative group">
+              <button
+                onClick={() => toggleDropdown('products')}
+                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+              >
+                <span>Products</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'products' ? 'rotate-180' : ''}`} />
+              </button>
+              {activeDropdown === 'products' && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
+                  <div className="p-4 space-y-3">
+                    <Link
+                      href="/products"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">All Products</div>
+                      <div className="text-sm text-text-secondary">Complete security suite</div>
+                    </Link>
+                    <Link
+                      href="/products/identity-access-suite"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Identity & Access Suite</div>
+                      <div className="text-sm text-text-secondary">Identity governance & access management</div>
+                    </Link>
+                    <Link
+                      href="/products/zero-trust-network-edge"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Zero Trust Network</div>
+                      <div className="text-sm text-text-secondary">Secure network architecture</div>
+                    </Link>
+                    <Link
+                      href="/products/threat-intelligence-platform"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Threat Intelligence</div>
+                      <div className="text-sm text-text-secondary">Advanced threat detection</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Services Dropdown */}
+            <div className="relative group">
+              <button
+                onClick={() => toggleDropdown('services')}
+                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+              >
+                <span>Services</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'services' ? 'rotate-180' : ''}`} />
+              </button>
+              {activeDropdown === 'services' && (
+                <div className="absolute top-full left-0 mt-2 w-72 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
+                  <div className="p-4 space-y-3">
+                    <Link
+                      href="/services"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">All Services</div>
+                      <div className="text-sm text-text-secondary">Complete service portfolio</div>
+                    </Link>
+                    <Link
+                      href="/services/cybersecurity-consulting"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Cybersecurity Consulting</div>
+                      <div className="text-sm text-text-secondary">Strategic security guidance</div>
+                    </Link>
+                    <Link
+                      href="/services/managed-security"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Managed Security</div>
+                      <div className="text-sm text-text-secondary">24/7 security operations</div>
+                    </Link>
+                    <Link
+                      href="/services/incident-response"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Incident Response</div>
+                      <div className="text-sm text-text-secondary">Rapid threat response</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Resources Dropdown */}
+            <div className="relative group">
+              <button
+                onClick={() => toggleDropdown('resources')}
+                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+              >
+                <span>Resources</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'resources' ? 'rotate-180' : ''}`} />
+              </button>
+              {activeDropdown === 'resources' && (
+                <div className="absolute top-full left-0 mt-2 w-64 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
+                  <div className="p-4 space-y-3">
+                    <Link
+                      href="/resources/blog"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Blog</div>
+                      <div className="text-sm text-text-secondary">Latest security insights</div>
+                    </Link>
+                    <Link
+                      href="/resources/documentation"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Documentation</div>
+                      <div className="text-sm text-text-secondary">Technical guides & APIs</div>
+                    </Link>
+                    <Link
+                      href="/resources/training"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Training</div>
+                      <div className="text-sm text-text-secondary">Security education</div>
+                    </Link>
+                    <Link
+                      href="/resources/threat-reports"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Threat Reports</div>
+                      <div className="text-sm text-text-secondary">Security intelligence</div>
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             <Link
               href="/contact"
               className="btn text-sm px-6 py-2.5 rounded-xl shadow-purple-lg"
@@ -120,7 +306,7 @@ export default function Header() {
           </button>
         </nav>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu with Dropdowns */}
         {isMobileMenuOpen && (
           <div className="xl:hidden absolute top-full left-0 right-0 darkfire-glass border-t border-border-light/50 darkfire-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[80vh] overflow-y-auto">
             <div className="px-4 py-6 space-y-3">
@@ -131,34 +317,180 @@ export default function Header() {
               >
                 Home
               </Link>
-              <Link
-                href="/about"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
-                onClick={closeMobileMenu}
-              >
-                About
-              </Link>
-              <Link
-                href="/products"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
-                onClick={closeMobileMenu}
-              >
-                Products
-              </Link>
-              <Link
-                href="/services"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
-                onClick={closeMobileMenu}
-              >
-                Services
-              </Link>
-              <Link
-                href="/resources/blog"
-                className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
-                onClick={closeMobileMenu}
-              >
-                Resources
-              </Link>
+              
+              {/* About Section */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between px-4 py-3 text-text-secondary font-medium">
+                  <span>About</span>
+                  <button
+                    onClick={() => toggleDropdown('mobile-about')}
+                    className="p-1"
+                  >
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'mobile-about' ? 'rotate-90' : ''}`} />
+                  </button>
+                </div>
+                {activeDropdown === 'mobile-about' && (
+                  <div className="ml-4 space-y-2">
+                    <Link
+                      href="/about"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      About Us
+                    </Link>
+                    <Link
+                      href="/about/leadership"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Leadership
+                    </Link>
+                    <Link
+                      href="/about/careers"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Careers
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Products Section */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between px-4 py-3 text-text-secondary font-medium">
+                  <span>Products</span>
+                  <button
+                    onClick={() => toggleDropdown('mobile-products')}
+                    className="p-1"
+                  >
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'mobile-products' ? 'rotate-90' : ''}`} />
+                  </button>
+                </div>
+                {activeDropdown === 'mobile-products' && (
+                  <div className="ml-4 space-y-2">
+                    <Link
+                      href="/products"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      All Products
+                    </Link>
+                    <Link
+                      href="/products/identity-access-suite"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Identity & Access Suite
+                    </Link>
+                    <Link
+                      href="/products/zero-trust-network-edge"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Zero Trust Network
+                    </Link>
+                    <Link
+                      href="/products/threat-intelligence-platform"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Threat Intelligence
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Services Section */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between px-4 py-3 text-text-secondary font-medium">
+                  <span>Services</span>
+                  <button
+                    onClick={() => toggleDropdown('mobile-services')}
+                    className="p-1"
+                  >
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'mobile-services' ? 'rotate-90' : ''}`} />
+                  </button>
+                </div>
+                {activeDropdown === 'mobile-services' && (
+                  <div className="ml-4 space-y-2">
+                    <Link
+                      href="/services"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      All Services
+                    </Link>
+                    <Link
+                      href="/services/cybersecurity-consulting"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Cybersecurity Consulting
+                    </Link>
+                    <Link
+                      href="/services/managed-security"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Managed Security
+                    </Link>
+                    <Link
+                      href="/services/incident-response"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Incident Response
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Resources Section */}
+              <div className="space-y-2">
+                <div className="flex items-center justify-between px-4 py-3 text-text-secondary font-medium">
+                  <span>Resources</span>
+                  <button
+                    onClick={() => toggleDropdown('mobile-resources')}
+                    className="p-1"
+                  >
+                    <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'mobile-resources' ? 'rotate-90' : ''}`} />
+                  </button>
+                </div>
+                {activeDropdown === 'mobile-resources' && (
+                  <div className="ml-4 space-y-2">
+                    <Link
+                      href="/resources/blog"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Blog
+                    </Link>
+                    <Link
+                      href="/resources/documentation"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Documentation
+                    </Link>
+                    <Link
+                      href="/resources/training"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Training
+                    </Link>
+                    <Link
+                      href="/resources/threat-reports"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Threat Reports
+                    </Link>
+                  </div>
+                )}
+              </div>
+
               <Link
                 href="/contact"
                 className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
