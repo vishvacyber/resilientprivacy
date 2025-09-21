@@ -19,10 +19,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://resilientprivacy.com'),
   title: {
-    default: 'Resilient Privacy - #1 Cybersecurity Company | Enterprise Security Solutions',
-    template: '%s | Resilient Privacy - #1 Cybersecurity Company',
+    default: 'Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
+    template: '%s | Resilient Privacy - Leading Cybersecurity Company',
   },
-  description: 'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
+  description: 'Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions. Expert identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
   keywords: [
     'cybersecurity solutions',
     'enterprise security',
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://resilientprivacy.com',
-    title: 'Resilient Privacy - #1 Cybersecurity Company | Enterprise Security Solutions',
-    description: 'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
+    title: 'Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
+    description: 'Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions. Expert identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
     siteName: 'Resilient Privacy',
     images: [
       {
@@ -71,8 +71,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Resilient Privacy - #1 Cybersecurity Company',
-    description: 'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions.',
+    title: 'Resilient Privacy - Leading Cybersecurity Company',
+    description: 'Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions.',
     images: ['/og-image.jpg'],
     creator: '@resilientprivacy',
   },
@@ -97,10 +97,10 @@ const structuredData = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Resilient Privacy',
-  alternateName: 'Resilient Privacy - #1 Cybersecurity Company',
+  alternateName: 'Resilient Privacy - Leading Cybersecurity Company',
   url: 'https://resilientprivacy.com',
   logo: 'https://resilientprivacy.com/favicon.svg',
-  description: 'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
+  description: 'Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions. Expert identity management, zero trust architecture, threat intelligence, and 24/7 managed security services. Trusted by organizations worldwide.',
   foundingDate: '2024',
   industry: 'Cybersecurity',
   numberOfEmployees: '10-50',

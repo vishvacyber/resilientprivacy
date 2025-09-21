@@ -16,9 +16,9 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About - Resilient Privacy – Global Cybersecurity Leader',
+  title: 'About Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
   description:
-    'Resilient Privacy is a global cybersecurity firm founded in 2025 by Vishva Patel. We empower organizations and critical infrastructure with enterprise-grade security solutions and digital trust.',
+    'Resilient Privacy is a leading cybersecurity company founded in 2024 by Vishva Patel. We provide enterprise-grade security solutions, identity management, zero trust architecture, and threat intelligence services to organizations worldwide.',
   keywords: [
     'about cybersecurity company',
     'cybersecurity company history',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     'cybersecurity company experience',
   ],
   openGraph: {
-    title: 'About - Resilient Privacy – Global Cybersecurity Leader',
+    title: 'About Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
     description:
-      'Resilient Privacy is a global cybersecurity firm founded in 2025 by Vishva Patel. We empower organizations and critical infrastructure with enterprise-grade security solutions and digital trust.',
+      'Resilient Privacy is a leading cybersecurity company founded in 2024 by Vishva Patel. We provide enterprise-grade security solutions, identity management, zero trust architecture, and threat intelligence services to organizations worldwide.',
     type: 'website',
     url: 'https://resilientprivacy.com/about',
   },
@@ -66,12 +66,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Resilient Privacy is a next-generation cybersecurity company
-            redefining digital trust. We specialize in identity security, zero
-            trust architecture, threat intelligence, and enterprise
-            consulting—delivering strategies and solutions that empower
-            organizations to stay secure, resilient, and ahead of threats in an
-            ever-evolving landscape.
+            Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions. We specialize in identity management, zero trust architecture, threat intelligence, and managed security services—delivering comprehensive protection that empowers organizations to stay secure, resilient, and ahead of evolving cyber threats.
           </p>
         </div>
       </section>
@@ -91,8 +86,8 @@ export default function AboutPage() {
                   <span className="darkfire-text-gradient font-semibold">
                     Privacy
                   </span>{' '}
-                  , founded in <span className="font-semibold">2025</span> by
-                  Vishva Patel, is shaping the future of cybersecurity. We
+                  , founded in <span className="font-semibold">2024</span> by
+                  Vishva Patel, is a leading cybersecurity company. We
                   design intelligent, adaptive security ecosystems that protect
                   the world's most critical organizations—keeping them secure,
                   resilient, and always one step ahead of threats.
