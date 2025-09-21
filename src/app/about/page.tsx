@@ -16,35 +16,35 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
+  title: 'About Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
   description:
-    'Resilient Privacy is a leading cybersecurity company founded in 2024 by Vishva Patel. We provide enterprise-grade security solutions, identity management, zero trust architecture, and threat intelligence services to organizations worldwide.',
+    'Resilient Privacy is the top AI and API security company founded in 2025 by Vishva Patel. We provide enterprise-grade AI security solutions, API protection, machine learning security, and AI-powered threat detection services to organizations worldwide.',
   keywords: [
-    'about cybersecurity company',
-    'cybersecurity company history',
-    'cybersecurity experts',
-    'cyber security experts',
-    'cybersecurity professionals',
-    'cyber security professionals',
-    'cybersecurity company leadership',
-    'cybersecurity company founder',
-    'Vishva Patel cybersecurity',
-    'enterprise cybersecurity company',
-    'cybersecurity consulting company',
-    'cybersecurity services company',
-    'cybersecurity solutions company',
-    'cybersecurity firm about',
-    'cyber security firm about',
-    'top cybersecurity company about',
-    'best cybersecurity company about',
-    'cybersecurity company team',
-    'cybersecurity company expertise',
-    'cybersecurity company experience',
+    'AI security company about',
+    'API security company history',
+    'AI security experts',
+    'API security experts',
+    'AI security professionals',
+    'API security professionals',
+    'AI security company leadership',
+    'API security company founder',
+    'Vishva Patel AI security',
+    'enterprise AI security company',
+    'AI security consulting company',
+    'API security services company',
+    'AI security solutions company',
+    'AI security firm about',
+    'API security firm about',
+    'top AI security company about',
+    'best API security company about',
+    'AI security company team',
+    'AI security company expertise',
+    'API security company experience',
   ],
   openGraph: {
-    title: 'About Resilient Privacy - Leading Cybersecurity Company | Enterprise Security Solutions',
+    title: 'About Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
     description:
-      'Resilient Privacy is a leading cybersecurity company founded in 2024 by Vishva Patel. We provide enterprise-grade security solutions, identity management, zero trust architecture, and threat intelligence services to organizations worldwide.',
+      'Resilient Privacy is the top AI and API security company founded in 2025 by Vishva Patel. We provide enterprise-grade AI security solutions, API protection, machine learning security, and AI-powered threat detection services to organizations worldwide.',
     type: 'website',
     url: 'https://resilientprivacy.com/about',
   },
@@ -66,7 +66,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Resilient Privacy is a leading cybersecurity company providing enterprise-grade security solutions. We specialize in identity management, zero trust architecture, threat intelligence, and managed security services—delivering comprehensive protection that empowers organizations to stay secure, resilient, and ahead of evolving cyber threats.
+            Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions. We specialize in AI threat detection, API protection, machine learning security, and AI-powered cybersecurity services—delivering cutting-edge protection that empowers organizations to stay secure, resilient, and ahead of evolving AI and API threats.
           </p>
         </div>
       </section>
@@ -86,22 +86,22 @@ export default function AboutPage() {
                   <span className="darkfire-text-gradient font-semibold">
                     Privacy
                   </span>{' '}
-                  , founded in <span className="font-semibold">2024</span> by
-                  Vishva Patel, is a leading cybersecurity company. We
-                  design intelligent, adaptive security ecosystems that protect
+                  , founded in <span className="font-semibold">2025</span> by
+                  Vishva Patel, is the top AI and API security company. We
+                  design intelligent, AI-powered security ecosystems that protect
                   the world's most critical organizations—keeping them secure,
-                  resilient, and always one step ahead of threats.
+                  resilient, and always one step ahead of AI and API threats.
                 </div>
                 <div className="my-4 p-6 bg-gradient-to-r from-background-card to-background-alt border-l-4 border-primary-500 rounded-xl shadow-lg">
                   <h3 className="text-xl font-bold text-primary-500 mb-1 flex items-center gap-2">
                     <Zap className="w-5 h-5 text-primary-500" /> Our Mission
                   </h3>
                   <p className="mb-2 text-base text-text-secondary">
-                    Empower organizations to anticipate threats and strengthen
-                    digital trust.
+                    Empower organizations to anticipate AI and API threats and strengthen
+                    digital trust through cutting-edge AI security solutions.
                   </p>
                   <blockquote className="italic text-primary-500 border-l-2 border-primary-500 pl-4 text-lg font-semibold mt-2">
-                    We Don't Chase Threats. We Preempt Them.
+                    We Don't Chase AI Threats. We Preempt Them with AI.
                   </blockquote>
                 </div>
                 <div className="mb-4">
@@ -109,28 +109,28 @@ export default function AboutPage() {
                   <ul className="list-none mt-2 space-y-3">
                     <li className="flex items-center gap-3">
                       <Target className="w-5 h-5 text-primary-500" />{' '}
-                      Identity-first security & zero trust architecture
+                      AI-powered threat detection & API security architecture
                     </li>
                     <li className="flex items-center gap-3">
                       <Globe className="w-5 h-5 text-primary-500" /> Advanced
-                      threat intelligence & bespoke consulting
+                      AI threat intelligence & machine learning security
                     </li>
 
                     <li className="flex items-center gap-3">
                       <Settings className="w-5 h-5 text-primary-500" /> Serving
-                      healthcare, finance, energy, and more
+                      AI-first organizations, fintech, healthcare, and more
                     </li>
                   </ul>
                 </div>
 
                 <div className="mt-8">
                   <p className="text-text-secondary text-base">
-                    At Resilient Privacy, we don’t just protect digital
-                    assets—we engineer trust, enable innovation, and build
-                    cyber-resilient enterprises.
+                    At Resilient Privacy, we don't just protect digital
+                    assets—we engineer AI-powered trust, enable innovation, and build
+                    AI-resilient enterprises with cutting-edge API security.
                   </p>
                   <p className="font-semibold text-primary-500 mt-4 text-lg">
-                    Let's shape a safer digital future—together.
+                    Let's shape a safer AI-powered digital future—together.
                   </p>
                 </div>
               </div>
