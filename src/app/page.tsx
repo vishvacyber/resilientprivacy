@@ -279,8 +279,15 @@ export default function Home() {
               </div>
               
               <div className="relative">
-                <div className="w-full h-96 bg-background-card rounded-2xl border border-border-light/50 flex items-center justify-center">
-                  <span className="text-text-secondary text-lg">Security Dashboard Demo</span>
+                <div className="w-full h-96 bg-background-card rounded-2xl border border-border-light/50 overflow-hidden">
+                  <Image
+                    src="/dashboard-preview.svg"
+                    alt="Security Dashboard Preview"
+                    width={800}
+                    height={400}
+                    className="w-full h-full object-cover object-center"
+                    priority
+                  />
                 </div>
               </div>
             </div>
