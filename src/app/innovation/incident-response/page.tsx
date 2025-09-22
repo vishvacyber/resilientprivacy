@@ -363,10 +363,12 @@ export default function IncidentResponsePage() {
                 threat analysis and containment:
               </p>
               <a
-                href="tel:+14695044135"
+                href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition text-lg shadow-lg"
               >
-                <Brain className="w-5 h-5" /> +1 (469) 504-4135
+                <Brain className="w-5 h-5" /> Contact Emergency Response
               </a>
               <div className="mt-4 text-xs text-text-secondary space-y-2">
                 <p className="flex items-center">
@@ -426,8 +428,8 @@ export default function IncidentResponsePage() {
                     will contact you within 15 minutes.
                   </p>
                   <p className="text-sm text-accent-500">
-                    For critical incidents, call our AI-enhanced hotline: +1
-                    (469) 504-4135
+                    For critical incidents, contact our AI-enhanced response team
+                    through our emergency portal.
                   </p>
                 </div>
               ) : (

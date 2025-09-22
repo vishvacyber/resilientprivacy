@@ -203,7 +203,6 @@ export default function AccessibilityStatement() {
                 </h3>
                 <div className="space-y-2 text-text-secondary">
                   <p>Email: accessibility@resilientprivacy.com</p>
-                  <p>Phone: +1 (469) 504-4135</p>
                   <p>Response Time: Within 24 hours</p>
                 </div>
               </div>

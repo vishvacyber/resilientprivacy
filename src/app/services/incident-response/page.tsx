@@ -312,7 +312,7 @@ export default function IncidentResponsePage() {
                 rel="noopener noreferrer"
                 className="btn text-lg px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-300"
               >
-                🚨 Emergency Hotline: +1 (469) 504-4135
+                🚨 Emergency Response
               </Link>
               <Link
                 href="#capabilities"

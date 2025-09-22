@@ -531,7 +531,6 @@ export default function DataSecurityPage() {
                     </li>
                     <li>
                       <strong className="text-white">Emergency Hotline:</strong>{' '}
-                      +1 (469) 504-4135 (24/7)
                     </li>
                   </ul>
                 </div>

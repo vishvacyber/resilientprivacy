@@ -400,7 +400,6 @@ export default function YourRightsPage() {
                         </span>
                       </li>
                       <li>Using our online privacy request form</li>
-                      <li>Calling our privacy hotline: +1 (469) 504-4135</li>
                     </ul>
                   </div>
 

@@ -283,7 +283,6 @@ export default function JurisdictionSpecificRightsPage() {
                             <strong>Email:</strong> privacy@resilientprivacy.com
                           </p>
                           <p>
-                            <strong>Phone:</strong> +1 (469) 504-4135
                           </p>
                           <p>
                             <strong>Online Form:</strong> Available on our
