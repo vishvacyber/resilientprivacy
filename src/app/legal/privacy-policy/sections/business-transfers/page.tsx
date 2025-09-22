@@ -306,7 +306,7 @@ export default function BusinessTransfersPage() {
                             Inquiry"
                           </p>
                           <p>
-                            <strong>Phone:</strong> +1 (469) 666-0131
+                            <strong>Phone:</strong> +1 (469) 504-4135
                           </p>
                           <p>
                             <strong>Response Time:</strong> Within 5 business

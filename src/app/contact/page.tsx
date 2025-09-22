@@ -7,7 +7,7 @@ const contactMethods = [
     title: 'Sales & Partnerships',
     description:
       'Enterprise cybersecurity solutions and strategic partnerships',
-    phone: '+1 (469) 666-0131',
+    phone: '+1 (469) 504-4135',
     email: 'sales@resilientprivacy.com',
     hours: 'Mon-Fri, 9AM-6PM CST',
     department: 'Business Development',
@@ -15,7 +15,7 @@ const contactMethods = [
   {
     title: 'Technical Support',
     description: 'Expert assistance for implementation and optimization',
-    phone: '+1 (469) 666-0131',
+    phone: '+1 (469) 504-4135',
     email: 'support@resilientprivacy.com',
     hours: '24/7 Support Available',
     department: 'Customer Success',
@@ -23,7 +23,7 @@ const contactMethods = [
   {
     title: 'Incident Response',
     description: 'Emergency response for security breaches and cyber incidents',
-    phone: '+1 (469) 666-0131',
+    phone: '+1 (469) 504-4135',
     email: 'ir@resilientprivacy.com',
     hours: '24/7 Emergency Response',
     department: 'Security Operations',

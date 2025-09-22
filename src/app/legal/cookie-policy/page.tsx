@@ -123,7 +123,7 @@ export default function CookiePolicyPage() {
                     <strong>Email:</strong> privacy@resilientprivacy.com
                   </p>
                   <p>
-                    <strong>Phone:</strong> +1 (469) 666-0131
+                    <strong>Phone:</strong> +1 (469) 504-4135
                   </p>
                 </div>
               </div>

@@ -474,7 +474,7 @@ export default function DataProcessingAgreement() {
                 </h3>
                 <div className="space-y-2 text-text-secondary">
                   <p>Email: dpo@resilientprivacy.com</p>
-                  <p>Phone: +1 (469) 666-0131</p>
+                  <p>Phone: +1 (469) 504-4135</p>
                 </div>
               </div>
               <div>

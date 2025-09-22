@@ -158,10 +158,10 @@ export default function ContactInformationPage() {
                       <div>
                         <strong className="text-white">Phone:</strong>
                         <a
-                          href="tel:+14696660131"
+                          href="tel:+14695044135"
                           className="text-accent-500 hover:text-white underline ml-2"
                         >
-                          +1 (469) 666-0131
+                          +1 (469) 504-4135
                         </a>
                       </div>
                       <div>
@@ -351,7 +351,7 @@ export default function ContactInformationPage() {
                       </div>
                       <div>
                         <strong className="text-white">Emergency:</strong> +1
-                        (469) 666-0131 (24/7)
+                        (469) 504-4135 (24/7)
                       </div>
                     </div>
                   </div>
