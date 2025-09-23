@@ -46,43 +46,6 @@ export const leadership: LeadershipMember[] = [
       "Leadership is about creating a vision that inspires others to achieve what they never thought possible. At Resilient Privacy, we're not just building a company, we're building the future of cybersecurity.",
   },
   {
-    name: 'Malay Bhavsar',
-    title:
-      'Chief Security Officer (CSO) & Deputy Chief Information Security Officer (Deputy CISO)',
-    photo: '/images/malay-bhavsar-headshot.jpg',
-    bio: "Malay Bhavsar is a cybersecurity powerhouse who serves as both Chief Security Officer and Deputy CISO at Resilient Privacy. With an unwavering commitment to security excellence, he has built a reputation as one of the industry's most formidable security leaders, consistently delivering bulletproof protection for enterprise clients worldwide.\n\nHis dual role as CSO and Deputy CISO positions him as the strategic architect of Resilient Privacy's security ecosystem. Working in close partnership with Founder and CISO Vishva Patel, Malay orchestrates comprehensive security strategies that integrate cutting-edge frameworks, real-time threat intelligence, and rapid incident response capabilities across every layer of the organization.\n\nMalay's leadership philosophy centers on proactive security enablement rather than reactive defense. He leverages advanced automation, AI-driven analytics, and zero-trust principles to anticipate and neutralize threats before they materialize. His approach has transformed cybersecurity from a cost center into a strategic competitive advantage for clients, establishing new industry benchmarks for security excellence.\n\nUnder Malay's strategic guidance, Resilient Privacy has achieved unprecedented levels of client protection, with security frameworks that consistently outperform industry standards. His vision extends beyond traditional security boundaries, creating an ecosystem where every digital interaction is secure, every data transaction is protected, and every client operates with absolute confidence in their security posture.",
-    expertise: [
-      'Security Strategy & Execution',
-      'Security Operations Center (SOC)',
-      'Incident Response & Management',
-      'Security Architecture & Design',
-      'Risk Management & Mitigation',
-      'Client Security Enablement',
-    ],
-    linkedin: 'https://www.linkedin.com/in/leo-malay-bhavsar',
-    quote:
-      "Security excellence is not an option, it's a mandate. As CSO and Deputy CISO, I ensure that every security decision we make creates an impenetrable fortress around our clients' most valuable assets.",
-    hidden: true,
-  },
-  {
-    name: 'Riya Patel',
-    title: 'Chief Marketing Officer (CMO)',
-    photo: '/images/riya-patel-headshot.jpg',
-    bio: "Riya Patel serves as the Chief Marketing Officer (CMO) of Resilient Privacy, bringing innovative marketing strategies and brand development expertise to drive the company's market presence and growth.\n\nIn her role as CMO, Riya leads comprehensive marketing initiatives and brand development that amplify Resilient Privacy's mission of redefining digital trust. She works closely with Founder and CISO Vishva Patel to develop marketing strategies that authentically communicate the company's security-first approach and innovative cybersecurity solutions. Riya collaborates with Vishva to ensure that all marketing messaging aligns with the company's commitment to digital trust and security excellence.\n\nRiya's strategic approach combines data-driven marketing insights with creative brand positioning to establish Resilient Privacy as a thought leader in the cybersecurity industry. She works closely with the executive team to develop and execute marketing strategies that support business objectives while building strong relationships with clients, partners, and stakeholders.\n\nUnder Riya's leadership and in partnership with Vishva's vision for digital trust, Resilient Privacy continues to strengthen its market position and brand recognition, with a focus on delivering compelling messaging that resonates with target audiences and drives business growth.",
-    expertise: [
-      'Strategic Marketing',
-      'Brand Development & Positioning',
-      'Digital Marketing & Communications',
-      'Customer Engagement',
-      'Strategic Planning',
-      'Market Research & Analytics',
-    ],
-    linkedin: 'https://www.linkedin.com/in/riya28',
-    quote:
-      "Great marketing is about telling stories that connect with people on a deeper level. At Resilient Privacy, we don't just communicate our value, we inspire trust and confidence in everything we do.",
-    hidden: true,
-  },
-  {
     name: 'Keral Patel',
     title: 'Chief Operations Officer (COO)',
     photo: '/images/keral-patel-headshot.jpg',

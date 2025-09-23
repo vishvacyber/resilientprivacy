@@ -38,12 +38,10 @@
 
 **File**: `src/lib/leadership-data.ts`
 
-- **Total Team Members**: 5 executives
+- **Total Team Members**: 3 executives
 - **Leadership Structure**:
   - Vishva Patel: Founder, CEO & CISO
   - Aditya Desai: Board Member & CTO
-  - Malay Bhavsar: CSO & Deputy CISO (Hidden)
-  - Riya Patel: CMO (Hidden)
   - Keral Patel: COO
 
 **Data Fields per Member**:
