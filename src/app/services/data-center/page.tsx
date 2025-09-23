@@ -377,7 +377,6 @@ export default function DataCenterPage() {
                 key={standard.standard}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] text-center"
               >
-                <div className="text-3xl mb-4">{standard.icon}</div>
                 <h3 className="text-lg font-bold text-white mb-3">
                   {standard.standard}
                 </h3>
