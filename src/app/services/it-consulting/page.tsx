@@ -452,7 +452,6 @@ export default function ITConsultingPage() {
                 <div className="absolute inset-0 bg-gradient-to-br from-accent-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
                 <div className="relative bg-[#0D0D0F] p-10 rounded-2xl border border-[#333] hover:border-accent-500/50 transition-all duration-300 group-hover:shadow-2xl group-hover:shadow-[accent-500]/10">
                   <div className="flex items-center gap-6 mb-8">
-                    <span className="text-5xl">{industry.icon}</span>
                     <h3 className="text-3xl font-bold text-white">
                       {industry.title}
                     </h3>

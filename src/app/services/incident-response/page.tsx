@@ -365,8 +365,7 @@ export default function IncidentResponsePage() {
               >
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
-                    <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                      {capability.icon}
+                    <div className="group-hover:scale-110 transition-transform duration-300">
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
@@ -443,8 +442,7 @@ export default function IncidentResponsePage() {
                 className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
                 <div className="flex items-center justify-between mb-6">
-                  <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                    {incident.icon}
+                  <div className="group-hover:scale-110 transition-transform duration-300">
                   </div>
                   <span
                     className={`px-3 py-1 text-xs font-semibold rounded-full ${
@@ -573,8 +571,7 @@ export default function IncidentResponsePage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
-                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {benefit.icon}
+                <div className="mb-6">
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {benefit.title}

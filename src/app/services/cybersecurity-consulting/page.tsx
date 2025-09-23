@@ -405,8 +405,7 @@ export default function CybersecurityConsultingPage() {
                 key={industry.industry}
                 className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group"
               >
-                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {industry.icon}
+                <div className="mb-6">
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {industry.industry}
@@ -485,8 +484,7 @@ export default function CybersecurityConsultingPage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A]/80 backdrop-blur-sm p-8 rounded-xl border border-[#333]/50 hover:border-accent-500/50 transition-all duration-300 hover:transform hover:scale-105 group text-center"
               >
-                <div className="text-4xl mb-6 group-hover:scale-110 transition-transform duration-300">
-                  {benefit.icon}
+                <div className="mb-6">
                 </div>
                 <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
                   {benefit.title}
