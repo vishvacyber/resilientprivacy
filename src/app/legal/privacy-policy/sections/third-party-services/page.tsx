@@ -236,7 +236,7 @@ export default function ThirdPartyServicesPage() {
 
                       <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
                         <h4 className="text-green-300 font-bold mb-3">
-                          🎛 Control Your Data
+                           Control Your Data
                         </h4>
                         <p className="text-green-300 text-sm">
                           You can control how your data is shared with third

@@ -460,7 +460,7 @@ export default function RedTeamingPage() {
                 {tier.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                     <div className="bg-gradient-to-r from-accent-500 to-[#EC4899] text-white px-4 py-1 text-sm font-bold rounded-full">
-                      ⭐ MOST POPULAR
+                       MOST POPULAR
                     </div>
                   </div>
                 )}

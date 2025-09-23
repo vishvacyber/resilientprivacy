@@ -46,7 +46,7 @@ export default function LegalCompliancePage() {
 
                   <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
                     <h3 className="text-green-300 font-bold mb-3">
-                      ✅ Compliance Commitment
+                       Compliance Commitment
                     </h3>
                     <p className="text-green-300 text-sm">
                       We maintain a comprehensive compliance program that

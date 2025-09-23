@@ -339,7 +339,7 @@ export default function ServicesPage() {
                     value: 'Included',
                     
                   },
-                  { label: 'Compliance Support', value: '24/7', icon: '✅' },
+                  { label: 'Compliance Support', value: '24/7', icon: '' },
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -404,7 +404,7 @@ export default function ServicesPage() {
               <span className="relative z-10 flex items-center justify-center gap-3">
                 <span>View Popular Service</span>
                 <span className="text-2xl group-hover:rotate-12 transition-transform duration-300">
-                  ⭐
+                  
                 </span>
               </span>
             </Link>

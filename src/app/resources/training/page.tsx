@@ -471,7 +471,7 @@ export default function TrainingPage() {
 
             <div className="card text-center">
               <div className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 rounded-xl mx-auto mb-6 flex items-center justify-center shadow-purple">
-                <span className="text-white font-bold text-2xl">👨‍🏫</span>
+                <span className="text-white font-bold text-2xl"></span>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-text-primary mb-4">
                 AI Security Experts
