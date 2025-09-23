@@ -32,11 +32,11 @@ export default function Footer() {
 
   return (
     <footer className="bg-background border-t border-border-light/30">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
           {/* Company Info */}
-          <div className="space-y-4">
+          <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3">
               <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">R</span>
@@ -67,22 +67,22 @@ export default function Footer() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Quick Links</h3>
             <div className="grid grid-cols-2 gap-2">
-              <Link href="/about" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/about" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 About
               </Link>
-              <Link href="/products" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/products" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 Products
               </Link>
-              <Link href="/services" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/services" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 Services
               </Link>
-              <Link href="/resources" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/resources" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 Resources
               </Link>
-              <Link href="/contact" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/contact" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 Contact
               </Link>
-              <Link href="/security" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+              <Link href="/security" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm py-1">
                 Security
               </Link>
             </div>
@@ -91,17 +91,17 @@ export default function Footer() {
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-sm font-semibold text-white">Contact</h3>
-            <div className="space-y-2">
-              <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="space-y-3">
+              <div className="flex items-start space-x-2">
+                <svg className="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <a href="mailto:info@resilientprivacy.com" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm">
+                <a href="mailto:info@resilientprivacy.com" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-sm break-all">
                   info@resilientprivacy.com
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-start space-x-2">
+                <svg className="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -112,17 +112,17 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="pt-6 border-t border-border-light/30">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
-            <p className="text-text-secondary text-xs">
+        <div className="pt-4 sm:pt-6 border-t border-border-light/30">
+          <div className="flex flex-col sm:flex-row justify-between items-center space-y-3 sm:space-y-0">
+            <p className="text-text-secondary text-xs text-center sm:text-left">
               © {currentYear} Resilient Privacy. All rights reserved.
             </p>
-            <div className="flex items-center space-x-4">
+            <div className="flex flex-wrap items-center justify-center sm:justify-end gap-3 sm:gap-4">
               {legalLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-text-secondary hover:text-primary-500 transition-colors text-xs"
+                  className="text-text-secondary hover:text-primary-500 transition-colors text-xs py-1"
                 >
                   {link.label}
                 </Link>
