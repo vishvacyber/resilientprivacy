@@ -326,7 +326,6 @@ export default function APISecurityIntelligencePage() {
                 key={index}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-3xl mb-4">{threat.icon}</div>
                 <h3 className="text-lg font-bold text-white mb-2">
                   {threat.threat}
                 </h3>
