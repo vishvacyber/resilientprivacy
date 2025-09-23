@@ -37,7 +37,7 @@ const benefits = [
   {
     title: 'Industry-Leading Protection',
     description:
-      'Trusted by 50+ enterprises with 99.8% threat detection accuracy and zero false positives guarantee.',
+      'Trusted by enterprises with 99.8% threat detection accuracy and zero false positives guarantee.',
     icon: '🏆',
   },
   {
@@ -146,7 +146,7 @@ export default function CloudSecurityPosturePage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-text-secondary">Security Controls</span>
-                  <span className="text-accent-500 font-semibold">500+</span>
+                  <span className="text-accent-500 font-semibold">Multiple</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-text-secondary">Compliance Frameworks</span>
@@ -201,7 +201,7 @@ export default function CloudSecurityPosturePage() {
       <section className="py-20 px-6 bg-[#0D0D0F]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">
-            Why 50+ Global Enterprises Trust Our Platform
+            Why Global Enterprises Trust Our Platform
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {benefits.map((benefit) => (

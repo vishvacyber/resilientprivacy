@@ -15,20 +15,6 @@ const resourceCategories = [
   },
 
   {
-    title: 'Threat Reports',
-    description: 'In-depth analysis of emerging threats and attack patterns',
-    icon: '🔍',
-    link: '/resources/threat-reports',
-    count: 'Monthly reports',
-    featured: [
-      'Ransomware Analysis',
-      'APT Group Tracking',
-      'Vulnerability Research',
-      'Threat Intelligence',
-      'Attack Pattern Analysis',
-    ],
-  },
-  {
     title: 'Documentation',
     description: 'Technical documentation and implementation guides',
     icon: '📚',

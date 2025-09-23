@@ -2,124 +2,148 @@ import Link from 'next/link'
 
 const documentationCategories = [
   {
-    category: 'Zero Trust Implementation',
+    category: 'API Security',
     description:
-      'Comprehensive guides for implementing Zero Trust architecture in 2025',
+      'Comprehensive guides for securing APIs and implementing OWASP API Security Top 10 controls',
     guides: [
       {
-        title: 'Zero Trust Network Architecture',
+        title: 'OWASP API Security Top 10 Implementation',
         description:
-          'Design and implement Zero Trust network architecture with modern security controls',
+          'Complete implementation guide for OWASP API Security Top 10 controls including authentication, authorization, and rate limiting',
         difficulty: 'Advanced',
         time: '4 hours',
-        slug: 'zero-trust-network-architecture',
+        slug: 'owasp-api-security-top10',
       },
       {
-        title: 'Identity-Centric Security',
+        title: 'API Authentication & Authorization',
         description:
-          'Implement identity-based access controls and continuous authentication',
+          'Implement secure API authentication using OAuth 2.0, JWT, and API key management',
         difficulty: 'Intermediate',
         time: '3 hours',
-        slug: 'identity-centric-security',
+        slug: 'api-authentication-authorization',
       },
       {
-        title: 'Micro-Segmentation Strategy',
+        title: 'API Rate Limiting & Throttling',
         description:
-          'Design and deploy network micro-segmentation for enhanced security',
-        difficulty: 'Advanced',
+          'Design and implement comprehensive API rate limiting strategies to prevent abuse and DoS attacks',
+        difficulty: 'Intermediate',
         time: '2.5 hours',
-        slug: 'micro-segmentation-strategy',
+        slug: 'api-rate-limiting-throttling',
+      },
+      {
+        title: 'API Gateway Security Configuration',
+        description:
+          'Secure API gateways with advanced threat protection, monitoring, and policy enforcement',
+        difficulty: 'Advanced',
+        time: '3.5 hours',
+        slug: 'api-gateway-security',
       },
     ],
   },
   {
-    category: 'AI-Powered Security',
-    description: 'Implementation guides for AI-driven cybersecurity solutions',
+    category: 'AI Security',
+    description: 'Implementation guides for securing AI systems and machine learning models',
     guides: [
       {
-        title: 'AI Threat Detection Setup',
+        title: 'AI Model Security & Adversarial Defense',
         description:
-          'Configure AI-powered threat detection and response systems',
-        difficulty: 'Advanced',
-        time: '3 hours',
-        slug: 'ai-threat-detection-setup',
-      },
-      {
-        title: 'Machine Learning Security Models',
-        description:
-          'Deploy and tune ML models for anomaly detection and threat hunting',
+          'Protect AI models from adversarial attacks, model extraction, and data poisoning',
         difficulty: 'Advanced',
         time: '4 hours',
-        slug: 'ml-security-models',
+        slug: 'ai-model-security-adversarial',
       },
       {
-        title: 'Automated Incident Response',
+        title: 'AI Threat Detection Implementation',
         description:
-          'Implement automated incident response workflows with AI integration',
+          'Deploy AI-powered threat detection systems with machine learning and behavioral analytics',
+        difficulty: 'Advanced',
+        time: '3.5 hours',
+        slug: 'ai-threat-detection-implementation',
+      },
+      {
+        title: 'Secure AI Development Lifecycle',
+        description:
+          'Implement security throughout the AI development process from data collection to deployment',
         difficulty: 'Intermediate',
-        time: '2 hours',
-        slug: 'automated-incident-response',
+        time: '3 hours',
+        slug: 'secure-ai-development-lifecycle',
+      },
+      {
+        title: 'AI Security Operations Center',
+        description:
+          'Build AI-powered SOC with automated threat detection, response, and security orchestration',
+        difficulty: 'Advanced',
+        time: '4.5 hours',
+        slug: 'ai-security-operations-center',
       },
     ],
   },
   {
-    category: 'Cloud Security Posture',
+    category: 'Cybersecurity Fundamentals',
     description:
-      'Cloud security configuration and management for multi-cloud environments',
+      'Core cybersecurity practices and modern security architecture implementation',
+    guides: [
+      {
+        title: 'Zero Trust Architecture Implementation',
+        description:
+          'Complete guide to implementing Zero Trust security model with identity-centric controls',
+        difficulty: 'Advanced',
+        time: '5 hours',
+        slug: 'zero-trust-architecture-implementation',
+      },
+      {
+        title: 'Security Operations Center (SOC) Setup',
+        description:
+          'Build and operate a modern SOC with SIEM, threat hunting, and incident response',
+        difficulty: 'Advanced',
+        time: '4 hours',
+        slug: 'security-operations-center-setup',
+      },
+      {
+        title: 'Threat Intelligence Integration',
+        description:
+          'Integrate threat intelligence feeds and build automated threat detection capabilities',
+        difficulty: 'Intermediate',
+        time: '3 hours',
+        slug: 'threat-intelligence-integration',
+      },
+      {
+        title: 'Incident Response & Digital Forensics',
+        description:
+          'Develop comprehensive incident response procedures and digital forensics capabilities',
+        difficulty: 'Advanced',
+        time: '4 hours',
+        slug: 'incident-response-digital-forensics',
+      },
+    ],
+  },
+  {
+    category: 'Cloud & Infrastructure Security',
+    description: 'Cloud security, container security, and infrastructure protection',
     guides: [
       {
         title: 'Multi-Cloud Security Framework',
         description:
-          'Implement consistent security controls across AWS, Azure, and GCP',
+          'Implement consistent security controls across AWS, Azure, and Google Cloud Platform',
         difficulty: 'Advanced',
         time: '5 hours',
         slug: 'multi-cloud-security-framework',
       },
       {
-        title: 'Cloud-Native Security Controls',
+        title: 'Container & Kubernetes Security',
         description:
-          'Deploy security controls using cloud-native services and APIs',
+          'Secure containerized applications and Kubernetes clusters with runtime protection',
         difficulty: 'Intermediate',
         time: '3 hours',
+        slug: 'container-kubernetes-security',
+      },
+      {
+        title: 'Cloud-Native Security Controls',
+        description:
+          'Deploy cloud-native security services and implement infrastructure as code security',
+        difficulty: 'Intermediate',
+        time: '3.5 hours',
         slug: 'cloud-native-security-controls',
-      },
-      {
-        title: 'Container Security Hardening',
-        description:
-          'Secure containerized applications with runtime protection and scanning',
-        difficulty: 'Intermediate',
-        time: '2.5 hours',
-        slug: 'container-security-hardening',
-      },
-    ],
-  },
-  {
-    category: 'Compliance & Governance',
-    description: 'Regulatory compliance and governance frameworks for 2025',
-    guides: [
-      {
-        title: 'GDPR Compliance Implementation',
-        description:
-          'Implement comprehensive GDPR compliance with data protection controls',
-        difficulty: 'Intermediate',
-        time: '4 hours',
-        slug: 'gdpr-compliance-implementation',
-      },
-      {
-        title: 'SOC 2 Type II Preparation',
-        description:
-          'Prepare for SOC 2 Type II audit with automated compliance monitoring',
-        difficulty: 'Advanced',
-        time: '6 hours',
-        slug: 'soc2-type2-preparation',
-      },
-      {
-        title: 'Industry-Specific Compliance',
-        description:
-          'Implement compliance frameworks for healthcare, finance, and government',
-        difficulty: 'Advanced',
-        time: '5 hours',
-        slug: 'industry-specific-compliance',
       },
     ],
   },
@@ -127,41 +151,41 @@ const documentationCategories = [
 
 const popularGuides = [
   {
-    title: 'Zero Trust Network Architecture 2025',
-    views: '25K+',
+    title: 'OWASP API Security Top 10 Implementation',
+    views: '32K+',
     rating: '4.9/5',
-    category: 'Zero Trust',
-    slug: 'zero-trust-network-architecture',
+    category: 'API Security',
+    slug: 'owasp-api-security-top10',
   },
   {
-    title: 'AI-Powered Threat Detection Setup',
-    views: '18K+',
+    title: 'AI Model Security & Adversarial Defense',
+    views: '28K+',
     rating: '4.8/5',
     category: 'AI Security',
-    slug: 'ai-threat-detection-setup',
+    slug: 'ai-model-security-adversarial',
   },
   {
-    title: 'Multi-Cloud Security Framework',
-    views: '15K+',
+    title: 'Zero Trust Architecture Implementation',
+    views: '25K+',
     rating: '4.9/5',
-    category: 'Cloud Security',
-    slug: 'multi-cloud-security-framework',
+    category: 'Cybersecurity',
+    slug: 'zero-trust-architecture-implementation',
   },
   {
-    title: 'SOC 2 Type II Preparation Guide',
-    views: '12K+',
+    title: 'AI Threat Detection Implementation',
+    views: '22K+',
     rating: '4.7/5',
-    category: 'Compliance',
-    slug: 'soc2-type2-preparation',
+    category: 'AI Security',
+    slug: 'ai-threat-detection-implementation',
   },
 ]
 
 const searchCategories = [
   'All',
-  'Zero Trust',
+  'API Security',
   'AI Security',
+  'Cybersecurity',
   'Cloud Security',
-  'Compliance',
   'Threat Detection',
 ]
 

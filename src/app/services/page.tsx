@@ -50,38 +50,38 @@ export const metadata: Metadata = {
 
 const serviceCategories = [
   {
-    name: 'IT Infrastructure & Support',
+    name: 'AI Security Solutions',
     description:
-      'Complete IT infrastructure management and 24/7 technical support services',
+      'Advanced AI security services including model protection, adversarial defense, and AI-powered threat detection',
     features: [
-      'Help desk & technical support',
-      'Infrastructure monitoring',
-      'Cloud migration & management',
-      'Network administration',
-      'System maintenance & updates',
+      'AI model security assessment',
+      'Adversarial attack protection',
+      'AI-powered threat detection',
+      'Secure AI model development',
+      'AI security consulting',
     ],
-    icon: '💻',
-    link: '/services/it-infrastructure',
+    icon: '🤖',
+    link: '/services/ai-security',
     pricing: 'Contact us for pricing',
-    popular: false,
-    gradient: 'from-blue-500 to-cyan-500',
+    popular: true,
+    gradient: 'from-purple-500 to-pink-500',
   },
   {
-    name: 'Data Center Services',
+    name: 'API Security Services',
     description:
-      'Enterprise-grade data center solutions with high availability and security',
+      'Comprehensive API security including authentication, authorization, and threat protection',
     features: [
-      'Colocation services',
-      'Private cloud hosting',
-      'Disaster recovery',
-      'Backup & storage solutions',
-      '99.99% uptime SLA',
+      'API security assessment',
+      'OWASP API Top 10 protection',
+      'API authentication & authorization',
+      'API threat monitoring',
+      'API security consulting',
     ],
-    icon: '🏢',
-    link: '/services/data-center',
+    icon: '🔗',
+    link: '/services/api-security',
     pricing: 'Contact us for pricing',
-    popular: false,
-    gradient: 'from-green-500 to-emerald-500',
+    popular: true,
+    gradient: 'from-blue-500 to-cyan-500',
   },
   {
     name: 'Managed Security Services',
@@ -89,16 +89,16 @@ const serviceCategories = [
       '24/7 security monitoring and threat response by certified experts',
     features: [
       'SOC-as-a-Service',
-      'SIEM management',
       'Threat hunting & detection',
       'Incident response',
       'Vulnerability management',
+      'Security monitoring',
     ],
     icon: '🛡️',
     link: '/services/managed-security',
     pricing: 'Contact us for pricing',
     popular: true,
-    gradient: 'from-purple-500 to-pink-500',
+    gradient: 'from-green-500 to-emerald-500',
   },
   {
     name: 'Cybersecurity Consulting',
@@ -109,7 +109,7 @@ const serviceCategories = [
       'Risk assessments & audits',
       'Compliance consulting',
       'Security architecture design',
-      'Policy & procedure development',
+      'Policy development',
     ],
     icon: '🔍',
     link: '/services/cybersecurity-consulting',
@@ -118,15 +118,15 @@ const serviceCategories = [
     gradient: 'from-orange-500 to-red-500',
   },
   {
-    name: 'Penetration Testing & Red Team',
+    name: 'Penetration Testing',
     description:
-      'Advanced security testing and adversarial simulation services',
+      'Advanced security testing and vulnerability assessment services',
     features: [
       'External penetration testing',
       'Internal network testing',
       'Web application security',
       'Red team exercises',
-      'Social engineering assessments',
+      'Security assessments',
     ],
     icon: '⚔️',
     link: '/services/red-teaming',
@@ -135,7 +135,7 @@ const serviceCategories = [
     gradient: 'from-red-500 to-rose-500',
   },
   {
-    name: 'Incident Response & Forensics',
+    name: 'Incident Response',
     description:
       'Rapid incident response and digital forensics investigation services',
     features: [
@@ -143,7 +143,7 @@ const serviceCategories = [
       'Digital forensics analysis',
       'Malware analysis',
       'Recovery & remediation',
-      'Legal support & reporting',
+      'Legal support',
     ],
     icon: '🚨',
     link: '/services/incident-response',
@@ -151,165 +151,8 @@ const serviceCategories = [
     popular: false,
     gradient: 'from-yellow-500 to-orange-500',
   },
-  {
-    name: 'Compliance & Governance',
-    description:
-      'Comprehensive compliance management and governance frameworks',
-    features: [
-      'GDPR, HIPAA, PCI DSS compliance',
-      'SOC 2 audit preparation',
-      'ISO 27001 implementation',
-      'Policy management',
-      'Audit & assessment services',
-    ],
-    icon: '📋',
-    link: '/services/governance-compliance',
-    pricing: 'Contact us for pricing',
-    popular: false,
-    gradient: 'from-indigo-500 to-purple-500',
-  },
-  {
-    name: 'Security Training & Awareness',
-    description: 'Comprehensive cybersecurity education and awareness programs',
-    features: [
-      'Security awareness training',
-      'Phishing simulation',
-      'Technical skills training',
-      'Executive briefings',
-      'Certification preparation',
-    ],
-    icon: '🎓',
-    link: '/services/training',
-    pricing: 'Contact us for pricing',
-    popular: false,
-    gradient: 'from-teal-500 to-green-500',
-  },
-  {
-    name: 'Cloud Security Services',
-    description: 'Specialized cloud security and DevSecOps implementation',
-    features: [
-      'Cloud security assessment',
-      'DevSecOps integration',
-      'Container security',
-      'Multi-cloud governance',
-      'Cloud compliance automation',
-    ],
-    icon: '☁️',
-    link: '/services/cloud-security',
-    pricing: 'Contact us for pricing',
-    popular: false,
-    gradient: 'from-sky-500 to-blue-500',
-  },
 ]
 
-const industryExpertise = [
-  {
-    industry: 'Financial Services',
-    description: 'Banking, insurance, and fintech security solutions',
-    icon: '🏦',
-    regulations: ['PCI DSS', 'SOX', 'GLBA', 'NYDFS'],
-    gradient: 'from-emerald-400 to-cyan-400',
-  },
-  {
-    industry: 'Healthcare',
-    description: 'HIPAA-compliant security for healthcare organizations',
-    icon: '🏥',
-    regulations: ['HIPAA', 'HITECH', 'FDA', 'GDPR'],
-    gradient: 'from-blue-400 to-indigo-400',
-  },
-  {
-    industry: 'Enterprise',
-    description: 'Enterprise security requirements and compliance',
-    icon: '🏛️',
-    regulations: ['FedRAMP', 'FISMA', 'NIST', 'CJIS'],
-    gradient: 'from-red-400 to-pink-400',
-  },
-  {
-    industry: 'Manufacturing',
-    description: 'OT/IT security for industrial environments',
-    icon: '🏭',
-    regulations: ['IEC 62443', 'NERC CIP', 'ISO 27001'],
-    gradient: 'from-orange-400 to-yellow-400',
-  },
-  {
-    industry: 'Technology',
-    description: 'SaaS, cloud, and software company security',
-    icon: '💻',
-    regulations: ['SOC 2', 'ISO 27001', 'GDPR', 'CCPA'],
-    gradient: 'from-purple-400 to-pink-400',
-  },
-  {
-    industry: 'Retail & E-commerce',
-    description: 'Customer data protection and payment security',
-    icon: '🛍️',
-    regulations: ['PCI DSS', 'GDPR', 'CCPA', 'SOX'],
-    gradient: 'from-green-400 to-teal-400',
-  },
-]
-
-const serviceStats = [
-  {
-    metric: '500+',
-    label: 'Clients Served',
-    description: 'Organizations trust our services',
-    icon: '👥',
-    color: 'from-blue-400 to-blue-600',
-  },
-  {
-    metric: '99.9%',
-    label: 'Uptime SLA',
-    description: 'Guaranteed service availability',
-    icon: '⚡',
-    color: 'from-green-400 to-green-600',
-  },
-  {
-    metric: '<15min',
-    label: 'Response Time',
-    description: 'Average incident response',
-    icon: '⏱️',
-    color: 'from-yellow-400 to-yellow-600',
-  },
-  {
-    metric: '24/7',
-    label: 'Monitoring',
-    description: 'Round-the-clock security',
-    icon: '🔍',
-    color: 'from-purple-400 to-purple-600',
-  },
-  {
-    metric: '200+',
-    label: 'Certified Experts',
-    description: 'Security professionals on staff',
-    icon: '🎓',
-    color: 'from-pink-400 to-pink-600',
-  },
-  {
-    metric: '98%',
-    label: 'Client Satisfaction',
-    description: 'Customer retention rate',
-    icon: '❤️',
-    color: 'from-red-400 to-red-600',
-  },
-]
-
-const certifications = [
-  'CISSP',
-  'CISM',
-  'CISSP',
-  'GCIH',
-  'GPEN',
-  'OSCP',
-  'CEH',
-  'CISA',
-  'CRISC',
-  'CGEIT',
-  'PMP',
-  'ITIL',
-  'AWS Certified',
-  'Azure Certified',
-  'GCP Certified',
-  'SANS Certified',
-]
 
 export default function ServicesPage() {
   return (
@@ -318,13 +161,13 @@ export default function ServicesPage() {
       <section className="relative py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            Complete <span className="text-accent-500">IT & Security</span>{' '}
+            Advanced <span className="text-accent-500">AI & API Security</span>{' '}
             Services
           </h1>
           <p className="text-2xl text-text-secondary mb-12 max-w-5xl mx-auto leading-relaxed">
-            From IT support and data center services to advanced cybersecurity
-            solutions. We provide comprehensive technology services that scale
-            with your business needs.
+            Cutting-edge AI security and API protection services. We provide
+            comprehensive cybersecurity solutions that protect your AI systems
+            and secure your APIs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -341,23 +184,6 @@ export default function ServicesPage() {
             </Link>
           </div>
 
-          {/* Service Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mt-16">
-            {serviceStats.map((stat, index) => (
-              <div
-                key={index}
-                className="bg-[#1A1A1A]/50 backdrop-blur-sm p-4 rounded-lg border border-[#333]"
-              >
-                <div className="text-2xl font-bold text-accent-500 mb-1">
-                  {stat.metric}
-                </div>
-                <div className="text-sm font-semibold text-white mb-1">
-                  {stat.label}
-                </div>
-                <div className="text-xs text-text-secondary">{stat.description}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -429,58 +255,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Industry Expertise */}
-      <section className="relative py-24 px-6 bg-gradient-to-br from-background-alt/50 to-background/80 backdrop-blur-xl">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-8">
-              Industry{' '}
-              <span className="fxology-text-gradient">
-                Expertise
-              </span>
-            </h2>
-            <p className="text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
-              Deep industry knowledge and compliance expertise across regulated
-              and high-risk sectors.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {industryExpertise.map((industry, index) => (
-              <div
-                key={industry.industry}
-                className="group relative fxology-card p-8 rounded-3xl hover:fxology-shadow transition-all duration-500 hover:scale-105 transform hover:-translate-y-2"
-              >
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${industry.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
-                ></div>
-                <div className="relative z-10">
-                  <div className="text-4xl mb-6 group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 filter group-hover:drop-shadow-lg">
-                    {industry.icon}
-                  </div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:text-accent-500 transition-colors duration-300">
-                    {industry.industry}
-                  </h3>
-                  <p className="text-text-secondary text-base mb-6 group-hover:text-white transition-colors duration-300">
-                    {industry.description}
-                  </p>
-                  <div className="flex flex-wrap gap-3">
-                    {industry.regulations.map((reg, regIndex) => (
-                      <span
-                        key={reg}
-                        className="px-3 py-2 bg-gradient-to-r from-accent-500/10 to-success-500/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-accent-500/20 hover:to-success-500/20 transition-all duration-300 hover:scale-105"
-                        style={{ transitionDelay: `${regIndex * 100}ms` }}
-                      >
-                        {reg}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Our Approach */}
       <section className="relative py-24 px-6">
@@ -595,26 +369,6 @@ export default function ServicesPage() {
                 ))}
               </div>
 
-              <div className="mt-10 p-6 bg-gradient-to-br from-[#0D0D0F]/90 to-[#1A1A1A]/90 rounded-2xl">
-                <h4 className="text-white font-bold text-lg mb-4 flex items-center gap-2">
-                  <span className="text-2xl">🏆</span>
-                  Team Certifications
-                </h4>
-                <div className="flex flex-wrap gap-3">
-                  {certifications.slice(0, 8).map((cert, index) => (
-                    <span
-                      key={cert}
-                      className="px-3 py-2 bg-gradient-to-r from-accent-500/10 to-[#EC4899]/10 text-accent-500 text-sm rounded-xl border border-accent-500/20 hover:border-accent-500/50 hover:bg-gradient-to-r hover:from-accent-500/20 hover:to-[#EC4899]/20 transition-all duration-300 hover:scale-105"
-                      style={{ transitionDelay: `${index * 50}ms` }}
-                    >
-                      {cert}
-                    </span>
-                  ))}
-                  <span className="px-3 py-2 text-text-secondary text-sm bg-[#333]/20 rounded-xl">
-                    +{certifications.length - 8} more
-                  </span>
-                </div>
-              </div>
             </div>
           </div>
         </div>

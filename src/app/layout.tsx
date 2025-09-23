@@ -19,10 +19,10 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://resilientprivacy.com'),
   title: {
-    default: 'Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
-    template: '%s | Resilient Privacy - Top AI & API Security Company',
+    default: 'Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
+    template: '%s | Resilient Privacy - Advanced AI & API Security Company',
   },
-  description: 'Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services. Trusted by organizations worldwide.',
+  description: 'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services.',
   keywords: [
     'AI security company',
     'API security solutions',
@@ -61,21 +61,21 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: 'https://resilientprivacy.com',
     title: 'Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
-    description: 'Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services. Trusted by organizations worldwide.',
+    description: 'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services.',
     siteName: 'Resilient Privacy',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Resilient Privacy - #1 Cybersecurity Company',
+        alt: 'Resilient Privacy - Advanced AI & API Security Company',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Resilient Privacy - Top AI & API Security Company',
-    description: 'Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions.',
+    description: 'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions.',
     images: ['/og-image.jpg'],
     creator: '@resilientprivacy',
   },
@@ -103,7 +103,7 @@ const structuredData = {
   alternateName: 'Resilient Privacy - Top AI & API Security Company',
   url: 'https://resilientprivacy.com',
   logo: 'https://resilientprivacy.com/favicon.svg',
-  description: 'Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services. Trusted by organizations worldwide.',
+  description: 'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Expert AI threat detection, API security, machine learning security, and AI-powered cybersecurity services.',
   foundingDate: '2025',
   industry: 'Cybersecurity',
   numberOfEmployees: '10-50',

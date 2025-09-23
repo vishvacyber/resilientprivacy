@@ -141,31 +141,39 @@ export default function Header() {
                       onClick={closeDropdown}
                     >
                       <div className="font-semibold text-white mb-1">All Products</div>
-                      <div className="text-sm text-text-secondary">Complete security suite</div>
+                      <div className="text-sm text-text-secondary">Complete security suite including Identity & Access, Zero Trust, Threat Intelligence & more</div>
                     </Link>
                     <Link
-                      href="/products/identity-access-suite"
+                      href="/products/ai-threat-detection"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">Identity & Access Suite</div>
-                      <div className="text-sm text-text-secondary">Identity governance & access management</div>
+                      <div className="font-semibold text-white mb-1">AI Threat Detection</div>
+                      <div className="text-sm text-text-secondary">AI-powered threat detection & behavioral analysis</div>
                     </Link>
                     <Link
-                      href="/products/zero-trust-network-edge"
+                      href="/products/ai-security-operations"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">Zero Trust Network</div>
-                      <div className="text-sm text-text-secondary">Secure network architecture</div>
+                      <div className="font-semibold text-white mb-1">AI Security Operations</div>
+                      <div className="text-sm text-text-secondary">AI-powered SOC & autonomous security</div>
                     </Link>
                     <Link
-                      href="/products/threat-intelligence-platform"
+                      href="/products/secure-ai-models"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">Threat Intelligence</div>
-                      <div className="text-sm text-text-secondary">Advanced threat detection</div>
+                      <div className="font-semibold text-white mb-1">Secure AI Models</div>
+                      <div className="text-sm text-text-secondary">AI model protection & adversarial defense</div>
+                    </Link>
+                    <Link
+                      href="/products/api-security-intelligence"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">API Security Intelligence</div>
+                      <div className="text-sm text-text-secondary">Advanced API threat detection & protection</div>
                     </Link>
                   </div>
                 </div>
@@ -256,14 +264,6 @@ export default function Header() {
                     >
                       <div className="font-semibold text-white mb-1">Training</div>
                       <div className="text-sm text-text-secondary">Security education</div>
-                    </Link>
-                    <Link
-                      href="/resources/threat-reports"
-                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
-                      onClick={closeDropdown}
-                    >
-                      <div className="font-semibold text-white mb-1">Threat Reports</div>
-                      <div className="text-sm text-text-secondary">Security intelligence</div>
                     </Link>
                   </div>
                 </div>
@@ -377,25 +377,32 @@ export default function Header() {
                       All Products
                     </Link>
                     <Link
-                      href="/products/identity-access-suite"
+                      href="/products/ai-threat-detection"
                       className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
-                      Identity & Access Suite
+                      AI Threat Detection
                     </Link>
                     <Link
-                      href="/products/zero-trust-network-edge"
+                      href="/products/ai-security-operations"
                       className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
-                      Zero Trust Network
+                      AI Security Operations
                     </Link>
                     <Link
-                      href="/products/threat-intelligence-platform"
+                      href="/products/secure-ai-models"
                       className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
-                      Threat Intelligence
+                      Secure AI Models
+                    </Link>
+                    <Link
+                      href="/products/api-security-intelligence"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      API Security Intelligence
                     </Link>
                   </div>
                 )}
@@ -479,13 +486,6 @@ export default function Header() {
                       onClick={closeMobileMenu}
                     >
                       Training
-                    </Link>
-                    <Link
-                      href="/resources/threat-reports"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
-                      onClick={closeMobileMenu}
-                    >
-                      Threat Reports
                     </Link>
                   </div>
                 )}

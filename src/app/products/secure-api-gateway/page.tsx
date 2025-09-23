@@ -26,9 +26,9 @@ import {
 
 export const metadata: Metadata = {
   title:
-    'Secure API Gateway - Enterprise API Security Platform | Resilient Privacy',
+    'Secure API Gateway - Advanced API Security Platform | Resilient Privacy',
   description:
-    'Enterprise-grade API security gateway with advanced threat protection, rate limiting, authentication, and real-time monitoring. Secure your APIs with zero-trust architecture.',
+    'Advanced API security gateway with cutting-edge threat protection, rate limiting, authentication, and real-time monitoring. Secure your APIs with zero-trust architecture.',
   keywords: [
     'API gateway security',
     'API protection',
@@ -43,9 +43,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      'Secure API Gateway - Enterprise API Security Platform | Resilient Privacy',
+      'Secure API Gateway - Advanced API Security Platform | Resilient Privacy',
     description:
-      'Enterprise-grade API security gateway with advanced threat protection, rate limiting, authentication, and real-time monitoring.',
+      'Advanced API security gateway with cutting-edge threat protection, rate limiting, authentication, and real-time monitoring.',
     type: 'website',
     url: 'https://resilientprivacy.com/products/secure-api-gateway',
   },
@@ -460,7 +460,7 @@ export default function SecureAPIGatewayPage() {
               <Star className="w-5 h-5 text-accent-500" />
             </div>
             <h2 className="text-5xl font-bold text-white mb-8">
-              What Our Customers Say
+              What Our Clients Say
             </h2>
           </div>
 

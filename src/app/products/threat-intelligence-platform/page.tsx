@@ -37,7 +37,7 @@ const benefits = [
   {
     title: 'Threat Intelligence Authority',
     description:
-      'Access to 100+ premium threat feeds. Cited by CISA and FBI in 50+ threat advisories. Trusted by national security agencies.',
+      'Access to 100+ premium threat feeds. Cited by CISA and FBI in multiple threat advisories. Trusted by national security agencies.',
     icon: '🏛️',
   },
   {
@@ -155,7 +155,7 @@ export default function ThreatIntelligencePlatformPage() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-text-secondary">Threat Actors Tracked</span>
-                  <span className="text-accent-500 font-semibold">500+</span>
+                  <span className="text-accent-500 font-semibold">Multiple</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-text-secondary">Malware Families</span>

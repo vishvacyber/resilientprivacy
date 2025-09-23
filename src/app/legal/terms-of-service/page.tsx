@@ -10,7 +10,7 @@ export default function TermsOfServicePage() {
             Terms of <span className="text-accent-500">Service</span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Last updated: January 15, 2024
+            Last updated: January 15, 2025
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#terms" className="btn text-lg px-8 py-4">
@@ -37,32 +37,36 @@ export default function TermsOfServicePage() {
                 <h2 className="text-2xl font-bold text-white mb-4">
                   1. Acceptance of Terms
                 </h2>
+                <p className="mb-4">
+                  These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Client,&quot; &quot;you,&quot; or &quot;your&quot;) and Resilient Privacy, LLC (&quot;Company,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), a Delaware limited liability company. By accessing, using, or engaging with our services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+                </p>
                 <p>
-                  By accessing and using the services provided by Resilient
-                  Privacy (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;),
-                  you accept and agree to be bound by the terms and provision of
-                  this agreement. If you do not agree to abide by the above,
-                  please do not use this service.
+                  If you do not agree to these Terms, you must immediately cease all use of our services. These Terms supplement and are incorporated into any separate written agreement between the parties.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  2. Description of Service
+                  2. Description of Services
                 </h2>
                 <p className="mb-4">
-                  Resilient Privacy provides cybersecurity consulting, managed
-                  security services, threat intelligence, and related security
-                  solutions. Our services include but are not limited to:
+                  Resilient Privacy provides advanced AI and API security solutions, including but not limited to:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Security assessments and audits</li>
-                  <li>Incident response services</li>
-                  <li>Managed security operations</li>
-                  <li>Threat intelligence and monitoring</li>
-                  <li>Security consulting and advisory</li>
-                  <li>Training and awareness programs</li>
+                  <li>AI-powered threat detection and response services</li>
+                  <li>API security intelligence and monitoring</li>
+                  <li>Machine learning security solutions</li>
+                  <li>Cybersecurity consulting and advisory services</li>
+                  <li>Managed security operations center (SOC) services</li>
+                  <li>Incident response and digital forensics</li>
+                  <li>Security assessments and penetration testing</li>
+                  <li>Compliance consulting and audit support</li>
+                  <li>Security training and awareness programs</li>
+                  <li>Zero trust architecture implementation</li>
                 </ul>
+                <p className="mt-4">
+                  <strong>Important Disclaimer:</strong> Our services are provided for security enhancement purposes only. We do not guarantee absolute security or prevention of all security incidents. Cybersecurity involves inherent risks that cannot be completely eliminated.
+                </p>
               </div>
 
               <div>
@@ -70,27 +74,15 @@ export default function TermsOfServicePage() {
                   3. User Accounts and Registration
                 </h2>
                 <p className="mb-4">
-                  To access certain features of our services, you may be
-                  required to create an account. You agree to:
+                  To access our services, you may be required to create an account. You represent and warrant that:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>
-                    Provide accurate, current, and complete information during
-                    registration
-                  </li>
-                  <li>
-                    Maintain and update your account information to keep it
-                    accurate and current
-                  </li>
-                  <li>Maintain the security of your account credentials</li>
-                  <li>
-                    Accept responsibility for all activities that occur under
-                    your account
-                  </li>
-                  <li>
-                    Notify us immediately of any unauthorized use of your
-                    account
-                  </li>
+                  <li>All information provided during registration is accurate, current, and complete</li>
+                  <li>You will maintain and update account information to ensure accuracy</li>
+                  <li>You are responsible for maintaining the confidentiality of your account credentials</li>
+                  <li>You accept full responsibility for all activities occurring under your account</li>
+                  <li>You will immediately notify us of any unauthorized access or security breaches</li>
+                  <li>You have the legal authority to enter into this agreement on behalf of your organization</li>
                 </ul>
               </div>
 
@@ -100,36 +92,33 @@ export default function TermsOfServicePage() {
                 </h2>
                 <p className="mb-4">You agree not to use our services to:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Violate any applicable laws or regulations</li>
-                  <li>Infringe upon the rights of others</li>
-                  <li>Transmit malicious code or conduct security attacks</li>
-                  <li>Attempt to gain unauthorized access to our systems</li>
-                  <li>Interfere with or disrupt our services</li>
-                  <li>Use our services for illegal or unauthorized purposes</li>
+                  <li>Violate any applicable federal, state, local, or international laws or regulations</li>
+                  <li>Infringe upon intellectual property rights of others</li>
+                  <li>Transmit, distribute, or store malicious code, malware, or harmful software</li>
+                  <li>Attempt to gain unauthorized access to our systems, networks, or other clients&apos; data</li>
+                  <li>Conduct security attacks, penetration testing, or vulnerability assessments without explicit authorization</li>
+                  <li>Interfere with or disrupt our services or infrastructure</li>
+                  <li>Use our services for illegal, unauthorized, or prohibited purposes</li>
+                  <li>Reverse engineer, decompile, or attempt to extract source code from our proprietary technology</li>
+                  <li>Resell, redistribute, or sublicense our services without written permission</li>
                 </ul>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  5. Payment Terms
+                  5. Payment Terms and Billing
                 </h2>
                 <p className="mb-4">
-                  Payment terms for our services are as follows:
+                  Payment terms are as follows:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Fees are billed in advance for subscription services</li>
-                  <li>
-                    Consulting services are billed upon completion or as
-                    specified in the engagement
-                  </li>
-                  <li>
-                    All payments are non-refundable unless otherwise specified
-                  </li>
-                  <li>
-                    Late payments may result in service suspension or
-                    termination
-                  </li>
-                  <li>Prices are subject to change with 30 days notice</li>
+                  <li>Subscription services are billed in advance on a monthly or annual basis</li>
+                  <li>Professional services are billed according to the terms specified in individual service agreements</li>
+                  <li>All fees are non-refundable unless otherwise specified in writing</li>
+                  <li>Late payments may incur additional charges and may result in service suspension</li>
+                  <li>We reserve the right to change pricing with 30 days&apos; written notice</li>
+                  <li>You are responsible for all applicable taxes, duties, and fees</li>
+                  <li>Disputed charges must be reported within 30 days of the billing date</li>
                 </ul>
               </div>
 
@@ -138,23 +127,14 @@ export default function TermsOfServicePage() {
                   6. Intellectual Property Rights
                 </h2>
                 <p className="mb-4">
-                  Our services and content are protected by intellectual
-                  property laws. You acknowledge that:
+                  All intellectual property rights in our services, including but not limited to software, algorithms, methodologies, and documentation, remain our exclusive property. You acknowledge that:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>
-                    We retain all rights to our proprietary technology and
-                    content
-                  </li>
-                  <li>
-                    You may not copy, modify, or distribute our intellectual
-                    property
-                  </li>
-                  <li>
-                    Any improvements or modifications to our services belong to
-                    us
-                  </li>
-                  <li>You retain rights to your own data and content</li>
+                  <li>We retain all rights, title, and interest in our proprietary technology and content</li>
+                  <li>You may not copy, modify, distribute, or create derivative works of our intellectual property</li>
+                  <li>Any improvements, modifications, or enhancements to our services belong to us</li>
+                  <li>You retain ownership of your data and content, subject to our right to use it for service provision</li>
+                  <li>We may use anonymized, aggregated data for research and service improvement purposes</li>
                 </ul>
               </div>
 
@@ -162,36 +142,39 @@ export default function TermsOfServicePage() {
                 <h2 className="text-2xl font-bold text-white mb-4">
                   7. Privacy and Data Protection
                 </h2>
-                <p>
-                  Your privacy is important to us. Our collection and use of
-                  personal information is governed by our
+                <p className="mb-4">
+                  Your privacy and data security are paramount. Our data practices are governed by our comprehensive
                   <Link
                     href="/legal/privacy-policy"
-                    className="text-accent-500 hover:text-white"
+                    className="text-accent-500 hover:text-white mx-1"
                   >
-                    {' '}
                     Privacy Policy
                   </Link>
-                  , which is incorporated into these terms by reference.
+                  , which is incorporated into these Terms by reference.
+                </p>
+                <p>
+                  We implement industry-standard security measures to protect your data, but you acknowledge that no system is completely secure and that data transmission over the internet involves inherent risks.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  8. Service Level Agreements
+                  8. Service Level Agreements and Warranties
                 </h2>
                 <p className="mb-4">
-                  Our services include specific service level agreements (SLAs)
-                  that define:
+                  <strong>No Warranties:</strong> Our services are provided &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; without any warranties, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.
+                </p>
+                <p className="mb-4">
+                  <strong>Service Level Commitments:</strong> Specific service level agreements (SLAs) may be provided in separate agreements and include:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Uptime guarantees and availability commitments</li>
+                  <li>Uptime and availability commitments (where applicable)</li>
                   <li>Response times for support and incident response</li>
                   <li>Performance metrics and quality standards</li>
                   <li>Remedies for SLA violations</li>
                 </ul>
                 <p className="mt-4">
-                  Specific SLA terms are provided in your service agreement.
+                  <strong>Security Disclaimer:</strong> We do not warrant that our services will prevent all security incidents, data breaches, or cyber attacks. Cybersecurity involves inherent risks that cannot be completely eliminated.
                 </p>
               </div>
 
@@ -200,32 +183,38 @@ export default function TermsOfServicePage() {
                   9. Limitation of Liability
                 </h2>
                 <p className="mb-4">
-                  To the maximum extent permitted by law, Resilient Privacy
-                  shall not be liable for:
+                  <strong>Maximum Liability:</strong> To the fullest extent permitted by law, our total liability for any claims arising from or related to these Terms or our services shall not exceed the total amount paid by you for our services in the twelve (12) months preceding the claim.
+                </p>
+                <p className="mb-4">
+                  <strong>Excluded Damages:</strong> In no event shall we be liable for:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>
-                    Indirect, incidental, special, or consequential damages
-                  </li>
-                  <li>Loss of profits, data, or business opportunities</li>
-                  <li>
-                    Damages resulting from security incidents or data breaches
-                  </li>
-                  <li>
-                    Any damages exceeding the amount paid for our services
-                  </li>
+                  <li>Indirect, incidental, special, consequential, or punitive damages</li>
+                  <li>Loss of profits, revenue, data, or business opportunities</li>
+                  <li>Damages resulting from security incidents, data breaches, or cyber attacks</li>
+                  <li>Third-party claims or actions</li>
+                  <li>Business interruption or loss of goodwill</li>
+                  <li>Any damages exceeding the liability cap set forth above</li>
                 </ul>
+                <p className="mt-4">
+                  <strong>Force Majeure:</strong> We shall not be liable for any failure to perform due to circumstances beyond our reasonable control, including but not limited to natural disasters, government actions, cyber attacks, or other unforeseeable events.
+                </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
                   10. Indemnification
                 </h2>
-                <p>
-                  You agree to indemnify and hold harmless Resilient Privacy
-                  from any claims, damages, or expenses arising from your use of
-                  our services or violation of these terms.
+                <p className="mb-4">
+                  You agree to defend, indemnify, and hold harmless Resilient Privacy, its officers, directors, employees, agents, and affiliates from and against any and all claims, damages, obligations, losses, liabilities, costs, and expenses (including reasonable attorneys&apos; fees) arising from or related to:
                 </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Your use of our services in violation of these Terms</li>
+                  <li>Your violation of any applicable laws or regulations</li>
+                  <li>Your infringement of any third-party rights</li>
+                  <li>Your negligent or wrongful acts or omissions</li>
+                  <li>Any content or data you provide to us</li>
+                </ul>
               </div>
 
               <div>
@@ -233,73 +222,110 @@ export default function TermsOfServicePage() {
                   11. Termination
                 </h2>
                 <p className="mb-4">
-                  Either party may terminate this agreement:
+                  <strong>Termination Rights:</strong> Either party may terminate this agreement:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>For convenience with 30 days written notice</li>
-                  <li>Immediately for material breach of these terms</li>
-                  <li>Upon non-payment of fees</li>
+                  <li>For convenience with 30 days&apos; written notice</li>
+                  <li>Immediately for material breach of these Terms</li>
+                  <li>Upon non-payment of fees after 15 days&apos; notice</li>
+                  <li>For violation of acceptable use policies</li>
                 </ul>
                 <p className="mt-4">
-                  Upon termination, your access to our services will cease, and
-                  we will delete your data in accordance with our data retention
-                  policies.
+                  <strong>Effect of Termination:</strong> Upon termination, your access to our services will cease immediately, and we will delete your data in accordance with our data retention policies. Provisions that by their nature should survive termination shall remain in effect.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  12. Governing Law and Dispute Resolution
+                  12. Dispute Resolution and Governing Law
                 </h2>
                 <p className="mb-4">
-                  These terms are governed by the laws of the State of Delaware.
-                  Any disputes shall be resolved through:
+                  <strong>Governing Law:</strong> These Terms are governed by the laws of the State of Delaware, without regard to conflict of law principles.
+                </p>
+                <p className="mb-4">
+                  <strong>Dispute Resolution:</strong> Any disputes arising from or related to these Terms shall be resolved through the following process:
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Good faith negotiations between the parties</li>
-                  <li>Mediation if negotiations fail</li>
-                  <li>Binding arbitration in Delaware</li>
+                  <li>Good faith negotiations between the parties (30 days)</li>
+                  <li>Mediation through a mutually agreed mediator (if negotiations fail)</li>
+                  <li>Binding arbitration in Delaware under the rules of the American Arbitration Association</li>
+                </ul>
+                <p className="mt-4">
+                  <strong>Class Action Waiver:</strong> You agree that any arbitration or legal proceeding shall be conducted on an individual basis and not as a class action, collective action, or other representative proceeding.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  13. Confidentiality and Non-Disclosure
+                </h2>
+                <p className="mb-4">
+                  Both parties acknowledge that they may receive confidential and proprietary information from the other party. Each party agrees to:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Maintain the confidentiality of all confidential information</li>
+                  <li>Use confidential information solely for the purpose of providing or receiving services</li>
+                  <li>Not disclose confidential information to third parties without written consent</li>
+                  <li>Return or destroy confidential information upon termination</li>
+                  <li>Implement reasonable security measures to protect confidential information</li>
                 </ul>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-white mb-4">
-                  13. Force Majeure
-                </h2>
-                <p>
-                  Neither party shall be liable for any failure to perform due
-                  to circumstances beyond their reasonable control, including
-                  but not limited to natural disasters, government actions, or
-                  other unforeseeable events.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold text-white mb-4">
-                  14. Changes to Terms
-                </h2>
-                <p>
-                  We reserve the right to modify these terms at any time. We
-                  will notify you of any material changes by posting the new
-                  terms on our website. Your continued use of our services
-                  constitutes acceptance of the modified terms.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-2xl font-bold text-white mb-4">
-                  15. Contact Information
+                  14. Compliance and Regulatory Requirements
                 </h2>
                 <p className="mb-4">
-                  If you have any questions about these Terms of Service, please
-                  contact us:
+                  You are responsible for ensuring compliance with all applicable laws, regulations, and industry standards in your use of our services. This includes but is not limited to:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Data protection and privacy laws (GDPR, CCPA, etc.)</li>
+                  <li>Industry-specific regulations (HIPAA, SOX, PCI-DSS, etc.)</li>
+                  <li>Export control and sanctions regulations</li>
+                  <li>Cybersecurity and incident reporting requirements</li>
+                </ul>
+                <p className="mt-4">
+                  We reserve the right to suspend or terminate services if we reasonably believe you are in violation of applicable laws or regulations.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  15. Changes to Terms
+                </h2>
+                <p className="mb-4">
+                  We reserve the right to modify these Terms at any time. We will notify you of material changes by:
+                </p>
+                <ul className="list-disc list-inside space-y-2 ml-4">
+                  <li>Posting the updated Terms on our website</li>
+                  <li>Sending email notification to your registered email address</li>
+                  <li>Providing notice through our service platform</li>
+                </ul>
+                <p className="mt-4">
+                  Your continued use of our services after the effective date of any changes constitutes acceptance of the modified Terms. If you do not agree to the changes, you must terminate your use of our services.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  16. Severability and Entire Agreement
+                </h2>
+                <p className="mb-4">
+                  If any provision of these Terms is found to be unenforceable or invalid, the remaining provisions shall remain in full force and effect. These Terms, together with any separate service agreements, constitute the entire agreement between the parties and supersede all prior agreements and understandings.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl font-bold text-white mb-4">
+                  17. Contact Information
+                </h2>
+                <p className="mb-4">
+                  For questions about these Terms of Service, please contact us:
                 </p>
                 <div className="bg-[#0D0D0F] p-6 rounded border border-[#222]">
-                  <p>
-                    <strong>Email:</strong> legal@resilientprivacy.com
-                  </p>
-                  <p>
-                  </p>
+                  <p><strong>Legal Department:</strong> legal@resilientprivacy.com</p>
+                  <p><strong>General Inquiries:</strong> info@resilientprivacy.com</p>
+                  <p><strong>Address:</strong> Resilient Privacy, LLC, Delaware, United States</p>
                 </div>
               </div>
             </div>

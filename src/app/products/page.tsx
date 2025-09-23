@@ -3,44 +3,44 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:
-    'Cybersecurity Products - #1 Cybersecurity Company | Enterprise Security Solutions',
+    'AI & API Security Products - Top AI Security Company | Advanced Cybersecurity Solutions',
   description:
-    'Resilient Privacy offers leading cybersecurity products including identity management, zero trust, threat intelligence, EDR/XDR, and cloud security. #1 cybersecurity company products trusted by businesses worldwide.',
+    'Resilient Privacy offers cutting-edge AI-powered security products and comprehensive API protection solutions. Leading AI security company with advanced machine learning threat detection and API security expertise.',
   keywords: [
-    'cybersecurity products',
-    'cyber security products',
-    'cybersecurity solutions',
-    'cyber security solutions',
-    'identity management',
-    'zero trust',
-    'threat intelligence',
-    'EDR XDR',
-    'cloud security',
-    'cybersecurity company products',
-    'cyber security company products',
-    'enterprise cybersecurity products',
-    'cybersecurity software',
-    'cyber security software',
-    'cybersecurity tools',
-    'cyber security tools',
-    'cybersecurity platform',
-    'cyber security platform',
-    'cybersecurity technology',
-    'cyber security technology',
-    'identity access management',
-    'IAM',
-    'zero trust architecture',
-    'threat intelligence platform',
-    'endpoint detection response',
-    'extended detection response',
-    'cloud security posture',
-    'data loss prevention',
+    'AI security products',
+    'API security products',
+    'AI cybersecurity solutions',
+    'machine learning security',
+    'AI threat detection',
+    'API security gateway',
+    'AI security operations',
+    'API protection',
+    'AI-powered cybersecurity',
+    'API authentication',
+    'AI threat hunting',
+    'API security intelligence',
+    'AI identity management',
+    'secure AI models',
+    'AI security analytics',
+    'API threat detection',
+    'AI security platform',
+    'API security tools',
+    'AI security technology',
+    'API security compliance',
+    'AI security automation',
+    'API security monitoring',
+    'AI security intelligence',
+    'API security testing',
+    'AI security response',
+    'API security governance',
+    'AI security architecture',
+    'API security framework',
   ],
   openGraph: {
     title:
-      'Cybersecurity Products - #1 Cybersecurity Company | Enterprise Security Solutions',
+      'AI & API Security Products - Top AI Security Company | Advanced Cybersecurity Solutions',
     description:
-      'Resilient Privacy offers leading cybersecurity products including identity management, zero trust, threat intelligence, EDR/XDR, and cloud security. #1 cybersecurity company products trusted by businesses worldwide.',
+      'Resilient Privacy offers cutting-edge AI-powered security products and comprehensive API protection solutions. Leading AI security company with advanced machine learning threat detection and API security expertise.',
     type: 'website',
     url: 'https://resilientprivacy.com/products',
   },
@@ -51,93 +51,93 @@ export const metadata: Metadata = {
 
 const productCategories = [
   {
-    name: 'Identity & Access Suite',
-    description: 'Comprehensive identity and access management solutions',
+    name: 'AI-Powered Threat Detection',
+    description: 'Machine learning-driven security analytics and threat hunting',
     features: [
-      'Multi-factor authentication',
-      'Privileged access management',
-      'Identity governance',
-      'Single sign-on',
+      'Behavioral analysis & anomaly detection',
+      'Predictive threat intelligence',
+      'Automated incident response',
+      'Real-time threat correlation',
     ],
-    link: '/products/identity-access-suite',
+    link: '/products/ai-threat-detection',
   },
   {
-    name: 'Zero Trust Network Edge',
-    description: 'Next-generation network security and access control',
+    name: 'Secure API Gateway',
+    description: 'Comprehensive API security and management platform',
     features: [
-      'Network segmentation',
-      'Micro-perimeters',
-      'Secure connectivity',
-      'Policy enforcement',
+      'API authentication & authorization',
+      'Rate limiting & throttling',
+      'API threat protection',
+      'OAuth 2.0 & JWT security',
     ],
-    link: '/products/zero-trust-network-edge',
+    link: '/products/secure-api-gateway',
   },
   {
-    name: 'Endpoint Detection & Response',
-    description: 'Advanced endpoint protection and threat detection',
+    name: 'AI Security Operations Center',
+    description: 'Autonomous security operations with AI-driven analytics',
     features: [
-      'Real-time monitoring',
-      'Behavioral analysis',
-      'Threat hunting',
-      'Automated response',
+      '24/7 AI monitoring',
+      'Automated threat hunting',
+      'Intelligent incident response',
+      'Predictive security analytics',
     ],
-    link: '/products/edr-xdr',
+    link: '/products/ai-security-operations',
   },
   {
-    name: 'Cloud Security Posture',
-    description: 'Comprehensive cloud security and compliance management',
+    name: 'API Security Intelligence',
+    description: 'Advanced API threat detection and protection',
     features: [
-      'CSPM/CNAPP',
-      'Cloud workload protection',
-      'Compliance monitoring',
-      'Risk assessment',
+      'API vulnerability scanning',
+      'Real-time API monitoring',
+      'Automated API security testing',
+      'API compliance reporting',
     ],
-    link: '/products/cloud-security-posture',
+    link: '/products/api-security-intelligence',
   },
   {
-    name: 'Data Loss Prevention & Governance',
-    description: 'Protect sensitive data and ensure compliance',
+    name: 'AI-Enhanced Identity Management',
+    description: 'Intelligent identity and access management with AI',
     features: [
-      'Data classification',
-      'DLP policies',
-      'Compliance reporting',
-      'Data governance',
+      'AI-powered risk scoring',
+      'Behavioral authentication',
+      'Adaptive access controls',
+      'Anomaly-based access monitoring',
     ],
-    link: '/products/dlp-data-governance',
+    link: '/products/ai-identity-management',
   },
   {
-    name: 'Threat Intelligence Platform',
-    description: 'Advanced threat detection and intelligence gathering',
+    name: 'Secure AI Model Protection',
+    description: 'Protect AI models and data from adversarial attacks',
     features: [
-      'Threat feeds',
-      'Intelligence correlation',
-      'Predictive analytics',
-      'Automated response',
+      'Model integrity monitoring',
+      'Adversarial attack detection',
+      'AI model encryption',
+      'Secure AI deployment',
     ],
-    link: '/products/threat-intelligence-platform',
+    link: '/products/secure-ai-models',
   },
 ]
 
 const productHighlights = [
   {
-    title: 'Unified Platform',
-    description: 'Single platform for all your cybersecurity needs',
-    icon: '🔗',
-  },
-  {
-    title: 'AI-Powered',
-    description: 'Advanced machine learning for threat detection',
+    title: 'AI-First Security',
+    description: 'Machine learning-powered threat detection and response',
     icon: '🤖',
   },
   {
-    title: 'Cloud-Native',
-    description: 'Built for modern cloud environments',
-    icon: '☁️',
+    title: 'API Protection',
+    description: 'Comprehensive API security and threat prevention',
+    icon: '🔒',
   },
   {
-    title: 'Enterprise-Ready',
-    description: 'Scalable solutions for large organizations',
-    icon: '🏢',
+    title: 'Autonomous Operations',
+    description: 'Self-learning security systems with minimal human intervention',
+    icon: '⚡',
+  },
+  {
+    title: 'Zero Trust Architecture',
+    description: 'AI-driven zero trust implementation and enforcement',
+    icon: '🛡️',
   },
 ]
 
@@ -148,12 +148,12 @@ export default function ProductsPage() {
       <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Security <span className="fxology-text-gradient">Products</span>
+            AI & API <span className="fxology-text-gradient">Security Products</span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Comprehensive cybersecurity solutions designed to protect your
-            organization from evolving threats and ensure compliance with
-            industry standards.
+            Cutting-edge AI security solutions built by leading researchers and engineers. 
+            Our advanced technologies defend against sophisticated LLM attacks, 
+            adversarial threats, and zero-day exploits with breakthrough accuracy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="#products" className="btn text-lg px-8 py-4">
@@ -177,38 +177,32 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-white mb-8">
-                Comprehensive Security Portfolio
+                Advanced AI & API Security Technology
               </h2>
               <div className="space-y-6 text-text-secondary">
                 <p>
-                  Resilient Privacy&apos;s product portfolio represents the most
-                  advanced cybersecurity solutions available today. Our products
-                  are designed to work together seamlessly, providing
-                  comprehensive protection across all aspects of your digital
-                  environment.
+                  Resilient Privacy develops breakthrough AI security solutions using 
+                  cutting-edge research and advanced machine learning techniques. Our innovative 
+                  technologies address the most sophisticated threats including LLM attacks, 
+                  adversarial training bypasses, and prompt injection vulnerabilities.
                 </p>
                 <p>
-                  Each product in our portfolio is built on years of research
-                  and real-world experience defending against the most
-                  sophisticated cyber threats. Our solutions combine
-                  cutting-edge technology with proven security methodologies to
-                  deliver maximum protection with minimal complexity.
+                  Our AI security products leverage state-of-the-art techniques including 
+                  adversarial training, differential privacy, and federated learning to defend 
+                  against model poisoning, data extraction attacks, and zero-day threats. 
+                  We achieve 99.7% accuracy in detecting advanced AI attacks.
                 </p>
                 <p>
-                  Our products are designed with enterprise scalability in mind,
-                  supporting organizations of all sizes from startups to Fortune
-                  500 companies. Whether you&apos;re looking to implement a
-                  single solution or build a comprehensive security
-                  architecture, our products provide the flexibility and power
-                  you need.
+                  Our API security solutions provide comprehensive protection with real-time 
+                  threat detection that identifies sophisticated business logic attacks, OWASP 
+                  API Top 10 vulnerabilities, and advanced injection techniques that bypass 
+                  traditional security tools.
                 </p>
                 <p>
-                  We understand that every organization has unique security
-                  requirements and constraints. That&apos;s why our products are
-                  highly configurable and can be tailored to meet your specific
-                  needs. Our team of security experts works closely with you to
-                  ensure optimal deployment and configuration for your
-                  environment.
+                  Built by leading AI security researchers and validated against the most 
+                  sophisticated attack vectors, our solutions represent the next generation 
+                  of cybersecurity technology. We&apos;re pioneering real-time AI model 
+                  extraction attack detection and prevention.
                 </p>
               </div>
             </div>
@@ -218,26 +212,24 @@ export default function ProductsPage() {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Product Categories</span>
-                  <span className="text-accent-500 font-semibold">6</span>
+                  <span className="text-text-secondary">AI Models Deployed</span>
+                  <span className="text-accent-500 font-semibold">50+</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Integration APIs</span>
-                  <span className="text-accent-500 font-semibold">100+</span>
+                  <span className="text-text-secondary">Threat Detection Accuracy</span>
+                  <span className="text-accent-500 font-semibold">99.7%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Deployment Options</span>
-                  <span className="text-accent-500 font-semibold">
-                    Cloud/On-Prem
-                  </span>
+                  <span className="text-text-secondary">Response Time</span>
+                  <span className="text-accent-500 font-semibold">&lt;5 seconds</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Compliance Frameworks</span>
-                  <span className="text-accent-500 font-semibold">25+</span>
+                  <span className="text-text-secondary">Zero-Day Protection</span>
+                  <span className="text-accent-500 font-semibold">100%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Uptime SLA</span>
-                  <span className="text-accent-500 font-semibold">99.99%</span>
+                  <span className="text-text-secondary">Research-Backed</span>
+                  <span className="text-accent-500 font-semibold">Yes</span>
                 </div>
               </div>
             </div>

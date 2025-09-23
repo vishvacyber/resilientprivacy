@@ -43,7 +43,7 @@ const benefits = [
   {
     title: 'Regulatory Excellence',
     description:
-      'Pre-built compliance templates for 25+ frameworks. 100% audit success rate across 1,200+ customer assessments.',
+      'Pre-built compliance templates for 25+ frameworks. 100% audit success rate across customer assessments.',
     icon: '📋',
   },
   {

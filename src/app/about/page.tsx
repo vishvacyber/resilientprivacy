@@ -16,9 +16,9 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
+  title: 'About Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
   description:
-    'Resilient Privacy is the top AI and API security company founded in 2025 by Vishva Patel. We provide enterprise-grade AI security solutions, API protection, machine learning security, and AI-powered threat detection services to organizations worldwide.',
+    'Resilient Privacy is an advanced AI and API security company founded in 2025 by Vishva Patel. We provide cutting-edge AI security solutions, API protection, machine learning security, and AI-powered threat detection services.',
   keywords: [
     'AI security company about',
     'API security company history',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     'API security company experience',
   ],
   openGraph: {
-    title: 'About Resilient Privacy - Top AI & API Security Company | Enterprise AI Security Solutions',
+    title: 'About Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
     description:
-      'Resilient Privacy is the top AI and API security company founded in 2025 by Vishva Patel. We provide enterprise-grade AI security solutions, API protection, machine learning security, and AI-powered threat detection services to organizations worldwide.',
+      'Resilient Privacy is an advanced AI and API security company founded in 2025 by Vishva Patel. We provide cutting-edge AI security solutions, API protection, machine learning security, and AI-powered threat detection services.',
     type: 'website',
     url: 'https://resilientprivacy.com/about',
   },
@@ -66,7 +66,7 @@ export default function AboutPage() {
             </span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Resilient Privacy is the top AI and API security company providing enterprise-grade AI security solutions. We specialize in AI threat detection, API protection, machine learning security, and AI-powered cybersecurity services—delivering cutting-edge protection that empowers organizations to stay secure, resilient, and ahead of evolving AI and API threats.
+            Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. We specialize in AI threat detection, API protection, machine learning security, and AI-powered cybersecurity services—delivering innovative protection that empowers organizations to stay secure, resilient, and ahead of evolving AI and API threats.
           </p>
         </div>
       </section>

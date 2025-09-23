@@ -49,7 +49,7 @@ const benefits = [
   {
     title: 'Enterprise Scale',
     description:
-      'Protecting 2M+ endpoints globally. Trusted by leading organizations for critical infrastructure.',
+      'Protecting endpoints globally. Trusted by leading organizations for critical infrastructure.',
     icon: '🌐',
   },
   {

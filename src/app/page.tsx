@@ -9,9 +9,9 @@ import CompanyScroller from '@/components/CompanyScroller'
 
 export const metadata: Metadata = {
   title:
-    'Resilient Privacy - #1 Cybersecurity Company | Enterprise Security Solutions',
+    'Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
   description:
-    'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and managed security services. Trusted by businesses worldwide.',
+    'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Specialized in AI threat detection, API protection, machine learning security, and advanced cybersecurity services.',
   keywords: [
     'cybersecurity company',
     'cyber security company',
@@ -42,9 +42,9 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title:
-      'Resilient Privacy - #1 Cybersecurity Company | Enterprise Security Solutions',
+      'Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
     description:
-      'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and managed security services. Trusted by businesses worldwide.',
+      'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Specialized in AI threat detection, API protection, machine learning security, and advanced cybersecurity services.',
     type: 'website',
     url: 'https://resilientprivacy.com',
     images: [
@@ -52,16 +52,16 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Resilient Privacy - #1 Cybersecurity Company',
+        alt: 'Resilient Privacy - Advanced AI & API Security Company',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
     title:
-      'Resilient Privacy - #1 Cybersecurity Company | Enterprise Security Solutions',
+      'Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
     description:
-      'Resilient Privacy is the #1 cybersecurity company providing enterprise-grade security solutions. Top-rated identity management, zero trust architecture, threat intelligence, and managed security services. Trusted by businesses worldwide.',
+      'Resilient Privacy is an advanced AI and API security company providing cutting-edge security solutions. Specialized in AI threat detection, API protection, machine learning security, and advanced cybersecurity services.',
     images: ['/og-image.jpg'],
   },
   alternates: {
@@ -301,7 +301,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
                 What Our Clients Say
               </h2>
-              <p className="text-lg text-text-secondary">Trusted by organizations worldwide for enterprise-grade security.</p>
+              <p className="text-lg text-text-secondary">Advanced security solutions for organizations seeking cutting-edge protection.</p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -353,43 +353,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Featured Blog Section - Cybersecurity Content */}
-        <section className="py-20 bg-background">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Latest Cybersecurity Insights
-              </h2>
-              <p className="text-lg text-text-secondary">Stay ahead of emerging threats with our expert analysis.</p>
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                { 
-                  category: "Threat Intelligence", 
-                  title: "Ransomware Trends Q4 2024", 
-                  description: "Analysis of emerging ransomware tactics and defense strategies for enterprise organizations." 
-                },
-                { 
-                  category: "Zero Trust", 
-                  title: "Implementing Zero Trust Architecture", 
-                  description: "Step-by-step guide to implementing zero trust principles in enterprise environments." 
-                },
-                { 
-                  category: "Compliance", 
-                  title: "SOC 2 Type II Compliance Guide", 
-                  description: "Comprehensive guide to achieving and maintaining SOC 2 Type II compliance." 
-                },
-              ].map((blog, index) => (
-                <div key={index} className="darkfire-card p-8 hover:darkfire-shadow transition-all duration-300 group">
-                  <div className="text-primary-400 text-sm font-semibold uppercase tracking-wide mb-4">{blog.category}</div>
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:darkfire-text-gradient transition-colors">{blog.title}</h3>
-                  <p className="text-text-secondary leading-relaxed">{blog.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* FAQ Section - Cybersecurity Questions */}
         <section className="py-20 bg-background-alt">
@@ -404,8 +367,8 @@ export default function Home() {
             <div className="space-y-6">
               {[
                 { 
-                  question: "What makes Resilient Privacy the #1 cybersecurity company?", 
-                  answer: "Resilient Privacy stands out as the #1 cybersecurity company due to our 99.9% detection rate, 24/7 monitoring, strategic North American presence, and proven track record of protecting over 5 million threats. Our team of 200+ cybersecurity experts provides unmatched expertise." 
+                  question: "What makes Resilient Privacy a leading cybersecurity company?", 
+                  answer: "Resilient Privacy stands out due to our advanced AI-powered security solutions, cutting-edge technology, and research-backed approach. We provide innovative cybersecurity services with high detection accuracy and comprehensive protection capabilities." 
                 },
                 { 
                   question: "What cybersecurity services do you offer?", 
@@ -416,8 +379,8 @@ export default function Home() {
                   answer: "Our managed security services provide 24/7 monitoring with an average response time of 15 minutes. We offer immediate incident response and digital forensics services to minimize damage and recovery time." 
                 },
                 { 
-                  question: "Do you work with large organizations?", 
-                  answer: "Yes, Resilient Privacy is trusted by businesses across various industries including healthcare, finance, technology, and manufacturing. We provide enterprise-grade security solutions tailored to organizations of all sizes." 
+                  question: "What types of organizations do you work with?", 
+                  answer: "Resilient Privacy works with organizations of all sizes across various industries including healthcare, finance, technology, and manufacturing. We provide advanced security solutions tailored to meet the specific needs of each organization." 
                 },
                 { 
                   question: "What compliance frameworks do you support?", 
