@@ -1,4 +1,4 @@
-name: Deploy to Vercel
+name: Pre-deployment Checks
 
 on:
   push:
@@ -8,7 +8,6 @@ on:
 
 env:
   NODE_VERSION: '20'
-  NPM_CACHE: '~/.npm'
 
 jobs:
   # Pre-deployment checks
@@ -25,7 +24,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci --prefer-offline --no-audit
+        run: npm ci
 
       - name: Type check
         run: npm run type-check
@@ -39,68 +38,30 @@ jobs:
       - name: Build test
         run: npm run build:ci
 
-  # Deploy to Vercel
-  deploy:
-    runs-on: ubuntu-latest
-    needs: checks
-    if: github.ref == 'refs/heads/main' || github.event_name == 'pull_request'
-    
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-
-      - name: Install dependencies
-        run: npm ci --prefer-offline --no-audit
-
-      - name: Deploy to Vercel
-        id: deploy
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: ${{ github.ref == 'refs/heads/main' && '--prod' || '' }}
-          working-directory: ./
-
-      - name: Comment deployment URL
+      - name: Comment success
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
           script: |
-            const deploymentUrl = '${{ steps.deploy.outputs.preview-url }}';
-            const isProduction = '${{ github.ref == 'refs/heads/main' }}' === 'true';
-            
-            const body = isProduction 
-              ? `🚀 **Production Deployment Successful!**
-                 
-                 **Production URL:** https://resilientprivacy.com
-                 **Deployment URL:** ${deploymentUrl}
-                 
-                 Your changes are now live in production!`
-              : `🔍 **Preview Deployment Ready!**
-                 
-                 **Preview URL:** ${deploymentUrl}
-                 **Production URL:** https://resilientprivacy.com
-                 
-                 Review your changes before merging to main.`;
-
             github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: body
+              body: `✅ **Pre-deployment Checks Passed!**
+                 
+                 All checks have passed successfully:
+                 - ✅ TypeScript type checking
+                 - ✅ ESLint code quality
+                 - ✅ Code formatting
+                 - ✅ Build test
+                 
+                 Vercel will automatically deploy this PR to a preview environment.`
             });
 
   # Notify on failure
   notify-failure:
     runs-on: ubuntu-latest
-    needs: [checks, deploy]
+    needs: [checks]
     if: failure()
     steps:
       - name: Notify failure
@@ -112,9 +73,9 @@ jobs:
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: `❌ **Deployment Failed!**
+              body: `❌ **Pre-deployment Checks Failed!**
                  
                  Please check the workflow logs and fix any issues before retrying.
                  
-                 **Failed Jobs:** ${{ needs.checks.result || 'checks' }}, ${{ needs.deploy.result || 'deploy' }}`
+                 **Failed Job:** ${{ needs.checks.result || 'checks' }}`
             });

@@ -16,8 +16,7 @@
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "postbuild": "next-sitemap",
-    "prebuild": "npm run type-check && npm run lint:ci"
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
