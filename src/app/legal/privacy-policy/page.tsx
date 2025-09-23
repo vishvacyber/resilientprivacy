@@ -211,12 +211,11 @@ export default function PrivacyPolicyPage() {
 
                 <div className="space-y-4">
                   <p>
-                    <strong>Resilient Privacy, LLC</strong> (&quot;Resilient
+                    <strong>Resilient Privacy, Inc.</strong> (&quot;Resilient
                     Privacy,&quot; &quot;Company,&quot; &quot;we,&quot;
-                    &quot;us,&quot; or &quot;our&quot;), a Delaware Limited
-                    Liability Company with global operations, is committed to
+                    &quot;us,&quot; or &quot;our&quot;), a Delaware C Corporation with global operations, is committed to
                     protecting your privacy and personal data in accordance with
-                    the highest international standards and applicable laws.
+                    applicable laws and industry best practices.
                   </p>
 
                   <p>
@@ -450,9 +449,13 @@ export default function PrivacyPolicyPage() {
                       </h4>
                       <div className="space-y-2 text-sm">
                         <p>
+                          <strong>Company:</strong> Resilient Privacy, Inc.
+                        </p>
+                        <p>
                           <strong>Email:</strong> privacy@resilientprivacy.com
                         </p>
                         <p>
+                          <strong>Entity Type:</strong> Delaware C Corporation
                         </p>
                       </div>
                     </div>
@@ -466,6 +469,7 @@ export default function PrivacyPolicyPage() {
                           <strong>Email:</strong> dpo@resilientprivacy.com
                         </p>
                         <p>
+                          <strong>Jurisdiction:</strong> Delaware, United States
                         </p>
                       </div>
                     </div>
@@ -567,7 +571,7 @@ export default function PrivacyPolicyPage() {
             <div className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222]">
               <h3 className="text-white font-bold mb-2">🇺🇸 USA Compliance</h3>
               <p className="text-sm text-text-secondary">
-                CCPA, COPPA, State Privacy Laws, Federal Privacy Regulations
+                Applicable federal and state privacy laws, including CCPA, COPPA, and other jurisdiction-specific requirements
               </p>
             </div>
           </div>

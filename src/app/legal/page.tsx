@@ -62,28 +62,28 @@ const complianceFrameworks = [
     icon: '🇺🇸',
   },
   {
-    name: 'SOC 2',
-    description: 'Service Organization Control 2 certification',
-    status: 'Type II Certified',
-    icon: '🏆',
-  },
-  {
-    name: 'ISO 27001',
-    description: 'Information Security Management System',
-    status: 'Certified',
-    icon: '🔒',
-  },
-  {
-    name: 'HIPAA',
-    description: 'Health Insurance Portability and Accountability Act',
+    name: 'COPPA',
+    description: 'Children\'s Online Privacy Protection Act',
     status: 'Compliant',
-    icon: '🏥',
+    icon: '👶',
   },
   {
-    name: 'PCI DSS',
-    description: 'Payment Card Industry Data Security Standard',
-    status: 'Level 1 Compliant',
-    icon: '💳',
+    name: 'State Privacy Laws',
+    description: 'Virginia, Colorado, Connecticut, Utah privacy laws',
+    status: 'Compliant',
+    icon: '🏛️',
+  },
+  {
+    name: 'Industry Standards',
+    description: 'NIST Privacy Framework and best practices',
+    status: 'Following',
+    icon: '📋',
+  },
+  {
+    name: 'Data Protection',
+    description: 'Comprehensive data protection measures',
+    status: 'Implemented',
+    icon: '🛡️',
   },
 ]
 
@@ -125,10 +125,10 @@ export default function LegalPage() {
               </h2>
               <div className="space-y-6 text-text-secondary">
                 <p>
-                  At Resilient Privacy, we believe that transparency and legal
+                  At Resilient Privacy, Inc., we believe that transparency and legal
                   compliance are essential foundations for building trust with
-                  our customers and partners. We are committed to maintaining
-                  the highest standards of legal and regulatory compliance
+                  our customers and partners. As a Delaware C Corporation, we are committed to maintaining
+                  compliance with applicable laws and regulations
                   across all aspects of our business operations.
                 </p>
                 <p>
@@ -142,9 +142,8 @@ export default function LegalPage() {
                   We understand that legal compliance is not just about meeting
                   minimum requirements—it&apos;s about demonstrating our
                   commitment to ethical business practices, data protection, and
-                  customer privacy. Our legal team works closely with our
-                  security and compliance teams to ensure that our policies and
-                  procedures are aligned with our security practices.
+                  customer privacy. We follow industry best practices and applicable legal requirements
+                  to ensure that our policies and procedures are aligned with our security practices.
                 </p>
                 <p>
                   We encourage our customers, partners, and stakeholders to
@@ -156,31 +155,31 @@ export default function LegalPage() {
               </div>
             </div>
             <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
-              <h3 className="text-2xl font-bold text-white mb-6">Legal Team</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Legal & Compliance</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
-                  <span className="text-text-secondary">In-house legal counsel</span>
+                  <span className="text-text-secondary">Legal compliance oversight</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
                   <span className="text-text-secondary">
-                    External legal advisors
+                    Privacy policy management
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
-                  <span className="text-text-secondary">Compliance specialists</span>
+                  <span className="text-text-secondary">Data protection compliance</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
                   <span className="text-text-secondary">
-                    Data protection officers
+                    Regulatory compliance monitoring
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
                   <div className="w-3 h-3 bg-accent-500 rounded-full"></div>
-                  <span className="text-text-secondary">Regular legal audits</span>
+                  <span className="text-text-secondary">Legal document maintenance</span>
                 </div>
               </div>
             </div>

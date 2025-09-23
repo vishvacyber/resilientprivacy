@@ -40,7 +40,7 @@ export default function IntroductionScopePage() {
                 </p>
                 <p className="mb-4">
                   This policy is designed to comply with applicable data
-                  protection laws including but not limited to:
+                  protection laws and regulations in jurisdictions where we operate, including:
                 </p>
                 <ul className="list-disc list-inside ml-4 space-y-2">
                   <li>
@@ -61,7 +61,7 @@ export default function IntroductionScopePage() {
                   <li>Utah Consumer Privacy Act (UCPA)</li>
                   <li>Children's Online Privacy Protection Act (COPPA)</li>
                   <li>
-                    Health Insurance Portability and Accountability Act (HIPAA)
+                    Other applicable federal, state, and local privacy laws
                   </li>
                 </ul>
               </div>
@@ -140,14 +140,14 @@ export default function IntroductionScopePage() {
                   1.4 Data Controller Information
                 </h2>
                 <p className="mb-4">
-                  Resilient Privacy LLC acts as the data controller for personal
+                  Resilient Privacy, Inc. acts as the data controller for personal
                   data collected through our services. Our contact information
                   is:
                 </p>
                 <div className="bg-[#0D0D0F] p-4 rounded border border-[#333] mb-4">
                   <p>
                     <strong className="text-white">Company:</strong> Resilient
-                    Privacy LLC
+                    Privacy, Inc.
                   </p>
                   <p>
                     <strong className="text-white">Privacy Officer:</strong>{' '}
@@ -195,28 +195,27 @@ export default function IntroductionScopePage() {
                   1.6 Legal Compliance Framework
                 </h2>
                 <p className="mb-4">
-                  Our privacy practices are designed to meet or exceed
-                  requirements under:
+                  Our privacy practices are designed to follow industry best practices and applicable legal requirements, including:
                 </p>
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-[#0D0D0F] p-4 rounded border border-[#333]">
                     <h4 className="text-white font-semibold mb-2">
-                      International Standards
-                    </h4>
-                    <ul className="text-sm space-y-1">
-                      <li>• ISO 27001:2013 (Information Security)</li>
-                      <li>• ISO 27701:2019 (Privacy Information Management)</li>
-                      <li>• SOC 2 Type II (Security & Privacy)</li>
-                    </ul>
-                  </div>
-                  <div className="bg-[#0D0D0F] p-4 rounded border border-[#333]">
-                    <h4 className="text-white font-semibold mb-2">
-                      Industry Frameworks
+                      Industry Standards
                     </h4>
                     <ul className="text-sm space-y-1">
                       <li>• NIST Privacy Framework</li>
                       <li>• NIST Cybersecurity Framework</li>
-                      <li>• CSA Cloud Controls Matrix</li>
+                      <li>• Industry best practices for data protection</li>
+                    </ul>
+                  </div>
+                  <div className="bg-[#0D0D0F] p-4 rounded border border-[#333]">
+                    <h4 className="text-white font-semibold mb-2">
+                      Legal Compliance
+                    </h4>
+                    <ul className="text-sm space-y-1">
+                      <li>• Applicable privacy laws and regulations</li>
+                      <li>• Industry-specific requirements where applicable</li>
+                      <li>• Reasonable security measures</li>
                     </ul>
                   </div>
                 </div>
