@@ -38,25 +38,25 @@ const benefits = [
     title: 'Threat Intelligence Authority',
     description:
       'Access to 100+ premium threat feeds. Cited by CISA and FBI in multiple threat advisories. Trusted by national security agencies.',
-    icon: '🏛️',
+    
   },
   {
     title: 'Predictive Advantage',
     description:
       'Predict attacks 14 days earlier than industry average. 89% accuracy in threat forecasting with AI-powered analytics.',
-    icon: '🔮',
+    
   },
   {
     title: 'Mission-Critical Reliability',
     description:
       'Protecting critical infrastructure in 45 countries. 99.99% uptime with real-time global threat monitoring network.',
-    icon: '🌍',
+    
   },
   {
     title: 'Actionable Intelligence',
     description:
       'Customers reduce incident response time by 85%. Automated threat hunting identifies 3x more threats than manual analysis.',
-    icon: '⚡',
+    
   },
 ]
 
@@ -214,7 +214,7 @@ export default function ThreatIntelligencePlatformPage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

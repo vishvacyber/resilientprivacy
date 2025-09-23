@@ -262,7 +262,7 @@ export default function LegalCompliancePage() {
 
                       <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
                         <h4 className="text-blue-300 font-bold mb-3">
-                          🔍 Regulatory Transparency
+                           Regulatory Transparency
                         </h4>
                         <p className="text-blue-300 text-sm">
                           We maintain transparency with regulatory authorities
@@ -292,7 +292,7 @@ export default function LegalCompliancePage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Continuous Improvement
+                          ⚠ Continuous Improvement
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           We continuously improve our compliance program based

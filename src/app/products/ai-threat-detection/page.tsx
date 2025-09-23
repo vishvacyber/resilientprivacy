@@ -39,7 +39,7 @@ const threatDetectionFeatures = [
       'Baseline establishment and drift detection',
       'Real-time behavioral scoring',
     ],
-    icon: '🧠',
+    
   },
   {
     title: 'Predictive Threat Intelligence',
@@ -52,7 +52,7 @@ const threatDetectionFeatures = [
       'Risk scoring and prioritization',
       'Proactive defense recommendations',
     ],
-    icon: '🔮',
+    
   },
   {
     title: 'Automated Incident Response',
@@ -65,7 +65,7 @@ const threatDetectionFeatures = [
       'Context-aware response actions',
       'Learning from response outcomes',
     ],
-    icon: '⚡',
+    
   },
   {
     title: 'Real-time Threat Correlation',
@@ -78,7 +78,7 @@ const threatDetectionFeatures = [
       'Temporal pattern recognition',
       'Contextual threat enrichment',
     ],
-    icon: '🔗',
+    
   },
 ]
 
@@ -200,7 +200,7 @@ export default function AIThreatDetectionPage() {
                 key={index}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] text-center hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🤖</div>
+                
                 <h3 className="text-xl font-bold text-white mb-2">
                   {capability.capability}
                 </h3>
@@ -236,7 +236,7 @@ export default function AIThreatDetectionPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>

@@ -145,14 +145,14 @@ const useCases = [
     title: 'Financial Services',
     description:
       'Secure payment APIs with PCI DSS compliance, fraud detection, and real-time transaction monitoring.',
-    icon: '🏦',
+    
     features: ['PCI DSS Compliance', 'Fraud Detection', 'Real-time Monitoring'],
   },
   {
     title: 'Healthcare',
     description:
       'HIPAA-compliant API gateway for patient data access, telemedicine platforms, and medical device integration.',
-    icon: '🏥',
+    
     features: [
       'HIPAA Compliance',
       'Patient Data Security',
@@ -163,7 +163,7 @@ const useCases = [
     title: 'E-commerce',
     description:
       'High-performance API gateway for product catalogs, payment processing, and inventory management.',
-    icon: '🛒',
+    
     features: [
       'High Performance',
       'Payment Processing',
@@ -174,7 +174,7 @@ const useCases = [
     title: 'IoT Platforms',
     description:
       'Scalable API gateway for IoT device management, data collection, and real-time analytics.',
-    icon: '📱',
+    
     features: ['Device Management', 'Data Collection', 'Real-time Analytics'],
   },
 ]

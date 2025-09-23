@@ -38,25 +38,25 @@ const benefits = [
     title: 'Unmatched Speed',
     description:
       'Sub-10 second threat detection with automated containment. 99.9% of attacks stopped before data exfiltration.',
-    icon: '⚡',
+    
   },
   {
     title: 'Award-Winning Technology',
     description:
       'Gartner Magic Quadrant Leader 3 years running. Recognized by NSA for advanced threat hunting capabilities.',
-    icon: '🏅',
+    
   },
   {
     title: 'Enterprise Scale',
     description:
       'Protecting endpoints globally. Trusted by leading organizations for critical infrastructure.',
-    icon: '🌐',
+    
   },
   {
     title: 'Zero Alert Fatigue',
     description:
       'AI reduces false positives by 95%. Security teams report 70% improvement in incident response efficiency.',
-    icon: '🎯',
+    
   },
 ]
 
@@ -213,7 +213,7 @@ export default function EdrXdrPage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

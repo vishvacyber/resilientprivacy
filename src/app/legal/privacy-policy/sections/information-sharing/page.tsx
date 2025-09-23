@@ -28,7 +28,7 @@ export default function InformationSharingPage() {
             <div className="space-y-8 text-text-secondary">
               <div className="bg-green-900/20 border border-green-500/30 p-6 rounded">
                 <h3 className="text-lg font-semibold text-green-400 mb-3">
-                  🔒 Our Commitment
+                   Our Commitment
                 </h3>
                 <p>
                   <strong>We do not sell personal information.</strong> We only

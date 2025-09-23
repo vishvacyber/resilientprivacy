@@ -60,7 +60,6 @@ const serviceCategories = [
       'Secure AI model development',
       'AI security consulting',
     ],
-    icon: '🤖',
     link: '/services/ai-security',
     pricing: 'Contact us for pricing',
     popular: true,
@@ -77,7 +76,6 @@ const serviceCategories = [
       'API threat monitoring',
       'API security consulting',
     ],
-    icon: '🔗',
     link: '/services/api-security',
     pricing: 'Contact us for pricing',
     popular: true,
@@ -94,7 +92,6 @@ const serviceCategories = [
       'Vulnerability management',
       'Security monitoring',
     ],
-    icon: '🛡️',
     link: '/services/managed-security',
     pricing: 'Contact us for pricing',
     popular: true,
@@ -111,7 +108,6 @@ const serviceCategories = [
       'Security architecture design',
       'Policy development',
     ],
-    icon: '🔍',
     link: '/services/cybersecurity-consulting',
     pricing: 'Contact us for pricing',
     popular: false,
@@ -128,7 +124,6 @@ const serviceCategories = [
       'Red team exercises',
       'Security assessments',
     ],
-    icon: '⚔️',
     link: '/services/red-teaming',
     pricing: 'Contact us for pricing',
     popular: false,
@@ -145,7 +140,6 @@ const serviceCategories = [
       'Recovery & remediation',
       'Legal support',
     ],
-    icon: '🚨',
     link: '/services/incident-response',
     pricing: 'Contact us for pricing',
     popular: false,
@@ -217,7 +211,6 @@ export default function ServicesPage() {
                     </div>
                   )}
 
-                  <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white mb-3">
                     {service.name}
                   </h3>
@@ -335,18 +328,16 @@ export default function ServicesPage() {
                   {
                     label: 'Critical Issue Response',
                     value: '< 15 minutes',
-                    icon: '⚡',
                   },
-                  { label: 'Service Availability', value: '99.9%', icon: '🛡️' },
+                  { label: 'Service Availability', value: '99.9%' },
                   {
                     label: 'Security Incident Response',
                     value: '< 1 hour',
-                    icon: '🚨',
                   },
                   {
                     label: 'Monthly Security Reports',
                     value: 'Included',
-                    icon: '📊',
+                    
                   },
                   { label: 'Compliance Support', value: '24/7', icon: '✅' },
                 ].map((item, index) => (
@@ -379,7 +370,6 @@ export default function ServicesPage() {
         <div className="absolute inset-0 bg-gradient-to-r from-accent-500/5 via-transparent to-[#EC4899]/5"></div>
         <div className="max-w-5xl mx-auto text-center relative z-10">
           <div className="mb-8">
-            <span className="text-6xl animate-bounce">🎯</span>
           </div>
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
             Ready to Transform Your{' '}
@@ -426,19 +416,17 @@ export default function ServicesPage() {
                 {
                   value: 'Free',
                   label: 'Security Assessment',
-                  icon: '🔍',
                   gradient: 'from-green-400 to-emerald-400',
                 },
                 {
                   value: '24/7',
                   label: 'Emergency Support',
-                  icon: '🚨',
                   gradient: 'from-red-400 to-pink-400',
                 },
                 {
                   value: 'No Lock-in',
                   label: 'Flexible Contracts',
-                  icon: '🔓',
+                  
                   gradient: 'from-blue-400 to-cyan-400',
                 },
               ].map((item, index) => (

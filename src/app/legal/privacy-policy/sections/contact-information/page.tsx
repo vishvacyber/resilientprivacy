@@ -41,7 +41,7 @@ export default function ContactInformationPage() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-[#0D0D0F] p-6 rounded border border-[#333]">
                     <h3 className="text-lg font-semibold text-white mb-4">
-                      🔒 General Privacy Inquiries
+                       General Privacy Inquiries
                     </h3>
                     <div className="space-y-3">
                       <div>

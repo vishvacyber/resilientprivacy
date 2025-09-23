@@ -13,7 +13,7 @@ const managedSecurityServices = [
       'Custom security use cases',
       'Monthly security reporting',
     ],
-    icon: '🛡️',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -27,7 +27,7 @@ const managedSecurityServices = [
       'Performance tuning',
       'User training & knowledge transfer',
     ],
-    icon: '📊',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -42,7 +42,7 @@ const managedSecurityServices = [
       'Threat landscape analysis',
       'Hunt campaign reporting',
     ],
-    icon: '🔍',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -56,7 +56,7 @@ const managedSecurityServices = [
       'Lessons learned documentation',
       'Legal & regulatory support',
     ],
-    icon: '🚨',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -70,7 +70,7 @@ const managedSecurityServices = [
       'Compliance vulnerability reporting',
       'Trend analysis & metrics',
     ],
-    icon: '🔧',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -85,7 +85,7 @@ const managedSecurityServices = [
       'Cloud compliance monitoring',
       'DevSecOps integration',
     ],
-    icon: '☁️',
+    
     pricing: 'Contact us for pricing',
   },
 ]
@@ -264,25 +264,25 @@ const benefits = [
     title: 'Reduced Security Costs',
     description:
       'Save up to 70% compared to building an in-house SOC team and infrastructure.',
-    icon: '💰',
+    
   },
   {
     title: 'Expert Security Team',
     description:
       'Access to certified security analysts with advanced threat detection expertise.',
-    icon: '👥',
+    
   },
   {
     title: 'Advanced Threat Detection',
     description:
       '99.5% threat detection accuracy with machine learning and behavioral analysis.',
-    icon: '🎯',
+    
   },
   {
     title: 'Compliance Ready',
     description:
       'Built-in compliance reporting for major regulatory frameworks and standards.',
-    icon: '📋',
+    
   },
 ]
 
@@ -353,7 +353,7 @@ export default function ManagedSecurityPage() {
                 key={service.category}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.category}
                 </h3>
@@ -552,7 +552,7 @@ export default function ManagedSecurityPage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

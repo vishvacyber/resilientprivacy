@@ -38,25 +38,25 @@ const benefits = [
     title: 'Identity Breach Prevention',
     description:
       'Block 99.7% of identity attacks with adaptive MFA. Customers report 94% reduction in credential-based breaches.',
-    icon: '🛡️',
+    
   },
   {
     title: 'Global Compliance Leader',
     description:
       'Pre-certified for SOX, PCI-DSS, HIPAA, and 22 other frameworks. Trusted by regulated industries worldwide.',
-    icon: '🌍',
+    
   },
   {
     title: 'Frictionless Access',
     description:
       'Single sign-on to 1,000+ applications. 98% user satisfaction rate with seamless authentication experience.',
-    icon: '✨',
+    
   },
   {
     title: 'Proven ROI',
     description:
       'Customers save average $1.8M annually on identity management costs. Deploy 75% faster than competitors.',
-    icon: '💰',
+    
   },
 ]
 
@@ -210,7 +210,7 @@ export default function IdentityAccessSuitePage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

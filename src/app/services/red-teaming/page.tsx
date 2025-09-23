@@ -13,7 +13,7 @@ const modernRedTeamServices = [
       'Large Language Model (LLM) prompt injection',
       'AI-assisted lateral movement techniques',
     ],
-    icon: '🤖',
+    
     difficulty: 'ADVANCED',
     trend: 'NEW 2025',
   },
@@ -29,7 +29,7 @@ const modernRedTeamServices = [
       'Infrastructure as Code (IaC) security testing',
       'Cloud workload protection bypass',
     ],
-    icon: '☁️',
+    
     difficulty: 'EXPERT',
     trend: 'HIGH DEMAND',
   },
@@ -45,7 +45,7 @@ const modernRedTeamServices = [
       'Privileged access management (PAM) attacks',
       'Device trust and compliance bypasses',
     ],
-    icon: '🛡️',
+    
     difficulty: 'EXPERT',
     trend: 'CRITICAL',
   },
@@ -60,7 +60,7 @@ const modernRedTeamServices = [
       'Command and control (C2) infrastructure',
       'Long-term persistence mechanisms',
     ],
-    icon: '🕵️',
+    
     difficulty: 'ELITE',
     trend: 'NATION-STATE',
   },
@@ -75,7 +75,7 @@ const modernRedTeamServices = [
       'Physical access control bypass',
       'Human intelligence (HUMINT) operations',
     ],
-    icon: '🎭',
+    
     difficulty: 'ADVANCED',
     trend: 'EVOLVING',
   },
@@ -90,7 +90,7 @@ const modernRedTeamServices = [
       'Hybrid classical-quantum attack simulation',
       'Quantum supremacy impact assessment',
     ],
-    icon: '⚛️',
+    
     difficulty: 'CUTTING-EDGE',
     trend: 'FUTURE-READY',
   },
@@ -259,28 +259,28 @@ const redTeamBenefits = [
     title: 'Real-World Attack Simulation',
     description:
       'Experience actual threat actor techniques and tactics used in the wild',
-    icon: '🎯',
+    
     value: 'Realistic scenarios',
   },
   {
     title: 'Advanced Evasion Techniques',
     description:
       'Test your defenses against sophisticated evasion and anti-forensics methods',
-    icon: '👻',
+    
     value: '100% stealth mode',
   },
   {
     title: 'AI-Enhanced Testing',
     description:
       'Leverage artificial intelligence for automated vulnerability discovery and exploitation',
-    icon: '🧠',
+    
     value: '10x faster discovery',
   },
   {
     title: 'Purple Team Collaboration',
     description:
       'Work alongside your blue team to improve detection and response capabilities',
-    icon: '🤝',
+    
     value: 'Collaborative improvement',
   },
 ]
@@ -367,7 +367,7 @@ export default function RedTeamingPage() {
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
                     <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                      {service.icon}
+                      
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">
@@ -644,7 +644,7 @@ export default function RedTeamingPage() {
       <section className="py-24 px-6 bg-gradient-to-br from-[#0D0D0F] via-[#1A1A1A] to-[#0D0D0F]">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <span className="text-5xl">⚔️</span>
+            
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Ready to Test Your Defenses?

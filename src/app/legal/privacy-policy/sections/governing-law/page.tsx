@@ -46,7 +46,7 @@ export default function GoverningLawPage() {
 
                   <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-6">
                     <h3 className="text-purple-300 font-bold mb-3">
-                      ⚖️ Legal Framework
+                      ⚖ Legal Framework
                     </h3>
                     <p className="text-purple-300 text-sm">
                       This Privacy Policy is governed by the laws of Delaware,
@@ -298,7 +298,7 @@ export default function GoverningLawPage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Severability
+                          ⚠ Severability
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           If any provision of this governing law section is

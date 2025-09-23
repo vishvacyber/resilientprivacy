@@ -293,7 +293,7 @@ export default function JurisdictionSpecificRightsPage() {
 
                       <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
                         <h4 className="text-blue-300 font-bold mb-3">
-                          ⏱️ Response Timeline
+                          ⏱ Response Timeline
                         </h4>
                         <p className="text-blue-300 text-sm">
                           We will respond to your request within 30 days of

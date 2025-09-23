@@ -39,7 +39,7 @@ const aiIAMFeatures = [
       'Network risk evaluation',
       'Dynamic risk adjustment',
     ],
-    icon: '🎯',
+    
   },
   {
     title: 'Behavioral Authentication',
@@ -52,7 +52,7 @@ const aiIAMFeatures = [
       'Application usage patterns',
       'Continuous authentication',
     ],
-    icon: '🧠',
+    
   },
   {
     title: 'Adaptive Access Controls',
@@ -65,7 +65,7 @@ const aiIAMFeatures = [
       'Real-time policy updates',
       'Intelligent access recommendations',
     ],
-    icon: '⚡',
+    
   },
   {
     title: 'Anomaly-Based Monitoring',
@@ -78,7 +78,7 @@ const aiIAMFeatures = [
       'Automated alerting',
       'Incident response automation',
     ],
-    icon: '🔍',
+    
   },
 ]
 
@@ -110,25 +110,25 @@ const aiIAMBenefits = [
     title: 'Enhanced Security',
     description: 'AI-driven security that adapts to evolving threats and user behaviors',
     improvement: '85%',
-    icon: '🛡️',
+    
   },
   {
     title: 'Reduced False Positives',
     description: 'Intelligent authentication reduces legitimate user friction',
     improvement: '90%',
-    icon: '✅',
+    
   },
   {
     title: 'Automated Response',
     description: 'AI automatically responds to security threats and anomalies',
     improvement: '95%',
-    icon: '🤖',
+    
   },
   {
     title: 'Compliance Automation',
     description: 'Automated compliance monitoring and reporting',
     improvement: '80%',
-    icon: '📋',
+    
   },
 ]
 
@@ -294,7 +294,7 @@ export default function AIIdentityManagementPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] text-center hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">🤖</div>
+                
                 <h3 className="text-xl font-bold text-white mb-2">
                   {capability.capability}
                 </h3>
@@ -330,7 +330,7 @@ export default function AIIdentityManagementPage() {
                 key={index}
                 className="bg-[#1A1A1A] p-8 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
@@ -373,7 +373,7 @@ export default function AIIdentityManagementPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] text-center hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-2">
                   {benefit.title}
                 </h3>

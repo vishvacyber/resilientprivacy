@@ -38,25 +38,25 @@ const benefits = [
     title: 'Zero Data Loss Guarantee',
     description:
       'Protect 99.95% of sensitive data with our AI-powered classification. Backed by comprehensive cyber insurance.',
-    icon: '🔒',
+    
   },
   {
     title: 'Regulatory Excellence',
     description:
       'Pre-built compliance templates for 25+ frameworks. 100% audit success rate across customer assessments.',
-    icon: '📋',
+    
   },
   {
     title: 'Proven Performance',
     description:
       'Customers report 92% reduction in data incidents and 60% faster compliance reporting with automated workflows.',
-    icon: '📊',
+    
   },
   {
     title: 'Rapid Implementation',
     description:
       'Deploy in 2-4 weeks with dedicated migration specialists. 95% of customers see ROI within first quarter.',
-    icon: '🚀',
+    
   },
 ]
 
@@ -210,7 +210,7 @@ export default function DlpDataGovernancePage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

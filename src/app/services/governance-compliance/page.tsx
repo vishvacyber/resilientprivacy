@@ -114,7 +114,7 @@ export default function GovernanceCompliance() {
                 </p>
               </div>
               <div className="text-center p-6 bg-[#0D0D0F] rounded-lg">
-                <div className="text-accent-500 text-3xl mb-4">🔍</div>
+                
                 <h3 className="text-xl font-semibold text-white mb-2">
                   Audit & Assessment
                 </h3>

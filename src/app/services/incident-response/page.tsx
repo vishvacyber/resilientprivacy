@@ -13,7 +13,7 @@ const responseCapabilities = [
       'Machine learning-based attack pattern recognition',
       'Automated indicator of compromise (IoC) generation',
     ],
-    icon: '🤖',
+    
     responseTime: '< 5 minutes',
     trend: 'AI-ENHANCED',
   },
@@ -29,7 +29,7 @@ const responseCapabilities = [
       'Malware reverse engineering',
       'Network traffic analysis and reconstruction',
     ],
-    icon: '🔍',
+    
     responseTime: '< 15 minutes',
     trend: 'COMPREHENSIVE',
   },
@@ -44,7 +44,7 @@ const responseCapabilities = [
       'DNS sinkholing and traffic redirection',
       'Real-time threat intelligence integration',
     ],
-    icon: '🛡️',
+    
     responseTime: '< 10 minutes',
     trend: 'CRITICAL',
   },
@@ -59,7 +59,7 @@ const responseCapabilities = [
       'Stakeholder communication management',
       'Recovery validation and testing',
     ],
-    icon: '🔄',
+    
     responseTime: '< 30 minutes',
     trend: 'BUSINESS-CRITICAL',
   },
@@ -74,7 +74,7 @@ const responseCapabilities = [
       'Insurance claim support',
       'Compliance documentation',
     ],
-    icon: '⚖️',
+    
     responseTime: '< 60 minutes',
     trend: 'COMPLIANCE',
   },
@@ -89,7 +89,7 @@ const responseCapabilities = [
       'Team training and awareness',
       'Incident response plan updates',
     ],
-    icon: '📈',
+    
     responseTime: '24-48 hours',
     trend: 'IMPROVEMENT',
   },
@@ -107,7 +107,7 @@ const incidentTypes = [
     ],
     specialization:
       'Advanced decryption techniques, threat actor negotiation, business continuity',
-    icon: '🔒',
+    
     severity: 'CRITICAL',
   },
   {
@@ -121,7 +121,7 @@ const incidentTypes = [
     ],
     specialization:
       'Attribution analysis, advanced forensics, geopolitical threat intelligence',
-    icon: '🕵️',
+    
     severity: 'HIGH',
   },
   {
@@ -135,7 +135,7 @@ const incidentTypes = [
     ],
     specialization:
       'Data classification, breach scope analysis, regulatory compliance',
-    icon: '📊',
+    
     severity: 'HIGH',
   },
   {
@@ -149,7 +149,7 @@ const incidentTypes = [
     ],
     specialization:
       'Cloud forensics, DevSecOps integration, infrastructure analysis',
-    icon: '☁️',
+    
     severity: 'MEDIUM',
   },
   {
@@ -163,7 +163,7 @@ const incidentTypes = [
     ],
     specialization:
       'Supply chain mapping, vendor risk assessment, cascading impact analysis',
-    icon: '🔗',
+    
     severity: 'HIGH',
   },
   {
@@ -177,7 +177,7 @@ const incidentTypes = [
     ],
     specialization:
       'OT forensics, industrial network analysis, safety system protection',
-    icon: '🏭',
+    
     severity: 'CRITICAL',
   },
 ]
@@ -259,26 +259,26 @@ const retainerBenefits = [
     title: 'Priority Response',
     description:
       'Guaranteed < 15 minute response time with dedicated team assignment',
-    icon: '⚡',
+    
     value: 'Immediate',
   },
   {
     title: 'Proactive Threat Hunting',
     description: 'Monthly threat hunting exercises to identify dormant threats',
-    icon: '🎯',
+    
     value: 'Monthly',
   },
   {
     title: 'Incident Response Planning',
     description: 'Customized playbooks and regular tabletop exercises',
-    icon: '📋',
+    
     value: 'Quarterly',
   },
   {
     title: 'Forensic Readiness',
     description:
       'Pre-positioned forensic tools and evidence collection procedures',
-    icon: '🔧',
+    
     value: 'Always Ready',
   },
 ]
@@ -312,7 +312,7 @@ export default function IncidentResponsePage() {
                 rel="noopener noreferrer"
                 className="btn text-lg px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-300"
               >
-                🚨 Emergency Response
+                 Emergency Response
               </Link>
               <Link
                 href="#capabilities"
@@ -597,7 +597,7 @@ export default function IncidentResponsePage() {
       <section className="py-24 px-6 bg-gradient-to-br from-[#0D0D0F] via-[#1A1A1A] to-[#0D0D0F]">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-8">
-            <span className="text-5xl">🚨</span>
+            
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
             Don't Wait for an Incident to Strike
@@ -614,7 +614,7 @@ export default function IncidentResponsePage() {
               rel="noopener noreferrer"
               className="btn text-lg px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-300"
             >
-              🚨 Get Emergency Hotline Access
+               Get Emergency Hotline Access
             </Link>
             <Link
               href="/services/managed-security"

@@ -38,25 +38,25 @@ const benefits = [
     title: 'Zero Trust Pioneer',
     description:
       'First to market with true zero trust architecture. Deployed by 300+ global enterprises including 8 of top 10 banks.',
-    icon: '🚀',
+    
   },
   {
     title: 'Breach Prevention Guarantee',
     description:
       'Stop 99.8% of lateral movement attacks. Customers report 96% reduction in network-based security incidents.',
-    icon: '🛡️',
+    
   },
   {
     title: 'Performance Excellence',
     description:
       'Sub-5ms latency with global edge network. 40% faster than traditional VPN solutions with superior security.',
-    icon: '⚡',
+    
   },
   {
     title: 'Seamless Migration',
     description:
       'Deploy without network downtime. 95% of customers complete migration in under 30 days with dedicated architects.',
-    icon: '🔄',
+    
   },
 ]
 
@@ -209,7 +209,7 @@ export default function ZeroTrustNetworkEdgePage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

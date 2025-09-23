@@ -122,22 +122,18 @@ const productHighlights = [
   {
     title: 'AI-First Security',
     description: 'Machine learning-powered threat detection and response',
-    icon: '🤖',
   },
   {
     title: 'API Protection',
     description: 'Comprehensive API security and threat prevention',
-    icon: '🔒',
   },
   {
     title: 'Autonomous Operations',
     description: 'Self-learning security systems with minimal human intervention',
-    icon: '⚡',
   },
   {
     title: 'Zero Trust Architecture',
     description: 'AI-driven zero trust implementation and enforcement',
-    icon: '🛡️',
   },
 ]
 
@@ -284,7 +280,6 @@ export default function ProductsPage() {
                 key={highlight.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{highlight.icon}</div>
                 <h3 className="text-xl font-bold text-white mb-4">
                   {highlight.title}
                 </h3>

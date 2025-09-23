@@ -13,7 +13,7 @@ const dataCenterServices = [
       'Biometric access controls',
       'Remote hands support',
     ],
-    icon: '🏢',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -27,7 +27,7 @@ const dataCenterServices = [
       'Custom network configurations',
       'Managed hypervisor platforms',
     ],
-    icon: '☁️',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -41,7 +41,7 @@ const dataCenterServices = [
       'Regular DR testing',
       'Failover orchestration',
     ],
-    icon: '🔄',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -55,7 +55,7 @@ const dataCenterServices = [
       'Compliance-ready retention',
       'Rapid data restoration',
     ],
-    icon: '💾',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -69,7 +69,7 @@ const dataCenterServices = [
       'DDoS protection services',
       'Network monitoring & management',
     ],
-    icon: '🌐',
+    
     pricing: 'Contact us for pricing',
   },
   {
@@ -83,7 +83,7 @@ const dataCenterServices = [
       'Capacity planning',
       'Incident response & resolution',
     ],
-    icon: '⚙️',
+    
     pricing: 'Contact us for pricing',
   },
 ]
@@ -155,32 +155,32 @@ const complianceStandards = [
   {
     standard: 'SOC 2 Type II',
     description: 'Security, availability, and confidentiality controls',
-    icon: '🔒',
+    
   },
   {
     standard: 'HIPAA Compliant',
     description: 'Healthcare data protection requirements',
-    icon: '🏥',
+    
   },
   {
     standard: 'PCI DSS Level 1',
     description: 'Payment card industry data security',
-    icon: '💳',
+    
   },
   {
     standard: 'FISMA Moderate',
     description: 'Federal information security standards',
-    icon: '🏛️',
+    
   },
   {
     standard: 'ISO 27001',
     description: 'Information security management',
-    icon: '📋',
+    
   },
   {
     standard: 'SSAE 18',
     description: 'Service organization control reports',
-    icon: '📊',
+    
   },
 ]
 
@@ -189,25 +189,25 @@ const benefits = [
     title: 'Enterprise Reliability',
     description:
       '99.99% uptime SLA with Tier III+ data center infrastructure and redundant systems.',
-    icon: '⚡',
+    
   },
   {
     title: 'Cost Optimization',
     description:
       'Reduce capital expenditure by 60% compared to building your own data center.',
-    icon: '💰',
+    
   },
   {
     title: 'Scalable Infrastructure',
     description:
       'Scale resources up or down instantly based on your business requirements.',
-    icon: '📈',
+    
   },
   {
     title: 'Enhanced Security',
     description:
       'Multi-layered physical and digital security with 24/7 monitoring and access controls.',
-    icon: '🔐',
+    
   },
 ]
 
@@ -289,7 +289,7 @@ export default function DataCenterPage() {
                 key={service.category}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.category}
                 </h3>
@@ -400,7 +400,7 @@ export default function DataCenterPage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

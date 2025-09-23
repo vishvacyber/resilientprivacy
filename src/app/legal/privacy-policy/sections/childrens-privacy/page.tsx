@@ -248,7 +248,7 @@ export default function ChildrensPrivacyPage() {
 
                   <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
                     <h4 className="text-blue-300 font-bold mb-3">
-                      🛡️ Additional Safeguards
+                       Additional Safeguards
                     </h4>
                     <p className="text-blue-300 text-sm">
                       We implement technical and organizational measures to

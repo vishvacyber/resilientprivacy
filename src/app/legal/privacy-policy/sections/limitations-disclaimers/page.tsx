@@ -39,7 +39,7 @@ export default function LimitationsDisclaimersPage() {
                 <div className="space-y-6">
                   <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6">
                     <h3 className="text-red-300 font-bold mb-3">
-                      ⚠️ IMPORTANT LEGAL NOTICE
+                      ⚠ IMPORTANT LEGAL NOTICE
                     </h3>
                     <p className="text-red-300 text-sm">
                       This section contains important limitations on our
@@ -63,7 +63,7 @@ export default function LimitationsDisclaimersPage() {
                     <div className="space-y-4">
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          🔒 Security Disclaimer
+                           Security Disclaimer
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           While we implement industry-standard security
@@ -230,7 +230,7 @@ export default function LimitationsDisclaimersPage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Third-Party Disclaimer
+                          ⚠ Third-Party Disclaimer
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           While we carefully select and monitor our third-party
@@ -321,7 +321,7 @@ export default function LimitationsDisclaimersPage() {
 
                       <div className="bg-purple-900/20 border border-purple-500/30 rounded-lg p-6">
                         <h4 className="text-purple-300 font-bold mb-3">
-                          ⚖️ Legal Consultation
+                          ⚖ Legal Consultation
                         </h4>
                         <p className="text-purple-300 text-sm">
                           The information in this Privacy Policy is for general

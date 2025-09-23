@@ -47,7 +47,7 @@ export default function ThirdPartyServicesPage() {
 
                   <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
                     <h3 className="text-blue-300 font-bold mb-3">
-                      🔒 Our Commitment
+                       Our Commitment
                     </h3>
                     <p className="text-blue-300 text-sm">
                       We carefully select third-party providers who share our
@@ -236,7 +236,7 @@ export default function ThirdPartyServicesPage() {
 
                       <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
                         <h4 className="text-green-300 font-bold mb-3">
-                          🎛️ Control Your Data
+                          🎛 Control Your Data
                         </h4>
                         <p className="text-green-300 text-sm">
                           You can control how your data is shared with third
@@ -263,7 +263,7 @@ export default function ThirdPartyServicesPage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Important Notice
+                          ⚠ Important Notice
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           While we carefully select and monitor our third-party

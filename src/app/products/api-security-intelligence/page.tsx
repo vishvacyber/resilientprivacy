@@ -39,7 +39,7 @@ const apiSecurityFeatures = [
       'Custom security rules',
       'Continuous monitoring',
     ],
-    icon: '🔍',
+    
   },
   {
     title: 'Real-time API Monitoring',
@@ -52,7 +52,7 @@ const apiSecurityFeatures = [
       'Real-time alerting',
       'Traffic visualization',
     ],
-    icon: '📊',
+    
   },
   {
     title: 'Automated API Security Testing',
@@ -65,7 +65,7 @@ const apiSecurityFeatures = [
       'Rate limiting verification',
       'Security control validation',
     ],
-    icon: '🧪',
+    
   },
   {
     title: 'API Compliance Reporting',
@@ -78,7 +78,7 @@ const apiSecurityFeatures = [
       'Custom compliance frameworks',
       'Audit trail generation',
     ],
-    icon: '📋',
+    
   },
 ]
 
@@ -87,37 +87,37 @@ const apiThreatTypes = [
     threat: 'API Injection Attacks',
     description: 'SQL injection, NoSQL injection, and command injection through API parameters',
     protection: 'Input validation and sanitization',
-    icon: '💉',
+    
   },
   {
     threat: 'Authentication Bypass',
     description: 'JWT manipulation, session hijacking, and credential stuffing attacks',
     protection: 'Multi-factor authentication and token validation',
-    icon: '🔐',
+    
   },
   {
     threat: 'Rate Limiting Bypass',
     description: 'DDoS attacks, brute force attempts, and API abuse',
     protection: 'Intelligent rate limiting and traffic shaping',
-    icon: '⚡',
+    
   },
   {
     threat: 'Data Exposure',
     description: 'Sensitive data leakage through API responses and logs',
     protection: 'Data classification and encryption',
-    icon: '📄',
+    
   },
   {
     threat: 'Business Logic Flaws',
     description: 'Exploitation of application-specific vulnerabilities',
     protection: 'Behavioral analysis and anomaly detection',
-    icon: '🧩',
+    
   },
   {
     threat: 'API Misconfigurations',
     description: 'Insecure default settings and misconfigured security controls',
     protection: 'Configuration scanning and hardening',
-    icon: '⚙️',
+    
   },
 ]
 
@@ -283,7 +283,7 @@ export default function APISecurityIntelligencePage() {
                 key={index}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>

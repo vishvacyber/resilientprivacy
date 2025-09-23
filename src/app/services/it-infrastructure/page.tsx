@@ -12,7 +12,7 @@ const itServices = [
       'User account management',
       'Password resets & access issues',
     ],
-    icon: '🎧',
+    
   },
   {
     category: 'Infrastructure Monitoring',
@@ -26,7 +26,7 @@ const itServices = [
       'Capacity planning & optimization',
       'Performance reporting & analytics',
     ],
-    icon: '📊',
+    
   },
   {
     category: 'Cloud Migration & Management',
@@ -39,7 +39,7 @@ const itServices = [
       'Cloud security implementation',
       'Backup & disaster recovery',
     ],
-    icon: '☁️',
+    
   },
   {
     category: 'Network Administration',
@@ -52,7 +52,7 @@ const itServices = [
       'Wireless network deployment',
       'Network security hardening',
     ],
-    icon: '🌐',
+    
   },
   {
     category: 'System Maintenance',
@@ -65,7 +65,7 @@ const itServices = [
       'Software license management',
       'Documentation & asset tracking',
     ],
-    icon: '🔧',
+    
   },
   {
     category: 'Data Backup & Recovery',
@@ -78,7 +78,7 @@ const itServices = [
       'Cloud backup integration',
       'Business continuity planning',
     ],
-    icon: '💾',
+    
   },
 ]
 
@@ -168,25 +168,25 @@ const benefits = [
     title: 'Reduced Downtime',
     description:
       'Proactive monitoring and maintenance reduce system downtime by up to 95%.',
-    icon: '⚡',
+    
   },
   {
     title: 'Cost Predictability',
     description:
       'Fixed monthly pricing helps you budget IT costs without surprise expenses.',
-    icon: '💰',
+    
   },
   {
     title: 'Expert Knowledge',
     description:
       'Access to certified IT professionals without the cost of hiring full-time staff.',
-    icon: '👨‍💻',
+    
   },
   {
     title: 'Scalable Solutions',
     description:
       'IT infrastructure that grows with your business needs and requirements.',
-    icon: '📈',
+    
   },
 ]
 
@@ -234,7 +234,7 @@ export default function ITInfrastructurePage() {
                 key={service.category}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{service.icon}</div>
+                <div className="text-4xl mb-4"></div>
                 <h3 className="text-xl font-bold text-white mb-3">
                   {service.category}
                 </h3>
@@ -382,7 +382,7 @@ export default function ITInfrastructurePage() {
                 key={benefit.title}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

@@ -28,7 +28,7 @@ export default function DataSecurityPage() {
             <div className="space-y-8 text-text-secondary">
               <div className="bg-blue-900/20 border border-blue-500/30 p-6 rounded">
                 <h3 className="text-lg font-semibold text-blue-400 mb-3">
-                  🔐 Security-First Approach
+                   Security-First Approach
                 </h3>
                 <p>
                   As a cybersecurity company, we implement enterprise-grade

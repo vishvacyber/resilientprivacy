@@ -13,7 +13,7 @@ const modernServices = [
       'AI governance and ethics frameworks',
       'Autonomous security orchestration design',
     ],
-    icon: '🤖',
+    
     trend: 'NEW IN 2025',
   },
   {
@@ -28,7 +28,7 @@ const modernServices = [
       'Zero trust network access (ZTNA) design',
       'Behavioral analytics integration',
     ],
-    icon: '🛡️',
+    
     trend: 'ESSENTIAL',
   },
   {
@@ -43,7 +43,7 @@ const modernServices = [
       'Legacy encryption migration strategy',
       'Quantum-safe certificate management',
     ],
-    icon: '⚛️',
+    
     trend: 'FUTURE-READY',
   },
   {
@@ -58,7 +58,7 @@ const modernServices = [
       'Cloud security posture management (CSPM)',
       'Infrastructure as Code (IaC) security',
     ],
-    icon: '☁️',
+    
     trend: 'HIGH DEMAND',
   },
   {
@@ -73,7 +73,7 @@ const modernServices = [
       'DORA (Digital Operational Resilience Act)',
       'State privacy law harmonization',
     ],
-    icon: '📋',
+    
     trend: 'REGULATORY UPDATE',
   },
   {
@@ -88,7 +88,7 @@ const modernServices = [
       'Supply chain risk management',
       'Crisis communication planning',
     ],
-    icon: '🔄',
+    
     trend: 'BUSINESS CRITICAL',
   },
 ]
@@ -149,28 +149,28 @@ const consultingBenefits = [
     title: 'AI-Augmented Expertise',
     description:
       'Our consultants leverage AI tools and insights to deliver faster, more accurate security assessments and recommendations.',
-    icon: '🧠',
+    
     value: '3x faster analysis',
   },
   {
     title: 'Future-Proof Strategies',
     description:
       'Security roadmaps designed to adapt to emerging technologies like quantum computing and advanced AI threats.',
-    icon: '🚀',
+    
     value: '5-10 year outlook',
   },
   {
     title: 'Regulatory Readiness',
     description:
       'Stay ahead of evolving compliance requirements with proactive regulatory impact assessments.',
-    icon: '⚖️',
+    
     value: '100% compliance rate',
   },
   {
     title: 'Measurable ROI',
     description:
       'Data-driven security investments with clear metrics and business impact measurement.',
-    icon: '📈',
+    
     value: 'Average 340% ROI',
   },
 ]
@@ -180,42 +180,42 @@ const industrySpecializations = [
     industry: 'Financial Services & Fintech',
     focus: 'Quantum-safe banking, AI fraud detection, regulatory technology',
     regulations: ['PCI DSS 4.0', 'DORA', 'Basel III', 'FIDO2'],
-    icon: '🏦',
+    
   },
   {
     industry: 'Healthcare & Life Sciences',
     focus:
       'Medical IoT security, AI diagnostics protection, patient data sovereignty',
     regulations: ['HIPAA', 'FDA Cybersecurity', 'GDPR', 'ISO 27799'],
-    icon: '🏥',
+    
   },
   {
     industry: 'Technology & SaaS',
     focus:
       'Secure-by-design development, AI model protection, supply chain security',
     regulations: ['SOC 2 Type II', 'ISO 27001', 'AI Act', 'CCPA'],
-    icon: '💻',
+    
   },
   {
     industry: 'Critical Infrastructure',
     focus:
       'OT/IT convergence, nation-state threat defense, resilience planning',
     regulations: ['NERC CIP', 'IEC 62443', 'NIS2', 'TSA Directives'],
-    icon: '⚡',
+    
   },
   {
     industry: 'Government & Defense',
     focus:
       'Zero trust implementation, classified data protection, supply chain vetting',
     regulations: ['FedRAMP', 'FISMA', 'NIST SP 800-171', 'CMMC 2.0'],
-    icon: '🏛️',
+    
   },
   {
     industry: 'Manufacturing & IoT',
     focus:
       'Industrial IoT security, smart factory protection, edge computing security',
     regulations: ['IEC 62443', 'ISO 27001', 'GDPR', 'CCPA'],
-    icon: '🏭',
+    
   },
 ]
 
@@ -335,7 +335,7 @@ export default function CybersecurityConsultingPage() {
                 <div className="flex items-start justify-between mb-6">
                   <div className="flex items-center gap-4">
                     <div className="text-4xl group-hover:scale-110 transition-transform duration-300">
-                      {service.icon}
+                      
                     </div>
                     <div>
                       <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-500 transition-colors duration-300">

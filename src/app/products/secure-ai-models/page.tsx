@@ -39,7 +39,7 @@ const aiModelSecurityFeatures = [
       'Deployment integrity verification',
       'Real-time tamper detection',
     ],
-    icon: '🔒',
+    
   },
   {
     title: 'Adversarial Attack Detection',
@@ -52,7 +52,7 @@ const aiModelSecurityFeatures = [
       'Defense mechanism activation',
       'Threat intelligence integration',
     ],
-    icon: '🛡️',
+    
   },
   {
     title: 'AI Model Encryption',
@@ -65,7 +65,7 @@ const aiModelSecurityFeatures = [
       'Differential privacy integration',
       'Secure multi-party computation',
     ],
-    icon: '🔐',
+    
   },
   {
     title: 'Secure AI Deployment',
@@ -78,7 +78,7 @@ const aiModelSecurityFeatures = [
       'Audit trail generation',
       'Compliance monitoring',
     ],
-    icon: '🚀',
+    
   },
 ]
 
@@ -87,37 +87,37 @@ const aiSecurityThreats = [
     threat: 'Adversarial Examples',
     description: 'Malicious inputs designed to fool AI models and cause misclassification',
     protection: 'Input validation and adversarial training',
-    icon: '🎯',
+    
   },
   {
     threat: 'Model Poisoning',
     description: 'Corruption of training data to manipulate model behavior',
     protection: 'Data integrity monitoring and validation',
-    icon: '☠️',
+    
   },
   {
     threat: 'Model Extraction',
     description: 'Theft of AI model architecture and parameters through API queries',
     protection: 'Query rate limiting and model obfuscation',
-    icon: '📤',
+    
   },
   {
     threat: 'Inference Attacks',
     description: 'Extraction of sensitive training data through model outputs',
     protection: 'Differential privacy and output filtering',
-    icon: '🔍',
+    
   },
   {
     threat: 'Backdoor Attacks',
     description: 'Hidden triggers in models that cause malicious behavior',
     protection: 'Model analysis and trigger detection',
-    icon: '🚪',
+    
   },
   {
     threat: 'Model Inversion',
     description: 'Reconstruction of training data from model outputs',
     protection: 'Output perturbation and privacy preservation',
-    icon: '🔄',
+    
   },
 ]
 
@@ -159,25 +159,25 @@ const aiSecurityBenefits = [
     title: 'Model Protection',
     description: 'Comprehensive protection against AI-specific security threats',
     improvement: '99%',
-    icon: '🛡️',
+    
   },
   {
     title: 'Threat Detection',
     description: 'Advanced detection of adversarial attacks and model tampering',
     improvement: '95%',
-    icon: '🔍',
+    
   },
   {
     title: 'Compliance',
     description: 'Automated compliance with AI security standards and regulations',
     improvement: '90%',
-    icon: '📋',
+    
   },
   {
     title: 'Performance',
     description: 'Minimal impact on AI model performance while maintaining security',
     improvement: '<5%',
-    icon: '⚡',
+    
   },
 ]
 
@@ -333,7 +333,7 @@ export default function SecureAIModelsPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
@@ -411,7 +411,7 @@ export default function SecureAIModelsPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-6 rounded-lg border border-[#333] text-center hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-2">
                   {benefit.title}
                 </h3>

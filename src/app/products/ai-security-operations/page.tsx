@@ -39,7 +39,7 @@ const aiSOCFeatures = [
       'Predictive threat modeling',
       'Automated alert correlation',
     ],
-    icon: '🔄',
+    
   },
   {
     title: 'Automated Threat Hunting',
@@ -52,7 +52,7 @@ const aiSOCFeatures = [
       'Automated investigation workflows',
       'Contextual threat analysis',
     ],
-    icon: '🔍',
+    
   },
   {
     title: 'Intelligent Incident Response',
@@ -65,7 +65,7 @@ const aiSOCFeatures = [
       'Learning from response outcomes',
       'Escalation intelligence',
     ],
-    icon: '⚡',
+    
   },
   {
     title: 'Predictive Security Analytics',
@@ -78,7 +78,7 @@ const aiSOCFeatures = [
       'Security posture scoring',
       'Proactive recommendations',
     ],
-    icon: '📊',
+    
   },
 ]
 
@@ -120,25 +120,25 @@ const aiSOCBenefits = [
     title: 'Reduced Security Costs',
     description: 'Eliminate the need for large SOC teams with AI automation handling routine security tasks.',
     savings: '70%',
-    icon: '💰',
+    
   },
   {
     title: 'Faster Threat Response',
     description: 'AI responds to threats in seconds, not hours, minimizing potential damage and exposure.',
     improvement: '90%',
-    icon: '⚡',
+    
   },
   {
     title: 'Enhanced Detection Accuracy',
     description: 'AI algorithms detect sophisticated threats that human analysts might miss.',
     accuracy: '99.7%',
-    icon: '🎯',
+    
   },
   {
     title: 'Continuous Learning',
     description: 'AI systems continuously improve their detection capabilities through machine learning.',
     improvement: '15%',
-    icon: '🧠',
+    
   },
 ]
 
@@ -271,7 +271,7 @@ export default function AISecurityOperationsPage() {
                 key={index}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#333] hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
@@ -314,7 +314,7 @@ export default function AISecurityOperationsPage() {
                 key={index}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#333] text-center hover:border-accent-500 transition-all duration-300"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-2">
                   {benefit.title}
                 </h3>

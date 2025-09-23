@@ -4,7 +4,7 @@ const resourceCategories = [
   {
     title: 'Blog',
     description: 'Latest insights and analysis from our security experts',
-    icon: '📝',
+    
     link: '/resources/blog',
     count: '75+ articles',
     featured: [
@@ -17,7 +17,7 @@ const resourceCategories = [
   {
     title: 'Documentation',
     description: 'Technical documentation and implementation guides',
-    icon: '📚',
+    
     link: '/resources/documentation',
     count: '150+ guides',
     featured: ['API Reference', 'Deployment Guide', 'Troubleshooting'],
@@ -25,7 +25,7 @@ const resourceCategories = [
   {
     title: 'Training',
     description: 'Security awareness and technical training',
-    icon: '🎓',
+    
     link: '/resources/training',
     count: '30+ courses',
     featured: [
@@ -184,7 +184,7 @@ export default function ResourcesPage() {
                 key={category.title}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
-                <div className="text-4xl mb-4">{category.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {category.title}
                 </h3>

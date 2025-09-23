@@ -238,7 +238,7 @@ export default function UpdatesToPolicyPage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Continued Use
+                          ⚠ Continued Use
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           Your continued use of our services after policy

@@ -4,7 +4,7 @@ const communityFeatures = [
   {
     title: 'Customer Portal',
     description: 'Access your account management and security resources',
-    icon: '🔐',
+    
     link: '/community/portal',
     features: [
       'Account Management',
@@ -16,7 +16,7 @@ const communityFeatures = [
   {
     title: 'Feature Requests',
     description: 'Submit and vote on new features and improvements',
-    icon: '💡',
+    
     link: '/community/features',
     features: [
       'Submit Ideas',
@@ -29,7 +29,7 @@ const communityFeatures = [
     title: 'Community Forums',
     description:
       'Connect with other security professionals and share knowledge',
-    icon: '💬',
+    
     link: '/community/forums',
     features: [
       'Security Discussions',
@@ -41,7 +41,7 @@ const communityFeatures = [
   {
     title: 'Help Center',
     description: 'Comprehensive documentation and troubleshooting guides',
-    icon: '📚',
+    
     link: '/community/help',
     features: ['Documentation', 'Tutorials', 'FAQ', 'Video Guides'],
   },
@@ -215,7 +215,7 @@ export default function CommunityPage() {
                 key={feature.title}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
-                <div className="text-4xl mb-4">{feature.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>

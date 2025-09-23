@@ -47,7 +47,7 @@ export default function BusinessTransfersPage() {
 
                   <div className="bg-blue-900/20 border border-blue-500/30 rounded-lg p-6">
                     <h3 className="text-blue-300 font-bold mb-3">
-                      🛡️ Our Commitment
+                       Our Commitment
                     </h3>
                     <p className="text-blue-300 text-sm">
                       We are committed to ensuring that your Personal Data
@@ -270,7 +270,7 @@ export default function BusinessTransfersPage() {
 
                       <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                         <h4 className="text-yellow-300 font-bold mb-3">
-                          ⚠️ Service Continuity
+                          ⚠ Service Continuity
                         </h4>
                         <p className="text-yellow-300 text-sm">
                           While we strive to maintain service continuity during

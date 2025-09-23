@@ -142,14 +142,14 @@ const industries = [
     title: 'Financial Services',
     description:
       'Compliance-focused IT solutions for banks, insurance companies, and fintech organizations.',
-    icon: '🏦',
+    
     features: ['Regulatory Compliance', 'Risk Management', 'Digital Banking'],
   },
   {
     title: 'Healthcare',
     description:
       'HIPAA-compliant technology solutions for hospitals, clinics, and healthcare providers.',
-    icon: '🏥',
+    
     features: [
       'HIPAA Compliance',
       'Patient Data Security',
@@ -160,14 +160,14 @@ const industries = [
     title: 'Manufacturing',
     description:
       'Industry 4.0 solutions for smart manufacturing and supply chain optimization.',
-    icon: '🏭',
+    
     features: ['IoT Integration', 'Supply Chain Optimization', 'Automation'],
   },
   {
     title: 'Retail & E-commerce',
     description:
       'Digital commerce solutions for omnichannel retail and e-commerce platforms.',
-    icon: '🛒',
+    
     features: [
       'Omnichannel Strategy',
       'E-commerce Platforms',

@@ -218,7 +218,7 @@ export default function InternationalTransfersPage() {
 
                   <div className="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6">
                     <h4 className="text-yellow-300 font-bold mb-3">
-                      ⚠️ Important Notice
+                      ⚠ Important Notice
                     </h4>
                     <p className="text-yellow-300 text-sm">
                       By using our services, you acknowledge that your Personal

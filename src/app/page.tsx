@@ -124,54 +124,47 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Our Core Cybersecurity Services
+                Our AI-Powered Security Products
               </h2>
               <p className="text-lg text-text-secondary max-w-4xl mx-auto leading-relaxed">
-                Comprehensive security solutions designed to protect your organization from evolving threats.
+                Cutting-edge AI security solutions with 99.7% threat detection accuracy, designed to protect against sophisticated attacks.
               </p>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
                 { 
-                  title: 'Identity & Access Management', 
-                  description: 'Advanced identity security and access control solutions with zero trust principles.',
-                  icon: '🔐',
-                  href: '/products/identity-access-suite'
+                  title: 'AI-Powered Threat Detection', 
+                  description: 'Machine learning-driven security analytics and threat hunting with 99.7% accuracy.',
+                  href: '/products/ai-threat-detection'
                 },
                 { 
-                  title: 'Zero Trust Architecture', 
-                  description: 'Comprehensive zero trust network security solutions for modern enterprises.',
-                  icon: '🛡️',
-                  href: '/products/zero-trust-network-edge'
+                  title: 'Secure API Gateway', 
+                  description: 'Comprehensive API security and management platform with real-time protection.',
+                  href: '/products/secure-api-gateway'
                 },
                 { 
-                  title: 'Threat Intelligence Platform', 
-                  description: 'Real-time threat intelligence and proactive threat hunting capabilities.',
-                  icon: '🎯',
-                  href: '/products/threat-intelligence-platform'
+                  title: 'AI Security Operations Center', 
+                  description: 'Autonomous security operations with AI-driven analytics and monitoring.',
+                  href: '/products/ai-security-operations'
                 },
                 { 
-                  title: 'Cloud Security Posture', 
-                  description: 'Advanced cloud security monitoring and compliance management.',
-                  icon: '☁️',
-                  href: '/products/cloud-security-posture'
+                  title: 'API Security Intelligence', 
+                  description: 'Advanced API threat detection and protection against sophisticated attacks.',
+                  href: '/products/api-security-intelligence'
                 },
                 { 
-                  title: 'EDR/XDR Solutions', 
-                  description: 'Endpoint detection and response with extended detection capabilities.',
-                  icon: '🖥️',
-                  href: '/products/edr-xdr'
+                  title: 'AI-Enhanced Identity Management', 
+                  description: 'Intelligent identity and access management with AI-powered risk scoring.',
+                  href: '/products/ai-identity-management'
                 },
                 { 
-                  title: 'Managed Security Services', 
-                  description: '24/7 SOC operations, incident response, and threat monitoring.',
-                  icon: '🔍',
-                  href: '/services/managed-security'
+                  title: 'Secure AI Model Protection', 
+                  description: 'Protect AI models and data from adversarial attacks and model extraction.',
+                  href: '/products/secure-ai-models'
                 },
               ].map((service, index) => (
                 <Link key={index} href={service.href} className="darkfire-card p-8 hover:darkfire-shadow transition-all duration-300 group">
-                  <div className="text-4xl mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-white mb-4 group-hover:darkfire-text-gradient transition-colors">
                     {service.title}
                   </h3>

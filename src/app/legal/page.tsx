@@ -53,37 +53,37 @@ const complianceFrameworks = [
     name: 'GDPR',
     description: 'General Data Protection Regulation compliance',
     status: 'Compliant',
-    icon: '🇪🇺',
+    
   },
   {
     name: 'CCPA',
     description: 'California Consumer Privacy Act compliance',
     status: 'Compliant',
-    icon: '🇺🇸',
+    
   },
   {
     name: 'COPPA',
     description: 'Children\'s Online Privacy Protection Act',
     status: 'Compliant',
-    icon: '👶',
+    
   },
   {
     name: 'State Privacy Laws',
     description: 'Virginia, Colorado, Connecticut, Utah privacy laws',
     status: 'Compliant',
-    icon: '🏛️',
+    
   },
   {
     name: 'Industry Standards',
     description: 'NIST Privacy Framework and best practices',
     status: 'Following',
-    icon: '📋',
+    
   },
   {
     name: 'Data Protection',
     description: 'Comprehensive data protection measures',
     status: 'Implemented',
-    icon: '🛡️',
+    
   },
 ]
 
@@ -237,7 +237,7 @@ export default function LegalPage() {
                 key={framework.name}
                 className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{framework.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {framework.name}
                 </h3>

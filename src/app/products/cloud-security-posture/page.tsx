@@ -38,25 +38,25 @@ const benefits = [
     title: 'Industry-Leading Protection',
     description:
       'Trusted by enterprises with 99.8% threat detection accuracy and zero false positives guarantee.',
-    icon: '🏆',
+    
   },
   {
     title: 'Proven ROI',
     description:
       'Customers report 85% reduction in security incidents and $2.3M average annual savings on compliance costs.',
-    icon: '📈',
+    
   },
   {
     title: 'Deployment Excellence',
     description:
       'Deploy in under 48 hours with our certified cloud architects. 100% success rate across 10,000+ implementations.',
-    icon: '⚡',
+    
   },
   {
     title: 'Enterprise Trust',
     description:
       'SOC 2 Type II certified with 99.99% uptime SLA. Backed by $50M cyber insurance coverage.',
-    icon: '🛡️',
+    
   },
 ]
 
@@ -209,7 +209,7 @@ export default function CloudSecurityPosturePage() {
                 key={benefit.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{benefit.icon}</div>
+                
                 <h3 className="text-xl font-bold text-white mb-4">
                   {benefit.title}
                 </h3>

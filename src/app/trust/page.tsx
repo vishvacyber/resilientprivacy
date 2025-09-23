@@ -6,28 +6,28 @@ const securityMetrics = [
     value: '99.99%',
     description: 'Platform availability over the last 12 months',
     trend: 'up',
-    icon: '📈',
+    
   },
   {
     metric: 'MTTR',
     value: '15 min',
     description: 'Mean Time to Resolution for security incidents',
     trend: 'down',
-    icon: '⚡',
+    
   },
   {
     metric: 'Threat Detection',
     value: '99.9%',
     description: 'Detection rate for known and unknown threats',
     trend: 'up',
-    icon: '🛡️',
+    
   },
   {
     metric: 'False Positives',
     value: '< 0.1%',
     description: 'False positive rate in threat detection',
     trend: 'down',
-    icon: '🎯',
+    
   },
 ]
 
@@ -226,7 +226,7 @@ export default function TrustCenterPage() {
                 key={metric.metric}
                 className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] text-center"
               >
-                <div className="text-4xl mb-4">{metric.icon}</div>
+                
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {metric.metric}
                 </h3>
