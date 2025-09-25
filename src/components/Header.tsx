@@ -65,12 +65,21 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-3 group transition-all duration-500 ease-out"
+            className="flex items-center group transition-all duration-500 ease-out"
             aria-label="Resilient Privacy - Home"
           >
-            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-text-primary transition-all duration-500 ease-out group-hover:scale-105">
-              Resilient Privacy
-            </h1>
+            <div className="relative">
+              <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold tracking-normal transition-all duration-300 ease-out group-hover:scale-102 select-none leading-tight">
+                <span className="logo-gradient font-bold">
+                  RESILIENT
+                </span>
+                <span className="ml-1.5 sm:ml-2 logo-gradient-purple font-bold">
+                  PRIVACY
+                </span>
+              </h1>
+              {/* Mobile-optimized glow effect */}
+              <div className="hidden sm:block absolute inset-0 bg-gradient-to-r from-purple-500/15 to-blue-500/10 blur-lg opacity-20 group-hover:opacity-30 transition-all duration-500 ease-out -z-10"></div>
+            </div>
           </Link>
 
           {/* Desktop Navigation with Dropdowns */}
@@ -308,8 +317,8 @@ export default function Header() {
 
         {/* Mobile Menu with Dropdowns */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 darkfire-glass border-t border-border-light/50 darkfire-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[70vh] overflow-y-auto">
-            <div className="px-4 py-6 space-y-3">
+          <div className="lg:hidden absolute top-full left-0 right-0 darkfire-glass border-t border-border-light/50 darkfire-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[80vh] overflow-y-auto">
+            <div className="px-4 py-4 space-y-2">
               <Link
                 href="/"
                 className="block px-4 py-3 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-base font-medium"
@@ -319,35 +328,35 @@ export default function Header() {
               </Link>
               
               {/* About Section */}
-              <div className="space-y-2">
-                <div className="flex items-center justify-between px-4 py-3 text-text-secondary font-medium">
+              <div className="space-y-1">
+                <div className="flex items-center justify-between px-4 py-2.5 text-text-secondary font-medium">
                   <span>About</span>
                   <button
                     onClick={() => toggleDropdown('mobile-about')}
-                    className="p-1"
+                    className="p-2 rounded-lg hover:bg-background-light/30 transition-colors"
                   >
                     <ChevronRight className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'mobile-about' ? 'rotate-90' : ''}`} />
                   </button>
                 </div>
                 {activeDropdown === 'mobile-about' && (
-                  <div className="ml-4 space-y-2">
+                  <div className="ml-4 space-y-1">
                     <Link
                       href="/about"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      className="block px-4 py-2.5 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-lg transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
                       About Us
                     </Link>
                     <Link
                       href="/about/leadership"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      className="block px-4 py-2.5 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-lg transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
                       Leadership
                     </Link>
                     <Link
                       href="/about/careers"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      className="block px-4 py-2.5 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-lg transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
                       Careers

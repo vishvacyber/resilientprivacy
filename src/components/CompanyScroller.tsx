@@ -14,12 +14,12 @@ export default function CompanyScroller() {
     let scrollSpeed = 0.5 // Default speed
     let isPaused = false
 
-    // Adjust speed based on screen size
+    // Adjust speed based on screen size and performance
     const updateSpeed = () => {
       if (window.innerWidth < 640) {
-        scrollSpeed = 0.3 // Slower on mobile
+        scrollSpeed = 0.25 // Slower on mobile for better performance
       } else if (window.innerWidth < 1024) {
-        scrollSpeed = 0.4 // Medium speed on tablet
+        scrollSpeed = 0.35 // Medium speed on tablet
       } else {
         scrollSpeed = 0.5 // Normal speed on desktop
       }
@@ -116,21 +116,21 @@ export default function CompanyScroller() {
   return (
     <div className="relative overflow-hidden">
       {/* Gradient overlays for smooth fade effect */}
-      <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 bg-gradient-to-r from-background-alt to-transparent z-10"></div>
-      <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-16 md:w-20 bg-gradient-to-l from-background-alt to-transparent z-10"></div>
+      <div className="absolute left-0 top-0 bottom-0 w-8 sm:w-12 md:w-16 bg-gradient-to-r from-background-alt to-transparent z-10"></div>
+      <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-12 md:w-16 bg-gradient-to-l from-background-alt to-transparent z-10"></div>
       
       {/* Scrolling container */}
       <div 
         ref={scrollerRef}
-        className="flex items-center space-x-4 sm:space-x-6 md:space-x-8 py-4"
+        className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 py-3 sm:py-4"
         style={{ width: 'max-content' }}
       >
         {companies.map((company, index) => (
           <div
             key={`${company}-${index}`}
-            className="flex-shrink-0 px-3 sm:px-4 md:px-6 py-2 sm:py-3 bg-background-card rounded-lg border border-border-light/30 hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple group cursor-pointer"
+            className="flex-shrink-0 px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 bg-background-card rounded-lg border border-border-light/30 hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple group cursor-pointer"
           >
-            <span className="text-text-secondary group-hover:text-white font-semibold text-xs sm:text-sm whitespace-nowrap transition-colors duration-300">
+            <span className="text-text-secondary group-hover:text-white font-medium text-xs sm:text-sm whitespace-nowrap transition-colors duration-300">
               {company}
             </span>
           </div>

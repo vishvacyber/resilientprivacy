@@ -84,22 +84,22 @@ export default function Home() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
-              A Secure <span className="inline-block min-w-[100px] xs:min-w-[120px]"><AnimatedText /></span> Release Engine Company
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+              A Secure <span className="inline-block min-w-[80px] sm:min-w-[100px] md:min-w-[120px]"><AnimatedText /></span> Release Engine Company
             </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-text-secondary mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mb-8 max-w-4xl mx-auto leading-relaxed px-2">
               Next-generation cybersecurity company redefining digital trust. We design intelligent, adaptive security ecosystems that protect the world's most critical organizations.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
               <Link
                 href="/contact"
-                className="btn text-lg px-8 py-4"
+                className="btn text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
               >
                 Get Started
               </Link>
               <Link
                 href="/about"
-                className="btn-secondary text-lg px-8 py-4"
+                className="btn-secondary text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
               >
                 Learn More
               </Link>
@@ -108,9 +108,9 @@ export default function Home() {
         </section>
 
         {/* Trusted by AI & Security Startups Section */}
-        <section className="py-20 bg-background-alt">
+        <section className="py-12 sm:py-16 md:py-20 bg-background-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-8 sm:mb-12 md:mb-16">
               Trusted by AI & Security Startups
             </h2>
             
