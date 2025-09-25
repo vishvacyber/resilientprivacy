@@ -9,14 +9,15 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build:ci": "next build",
+    "build:ci": "npm run type-check && next build",
     "start": "next start",
     "lint": "next lint",
     "lint:ci": "next lint --max-warnings 0",
     "type-check": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",

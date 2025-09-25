@@ -68,13 +68,13 @@ export default function Header() {
             className="flex items-center space-x-3 group transition-all duration-500 ease-out"
             aria-label="Resilient Privacy - Home"
           >
-            <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-text-primary transition-all duration-500 ease-out group-hover:scale-105">
+            <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-text-primary transition-all duration-500 ease-out group-hover:scale-105">
               Resilient Privacy
             </h1>
           </Link>
 
           {/* Desktop Navigation with Dropdowns */}
-          <div className="hidden xl:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             <Link
               href="/"
               className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
@@ -281,7 +281,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMobileMenu}
-            className="xl:hidden relative p-3 rounded-xl bg-gradient-to-r from-background-card to-background-light border border-border-light/50 hover:border-primary-500/70 transition-all duration-500 ease-out group shadow-lg hover:shadow-xl"
+            className="lg:hidden relative p-3 rounded-xl bg-gradient-to-r from-background-card to-background-light border border-border-light/50 hover:border-primary-500/70 transition-all duration-500 ease-out group shadow-lg hover:shadow-xl"
             aria-label="Toggle mobile menu"
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-menu"
@@ -308,7 +308,7 @@ export default function Header() {
 
         {/* Mobile Menu with Dropdowns */}
         {isMobileMenuOpen && (
-          <div className="xl:hidden absolute top-full left-0 right-0 darkfire-glass border-t border-border-light/50 darkfire-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[80vh] overflow-y-auto">
+          <div className="lg:hidden absolute top-full left-0 right-0 darkfire-glass border-t border-border-light/50 darkfire-shadow animate-in slide-in-from-top-2 fade-in duration-300 max-h-[70vh] overflow-y-auto">
             <div className="px-4 py-6 space-y-3">
               <Link
                 href="/"

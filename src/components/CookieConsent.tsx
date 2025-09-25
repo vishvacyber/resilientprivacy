@@ -116,9 +116,9 @@ export default function CookieConsent() {
     <>
       {/* Main Consent Banner */}
       {showBanner && (
-        <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-primary-500 z-50 p-6">
+        <div className="fixed bottom-0 left-0 right-0 bg-background border-t border-primary-500 z-50 p-4 sm:p-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex flex-col lg:flex-row gap-6 items-start lg:items-center">
+            <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 items-start lg:items-center">
               <div className="flex-1">
                 <h3 className="text-xl font-bold text-white mb-2">
                   🍪 We use cookies to enhance your experience
@@ -168,7 +168,7 @@ export default function CookieConsent() {
       {/* Settings Modal */}
       {showSettings && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="bg-[#0D0D0F] border border-[accent-500] rounded-lg max-w-md w-full p-6">
+          <div className="bg-background-card border border-accent-500 rounded-lg max-w-md w-full mx-4 p-6 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-xl font-bold text-white flex items-center gap-2">
                 <Settings className="w-5 h-5" />
@@ -198,7 +198,7 @@ export default function CookieConsent() {
                     type="checkbox"
                     checked={preferences.essential}
                     disabled
-                    className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
+                    className="w-4 h-4 text-accent-500 bg-gray-700 border-gray-600 rounded focus:ring-accent-500 focus:ring-2"
                   />
                   <span className="ml-2 text-xs text-gray-500">
                     Always Active
@@ -222,7 +222,7 @@ export default function CookieConsent() {
                   onChange={(e) =>
                     handlePreferenceChange('analytics', e.target.checked)
                   }
-                  className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
+                  className="w-4 h-4 text-accent-500 bg-gray-700 border-gray-600 rounded focus:ring-accent-500 focus:ring-2"
                 />
               </div>
 
@@ -242,7 +242,7 @@ export default function CookieConsent() {
                   onChange={(e) =>
                     handlePreferenceChange('marketing', e.target.checked)
                   }
-                  className="w-4 h-4 text-[accent-500] bg-gray-700 border-gray-600 rounded focus:ring-[accent-500] focus:ring-2"
+                  className="w-4 h-4 text-accent-500 bg-gray-700 border-gray-600 rounded focus:ring-accent-500 focus:ring-2"
                 />
               </div>
             </div>
