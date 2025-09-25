@@ -310,13 +310,13 @@ export default function IncidentResponsePage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn text-lg px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-300"
+                className="btn text-lg px-10 py-4"
               >
                  Emergency Response
               </Link>
               <Link
                 href="#capabilities"
-                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+                className="btn-secondary text-lg px-10 py-4"
               >
                 Explore Response Capabilities
               </Link>
@@ -609,13 +609,13 @@ export default function IncidentResponsePage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn text-lg px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 transform hover:scale-105 transition-all duration-300"
+              className="btn text-lg px-10 py-4"
             >
                Get Emergency Hotline Access
             </Link>
             <Link
               href="/services/managed-security"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+              className="btn-secondary text-lg px-10 py-4"
             >
               Explore Proactive Security
             </Link>

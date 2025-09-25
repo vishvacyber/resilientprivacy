@@ -20,7 +20,7 @@ export default function CookiePolicyPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Contact Us
             </Link>

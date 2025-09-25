@@ -114,7 +114,7 @@ export default function CommunityPage() {
             </Link>
             <Link
               href="#forums"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Join Forums
             </Link>
@@ -304,7 +304,7 @@ export default function CommunityPage() {
                   </div>
                 </div>
                 <p className="text-text-secondary mb-6">{event.description}</p>
-                <button className="w-full bg-accent-500 text-white py-3 px-6 rounded font-semibold hover:bg-[#a78bfa] transition-colors">
+                <button className="btn w-full">
                   Register Now
                 </button>
               </div>
@@ -409,7 +409,7 @@ export default function CommunityPage() {
             </Link>
             <Link
               href="/about/careers"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Join Our Team
             </Link>

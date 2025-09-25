@@ -236,7 +236,7 @@ export default function DataCenterPage() {
             </Link>
             <Link
               href="#services"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Explore Services
             </Link>
@@ -545,7 +545,7 @@ export default function DataCenterPage() {
             </Link>
             <Link
               href="/services"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               View All Services
             </Link>

@@ -224,14 +224,14 @@ export default function IncidentResponsePage() {
           <div className="flex flex-wrap justify-center gap-4 mt-8">
             <button
               onClick={() => setShowHotline(true)}
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+              className="btn text-lg px-8 py-4 inline-flex items-center gap-2"
               aria-label="Call 24/7 AI-Enhanced Emergency Hotline"
             >
               <Phone className="w-5 h-5" /> 24/7 AI Emergency Response
             </button>
             <button
               onClick={() => setShowReport(true)}
-              className="inline-flex items-center gap-2 bg-[#232336] border border-accent-500 text-accent-500 px-8 py-4 rounded-xl font-semibold hover:bg-accent-500 hover:text-white transition text-lg shadow-lg min-w-[44px] min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-500"
+              className="btn-secondary text-lg px-8 py-4 inline-flex items-center gap-2"
               aria-label="Report Incident with AI Analysis"
             >
               <Brain className="w-5 h-5" /> AI-Powered Report

@@ -504,13 +504,13 @@ export default function DataProcessingAgreement() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="mailto:dpo@resilientprivacy.com"
-              className="btn bg-white text-accent-500 hover:bg-gray-100 text-lg px-8 py-4"
+              className="btn text-lg px-8 py-4"
             >
               Contact DPO
             </Link>
             <Link
               href="/legal/privacy-policy"
-              className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent-500 text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               View Privacy Policy
             </Link>

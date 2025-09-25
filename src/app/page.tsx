@@ -93,13 +93,13 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="btn text-lg px-8 py-4 rounded-xl shadow-purple-lg hover:shadow-purple-lg transform hover:scale-105 transition-all duration-300"
+                className="btn text-lg px-8 py-4"
               >
                 Get Started
               </Link>
               <Link
                 href="/about"
-                className="btn-secondary text-lg px-8 py-4 rounded-xl"
+                className="btn-secondary text-lg px-8 py-4"
               >
                 Learn More
               </Link>

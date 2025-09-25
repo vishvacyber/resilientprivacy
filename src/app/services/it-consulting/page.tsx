@@ -259,14 +259,14 @@ export default function ITConsultingPage() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link
                 href="/contact"
-                className="btn text-lg px-10 py-5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                className="btn text-lg px-10 py-5"
               >
                 Get Free Consultation
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
               <Link
                 href="/resources"
-                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                className="btn-secondary text-lg px-10 py-5"
               >
                 View Resources
               </Link>
@@ -587,14 +587,14 @@ export default function ITConsultingPage() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/contact"
-                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                  className="btn text-lg px-12 py-6"
                 >
                   Get Free Consultation
                   <ArrowUpRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                  className="btn-secondary text-lg px-12 py-6"
                 >
                   Schedule a Call
                 </Link>

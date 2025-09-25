@@ -327,7 +327,7 @@ export default function ResourcesPage() {
             </Link>
             <Link
               href="/services/cybersecurity-consulting"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Consulting Services
             </Link>

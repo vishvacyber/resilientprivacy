@@ -141,20 +141,20 @@ export default function CookieConsent() {
               <div className="flex flex-col sm:flex-row gap-3">
                 <button
                   onClick={handleAcceptAll}
-                  className="bg-[accent-500] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="btn flex items-center justify-center gap-2"
                 >
                   <Check className="w-4 h-4" />
                   Accept All
                 </button>
                 <button
                   onClick={handleRejectAll}
-                  className="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                  className="btn-secondary"
                 >
                   Reject All
                 </button>
                 <button
                   onClick={() => setShowSettings(true)}
-                  className="bg-transparent border border-[accent-500] text-[accent-500] hover:bg-[accent-500] hover:text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2"
+                  className="btn-secondary flex items-center justify-center gap-2"
                 >
                   <Settings className="w-4 h-4" />
                   Customize
@@ -250,13 +250,13 @@ export default function CookieConsent() {
             <div className="flex gap-3">
               <button
                 onClick={handleSavePreferences}
-                className="flex-1 bg-[accent-500] hover:bg-[#7C3AED] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                className="flex-1 btn"
               >
                 Save Preferences
               </button>
               <button
                 onClick={() => setShowSettings(false)}
-                className="flex-1 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                className="flex-1 btn-secondary"
               >
                 Cancel
               </button>

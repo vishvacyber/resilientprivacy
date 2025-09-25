@@ -311,13 +311,13 @@ export default function RedTeamingPage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+                className="btn text-lg px-10 py-4"
               >
                 Request Red Team Assessment
               </Link>
               <Link
                 href="#services"
-                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+                className="btn-secondary text-lg px-10 py-4"
               >
                 Explore Attack Vectors
               </Link>
@@ -658,13 +658,13 @@ export default function RedTeamingPage() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn text-lg px-10 py-4 bg-gradient-to-r from-accent-500 to-[#EC4899] hover:from-[#9333EA] hover:to-[#F472B6] transform hover:scale-105 transition-all duration-300"
+              className="btn text-lg px-10 py-4"
             >
               Schedule Red Team Assessment
             </Link>
             <Link
               href="/services/incident-response"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-4 transform hover:scale-105 transition-all duration-300"
+              className="btn-secondary text-lg px-10 py-4"
             >
               Explore Incident Response
             </Link>

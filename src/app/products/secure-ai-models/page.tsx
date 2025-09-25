@@ -272,7 +272,7 @@ export default function SecureAIModelsPage() {
             </Link>
             <Link
               href="#features"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Explore Features
             </Link>
@@ -525,7 +525,7 @@ export default function SecureAIModelsPage() {
             </Link>
             <Link
               href="/products"
-              className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               View All Products
             </Link>

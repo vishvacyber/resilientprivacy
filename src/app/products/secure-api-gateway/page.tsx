@@ -233,14 +233,14 @@ export default function SecureAPIGatewayPage() {
                 href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn text-lg px-10 py-5 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                className="btn text-lg px-10 py-5"
               >
                 Get Started Free
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
               <Link
                 href="/contact"
-                className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-10 py-5 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                className="btn-secondary text-lg px-10 py-5"
               >
                 Schedule Demo
               </Link>
@@ -584,14 +584,14 @@ export default function SecureAPIGatewayPage() {
                   href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn text-lg px-12 py-6 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-[#7C3AED] hover:to-accent-500 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                  className="btn text-lg px-12 py-6"
                 >
                   Start Free Trial
                   <ArrowUpRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
                   href="/contact"
-                  className="btn bg-transparent border-2 border-accent-500 text-accent-500 hover:bg-accent-500 hover:text-white text-lg px-12 py-6 shadow-2xl hover:shadow-[accent-500]/25 transition-all duration-300"
+                  className="btn-secondary text-lg px-12 py-6"
                 >
                   Contact Sales
                 </Link>

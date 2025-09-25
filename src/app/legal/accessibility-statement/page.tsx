@@ -272,13 +272,13 @@ export default function AccessibilityStatement() {
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn bg-white text-accent-500 hover:bg-gray-100 text-lg px-8 py-4"
+              className="btn text-lg px-8 py-4"
             >
               Contact Support
             </Link>
             <Link
               href="mailto:accessibility@resilientprivacy.com"
-              className="btn bg-transparent border-2 border-white text-white hover:bg-white hover:text-accent-500 text-lg px-8 py-4"
+              className="btn-secondary text-lg px-8 py-4"
             >
               Email Accessibility Team
             </Link>
