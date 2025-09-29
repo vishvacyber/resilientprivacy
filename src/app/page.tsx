@@ -72,9 +72,22 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
-      <Suspense fallback={<LoadingSpinner size="lg" className="min-h-screen" />}>
+      {/* Skip to main content for accessibility */}
+      <a 
+        href="#main-content" 
+        className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-primary-500 text-white px-4 py-2 rounded-md z-50"
+      >
+        Skip to main content
+      </a>
+      <Suspense fallback={
+        <div className="min-h-screen flex items-center justify-center bg-background">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-500" role="status" aria-label="Loading">
+            <span className="sr-only">Loading...</span>
+          </div>
+        </div>
+      }>
         {/* Hero Section - DarkFire Style with Cybersecurity Content */}
-        <section className="relative flex items-center justify-center overflow-hidden py-12 sm:py-16 md:py-20 lg:min-h-screen hero-section-mobile">
+        <main id="main-content" className="relative flex items-center justify-center overflow-hidden py-12 sm:py-16 md:py-20 lg:min-h-screen hero-section-mobile">
           {/* Background Effects */}
           <div className="absolute inset-0 bg-gradient-hero"></div>
           <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-blue-500/10"></div>
@@ -85,7 +98,7 @@ export default function Home() {
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight mobile-spacing-fix">
-              A Secure <span className="inline-block min-w-[80px] sm:min-w-[100px] md:min-w-[120px]"><AnimatedText /></span> Release Engine Company
+              A Secure <span className="inline-block min-w-[80px] sm:min-w-[100px] md:min-w-[120px]" aria-label="AI-powered"><AnimatedText /></span> Release Engine Company
             </h1>
             <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary mb-4 sm:mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-2 mobile-spacing-fix">
               Next-generation cybersecurity company redefining digital trust. We design intelligent, adaptive security ecosystems that protect the world's most critical organizations.
@@ -105,7 +118,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </section>
+        </main>
 
         {/* Trusted by AI & Security Startups Section */}
         <section className="py-12 sm:py-16 md:py-20 bg-background-alt">
