@@ -9,6 +9,7 @@ import Footer from '@/components/Footer'
 import Providers from '@/components/Providers'
 import { ToastProvider } from '@/components/ui/toast'
 import CookieConsent from '@/components/CookieConsent'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -169,6 +170,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-background font-sans antialiased">
+        <GoogleAnalytics measurementId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ''} />
         <Providers>
           <Header />
           <main className="flex-1">{children}</main>
