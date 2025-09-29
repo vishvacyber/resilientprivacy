@@ -101,7 +101,7 @@ export default function AboutPage() {
                     digital trust through cutting-edge AI security solutions.
                   </p>
                   <blockquote className="italic text-primary-500 border-l-2 border-primary-500 pl-4 text-lg font-semibold mt-2">
-                    We Don't Chase AI Threats. We Preempt Them with AI.
+                    WE DON'T CHASE THREATS. WE PREEMPT THEM.
                   </blockquote>
                 </div>
                 <div className="mb-4">
