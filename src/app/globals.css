@@ -46,6 +46,15 @@
   }
 }
 
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Mobile-specific optimizations */
 @media (max-width: 640px) {
   /* Improve touch targets */
