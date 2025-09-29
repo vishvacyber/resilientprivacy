@@ -3,44 +3,44 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title:
-    'AI & API Security Products - Top AI Security Company | Advanced Cybersecurity Solutions',
+    'CoreShield™ API Protection Suite - Advanced API Security Platform | Resilient Privacy',
   description:
-    'Resilient Privacy offers cutting-edge AI-powered security products and comprehensive API protection solutions. Leading AI security company with advanced machine learning threat detection and API security expertise.',
+    'CoreShield™ API Protection Suite - Our flagship platform to uncover and mitigate API risks. Includes API mapping, continuous risk testing, fraud prevention, and AI-aware protection.',
   keywords: [
-    'AI security products',
-    'API security products',
-    'AI cybersecurity solutions',
-    'machine learning security',
-    'AI threat detection',
-    'API security gateway',
-    'AI security operations',
-    'API protection',
-    'AI-powered cybersecurity',
+    'API protection suite',
+    'API security platform',
+    'API mapping',
+    'API risk testing',
+    'API fraud prevention',
+    'API abuse prevention',
+    'shadow API detection',
     'API authentication',
-    'AI threat hunting',
-    'API security intelligence',
-    'AI identity management',
-    'secure AI models',
-    'AI security analytics',
-    'API threat detection',
-    'AI security platform',
-    'API security tools',
-    'AI security technology',
-    'API security compliance',
-    'AI security automation',
-    'API security monitoring',
-    'AI security intelligence',
     'API security testing',
-    'AI security response',
-    'API security governance',
-    'AI security architecture',
+    'API threat detection',
+    'API security monitoring',
+    'API compliance',
+    'API governance',
+    'API security intelligence',
+    'API vulnerability scanning',
+    'API security automation',
+    'AI-aware API protection',
+    'API security analytics',
     'API security framework',
+    'API security tools',
+    'API security technology',
+    'API security platform',
+    'API security solutions',
+    'API security services',
+    'API security consulting',
+    'API security architecture',
+    'API security implementation',
+    'API security best practices',
   ],
   openGraph: {
     title:
-      'AI & API Security Products - Top AI Security Company | Advanced Cybersecurity Solutions',
+      'CoreShield™ API Protection Suite - Advanced API Security Platform | Resilient Privacy',
     description:
-      'Resilient Privacy offers cutting-edge AI-powered security products and comprehensive API protection solutions. Leading AI security company with advanced machine learning threat detection and API security expertise.',
+      'CoreShield™ API Protection Suite - Our flagship platform to uncover and mitigate API risks. Includes API mapping, continuous risk testing, fraud prevention, and AI-aware protection.',
     type: 'website',
     url: 'https://resilientprivacy.com/products',
   },
@@ -49,91 +49,104 @@ export const metadata: Metadata = {
   },
 }
 
-const productCategories = [
+const coreProducts = [
   {
-    name: 'AI-Powered Threat Detection',
-    description: 'Machine learning-driven security analytics and threat hunting',
+    name: 'CoreShield™ API Protection Suite',
+    description: 'Our flagship platform to uncover and mitigate API risks',
     features: [
-      'Behavioral analysis & anomaly detection',
-      'Predictive threat intelligence',
-      'Automated incident response',
-      'Real-time threat correlation',
+      'API Mapping & Visibility',
+      'Continuous API Risk Testing',
+      'Fraud & Abuse Prevention',
+      'AI-Aware Protection',
     ],
-    link: '/products/ai-threat-detection',
+    link: '/products/coreshield-api-protection-suite',
+    isHero: true,
   },
   {
-    name: 'Secure API Gateway',
-    description: 'Comprehensive API security and management platform',
+    name: 'Unified WAAP+™',
+    description: 'Cloud-native, all-in-one defense framework for web apps and APIs',
     features: [
-      'API authentication & authorization',
-      'Rate limiting & throttling',
-      'API threat protection',
-      'OAuth 2.0 & JWT security',
+      'Multi-cloud protection',
+      'Hybrid environment support',
+      'On-premises deployment',
+      'Zero-complexity security',
     ],
-    link: '/products/secure-api-gateway',
-  },
-  {
-    name: 'AI Security Operations Center',
-    description: 'Autonomous security operations with AI-driven analytics',
-    features: [
-      '24/7 AI monitoring',
-      'Automated threat hunting',
-      'Intelligent incident response',
-      'Predictive security analytics',
-    ],
-    link: '/products/ai-security-operations',
-  },
-  {
-    name: 'API Security Intelligence',
-    description: 'Advanced API threat detection and protection',
-    features: [
-      'API vulnerability scanning',
-      'Real-time API monitoring',
-      'Automated API security testing',
-      'API compliance reporting',
-    ],
-    link: '/products/api-security-intelligence',
-  },
-  {
-    name: 'AI-Enhanced Identity Management',
-    description: 'Intelligent identity and access management with AI',
-    features: [
-      'AI-powered risk scoring',
-      'Behavioral authentication',
-      'Adaptive access controls',
-      'Anomaly-based access monitoring',
-    ],
-    link: '/products/ai-identity-management',
-  },
-  {
-    name: 'Secure AI Model Protection',
-    description: 'Protect AI models and data from adversarial attacks',
-    features: [
-      'Model integrity monitoring',
-      'Adversarial attack detection',
-      'AI model encryption',
-      'Secure AI deployment',
-    ],
-    link: '/products/secure-ai-models',
+    link: '/products/unified-waap-plus',
+    isHero: true,
   },
 ]
 
-const productHighlights = [
+const coreShieldFeatures = [
   {
-    title: 'AI-First Security',
-    description: 'Machine learning-powered threat detection and response',
+    name: 'API Mapping & Visibility',
+    description: 'Automatically discover every endpoint, shadow API, and undocumented interface',
+    features: [
+      'Complete API inventory discovery',
+      'Shadow API detection',
+      'Undocumented endpoint mapping',
+      'Real-time API topology visualization',
+      'API dependency mapping',
+      'Legacy API identification',
+    ],
+    link: '/products/coreshield-api-mapping',
   },
   {
-    title: 'API Protection',
-    description: 'Comprehensive API security and threat prevention',
+    name: 'Continuous API Risk Testing',
+    description: 'Assess APIs for misconfigurations, flaws, and weak authentication flows',
+    features: [
+      'Automated vulnerability scanning',
+      'Authentication flow testing',
+      'Configuration drift detection',
+      'OWASP API Top 10 compliance',
+      'Business logic testing',
+      'Zero-day vulnerability detection',
+    ],
+    link: '/products/coreshield-risk-testing',
   },
   {
-    title: 'Autonomous Operations',
-    description: 'Self-learning security systems with minimal human intervention',
+    name: 'Fraud & Abuse Prevention',
+    description: 'Stop credential stuffing, account takeover attempts, and automated exploitation',
+    features: [
+      'Credential stuffing protection',
+      'Account takeover prevention',
+      'Bot detection and mitigation',
+      'Rate limiting and throttling',
+      'Behavioral analysis',
+      'Real-time fraud scoring',
+    ],
+    link: '/products/coreshield-fraud-prevention',
   },
   {
-    title: 'Zero Trust Architecture',
-    description: 'AI-driven zero trust implementation and enforcement',
+    name: 'AI-Aware Protection',
+    description: 'Security tailored for Agentic AI-driven workloads and data pipelines',
+    features: [
+      'AI workload protection',
+      'Data pipeline security',
+      'Model inference protection',
+      'AI agent monitoring',
+      'LLM security controls',
+      'AI-specific threat detection',
+    ],
+    link: '/products/coreshield-ai-protection',
+  },
+]
+
+const coreShieldHighlights = [
+  {
+    title: 'Complete API Visibility',
+    description: 'Discover every API endpoint, including shadow and undocumented APIs',
+  },
+  {
+    title: 'Continuous Risk Assessment',
+    description: 'Automated testing for vulnerabilities and misconfigurations',
+  },
+  {
+    title: 'Advanced Fraud Prevention',
+    description: 'Protect against credential stuffing and account takeover attacks',
+  },
+  {
+    title: 'AI-Native Security',
+    description: 'Specialized protection for AI workloads and data pipelines',
   },
 ]
 
@@ -144,16 +157,15 @@ export default function ProductsPage() {
       <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            AI & API <span className="fxology-text-gradient">Security Products</span>
+            Advanced <span className="fxology-text-gradient">Security Solutions</span>
           </h1>
           <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
-            Cutting-edge AI security solutions built by leading researchers and engineers. 
-            Our advanced technologies defend against sophisticated LLM attacks, 
-            adversarial threats, and zero-day exploits with breakthrough accuracy.
+            Comprehensive security platforms for modern applications. CoreShield™ API Protection Suite 
+            for API security and Unified WAAP+™ for web & API application protection across all environments.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#products" className="btn text-lg px-8 py-4">
-              Explore Products
+            <Link href="#features" className="btn text-lg px-8 py-4">
+              Explore Features
             </Link>
             <Link
               href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
@@ -173,58 +185,57 @@ export default function ProductsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-white mb-8">
-                Advanced AI & API Security Technology
+                Comprehensive API Security Platform
               </h2>
               <div className="space-y-6 text-text-secondary">
                 <p>
-                  Resilient Privacy develops breakthrough AI security solutions using 
-                  cutting-edge research and advanced machine learning techniques. Our innovative 
-                  technologies address the most sophisticated threats including LLM attacks, 
-                  adversarial training bypasses, and prompt injection vulnerabilities.
+                  CoreShield™ API Protection Suite is our flagship platform designed to address 
+                  the complete spectrum of API security challenges. From discovery to protection, 
+                  our comprehensive solution provides end-to-end API security coverage for modern 
+                  applications and AI-driven workloads.
                 </p>
                 <p>
-                  Our AI security products leverage state-of-the-art techniques including 
-                  adversarial training, differential privacy, and federated learning to defend 
-                  against model poisoning, data extraction attacks, and zero-day threats. 
-                  We achieve 99.7% accuracy in detecting advanced AI attacks.
+                  Our platform automatically discovers every API endpoint in your environment, 
+                  including shadow APIs and undocumented interfaces that traditional security 
+                  tools miss. With continuous risk testing and real-time threat detection, 
+                  CoreShield™ provides 360-degree API protection.
                 </p>
                 <p>
-                  Our API security solutions provide comprehensive protection with real-time 
-                  threat detection that identifies sophisticated business logic attacks, OWASP 
-                  API Top 10 vulnerabilities, and advanced injection techniques that bypass 
-                  traditional security tools.
+                  Built specifically for the modern API landscape, CoreShield™ includes advanced 
+                  fraud prevention capabilities to stop credential stuffing, account takeover 
+                  attempts, and automated exploitation. Our AI-aware protection ensures your 
+                  AI workloads and data pipelines remain secure.
                 </p>
                 <p>
-                  Built by leading AI security researchers and validated against the most 
-                  sophisticated attack vectors, our solutions represent the next generation 
-                  of cybersecurity technology. We&apos;re pioneering real-time AI model 
-                  extraction attack detection and prevention.
+                  With seamless integration into existing infrastructure and support for all 
+                  major cloud platforms, CoreShield™ provides enterprise-grade API security 
+                  that scales with your organization&apos;s growth.
                 </p>
               </div>
             </div>
             <div className="bg-[#1A1A1A] p-8 rounded-lg border border-[#222]">
               <h3 className="text-2xl font-bold text-white mb-6">
-                Product Highlights
+                CoreShield™ Capabilities
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">AI Models Deployed</span>
-                  <span className="text-accent-500 font-semibold">50+</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Threat Detection Accuracy</span>
-                  <span className="text-accent-500 font-semibold">99.7%</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Response Time</span>
-                  <span className="text-accent-500 font-semibold">&lt;5 seconds</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Zero-Day Protection</span>
+                  <span className="text-text-secondary">API Endpoints Discovered</span>
                   <span className="text-accent-500 font-semibold">100%</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-text-secondary">Research-Backed</span>
+                  <span className="text-text-secondary">Vulnerability Detection</span>
+                  <span className="text-accent-500 font-semibold">99.8%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-text-secondary">Response Time</span>
+                  <span className="text-accent-500 font-semibold">&lt;2 seconds</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-text-secondary">False Positive Rate</span>
+                  <span className="text-accent-500 font-semibold">&lt;0.1%</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-text-secondary">AI Workload Support</span>
                   <span className="text-accent-500 font-semibold">Yes</span>
                 </div>
               </div>
@@ -233,20 +244,20 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Product Categories */}
-      <section id="products" className="py-20 px-6 bg-[#1A1A1A]">
+      {/* Core Products */}
+      <section id="features" className="py-20 px-6 bg-[#1A1A1A]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">
-            Product Categories
+            Our Core Security Platforms
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {productCategories.map((product) => (
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+            {coreProducts.map((product) => (
               <Link key={product.name} href={product.link} className="group">
-                <div className="fxology-card p-8 hover:fxology-shadow transition-all duration-300 group-hover:transform group-hover:scale-105">
-                  <h3 className="text-2xl font-bold text-white mb-4">
+                <div className={`fxology-card p-8 hover:fxology-shadow transition-all duration-300 group-hover:transform group-hover:scale-105 ${product.isHero ? 'border-2 border-accent-500/30 bg-accent-500/5' : ''}`}>
+                  <h3 className="text-3xl font-bold text-white mb-4">
                     {product.name}
                   </h3>
-                  <p className="text-text-secondary mb-6">{product.description}</p>
+                  <p className="text-text-secondary mb-6 text-lg">{product.description}</p>
                   <ul className="space-y-2 mb-6">
                     {product.features.map((feature) => (
                       <li
@@ -255,6 +266,41 @@ export default function ProductsPage() {
                       >
                         <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
                         {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="fxology-text-gradient group-hover:text-white transition-colors text-lg font-semibold">
+                    Learn More →
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CoreShield Features */}
+      <section className="py-20 px-6 bg-[#0D0D0F]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center text-white mb-16">
+            CoreShield™ API Protection Features
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {coreShieldFeatures.map((feature) => (
+              <Link key={feature.name} href={feature.link} className="group">
+                <div className="fxology-card p-8 hover:fxology-shadow transition-all duration-300 group-hover:transform group-hover:scale-105">
+                  <h3 className="text-2xl font-bold text-white mb-4">
+                    {feature.name}
+                  </h3>
+                  <p className="text-text-secondary mb-6">{feature.description}</p>
+                  <ul className="space-y-2 mb-6">
+                    {feature.features.map((item) => (
+                      <li
+                        key={item}
+                        className="text-accent-500 text-sm flex items-center"
+                      >
+                        <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
+                        {item}
                       </li>
                     ))}
                   </ul>
@@ -268,14 +314,14 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Product Features */}
+      {/* CoreShield Highlights */}
       <section className="py-20 px-6 bg-[#0D0D0F]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-white mb-16">
-            Why Choose Our Products?
+            Why Choose CoreShield™?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {productHighlights.map((highlight) => (
+            {coreShieldHighlights.map((highlight) => (
               <div
                 key={highlight.title}
                 className="bg-[#1A1A1A] p-6 rounded-lg border border-[#222] text-center"
@@ -336,12 +382,12 @@ export default function ProductsPage() {
               </h3>
               <div className="space-y-4 text-text-secondary">
                 <p>
-                  Our products support multiple deployment models to meet your
+                  CoreShield™ supports multiple deployment models to meet your
                   infrastructure and security requirements.
                 </p>
                 <p>
                   Cloud-native deployment provides maximum scalability and
-                  minimal maintenance overhead.
+                  minimal maintenance overhead for API protection.
                 </p>
                 <p>
                   On-premises deployment offers complete control and compliance
@@ -361,11 +407,11 @@ export default function ProductsPage() {
       <section className="py-20 px-6 bg-gradient-to-br from-background to-background-alt">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold text-white mb-6">
-            Ready to Get Started?
+            Ready to Secure Your APIs?
           </h2>
           <p className="text-xl text-text-secondary mb-8">
-            Explore our comprehensive security portfolio and discover how our
-            solutions can protect your organization.
+            Discover how CoreShield™ API Protection Suite can provide comprehensive 
+            security for your APIs and AI workloads.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

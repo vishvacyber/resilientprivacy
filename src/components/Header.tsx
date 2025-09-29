@@ -142,47 +142,65 @@ export default function Header() {
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'products' ? 'rotate-180' : ''}`} />
               </button>
               {activeDropdown === 'products' && (
-                <div className="absolute top-full left-0 mt-2 w-72 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
+                <div className="absolute top-full left-0 mt-2 w-96 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">
                     <Link
                       href="/products"
-                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300 border border-accent-500/20 bg-accent-500/5"
                       onClick={closeDropdown}
                     >
                       <div className="font-semibold text-white mb-1">All Products</div>
-                      <div className="text-sm text-text-secondary">Complete security suite including Identity & Access, Zero Trust, Threat Intelligence & more</div>
+                      <div className="text-sm text-text-secondary">Complete security platform portfolio</div>
+                    </Link>
+                    <div className="border-t border-border-light/20 my-3"></div>
+                    <Link
+                      href="/products/coreshield-api-protection-suite"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300 border border-accent-500/10 bg-accent-500/3"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">CoreShield™ API Protection Suite</div>
+                      <div className="text-sm text-text-secondary">Flagship platform to uncover and mitigate API risks</div>
                     </Link>
                     <Link
-                      href="/products/ai-threat-detection"
+                      href="/products/unified-waap-plus"
+                      className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300 border border-accent-500/10 bg-accent-500/3"
+                      onClick={closeDropdown}
+                    >
+                      <div className="font-semibold text-white mb-1">Unified WAAP+™</div>
+                      <div className="text-sm text-text-secondary">Cloud-native, all-in-one defense framework for web apps and APIs</div>
+                    </Link>
+                    <div className="border-t border-border-light/20 my-3"></div>
+                    <Link
+                      href="/products/coreshield-api-mapping"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">AI Threat Detection</div>
-                      <div className="text-sm text-text-secondary">AI-powered threat detection & behavioral analysis</div>
+                      <div className="font-semibold text-white mb-1">API Mapping & Visibility</div>
+                      <div className="text-sm text-text-secondary">Discover every endpoint, shadow API, and undocumented interface</div>
                     </Link>
                     <Link
-                      href="/products/ai-security-operations"
+                      href="/products/coreshield-risk-testing"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">AI Security Operations</div>
-                      <div className="text-sm text-text-secondary">AI-powered SOC & autonomous security</div>
+                      <div className="font-semibold text-white mb-1">Continuous API Risk Testing</div>
+                      <div className="text-sm text-text-secondary">Assess APIs for misconfigurations, flaws, and weak authentication</div>
                     </Link>
                     <Link
-                      href="/products/secure-ai-models"
+                      href="/products/coreshield-fraud-prevention"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">Secure AI Models</div>
-                      <div className="text-sm text-text-secondary">AI model protection & adversarial defense</div>
+                      <div className="font-semibold text-white mb-1">Fraud & Abuse Prevention</div>
+                      <div className="text-sm text-text-secondary">Stop credential stuffing, account takeover, and automated exploitation</div>
                     </Link>
                     <Link
-                      href="/products/api-security-intelligence"
+                      href="/products/coreshield-ai-protection"
                       className="block px-4 py-3 text-text-secondary hover:text-white hover:bg-primary-500/10 rounded-lg transition-all duration-300"
                       onClick={closeDropdown}
                     >
-                      <div className="font-semibold text-white mb-1">API Security Intelligence</div>
-                      <div className="text-sm text-text-secondary">Advanced API threat detection & protection</div>
+                      <div className="font-semibold text-white mb-1">AI-Aware Protection</div>
+                      <div className="text-sm text-text-secondary">Security tailored for Agentic AI-driven workloads and data pipelines</div>
                     </Link>
                   </div>
                 </div>
@@ -380,38 +398,52 @@ export default function Header() {
                   <div className="ml-4 space-y-2">
                     <Link
                       href="/products"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm border border-accent-500/20 bg-accent-500/5"
                       onClick={closeMobileMenu}
                     >
                       All Products
                     </Link>
                     <Link
-                      href="/products/ai-threat-detection"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      href="/products/coreshield-api-protection-suite"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm border border-accent-500/10 bg-accent-500/3"
                       onClick={closeMobileMenu}
                     >
-                      AI Threat Detection
+                      CoreShield™ API Protection Suite
                     </Link>
                     <Link
-                      href="/products/ai-security-operations"
-                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      href="/products/unified-waap-plus"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm border border-accent-500/10 bg-accent-500/3"
                       onClick={closeMobileMenu}
                     >
-                      AI Security Operations
+                      Unified WAAP+™
                     </Link>
                     <Link
-                      href="/products/secure-ai-models"
+                      href="/products/coreshield-api-mapping"
                       className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
-                      Secure AI Models
+                      API Mapping & Visibility
                     </Link>
                     <Link
-                      href="/products/api-security-intelligence"
+                      href="/products/coreshield-risk-testing"
                       className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
                       onClick={closeMobileMenu}
                     >
-                      API Security Intelligence
+                      Continuous API Risk Testing
+                    </Link>
+                    <Link
+                      href="/products/coreshield-fraud-prevention"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      Fraud & Abuse Prevention
+                    </Link>
+                    <Link
+                      href="/products/coreshield-ai-protection"
+                      className="block px-4 py-2 text-text-secondary hover:text-text-primary hover:bg-background-light/30 rounded-md transition-colors text-sm"
+                      onClick={closeMobileMenu}
+                    >
+                      AI-Aware Protection
                     </Link>
                   </div>
                 )}
