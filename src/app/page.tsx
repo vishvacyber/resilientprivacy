@@ -74,7 +74,7 @@ export default function Home() {
     <div className="min-h-screen bg-background">
       <Suspense fallback={<LoadingSpinner size="lg" className="min-h-screen" />}>
         {/* Hero Section - DarkFire Style with Cybersecurity Content */}
-        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden py-8 sm:py-12 md:py-16">
           {/* Background Effects */}
           <div className="absolute inset-0 bg-gradient-hero"></div>
           <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-blue-500/10"></div>
@@ -84,10 +84,10 @@ export default function Home() {
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
               A Secure <span className="inline-block min-w-[80px] sm:min-w-[100px] md:min-w-[120px]"><AnimatedText /></span> Release Engine Company
             </h1>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mb-8 max-w-4xl mx-auto leading-relaxed px-2">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
               Next-generation cybersecurity company redefining digital trust. We design intelligent, adaptive security ecosystems that protect the world's most critical organizations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-2">
