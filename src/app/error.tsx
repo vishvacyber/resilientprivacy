@@ -80,7 +80,7 @@ export default function Error({ error, reset }: ErrorProps) {
               If this problem persists, please contact our support team.
             </p>
             <Link
-              href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+              href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-accent-400 hover:text-accent-300 transition-colors text-sm font-medium"

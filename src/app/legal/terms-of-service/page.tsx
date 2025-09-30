@@ -17,7 +17,7 @@ export default function TermsOfServicePage() {
               Read Terms
             </Link>
             <Link
-              href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+              href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-lg px-8 py-4"
@@ -345,7 +345,7 @@ export default function TermsOfServicePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+              href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

@@ -364,7 +364,7 @@ export default function LeadershipPage() {
             </Link>
             
             <Link
-              href="https://resilientprivacy.notion.site/24b57ead9668813e813ae3b92d1d0041?pvs=105"
+              href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center px-10 py-5 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-semibold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/25 hover:-translate-y-1 backdrop-blur-sm"
