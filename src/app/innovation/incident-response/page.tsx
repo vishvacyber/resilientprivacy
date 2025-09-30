@@ -123,7 +123,7 @@ export default function IncidentResponsePage() {
     try {
       // Redirect to Notion contact form instead of API call
       window.open(
-        'https://forms.gle/r4eosBbq6nTf7a8X7',
+        'https://forms.gle/8M41jMdsjVm6PoAG7',
         '_blank'
       )
 
@@ -363,7 +363,7 @@ export default function IncidentResponsePage() {
                 threat analysis and containment:
               </p>
               <a
-                href="https://forms.gle/r4eosBbq6nTf7a8X7"
+                href="https://forms.gle/8M41jMdsjVm6PoAG7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition text-lg shadow-lg"

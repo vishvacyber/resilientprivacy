@@ -168,7 +168,7 @@ export default function ProductsPage() {
               Explore Features
             </Link>
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
@@ -415,7 +415,7 @@ export default function ProductsPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

@@ -205,7 +205,7 @@ export default function ITInfrastructurePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"
@@ -318,7 +318,7 @@ export default function ITInfrastructurePage() {
                 </ul>
 
                 <Link
-                  href="https://forms.gle/r4eosBbq6nTf7a8X7"
+                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={`w-full block text-center py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
@@ -405,7 +405,7 @@ export default function ITInfrastructurePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

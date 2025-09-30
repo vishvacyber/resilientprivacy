@@ -150,12 +150,12 @@ export default function ContactPage() {
               24/7.
             </p>
             <a
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/8M41jMdsjVm6PoAG7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-accent-500 hover:bg-purple-700 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300"
             >
-              Contact Us
+              Emergency Contact
             </a>
           </div>
         </div>

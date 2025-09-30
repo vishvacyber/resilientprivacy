@@ -128,7 +128,7 @@ export default function FraudPreventionPage() {
               Explore Features
             </Link>
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-secondary text-lg px-8 py-4"
@@ -273,7 +273,7 @@ export default function FraudPreventionPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

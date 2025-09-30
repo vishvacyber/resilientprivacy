@@ -230,7 +230,7 @@ export default function SecureAPIGatewayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link
-                href="https://forms.gle/r4eosBbq6nTf7a8X7"
+                href="https://forms.gle/xuGFneJ1ijjfMp9x7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn text-lg px-10 py-5"
@@ -581,7 +581,7 @@ export default function SecureAPIGatewayPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
-                  href="https://forms.gle/r4eosBbq6nTf7a8X7"
+                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn text-lg px-12 py-6"
