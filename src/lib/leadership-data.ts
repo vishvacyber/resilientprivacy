@@ -79,6 +79,23 @@ export const leadership: LeadershipMember[] = [
     quote:
       "Vision without execution is just a dream. As Chief of Staff, I turn the CEO's vision into reality through strategic coordination and flawless execution. We're not just building a company—we're architecting the future of cybersecurity.",
   },
+  {
+    name: 'Siddhi Patel',
+    title: 'Chief Financial Officer (CFO)',
+    photo: '/images/siddhi-patel-headshot.png',
+    bio: "Siddhi Patel serves as the Chief Financial Officer (CFO) of Resilient Privacy, bringing strategic financial leadership and extensive experience in financial management, planning, and analysis. With a proven track record in scaling financial operations for high-growth technology companies, Siddhi plays a critical role in ensuring the company's financial health and sustainable growth.\n\nAs CFO, Siddhi oversees all financial aspects of the organization, including financial planning and analysis, budgeting, forecasting, and strategic financial decision-making. She works closely with Founder and CEO Vishva Patel to develop and implement financial strategies that support the company's mission of redefining digital trust and cybersecurity standards while maintaining fiscal responsibility and operational efficiency.\n\nSiddhi's expertise in financial management, strategic planning, and risk assessment enables her to provide critical financial insights that support informed decision-making across all levels of the organization. Her ability to balance financial prudence with strategic growth initiatives makes her an invaluable asset to Resilient Privacy's continued success and expansion.\n\nUnder Siddhi's financial leadership and in partnership with Vishva's strategic vision, Resilient Privacy continues to strengthen its financial foundation while pursuing ambitious growth objectives in the cybersecurity market.",
+    expertise: [
+      'Financial Strategy & Planning',
+      'Budget Management & Forecasting',
+      'Financial Analysis & Reporting',
+      'Risk Management & Compliance',
+      'Strategic Financial Decision Making',
+      'Investor Relations & Fundraising',
+    ],
+    linkedin: '',
+    quote:
+      "Financial excellence is the foundation of sustainable growth. As CFO, I ensure that every financial decision aligns with our mission while building the financial strength needed to revolutionize cybersecurity and protect organizations worldwide.",
+  },
 ]
 
 export function slugify(name: string) {
