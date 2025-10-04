@@ -348,29 +348,25 @@ div[hidden][id^='S:'] {
 
 @layer components {
   .btn {
-    background: linear-gradient(
-      135deg,
-      #8B5CF6 0%,
-      #7C3AED 100%
-    );
-    color: #ffffff;
+    background: transparent;
+    color: #8B5CF6;
+    border: 2px solid #8B5CF6;
     border-radius: 0.75rem;
     padding: 0.875rem 1.75rem;
     font-weight: 700;
     font-size: 0.875rem;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    border: none;
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 16px 0 rgba(139, 92, 246, 0.5);
+    box-shadow: 0 4px 16px 0 rgba(139, 92, 246, 0.3);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     min-height: 44px;
     min-width: 44px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -397,13 +393,11 @@ div[hidden][id^='S:'] {
 
   .btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 30px 0 rgba(139, 92, 246, 0.7);
-    background: linear-gradient(
-      135deg,
-      #9F7AEA 0%,
-      #8B5CF6 100%
-    );
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 8px 30px 0 rgba(139, 92, 246, 0.5);
+    background: rgba(139, 92, 246, 0.1);
+    border-color: #9F7AEA;
+    color: #9F7AEA;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
 
   .btn-secondary {
@@ -429,15 +423,12 @@ div[hidden][id^='S:'] {
   }
 
   .btn-secondary:hover {
-    background: linear-gradient(
-      135deg,
-      #8B5CF6 0%,
-      #7C3AED 100%
-    );
-    color: #ffffff;
-    box-shadow: 0 8px 30px 0 rgba(139, 92, 246, 0.7);
+    background: rgba(139, 92, 246, 0.1);
+    color: #9F7AEA;
+    border-color: #9F7AEA;
+    box-shadow: 0 8px 30px 0 rgba(139, 92, 246, 0.5);
     transform: translateY(-2px);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
   }
 
   /* Enhanced button focus and active states */

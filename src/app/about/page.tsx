@@ -117,7 +117,7 @@ export default function AboutPage() {
           <div className="text-center">
             <Link
               href="/about/leadership"
-              className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300"
+              className="inline-flex items-center gap-2 bg-transparent border-2 border-primary-500 text-primary-500 px-6 py-3 rounded-lg hover:bg-primary-500/10 hover:border-primary-400 transition-all duration-300"
             >
               <Users className="w-5 h-5" />
               Meet Our Team
@@ -140,13 +140,13 @@ export default function AboutPage() {
               href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 font-semibold"
+              className="bg-transparent border-2 border-primary-500 text-primary-500 px-8 py-4 rounded-lg hover:bg-primary-500/10 hover:border-primary-400 transition-all duration-300 font-semibold"
             >
               Get Started
             </Link>
             <Link
               href="/about/leadership"
-              className="border border-primary-500 text-primary-500 px-8 py-4 rounded-lg hover:bg-primary-500 hover:text-white transition-all duration-300 font-semibold"
+              className="border-2 border-primary-500 text-primary-500 px-8 py-4 rounded-lg hover:bg-primary-500/10 hover:border-primary-400 transition-all duration-300 font-semibold"
             >
               Meet Our Team
             </Link>
