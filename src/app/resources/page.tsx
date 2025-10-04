@@ -85,35 +85,35 @@ const featuredResources = [
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
+      {/* Mobile-Optimized Hero Section */}
+      <section className="bg-gradient-to-br from-background to-background-alt py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             Cybersecurity <span className="text-accent-500">Resources</span>
           </h1>
-          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
             Access our comprehensive library of cybersecurity insights,
             research, and educational content to stay ahead of evolving threats
             and industry trends.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#resources" className="btn text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link href="#resources" className="btn text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]">
               Explore Resources
             </Link>
           </div>
         </div>
       </section>
 
-      {/* Resources Overview */}
-      <section className="py-20 px-6 bg-[#0D0D0F]">
+      {/* Mobile-Optimized Resources Overview */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#0D0D0F]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-white mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8">
                 Knowledge is Power
               </h2>
-              <div className="space-y-6 text-text-secondary">
-                <p>
+              <div className="space-y-4 sm:space-y-6 text-text-secondary">
+                <p className="text-sm sm:text-base">
                   At Resilient Privacy, we believe that knowledge sharing is
                   essential to building a more secure digital world. Our
                   comprehensive resource library provides cybersecurity
@@ -121,7 +121,7 @@ export default function ResourcesPage() {
                   insights, tools, and guidance they need to make informed
                   security decisions.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   Our team of security experts, researchers, and analysts
                   continuously monitor the threat landscape, analyze emerging
                   trends, and develop practical guidance based on real-world
@@ -129,7 +129,7 @@ export default function ResourcesPage() {
                   including detailed white papers, technical documentation, case
                   studies, and educational content.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   Whether you&apos;re looking for strategic guidance on
                   implementing zero trust architecture, tactical advice on
                   responding to ransomware attacks, or educational content to
@@ -172,37 +172,37 @@ export default function ResourcesPage() {
         </div>
       </section>
 
-      {/* Resource Categories */}
-      <section id="resources" className="py-20 px-6 bg-[#1A1A1A]">
+      {/* Mobile-Optimized Resource Categories */}
+      <section id="resources" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#1A1A1A]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-8 sm:mb-12 lg:mb-16">
             Resource Categories
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {resourceCategories.map((category) => (
               <div
                 key={category.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
+                className="bg-[#0D0D0F] p-4 sm:p-6 lg:p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
                 
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-3 sm:mb-4">
                   {category.title}
                 </h3>
-                <p className="text-text-secondary mb-4">{category.description}</p>
-                <p className="text-accent-500 font-semibold mb-6">
+                <p className="text-sm sm:text-base text-text-secondary mb-3 sm:mb-4">{category.description}</p>
+                <p className="text-accent-500 font-semibold mb-4 sm:mb-6 text-sm sm:text-base">
                   {category.count}
                 </p>
-                <div className="mb-6">
-                  <h4 className="text-accent-500 font-semibold mb-3">
+                <div className="mb-4 sm:mb-6">
+                  <h4 className="text-accent-500 font-semibold mb-2 sm:mb-3 text-sm sm:text-base">
                     Featured Content
                   </h4>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1.5 sm:space-y-2">
                     {category.featured.map((item) => (
                       <li
                         key={item}
-                        className="text-text-secondary text-sm flex items-center"
+                        className="text-text-secondary text-xs sm:text-sm flex items-center"
                       >
-                        <span className="w-2 h-2 bg-accent-500 rounded-full mr-3"></span>
+                        <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full mr-2 sm:mr-3 flex-shrink-0"></span>
                         {item}
                       </li>
                     ))}
@@ -210,7 +210,7 @@ export default function ResourcesPage() {
                 </div>
                 <Link
                   href={category.link}
-                  className="text-accent-500 hover:text-white transition-colors"
+                  className="text-accent-500 hover:text-white transition-colors text-sm sm:text-base"
                 >
                   Browse {category.title} →
                 </Link>

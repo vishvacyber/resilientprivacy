@@ -151,28 +151,28 @@ const serviceCategories = [
 export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-[#0D0D0F]">
-      {/* Hero Section */}
-      <section className="relative py-24 px-6">
+      {/* Mobile-Optimized Hero Section */}
+      <section className="relative py-12 sm:py-16 lg:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 lg:mb-8 leading-tight">
             Advanced <span className="text-accent-500">AI & API Security</span>{' '}
             Services
           </h1>
-          <p className="text-2xl text-text-secondary mb-12 max-w-5xl mx-auto leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-text-secondary mb-6 sm:mb-8 lg:mb-12 max-w-5xl mx-auto leading-relaxed px-2">
             Cutting-edge AI security and API protection services. We provide
             comprehensive cybersecurity solutions that protect your AI systems
             and secure your APIs.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Link href="#services" className="btn text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-8 sm:mb-12 lg:mb-16">
+            <Link href="#services" className="btn text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]">
               Explore Services
             </Link>
             <Link
               href="https://forms.gle/xuGFneJ1ijjfMp9x7"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary text-lg px-8 py-4"
+              className="btn-secondary text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
             >
               Get Free Consultation
             </Link>
@@ -181,63 +181,63 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Service Categories */}
-      <section id="services" className="relative py-24 px-6">
+      {/* Mobile-Optimized Service Categories */}
+      <section id="services" className="relative py-12 sm:py-16 lg:py-24 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-6">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
               Our Service Portfolio
             </h2>
-            <p className="text-lg text-text-secondary max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-text-secondary max-w-3xl mx-auto px-2">
               Comprehensive technology and security services designed to support
               your business at every stage of growth. From basic IT support to
               enterprise-grade security solutions.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {serviceCategories.map((service) => (
               <Link key={service.name} href={service.link} className="group">
                 <div
-                  className={`bg-[#1A1A1A] p-8 rounded-lg border transition-all duration-300 group-hover:transform group-hover:scale-105 relative overflow-hidden ${
+                  className={`bg-[#1A1A1A] p-4 sm:p-6 lg:p-8 rounded-lg border transition-all duration-300 group-hover:transform group-hover:scale-105 relative overflow-hidden ${
                     service.popular
                       ? 'border-accent-500 ring-2 ring-[accent-500]/20'
                       : 'border-[#333] hover:border-accent-500'
                   }`}
                 >
                   {service.popular && (
-                    <div className="absolute top-0 right-0 bg-accent-500 text-white px-3 py-1 text-xs font-semibold rounded-bl-lg">
+                    <div className="absolute top-0 right-0 bg-accent-500 text-white px-2 sm:px-3 py-1 text-xs font-semibold rounded-bl-lg">
                       POPULAR
                     </div>
                   )}
 
-                  <h3 className="text-xl font-bold text-white mb-3">
+                  <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
                     {service.name}
                   </h3>
-                  <p className="text-text-secondary mb-4 text-sm leading-relaxed">
+                  <p className="text-text-secondary mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                     {service.description}
                   </p>
 
-                  <ul className="space-y-2 mb-6">
+                  <ul className="space-y-1.5 sm:space-y-2 mb-4 sm:mb-6">
                     {service.features.map((feature) => (
                       <li
                         key={feature}
-                        className="text-accent-500 text-sm flex items-center"
+                        className="text-accent-500 text-xs sm:text-sm flex items-center"
                       >
-                        <span className="w-1.5 h-1.5 bg-accent-500 rounded-full mr-3 flex-shrink-0"></span>
+                        <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-accent-500 rounded-full mr-2 sm:mr-3 flex-shrink-0"></span>
                         {feature}
                       </li>
                     ))}
                   </ul>
 
                   <div className="flex items-center justify-between">
-                    <div className="text-sm">
+                    <div className="text-xs sm:text-sm">
                       <span className="text-text-secondary">Contact us for</span>
-                      <div className="font-semibold text-white">
+                      <div className="font-semibold text-white text-sm sm:text-base">
                         {service.pricing}
                       </div>
                     </div>
-                    <div className="text-accent-500 group-hover:text-white transition-colors font-medium">
+                    <div className="text-accent-500 group-hover:text-white transition-colors font-medium text-xs sm:text-sm">
                       Learn More →
                     </div>
                   </div>

@@ -90,24 +90,24 @@ const complianceFrameworks = [
 export default function LegalPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
+      {/* Mobile-Optimized Hero Section */}
+      <section className="bg-gradient-to-br from-background to-background-alt py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             Legal & <span className="text-accent-500">Compliance</span>
           </h1>
-          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
             Transparency and compliance are fundamental to our business. Access
             our legal documents and learn about our commitment to data
             protection and security.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="#documents" className="btn text-lg px-8 py-4">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+            <Link href="#documents" className="btn text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]">
               Legal Documents
             </Link>
             <Link
               href="/compliance"
-              className="btn-secondary text-lg px-8 py-4"
+              className="btn-secondary text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
             >
               Compliance Center
             </Link>
@@ -115,37 +115,37 @@ export default function LegalPage() {
         </div>
       </section>
 
-      {/* Legal Overview */}
-      <section className="py-20 px-6 bg-[#0D0D0F]">
+      {/* Mobile-Optimized Legal Overview */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#0D0D0F]">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-white mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8">
                 Our Legal Commitment
               </h2>
-              <div className="space-y-6 text-text-secondary">
-                <p>
+              <div className="space-y-4 sm:space-y-6 text-text-secondary">
+                <p className="text-sm sm:text-base">
                   At Resilient Privacy, Inc., we believe that transparency and legal
                   compliance are essential foundations for building trust with
                   our customers and partners. As a Delaware C Corporation, we are committed to maintaining
                   compliance with applicable laws and regulations
                   across all aspects of our business operations.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   Our legal framework is designed to protect both our customers
                   and our organization while ensuring that we operate within the
                   bounds of applicable laws and regulations. We regularly review
                   and update our legal documents to reflect changes in laws,
                   regulations, and industry best practices.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   We understand that legal compliance is not just about meeting
                   minimum requirements—it&apos;s about demonstrating our
                   commitment to ethical business practices, data protection, and
                   customer privacy. We follow industry best practices and applicable legal requirements
                   to ensure that our policies and procedures are aligned with our security practices.
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   We encourage our customers, partners, and stakeholders to
                   review our legal documents and reach out to us with any
                   questions or concerns. We are committed to being transparent
@@ -187,35 +187,35 @@ export default function LegalPage() {
         </div>
       </section>
 
-      {/* Legal Documents */}
-      <section id="documents" className="py-20 px-6 bg-[#1A1A1A]">
+      {/* Mobile-Optimized Legal Documents */}
+      <section id="documents" className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 bg-[#1A1A1A]">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-white mb-16">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white mb-8 sm:mb-12 lg:mb-16">
             Legal Documents
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {legalDocuments.map((document) => (
               <div
                 key={document.title}
-                className="bg-[#0D0D0F] p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
+                className="bg-[#0D0D0F] p-4 sm:p-6 lg:p-8 rounded-lg border border-[#222] hover:border-accent-500 transition-colors"
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <span className="text-accent-500 text-sm font-semibold">
+                <div className="flex items-center gap-2 mb-3 sm:mb-4">
+                  <span className="text-accent-500 text-xs sm:text-sm font-semibold">
                     {document.category}
                   </span>
                 </div>
-                <h3 className="text-xl font-bold text-white mb-4">
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">
                   {document.title}
                 </h3>
-                <p className="text-text-secondary mb-6">{document.description}</p>
-                <div className="flex justify-between items-center mb-6">
-                  <span className="text-text-secondary text-sm">
+                <p className="text-text-secondary mb-4 sm:mb-6 text-sm sm:text-base">{document.description}</p>
+                <div className="flex justify-between items-center mb-4 sm:mb-6">
+                  <span className="text-text-secondary text-xs sm:text-sm">
                     Last updated: {document.lastUpdated}
                   </span>
                 </div>
                 <Link
                   href={document.link}
-                  className="text-accent-500 hover:text-white transition-colors"
+                  className="text-accent-500 hover:text-white transition-colors text-sm sm:text-base"
                 >
                   Read Document →
                 </Link>

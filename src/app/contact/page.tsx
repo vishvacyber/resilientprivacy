@@ -33,23 +33,23 @@ const contactMethods = [
 export default function ContactPage() {
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-background to-background-alt py-20 px-6">
+      {/* Mobile-Optimized Hero Section */}
+      <section className="bg-gradient-to-br from-background to-background-alt py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6">
             Get in <span className="fxology-text-gradient">Touch</span>
           </h1>
-          <p className="text-xl text-text-secondary mb-8 max-w-4xl mx-auto">
+          <p className="text-base sm:text-lg lg:text-xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
             Ready to strengthen your organization&apos;s cybersecurity posture?
             Our team of experts is here to help you navigate the complex world
             of digital security.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <a
               href="https://forms.gle/r4eosBbq6nTf7a8X7"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
+              className="btn text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
             >
               Contact Us
             </a>
@@ -57,54 +57,54 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Contact Methods */}
-      <section id="contact-info" className="py-24 px-6 bg-[#0D0D0F]">
+      {/* Mobile-Optimized Contact Methods */}
+      <section id="contact-info" className="py-12 sm:py-16 lg:py-24 px-4 sm:px-6 bg-[#0D0D0F]">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl font-bold text-white mb-4">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4">
               Contact Our Team
             </h2>
-            <p className="text-lg text-text-secondary max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-text-secondary max-w-2xl mx-auto px-2">
               Connect with the right department for your cybersecurity needs
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             {contactMethods.map((method, index) => (
               <div
                 key={method.title}
-                className="bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                className="bg-white/[0.02] backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
               >
                 {/* Department Badge */}
-                <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-accent-500/20 rounded-full px-3 py-1 mb-6">
-                  <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
-                  <span className="text-accent-500 text-sm font-medium">
+                <div className="inline-flex items-center gap-2 bg-accent-500/10 border border-accent-500/20 rounded-full px-2 sm:px-3 py-1 mb-4 sm:mb-6">
+                  <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
+                  <span className="text-accent-500 text-xs sm:text-sm font-medium">
                     {method.department}
                   </span>
                 </div>
 
                 {/* Title & Description */}
-                <h3 className="text-2xl font-semibold text-white mb-3">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-white mb-2 sm:mb-3">
                   {method.title}
                 </h3>
-                <p className="text-text-secondary mb-8 leading-relaxed">
+                <p className="text-sm sm:text-base text-text-secondary mb-6 sm:mb-8 leading-relaxed">
                   {method.description}
                 </p>
 
                 {/* Contact Details */}
-                <div className="space-y-6">
+                <div className="space-y-4 sm:space-y-6">
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
                       </div>
-                      <span className="text-accent-500 font-medium text-sm">
+                      <span className="text-accent-500 font-medium text-xs sm:text-sm">
                         Phone
                       </span>
                     </div>
                     <a
                       href={`tel:${method.phone.replace(/[^\d+]/g, '')}`}
-                      className="text-white text-lg font-mono hover:text-accent-500 transition-colors duration-200"
+                      className="text-white text-sm sm:text-base lg:text-lg font-mono hover:text-accent-500 transition-colors duration-200"
                     >
                       {method.phone}
                     </a>
@@ -112,16 +112,16 @@ export default function ContactPage() {
 
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
                       </div>
-                      <span className="text-accent-500 font-medium text-sm">
+                      <span className="text-accent-500 font-medium text-xs sm:text-sm">
                         Email
                       </span>
                     </div>
                     <a
                       href={`mailto:${method.email}`}
-                      className="text-white text-base font-medium hover:text-accent-500 transition-colors duration-200 break-all"
+                      className="text-white text-sm sm:text-base font-medium hover:text-accent-500 transition-colors duration-200 break-all"
                     >
                       {method.email}
                     </a>
@@ -129,14 +129,14 @@ export default function ContactPage() {
 
                   <div>
                     <div className="flex items-center gap-2 mb-2">
-                      <div className="w-4 h-4 border border-accent-500 rounded-full flex items-center justify-center">
-                        <div className="w-2 h-2 bg-accent-500 rounded-full"></div>
+                      <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
+                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
                       </div>
-                      <span className="text-accent-500 font-medium text-sm">
+                      <span className="text-accent-500 font-medium text-xs sm:text-sm">
                         Availability
                       </span>
                     </div>
-                    <p className="text-text-secondary">{method.hours}</p>
+                    <p className="text-text-secondary text-sm sm:text-base">{method.hours}</p>
                   </div>
                 </div>
               </div>
