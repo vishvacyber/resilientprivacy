@@ -15,7 +15,7 @@ function Avatar({
   if (src) {
     return (
       <div className="w-32 h-32 rounded-full border-3 border-primary-500/30 mx-auto overflow-hidden shadow-2xl shadow-primary-500/20">
-        <img src={src} alt={alt} className="w-full h-full object-cover" />
+        <img src={src} alt={alt} className="w-full h-full object-cover object-center" />
       </div>
     )
   }

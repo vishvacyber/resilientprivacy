@@ -44,7 +44,7 @@ function Avatar({
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover"
+        className="w-full h-full object-cover object-center"
         onError={() => setImgError(true)}
       />
     </div>
@@ -210,7 +210,7 @@ export default function LeadershipPage() {
                 title: 'Sr. Director - Managed Security Services',
                 expertise: 'NTT DATA Services, Board Member NTX Infraguard',
                 description:
-                  'Leading managed security services at NTT DATA with deep expertise in enterprise security operations and board governance at NTX Infraguard.',
+                  'Leading managed security services with deep expertise in enterprise security operations and board governance.',
                 image: '/images/advisors/tejas-shroff.png',
               },
               {
@@ -219,8 +219,17 @@ export default function LeadershipPage() {
                 title: 'Cyber Security Consultant',
                 expertise: 'Toyota Motors North America',
                 description:
-                  'Cybersecurity consultant specializing in automotive industry security at Toyota Motors North America, focusing on connected vehicle security and manufacturing systems protection.',
+                  'Cybersecurity consultant specializing in automotive industry security, focusing on connected vehicle security and manufacturing systems protection.',
                 image: '/images/advisors/falguni-patel.jpg',
+              },
+              {
+                id: 3,
+                name: 'Bhagirath Patel',
+                title: 'Legal Advisor',
+                expertise: 'Corporate & Civil Criminal Advocate',
+                description:
+                  'Well-known corporate and civil criminal advocate, bringing extensive legal expertise in corporate law, civil litigation, and criminal defense with deep understanding of legal frameworks and regulatory compliance.',
+                image: '/images/advisors/bhagirath-patel.png',
               },
             ].map((advisor) => (
               <div
