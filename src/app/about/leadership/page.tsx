@@ -211,7 +211,7 @@ export default function LeadershipPage() {
                 expertise: 'NTT DATA Services, Board Member NTX Infraguard',
                 description:
                   'Leading managed security services at NTT DATA with deep expertise in enterprise security operations and board governance at NTX Infraguard.',
-                image: '/images/advisors/tejas-shroff.jpg',
+                image: '/images/advisors/tejas-shroff.png',
               },
               {
                 id: 2,
