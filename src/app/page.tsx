@@ -6,6 +6,8 @@ import AnimatedCounter from '@/components/AnimatedCounter'
 import LoadingSpinner from '@/components/LoadingSpinner'
 import AnimatedText from '@/components/AnimatedText'
 import CompanyScroller from '@/components/CompanyScroller'
+import TypewriterText from '@/components/TypewriterText'
+import { Shield, Zap, Brain, Lock, ArrowRight, CheckCircle, Star, Users, Target, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
   title:
@@ -86,271 +88,299 @@ export default function Home() {
           </div>
         </div>
       }>
-        {/* Hero Section - DarkFire Style with Cybersecurity Content */}
-        <main id="main-content" className="relative flex items-center justify-center overflow-hidden py-12 sm:py-16 md:py-20 lg:min-h-screen hero-section-mobile">
+        {/* Hero Section - Wallarm-inspired design */}
+        <main id="main-content" className="relative overflow-hidden">
           {/* Background Effects */}
-          <div className="absolute inset-0 bg-gradient-hero"></div>
-          <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-transparent to-blue-500/10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-background via-background-alt to-background-card"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary-500/5 via-transparent to-blue-500/5"></div>
           
           {/* Animated Background Elements */}
-          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight mobile-spacing-fix">
-              A Secure <span className="inline-block min-w-[80px] sm:min-w-[100px] md:min-w-[120px]" aria-label="AI-powered"><AnimatedText /></span> Release Engine Company
-            </h1>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary mb-4 sm:mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-2 mobile-spacing-fix">
-              Next-generation cybersecurity company redefining digital trust. We design intelligent, adaptive security ecosystems that protect the world's most critical organizations.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center px-2">
-              <Link
-                href="/contact"
-                className="btn text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 min-h-[44px]"
-              >
-                Get Started
-              </Link>
-              <Link
-                href="/about"
-                className="btn-secondary text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 min-h-[44px]"
-              >
-                Learn More
-              </Link>
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                <span className="block">
+                  <TypewriterText 
+                    phrases={[
+                      "API Protection",
+                      "AI Security", 
+                      "Threat Detection",
+                      "Zero Trust"
+                    ]}
+                    className="text-primary-400"
+                    typingSpeed={80}
+                    deletingSpeed={40}
+                    pauseTime={2500}
+                  />
+                </span>
+                <span className="block text-primary-400">in Minutes</span>
+                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-text-secondary mt-3 sm:mt-4">
+                  with <span className="text-primary-400 font-semibold">Security Edge</span>
+                </span>
+              </h1>
+              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
+                Real-time API threat protection at the edge. Security Edge discovers your API attack surface, stops API attacks in real-time, and automates security testing in development and production.
+              </p>
+            </div>
+
+            {/* Separator */}
+            <div className="flex items-center justify-center mb-8 sm:mb-12 md:mb-16">
+              <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+              <div className="mx-3 sm:mx-4 w-1.5 sm:w-2 h-1.5 sm:h-2 bg-primary-500/30 rounded-full"></div>
+              <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+            </div>
+
+            {/* Trusted by section */}
+            <div className="mb-12 sm:mb-16 md:mb-20">
+              <p className="text-center text-text-secondary mb-6 sm:mb-8 text-xs sm:text-sm uppercase tracking-wider font-semibold">
+                Trusted by Leading Organizations
+              </p>
+              <CompanyScroller />
             </div>
           </div>
         </main>
 
-        {/* Trusted by AI & Security Startups Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-background-alt">
+        {/* AI Protection Focus */}
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-background-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-8 sm:mb-12 md:mb-16">
-              Trusted by AI & Security Startups
-            </h2>
-            
-            {/* Perfect Scroller Component */}
-            <CompanyScroller />
+            <div className="text-center mb-8 sm:mb-12 md:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                The only platform that protects <span className="text-primary-400">Agentic AI</span>
+              </h2>
+              <p className="text-base sm:text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed px-2 mb-8 sm:mb-12">
+                AI deployments create complex attack surfaces. We secure them.
+              </p>
+              
+              {/* AI Protection Counters */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
+                <div className="text-center group">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <AnimatedCounter end={99} suffix=".9%" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                    AI Threat Detection Accuracy
+                  </div>
+                </div>
+                
+                <div className="text-center group">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <AnimatedCounter end={15} suffix="ms" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                    Real-time Response Time
+                  </div>
+                </div>
+                
+                <div className="text-center group">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <AnimatedCounter end={24} suffix="/7" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                    AI Security Monitoring
+                  </div>
+                </div>
+                
+                <div className="text-center group">
+                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                    <AnimatedCounter end={50} suffix="K+" />
+                  </div>
+                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                    AI Models Protected
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        {/* Core Services Section - DarkFire Style */}
-        <section className="py-20 bg-background">
+        {/* Core Capabilities - Web Redesigned */}
+        <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Our AI-Powered Security Products
+            {/* Header Section */}
+            <div className="text-center mb-12 sm:mb-16 md:mb-20">
+              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 mb-4">
+                <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mr-2 animate-pulse"></div>
+                <span className="text-xs font-medium text-primary-400">Core Capabilities</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight">
+                Stop attacks, don't just detect them
               </h2>
-              <p className="text-lg text-text-secondary max-w-4xl mx-auto leading-relaxed">
-                Cutting-edge AI security solutions with 99.7% threat detection accuracy, designed to protect against sophisticated attacks.
+              <p className="text-lg sm:text-xl md:text-2xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
+                Our platform goes beyond traditional security monitoring to actively prevent, block, and neutralize threats in real-time.
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Capabilities Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
               {[
                 { 
-                  title: 'AI-Powered Threat Detection', 
-                  description: 'Machine learning-driven security analytics and threat hunting with 99.7% accuracy.',
-                  href: '/products/ai-threat-detection'
+                  icon: <Target className="w-12 h-12 text-primary-400" />,
+                  title: 'Discover', 
+                  subtitle: 'Complete Attack Surface Visibility',
+                  description: 'Automated discovery of shadow APIs, undocumented endpoints, and hidden vulnerabilities across your entire digital infrastructure.',
+                  href: '/products/coreshield-api-mapping',
+                  features: ['Shadow API Detection', 'Endpoint Mapping', 'Vulnerability Discovery'],
+                  gradient: 'from-primary-500/20 to-primary-600/10',
+                  borderColor: 'border-primary-500/30'
                 },
                 { 
-                  title: 'Secure API Gateway', 
-                  description: 'Comprehensive API security and management platform with real-time protection.',
-                  href: '/products/secure-api-gateway'
+                  icon: <Zap className="w-12 h-12 text-blue-400" />,
+                  title: 'Test', 
+                  subtitle: 'AI-Powered Security Testing',
+                  description: 'Continuous security testing with AI-powered vulnerability assessment that identifies misconfigurations and security flaws.',
+                  href: '/products/coreshield-risk-testing',
+                  features: ['Automated Testing', 'AI-Powered Analysis', 'Risk Assessment'],
+                  gradient: 'from-blue-500/20 to-blue-600/10',
+                  borderColor: 'border-blue-500/30'
                 },
                 { 
-                  title: 'AI Security Operations Center', 
-                  description: 'Autonomous security operations with AI-driven analytics and monitoring.',
-                  href: '/products/ai-security-operations'
+                  icon: <Shield className="w-12 h-12 text-green-400" />,
+                  title: 'Protect', 
+                  subtitle: 'Real-Time Threat Blocking',
+                  description: 'Machine learning models that detect and prevent attacks before they can cause damage to your systems.',
+                  href: '/products/coreshield-api-protection-suite',
+                  features: ['Real-time Blocking', 'ML Threat Detection', 'Zero-day Protection'],
+                  gradient: 'from-green-500/20 to-green-600/10',
+                  borderColor: 'border-green-500/30'
                 },
                 { 
-                  title: 'API Security Intelligence', 
-                  description: 'Advanced API threat detection and protection against sophisticated attacks.',
-                  href: '/products/api-security-intelligence'
-                },
-                { 
-                  title: 'AI-Enhanced Identity Management', 
-                  description: 'Intelligent identity and access management with AI-powered risk scoring.',
-                  href: '/products/ai-identity-management'
-                },
-                { 
-                  title: 'Secure AI Model Protection', 
-                  description: 'Protect AI models and data from adversarial attacks and model extraction.',
-                  href: '/products/secure-ai-models'
+                  icon: <Brain className="w-12 h-12 text-purple-400" />,
+                  title: 'Respond', 
+                  subtitle: 'Intelligent Incident Response',
+                  description: 'Automated threat containment, forensic analysis, and recovery procedures to minimize impact.',
+                  href: '/products/ai-security-operations',
+                  features: ['Automated Response', 'Threat Containment', 'Forensic Analysis'],
+                  gradient: 'from-purple-500/20 to-purple-600/10',
+                  borderColor: 'border-purple-500/30'
                 },
               ].map((service, index) => (
-                <Link key={index} href={service.href} className="darkfire-card p-8 hover:darkfire-shadow transition-all duration-300 group">
-                  <h3 className="text-xl font-bold text-white mb-4 group-hover:darkfire-text-gradient transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-text-secondary leading-relaxed">
-                    {service.description}
-                  </p>
+                <Link key={index} href={service.href} className="group relative bg-background-card border border-border-light/20 rounded-xl p-6 hover:border-primary-500/50 hover:shadow-purple transition-all duration-300 hover:-translate-y-1">
+                  {/* Icon */}
+                  <div className="mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-primary-500/20 to-primary-600/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      {service.icon}
+                    </div>
+                  </div>
+                  
+                  {/* Content */}
+                  <div>
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary-400 transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-sm text-text-secondary leading-relaxed mb-4">
+                      {service.description}
+                    </p>
+                    
+                    {/* Features */}
+                    <div className="space-y-2">
+                      {service.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="flex items-center text-sm text-text-tertiary">
+                          <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mr-2 flex-shrink-0"></div>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  
+                  {/* Hover Arrow */}
+                  <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <svg className="w-5 h-5 text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </Link>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Impact Metrics Section */}
-        <section className="py-20 bg-background-alt">
+        {/* Impact Metrics - Streamlined */}
+        <section className="py-12 sm:py-16 md:py-20 bg-background-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white mb-16">
-              Our Impact in Numbers
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                Trusted by security leaders worldwide
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 text-center">
               <div className="group">
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold darkfire-text-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <AnimatedCounter end={5000000} suffix="+" />
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-400 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <AnimatedCounter end={15} suffix="M+" />
                 </div>
-                <div className="text-text-secondary text-lg font-medium">
-                  Threats Blocked
+                <div className="text-text-secondary text-sm sm:text-base lg:text-lg font-medium">
+                  API requests protected daily
                 </div>
               </div>
               <div className="group">
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold darkfire-text-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-400 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <AnimatedCounter end={160} suffix="K+" />
+                </div>
+                <div className="text-text-secondary text-sm sm:text-base lg:text-lg font-medium">
+                  APIs secured
+                </div>
+              </div>
+              <div className="group">
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-400 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                   <AnimatedCounter end={99} suffix=".9%" />
                 </div>
-                <div className="text-text-secondary text-lg font-medium">
-                  Detection Rate
+                <div className="text-text-secondary text-sm sm:text-base lg:text-lg font-medium">
+                  Threat detection accuracy
                 </div>
               </div>
               <div className="group">
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold darkfire-text-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <AnimatedCounter end={24} suffix="/7" />
-                </div>
-                <div className="text-text-secondary text-lg font-medium">
-                  IR Hotline
-                </div>
-              </div>
-              <div className="group">
-                <div className="text-4xl sm:text-5xl md:text-6xl font-bold darkfire-text-gradient mb-4 group-hover:scale-110 transition-transform duration-300">
+                <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-400 mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
                   <AnimatedCounter end={15} suffix="-min" />
                 </div>
-                <div className="text-text-secondary text-lg font-medium">
-                  Avg MTTD
+                <div className="text-text-secondary text-sm sm:text-base lg:text-lg font-medium">
+                  Average response time
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Features Section - DarkFire Style */}
-        <section className="py-20 bg-background">
+        {/* Social Proof - Streamlined */}
+        <section className="py-12 sm:py-16 md:py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                  Advanced Threat Protection With Our AI Platform
-                </h2>
-                <div className="space-y-8">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-primary-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-primary-500 rounded"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Real-Time Threat Detection</h3>
-                      <p className="text-text-secondary">Advanced AI-powered threat detection that identifies and neutralizes attacks in real-time.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-blue-500 rounded"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Zero Trust Architecture</h3>
-                      <p className="text-text-secondary">Comprehensive zero trust implementation that verifies every access request.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-success-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-success-500 rounded"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">24/7 SOC Monitoring</h3>
-                      <p className="text-text-secondary">Round-the-clock security operations center with expert analysts monitoring your infrastructure.</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <div className="w-6 h-6 bg-orange-500 rounded"></div>
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-white mb-2">Incident Response</h3>
-                      <p className="text-text-secondary">Rapid incident response with 15-minute average response time and digital forensics.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="relative">
-                <div className="w-full h-64 sm:h-80 lg:h-96 bg-background-card rounded-2xl border border-border-light/50 overflow-hidden">
-                  <Image
-                    src="/dashboard-preview.svg"
-                    alt="Security Dashboard Preview"
-                    width={800}
-                    height={400}
-                    className="w-full h-full object-contain sm:object-cover object-center"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Testimonials Section - Cybersecurity Clients */}
-        <section className="py-20 bg-background-alt">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                What Our Clients Say
+            <div className="text-center mb-12 sm:mb-16">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+                Trusted by security leaders
               </h2>
-              <p className="text-lg text-text-secondary">Advanced security solutions for organizations seeking cutting-edge protection.</p>
             </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
               {[
                 { 
-                  quote: "Resilient Privacy transformed our security posture. Their zero trust implementation reduced our attack surface by 80%.", 
-                  author: "Meet Chauhan", 
-                  title: "CISO, Enterprise Tech" 
+                  quote: "Resilient Privacy really protects our service and provides good visibility and user-friendly control.", 
+                  author: "Anton Bulavin", 
+                  title: "Head of Application Security" 
                 },
                 { 
-                  quote: "Their threat intelligence platform provides real-time insights that have prevented multiple attacks.", 
-                  author: "Ashley Patel", 
-                  title: "Security Director, Healthcare" 
+                  quote: "I would absolutely recommend Resilient Privacy, in a heartbeat. They do what they say they can do.", 
+                  author: "Rob Davies", 
+                  title: "VP of Engineering" 
                 },
                 { 
-                  quote: "The managed security services team is exceptional. 24/7 monitoring with 15-minute response times.", 
-                  author: "Mihir Mehta", 
-                  title: "CTO, Diamond Manufacturing Industry" 
-                },
-                { 
-                  quote: "Outstanding incident response capabilities. They helped us recover from a major breach in record time.", 
-                  author: "Sarah Johnson", 
-                  title: "CISO, Financial Services" 
-                },
-                { 
-                  quote: "Their compliance expertise helped us achieve SOC 2 Type II certification seamlessly.", 
-                  author: "David Chen", 
-                  title: "VP Security, Tech Startup" 
-                },
-                { 
-                  quote: "The red team exercises revealed vulnerabilities we never knew existed. Highly recommended.", 
-                  author: "Lisa Rodriguez", 
-                  title: "Security Manager, Healthcare" 
+                  quote: "The installation is easy and straightforward. We didn't need to change anything in our infrastructure.", 
+                  author: "Konstantin Golubitsky", 
+                  title: "CTO" 
                 },
               ].map((testimonial, index) => (
-                <div key={index} className="darkfire-card p-8 hover:darkfire-shadow transition-all duration-300">
-                  <div className="text-primary-400 text-4xl mb-4">"</div>
-                  <p className="text-text-secondary mb-6 leading-relaxed">{testimonial.quote}</p>
+                <div key={index} className="darkfire-card p-6 sm:p-8 hover:darkfire-shadow transition-all duration-300">
+                  <div className="text-primary-400 text-3xl sm:text-4xl mb-3 sm:mb-4">"</div>
+                  <p className="text-sm sm:text-base text-text-secondary mb-4 sm:mb-6 leading-relaxed">{testimonial.quote}</p>
                   <div className="flex items-center">
-                    <div className="w-12 h-12 bg-primary-500 rounded-full mr-4"></div>
-                    <div>
-                      <div className="font-semibold text-white">{testimonial.author}</div>
-                      <div className="text-text-tertiary text-sm">{testimonial.title}</div>
+                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-primary-500 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                      <span className="text-white font-bold text-sm sm:text-lg">
+                        {testimonial.author.split(' ').map(n => n[0]).join('')}
+                      </span>
+                    </div>
+                    <div className="min-w-0">
+                      <div className="font-semibold text-white text-sm sm:text-base">{testimonial.author}</div>
+                      <div className="text-text-tertiary text-xs sm:text-sm">{testimonial.title}</div>
                     </div>
                   </div>
                 </div>
@@ -360,54 +390,22 @@ export default function Home() {
         </section>
 
 
-        {/* FAQ Section - Cybersecurity Questions */}
-        <section className="py-20 bg-background-alt">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-text-secondary">Everything you need to know about our cybersecurity services.</p>
-            </div>
-            
-            <div className="space-y-6">
-              {[
-                { 
-                  question: "What makes Resilient Privacy a leading cybersecurity company?", 
-                  answer: "Resilient Privacy stands out due to our advanced AI-powered security solutions, cutting-edge technology, and research-backed approach. We provide innovative cybersecurity services with high detection accuracy and comprehensive protection capabilities." 
-                },
-                { 
-                  question: "What cybersecurity services do you offer?", 
-                  answer: "We offer comprehensive cybersecurity services including cybersecurity consulting, managed security services, penetration testing, incident response, identity & access management, zero trust architecture, threat intelligence, and compliance consulting." 
-                },
-                { 
-                  question: "How quickly can you respond to security incidents?", 
-                  answer: "Our managed security services provide 24/7 monitoring with an average response time of 15 minutes. We offer immediate incident response and digital forensics services to minimize damage and recovery time." 
-                },
-                { 
-                  question: "What types of organizations do you work with?", 
-                  answer: "Resilient Privacy works with organizations of all sizes across various industries including healthcare, finance, technology, and manufacturing. We provide advanced security solutions tailored to meet the specific needs of each organization." 
-                },
-                { 
-                  question: "What compliance frameworks do you support?", 
-                  answer: "We support all major compliance frameworks including SOC 2, ISO 27001, GDPR, HIPAA, PCI DSS, and industry-specific regulations. Our compliance experts help you achieve and maintain certification." 
-                },
-              ].map((faq, index) => (
-                <div key={index} className="darkfire-card p-8">
-                  <h3 className="text-xl font-bold text-white mb-4">{faq.question}</h3>
-                  <p className="text-text-secondary leading-relaxed">{faq.answer}</p>
-                </div>
-              ))}
-            </div>
-            
-            <div className="text-center mt-12">
-              <h3 className="text-2xl font-bold text-white mb-4">Still have questions?</h3>
-              <p className="text-text-secondary mb-8">Our cybersecurity experts are here to help.</p>
+        {/* Final CTA - Streamlined */}
+        <section className="py-12 sm:py-16 md:py-20 bg-background-alt">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+              Ready to secure your APIs and AI?
+            </h2>
+            <p className="text-base sm:text-lg text-text-secondary mb-6 sm:mb-8 px-2">
+              Join thousands of security teams protecting their most critical assets.
+            </p>
+            <div className="flex justify-center px-2">
               <Link
-                href="/contact"
-                className="btn text-lg px-8 py-4 rounded-xl shadow-purple-lg"
+                href="/products"
+                className="btn-secondary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl flex items-center justify-center gap-2 min-h-[48px]"
               >
-                Contact Us
+                <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
+                View Products
               </Link>
             </div>
           </div>

@@ -84,37 +84,11 @@ export default function LeadershipPage() {
               Visionary leaders driving the future of cybersecurity through innovation, expertise, and unwavering commitment to digital trust.
             </p>
 
-            {/* Leadership Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="group">
-                <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Award className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">20+</div>
-                  <div className="text-text-secondary text-sm">Years Experience</div>
-                </div>
-              </div>
-              
-              <div className="group">
-                <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Shield className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">100%</div>
-                  <div className="text-text-secondary text-sm">Security Focus</div>
-                </div>
-              </div>
-              
-              <div className="group">
-                <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <Globe className="w-6 h-6 text-white" />
-                  </div>
-                  <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">Global</div>
-                  <div className="text-text-secondary text-sm">Leadership Vision</div>
-                </div>
-              </div>
+            {/* Separator */}
+            <div className="flex items-center justify-center mt-16">
+              <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+              <div className="mx-4 w-2 h-2 bg-primary-500/30 rounded-full"></div>
+              <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
             </div>
           </div>
         </div>
@@ -356,7 +330,7 @@ export default function LeadershipPage() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
             <Link
               href="/about/careers"
-              className="group relative inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/25 hover:-translate-y-1"
+              className="group relative inline-flex items-center px-10 py-5 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-semibold rounded-2xl transition-all duration-300 hover:shadow-2xl hover:shadow-primary-500/25 hover:-translate-y-1 backdrop-blur-sm"
             >
               <Target className="w-5 h-5 mr-3" />
               <span>View Career Opportunities</span>
@@ -375,37 +349,11 @@ export default function LeadershipPage() {
             </Link>
           </div>
 
-          {/* Leadership Stats */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="group">
-              <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Users className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">5+</div>
-                <div className="text-text-secondary text-sm">Executive Leaders</div>
-              </div>
-            </div>
-            
-            <div className="group">
-              <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Award className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">100%</div>
-                <div className="text-text-secondary text-sm">Security Focused</div>
-              </div>
-            </div>
-            
-            <div className="group">
-              <div className="bg-background-card/50 backdrop-blur-sm rounded-2xl p-6 border border-primary-500/20 group-hover:border-primary-500/40 transition-all duration-300">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Globe className="w-6 h-6 text-white" />
-                </div>
-                <div className="text-2xl font-bold text-white mb-2 group-hover:text-primary-500 transition-colors duration-300">Global</div>
-                <div className="text-text-secondary text-sm">Leadership Vision</div>
-              </div>
-            </div>
+          {/* Separator */}
+          <div className="flex items-center justify-center mt-16">
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+            <div className="mx-4 w-2 h-2 bg-primary-500/30 rounded-full"></div>
+            <div className="w-16 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
           </div>
         </div>
       </section>

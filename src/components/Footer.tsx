@@ -38,13 +38,10 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">R</span>
-              </div>
-              <span className="text-lg font-bold text-white">Resilient Privacy</span>
+              <span className="text-lg font-bold text-white">Resilient Privacy Inc.</span>
             </div>
             <p className="text-text-secondary text-sm leading-relaxed max-w-sm">
-              Empowering organizations with cutting-edge cybersecurity solutions and expert guidance.
+              A feature release engine company specializing in AI and API security solutions. We develop and deploy advanced cybersecurity technologies to protect modern digital infrastructure.
             </p>
             {/* Social Links */}
             <div className="flex items-center space-x-3">

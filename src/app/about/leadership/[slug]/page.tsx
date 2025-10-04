@@ -1,4 +1,4 @@
-import { User } from 'lucide-react'
+import { User, Linkedin, ArrowLeft, Quote } from 'lucide-react'
 import Link from 'next/link'
 import { leadership, slugify } from '@/lib/leadership-data'
 
@@ -14,7 +14,7 @@ function Avatar({
   // Show actual image if it exists, otherwise show initials
   if (src) {
     return (
-      <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto overflow-hidden">
+      <div className="w-32 h-32 rounded-full border-3 border-primary-500/30 mx-auto overflow-hidden shadow-2xl shadow-primary-500/20">
         <img src={src} alt={alt} className="w-full h-full object-cover" />
       </div>
     )
@@ -22,7 +22,7 @@ function Avatar({
 
   // Show initials as fallback
   return (
-    <div className="w-32 h-32 rounded-full border-2 border-accent-500 mx-auto bg-gradient-to-br from-accent-500 to-[#7C3AED] flex items-center justify-center text-white text-2xl font-bold">
+    <div className="w-32 h-32 rounded-full border-3 border-primary-500/30 mx-auto bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center text-white text-2xl font-bold shadow-2xl shadow-primary-500/20">
       {initials}
     </div>
   )
@@ -47,7 +47,7 @@ export default async function LeaderDetailPage({
 
   if (!leader || leader.hidden) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 px-4">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-background px-4">
         <h1 className="text-4xl font-bold text-white mb-4">
           404 - Leader Not Found
         </h1>
@@ -56,7 +56,7 @@ export default async function LeaderDetailPage({
         </p>
         <Link
           href="/about/leadership"
-          className="text-base font-medium text-white bg-accent-500 hover:bg-[#7c3aed] px-6 py-2 rounded-lg transition-colors"
+          className="text-base font-medium text-white bg-primary-500 hover:bg-primary-600 px-6 py-2 rounded-lg transition-colors"
         >
           Back to Leadership
         </Link>
@@ -65,13 +65,14 @@ export default async function LeaderDetailPage({
   }
 
   return (
-    <div className="min-h-screen w-full bg-gradient-to-br from-[#18181B] via-[#232336] to-accent-500 pb-20 px-2">
+    <div className="min-h-screen w-full bg-background pb-20 px-2">
       <div className="max-w-3xl mx-auto pt-20 pb-10 px-4">
         <Link
           href="/about/leadership"
-          className="text-accent-500 hover:underline mb-8 text-base font-medium"
+          className="inline-flex items-center gap-2 text-primary-500 hover:text-primary-400 hover:underline mb-8 text-base font-medium transition-colors"
         >
-          &larr; Back to Leadership
+          <ArrowLeft className="w-4 h-4" />
+          Back to Leadership
         </Link>
         <div className="flex flex-col items-center text-center">
           <Avatar
@@ -84,7 +85,7 @@ export default async function LeaderDetailPage({
           />
           <h1 className="text-4xl font-extrabold mt-6 mb-2 tracking-tight">
             <span className="text-white">Resilient </span>
-            <span className="bg-gradient-to-r from-accent-500 via-accent-600 to-accent-500 bg-clip-text text-transparent drop-shadow-lg">
+            <span className="darkfire-text-gradient">
               Privacy
             </span>
             <span className="text-white"> Leadership</span>
@@ -92,7 +93,7 @@ export default async function LeaderDetailPage({
           <h2 className="text-3xl font-extrabold text-white mt-2 mb-2 tracking-tight">
             {leader.name}
           </h2>
-          <p className="text-accent-500 font-medium text-xl mb-4">
+          <p className="text-primary-500 font-medium text-xl mb-4">
             {leader.title}
           </p>
           {leader.linkedin && (
@@ -100,14 +101,14 @@ export default async function LeaderDetailPage({
               href={leader.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-accent-500 hover:text-white transition-colors text-lg mb-6 font-medium"
+              className="inline-flex items-center gap-2 text-primary-500 hover:text-primary-400 transition-colors text-lg mb-6 font-medium"
               aria-label={`LinkedIn profile of ${leader.name}`}
             >
-              <User className="w-5 h-5" /> LinkedIn
+              <Linkedin className="w-5 h-5" /> LinkedIn
             </a>
           )}
         </div>
-        <div className="bg-[#232336] rounded-2xl p-8 mt-4 text-left text-text-secondary shadow-lg">
+        <div className="darkfire-card rounded-2xl p-8 mt-4 text-left text-text-secondary shadow-lg">
           <h2 className="text-2xl font-bold text-white mb-4">
             About {leader.name.split(' ')[0]}
           </h2>
@@ -115,14 +116,14 @@ export default async function LeaderDetailPage({
 
           <div className="grid md:grid-cols-2 gap-8 mb-8">
             <div>
-              <h3 className="text-xl font-semibold text-accent-500 mb-4">
+              <h3 className="text-xl font-semibold text-primary-500 mb-4">
                 Areas of Expertise
               </h3>
               <ul className="flex flex-wrap gap-3">
                 {leader.expertise.map((skill) => (
                   <li
                     key={skill}
-                    className="px-3 py-2 bg-accent-500 bg-opacity-20 text-accent-500 rounded-full text-sm font-medium"
+                    className="px-3 py-2 bg-primary-500/20 text-primary-500 rounded-full text-sm font-medium"
                   >
                     {skill}
                   </li>
@@ -131,45 +132,46 @@ export default async function LeaderDetailPage({
             </div>
 
             <div>
-              <h3 className="text-xl font-semibold text-accent-500 mb-4">
+              <h3 className="text-xl font-semibold text-primary-500 mb-4">
                 Professional Highlights
               </h3>
               <ul className="space-y-2 text-sm">
                 <li className="flex items-start gap-2">
-                  <span className="text-accent-500 mt-1">•</span>
+                  <span className="text-primary-500 mt-1">•</span>
                   <span>
                     Led transformative initiatives in enterprise security
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-accent-500 mt-1">•</span>
+                  <span className="text-primary-500 mt-1">•</span>
                   <span>Managed multi-million dollar security portfolios</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-accent-500 mt-1">•</span>
+                  <span className="text-primary-500 mt-1">•</span>
                   <span>Pioneered innovative cybersecurity solutions</span>
                 </li>
                 <li className="flex items-start gap-2">
-                  <span className="text-accent-500 mt-1">•</span>
+                  <span className="text-primary-500 mt-1">•</span>
                   <span>Built high-performing global teams</span>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="border-t border-[#3F3F46] pt-6">
-            <h3 className="text-xl font-semibold text-accent-500 mb-4">
+          <div className="border-t border-border-light pt-6">
+            <h3 className="text-xl font-semibold text-primary-500 mb-4">
               Leadership Philosophy
             </h3>
-            <blockquote className="border-l-4 border-accent-500 pl-6 italic text-lg text-accent-500 bg-accent-500 bg-opacity-10 p-4 rounded-r-lg">
+            <blockquote className="border-l-4 border-primary-500 pl-6 italic text-lg text-primary-500 bg-primary-500/10 p-4 rounded-r-lg">
+              <Quote className="w-5 h-5 inline mr-2" />
               "{leader.quote}"
             </blockquote>
           </div>
         </div>
 
         {/* Additional Info Section */}
-        <div className="bg-[#232336] rounded-2xl p-8 mt-6 text-left text-text-secondary shadow-lg">
-          <h3 className="text-xl font-semibold text-accent-500 mb-4">
+        <div className="darkfire-card rounded-2xl p-8 mt-6 text-left text-text-secondary shadow-lg">
+          <h3 className="text-xl font-semibold text-primary-500 mb-4">
             Connect with {leader.name.split(' ')[0]}
           </h3>
           <div className="flex flex-wrap gap-4">
@@ -178,10 +180,10 @@ export default async function LeaderDetailPage({
                 href={leader.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-accent-500 hover:text-white transition-colors text-base font-medium bg-accent-500 bg-opacity-20 px-4 py-2 rounded-lg"
+                className="inline-flex items-center gap-2 text-primary-500 hover:text-primary-400 transition-colors text-base font-medium bg-primary-500/20 px-4 py-2 rounded-lg hover:bg-primary-500/30"
                 aria-label={`LinkedIn profile of ${leader.name}`}
               >
-                <User className="w-4 h-4" /> LinkedIn Profile
+                <Linkedin className="w-4 h-4" /> LinkedIn Profile
               </a>
             )}
           </div>
