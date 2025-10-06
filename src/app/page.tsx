@@ -4,7 +4,6 @@ import { Metadata } from 'next'
 import Image from 'next/image'
 import AnimatedCounter from '@/components/AnimatedCounter'
 import AnimatedText from '@/components/AnimatedText'
-import CompanyScroller from '@/components/CompanyScroller'
 import TypewriterText from '@/components/TypewriterText'
 import { Shield, Zap, Brain, Lock, ArrowRight, CheckCircle, Star, Users, Target, Globe } from 'lucide-react'
 
@@ -131,13 +130,6 @@ export default function Home() {
               <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
             </div>
 
-            {/* Trusted by section */}
-            <div className="mb-12 sm:mb-16 md:mb-20">
-              <p className="text-center text-text-secondary mb-6 sm:mb-8 text-xs sm:text-sm uppercase tracking-wider font-semibold">
-                Trusted by Leading Organizations
-              </p>
-              <CompanyScroller />
-            </div>
           </div>
         </main>
 

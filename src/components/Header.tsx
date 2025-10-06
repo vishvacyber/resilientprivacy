@@ -91,16 +91,16 @@ export default function Header() {
               Home
             </Link>
             
-            {/* About Dropdown */}
+            {/* Company Dropdown */}
             <div className="relative group">
               <button
-                onClick={() => toggleDropdown('about')}
+                onClick={() => toggleDropdown('company')}
                 className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
               >
-                <span>About</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'about' ? 'rotate-180' : ''}`} />
+                <span>Company</span>
+                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'company' ? 'rotate-180' : ''}`} />
               </button>
-              {activeDropdown === 'about' && (
+              {activeDropdown === 'company' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">
                     <Link
@@ -361,22 +361,22 @@ export default function Header() {
                 <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-blue-400 transition-colors" />
               </Link>
               
-              {/* About Section */}
+              {/* Company Section */}
               <div className="space-y-1">
                 <button
-                  onClick={() => toggleDropdown('mobile-about')}
+                  onClick={() => toggleDropdown('mobile-company')}
                   className="w-full group flex items-center px-4 py-3 bg-slate-800/50 hover:bg-slate-700/70 rounded-xl transition-all duration-300 border border-slate-700 hover:border-purple-500/50"
                 >
                   <div className="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center mr-3 group-hover:bg-purple-500/30 transition-colors">
                     <Users className="w-4 h-4 text-purple-400" />
                   </div>
                   <div className="flex-1 text-left">
-                    <div className="text-white font-semibold text-base">About</div>
+                    <div className="text-white font-semibold text-base">Company</div>
                     <div className="text-slate-400 text-xs">Our company & team</div>
                   </div>
-                  <ChevronRight className={`w-4 h-4 text-slate-400 group-hover:text-purple-400 transition-all duration-300 ${activeDropdown === 'mobile-about' ? 'rotate-90' : ''}`} />
+                  <ChevronRight className={`w-4 h-4 text-slate-400 group-hover:text-purple-400 transition-all duration-300 ${activeDropdown === 'mobile-company' ? 'rotate-90' : ''}`} />
                 </button>
-                {activeDropdown === 'mobile-about' && (
+                {activeDropdown === 'mobile-company' && (
                   <div className="ml-4 space-y-1 bg-slate-800/30 rounded-xl p-3 border border-slate-700">
                     <Link
                       href="/about"

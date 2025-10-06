@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
+import Image from 'next/image'
 
 export default function CompanyScroller() {
   const scrollerRef = useRef<HTMLDivElement>(null)
@@ -71,47 +72,68 @@ export default function CompanyScroller() {
     }
   }, [])
 
+  // Real company logos with optimized data
   const companies = [
-    'CyberShield AI',
-    'SecureFlow',
-    'ThreatGuard Pro',
-    'DataVault Security',
-    'CyberDefense Labs',
-    'SecureMind AI',
-    'ThreatIntel Solutions',
-    'CyberArmor',
-    'SecureNet AI',
-    'DefenseTech',
-    'AI Security Hub',
-    'CyberVault',
-    'ThreatBlock AI',
-    'SecureCore',
-    'CyberGuardian',
-    'AI Defense Co',
-    'SecureAI Labs',
-    'ThreatShield',
-    'CyberFortress',
-    'AI Security Pro',
-    'SecureFlow',
-    'ThreatGuard Pro',
-    'DataVault Security',
-    'CyberDefense Labs',
-    'SecureMind AI',
-    'ThreatIntel Solutions',
-    'CyberArmor',
-    'SecureNet AI',
-    'DefenseTech',
-    'AI Security Hub',
-    'CyberVault',
-    'ThreatBlock AI',
-    'SecureCore',
-    'CyberGuardian',
-    'AI Defense Co',
-    'SecureAI Labs',
-    'ThreatShield',
-    'CyberFortress',
-    'AI Security Pro'
+    {
+      name: 'Amazon',
+      logo: '/logos/amazon.svg',
+      alt: 'Amazon Web Services',
+      width: 120,
+      height: 40
+    },
+    {
+      name: 'Cisco',
+      logo: '/logos/cisco.svg',
+      alt: 'Cisco Systems',
+      width: 100,
+      height: 40
+    },
+    {
+      name: 'CrowdStrike',
+      logo: '/logos/crowdstrike.svg',
+      alt: 'CrowdStrike',
+      width: 140,
+      height: 40
+    },
+    {
+      name: 'Google',
+      logo: '/logos/google.svg',
+      alt: 'Google Cloud',
+      width: 100,
+      height: 40
+    },
+    {
+      name: 'IBM',
+      logo: '/logos/ibm.svg',
+      alt: 'IBM',
+      width: 80,
+      height: 40
+    },
+    {
+      name: 'Microsoft',
+      logo: '/logos/microsoft.svg',
+      alt: 'Microsoft',
+      width: 120,
+      height: 40
+    },
+    {
+      name: 'Salesforce',
+      logo: '/logos/salesforce.svg',
+      alt: 'Salesforce',
+      width: 130,
+      height: 40
+    },
+    {
+      name: 'Splunk',
+      logo: '/logos/splunk.svg',
+      alt: 'Splunk',
+      width: 100,
+      height: 40
+    }
   ]
+
+  // Duplicate the array for seamless scrolling
+  const duplicatedCompanies = [...companies, ...companies]
 
   return (
     <div className="relative overflow-hidden">
@@ -122,17 +144,26 @@ export default function CompanyScroller() {
       {/* Scrolling container */}
       <div 
         ref={scrollerRef}
-        className="flex items-center space-x-3 sm:space-x-4 md:space-x-6 py-3 sm:py-4"
+        className="flex items-center space-x-6 sm:space-x-8 md:space-x-12 py-4 sm:py-6"
         style={{ width: 'max-content' }}
       >
-        {companies.map((company, index) => (
+        {duplicatedCompanies.map((company, index) => (
           <div
-            key={`${company}-${index}`}
-            className="flex-shrink-0 px-2.5 sm:px-3 md:px-4 py-1.5 sm:py-2 md:py-2.5 bg-background-card rounded-lg border border-border-light/30 hover:border-primary-500/50 transition-all duration-300 hover:shadow-purple group cursor-pointer"
+            key={`${company.name}-${index}`}
+            className="flex-shrink-0 px-4 sm:px-6 py-3 sm:py-4 bg-background-card/50 backdrop-blur-sm rounded-xl border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 group cursor-pointer"
           >
-            <span className="text-text-secondary group-hover:text-white font-medium text-xs sm:text-sm whitespace-nowrap transition-colors duration-300">
-              {company}
-            </span>
+            <div className="flex items-center justify-center">
+              <Image
+                src={company.logo}
+                alt={company.alt}
+                width={company.width}
+                height={company.height}
+                className="object-contain filter brightness-0 invert opacity-60 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-300"
+                priority={index < 8} // Prioritize first set of logos
+                quality={90}
+                sizes="(max-width: 640px) 100px, (max-width: 1024px) 120px, 140px"
+              />
+            </div>
           </div>
         ))}
       </div>

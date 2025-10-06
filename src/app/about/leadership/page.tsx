@@ -215,15 +215,6 @@ export default function LeadershipPage() {
               },
               {
                 id: 2,
-                name: 'Falguni Patel',
-                title: 'Cyber Security Consultant',
-                expertise: 'Toyota Motors North America',
-                description:
-                  'Cybersecurity consultant specializing in automotive industry security, focusing on connected vehicle security and manufacturing systems protection.',
-                image: '/images/advisors/falguni-patel.jpg',
-              },
-              {
-                id: 3,
                 name: 'Bhagirath Patel',
                 title: 'Legal Advisor',
                 expertise: 'Corporate & Civil Criminal Advocate',
