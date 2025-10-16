@@ -1,1 +1,1 @@
-{"last_found_secrets": [{"match": "8be1cc1c283e14f36682f03c610e3faac5e4c6009554f4d18149e05213bdd7e7", "name": "Generic High Entropy Secret - /Users/vishvapatel/Desktop/myproject-main/run-testsprite.js"}]}
+{"last_found_secrets": [{"name": "SMTP credentials - /Users/vishvapatel/Desktop/myproject-main/SUPABASE_DOCKER_SETUP.md", "match": "0a7eb302422e7b41abc2d674acb71b4c892d90300ab633771bab2982e49616c9"}]}
