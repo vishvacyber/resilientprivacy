@@ -81,20 +81,20 @@ export const leadership: LeadershipMember[] = [
   },
   {
     name: 'Siddhi Patel',
-    title: 'Chief Financial Officer (CFO)',
+    title: 'Chief Human Resource Officer (CHRO)',
     photo: '/images/siddhi-patel-headshot.png',
-    bio: "Siddhi Patel serves as the Chief Financial Officer (CFO) of Resilient Privacy, bringing strategic financial leadership and extensive experience in financial management and analysis. With a proven track record in scaling financial operations for high-growth technology companies, she plays a critical role in ensuring the company's financial health and sustainable growth.\n\nAs CFO, Siddhi oversees all financial aspects of the organization, including financial planning, budgeting, forecasting, and strategic financial decision-making. She develops and implements financial strategies that support the company's mission of redefining digital trust and cybersecurity standards while maintaining fiscal responsibility and operational efficiency.\n\nSiddhi's expertise in financial management, strategic planning, and risk assessment enables her to provide critical financial insights that support informed decision-making across all levels of the organization. Her ability to balance financial prudence with strategic growth initiatives makes her an invaluable asset to Resilient Privacy's continued success and expansion.",
+    bio: "Siddhi Patel serves as the Chief Human Resource Officer (CHRO) of Resilient Privacy, bringing strategic human resources leadership and extensive experience in talent management and organizational development. With a proven track record in building high-performing teams and fostering inclusive workplace cultures, she plays a critical role in ensuring the company's human capital strategy and sustainable organizational growth.\n\nAs CHRO, Siddhi oversees all human resources aspects of the organization, including talent acquisition, employee development, performance management, and organizational culture initiatives. She develops and implements HR strategies that support the company's mission of redefining digital trust and cybersecurity standards while maintaining a people-first approach to business operations.\n\nSiddhi's expertise in human resources management, talent development, and organizational psychology enables her to provide critical insights that support informed decision-making across all levels of the organization. Her ability to balance people-centric approaches with strategic business objectives makes her an invaluable asset to Resilient Privacy's continued success and expansion.",
     expertise: [
-      'Financial Strategy & Planning',
-      'Budget Management & Forecasting',
-      'Financial Analysis & Reporting',
-      'Risk Management & Compliance',
-      'Strategic Financial Decision Making',
-      'Investor Relations & Fundraising',
+      'Human Resources Strategy',
+      'Talent Acquisition & Development',
+      'Organizational Culture & Development',
+      'Employee Relations & Engagement',
+      'Performance Management',
+      'HR Compliance & Policy',
     ],
     linkedin: '',
     quote:
-      "Financial excellence is the foundation of sustainable growth. As CFO, I ensure that every financial decision aligns with our mission while building the financial strength needed to revolutionize cybersecurity and protect organizations worldwide.",
+      "People are the foundation of sustainable growth. As CHRO, I ensure that every human resources decision aligns with our mission while building the talent and culture needed to revolutionize cybersecurity and protect organizations worldwide.",
   },
 ]
 
