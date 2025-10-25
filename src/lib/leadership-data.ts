@@ -46,6 +46,23 @@ export const leadership: LeadershipMember[] = [
       "Leadership is about creating a vision that inspires others to achieve what they never thought possible. At Resilient Privacy, we're not just building a company, we're building the future of cybersecurity.",
   },
   {
+    name: 'Malay Bhavsar',
+    title: 'Chief Technology Officer (CTO) and Chief Information Security Officer (CISO)',
+    photo: '/images/malay-bhavsar-headshot.png',
+    bio: "Malay Bhavsar serves as the Chief Technology Officer (CTO) and Chief Information Security Officer (CISO) of Resilient Privacy, bringing over 15 years of executive leadership experience in cybersecurity, technology strategy, and information security governance. A visionary leader with a proven track record of building secure, scalable technology solutions, he has successfully led multiple organizations through digital transformation while maintaining the highest standards of security and compliance.\n\nPrior to joining Resilient Privacy, Malay held senior executive positions at leading technology and cybersecurity companies, where he demonstrated exceptional ability to architect secure systems, build high-performing security teams, and establish comprehensive security frameworks. His deep understanding of both technology innovation and security governance has enabled him to bridge the gap between cutting-edge technology development and enterprise-grade security requirements.\n\nAt Resilient Privacy, Malay leads the company's technology strategy and security operations, overseeing all aspects of product development, technology architecture, security engineering, and information security governance. He collaborates with the executive team to develop and execute technology strategies that drive innovation while maintaining the highest standards of security, compliance, and operational excellence. His leadership philosophy centers on building secure-by-design systems, fostering a culture of security awareness, and ensuring that every technological advancement aligns with the company's mission of redefining digital trust.",
+    expertise: [
+      'Cybersecurity Strategy & Governance',
+      'Technology Architecture & Engineering',
+      'Security Operations & Incident Response',
+      'Product Development & Innovation',
+      'Risk Management & Compliance',
+      'Security Engineering & DevSecOps',
+    ],
+    linkedin: 'https://www.linkedin.com/in/malay-bhavsar',
+    quote:
+      "Security is not a feature—it's the foundation. As CTO and CISO, I ensure that every line of code, every system design, and every innovation we create is built with security at its core, enabling our clients to innovate fearlessly in a secure digital world.",
+  },
+  {
     name: 'Keral Patel',
     title: 'Chief Operations Officer (COO)',
     photo: '/images/keral-patel-headshot.png',
