@@ -50,7 +50,7 @@ export default function InformationCollectionPage() {
                     </p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
                       <li>Full name and professional title</li>
-                      <li>Business email address and phone number</li>
+                      <li>Business email address</li>
                       <li>Company name and industry information</li>
                       <li>Billing and shipping addresses</li>
                       <li>
@@ -69,7 +69,7 @@ export default function InformationCollectionPage() {
                       When you contact us through various channels, we collect:
                     </p>
                     <ul className="list-disc list-inside ml-4 space-y-1">
-                      <li>Contact information (name, email, phone number)</li>
+                      <li>Contact information (name, email)</li>
                       <li>Message content and inquiry details</li>
                       <li>Preferred communication methods</li>
                       <li>File attachments (when provided)</li>

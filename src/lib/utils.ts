@@ -296,9 +296,6 @@ export function isValidAlphanumericWithSpecial(input: string): boolean {
   return VALIDATION_PATTERNS.ALPHANUMERIC_WITH_SPECIAL.test(input)
 }
 
-export function isValidPhone(input: string): boolean {
-  return VALIDATION_PATTERNS.PHONE.test(input)
-}
 
 export function truncateText(text: string, maxLength: number): string {
   if (!text || text.length <= maxLength) return text

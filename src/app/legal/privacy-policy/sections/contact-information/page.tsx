@@ -156,13 +156,6 @@ export default function ContactInformationPage() {
                     </p>
                     <div className="space-y-2">
                       <div>
-                        <strong className="text-white">Phone:</strong>
-                        <a
-                          className="text-accent-500 hover:text-white underline ml-2"
-                        >
-                        </a>
-                      </div>
-                      <div>
                         <strong className="text-white">Hours:</strong>
                         <span className="text-text-secondary ml-2">
                           Monday-Friday, 9:00 AM - 6:00 PM EST
@@ -194,10 +187,6 @@ export default function ContactInformationPage() {
                       <div>
                         <strong className="text-white">Email:</strong>{' '}
                         privacy-us@resilientprivacy.com
-                      </div>
-                      <div>
-                        <strong className="text-white">Phone:</strong> +1 (469)
-                        666-0131
                       </div>
                       <div>
                         <strong className="text-white">Covers:</strong> CCPA,
@@ -346,9 +335,6 @@ export default function ContactInformationPage() {
                       <div>
                         <strong className="text-white">Purpose:</strong>{' '}
                         Security incidents, vulnerabilities
-                      </div>
-                      <div>
-                        <strong className="text-white">Emergency:</strong> +1
                       </div>
                     </div>
                   </div>

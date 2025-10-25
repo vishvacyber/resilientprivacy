@@ -90,7 +90,7 @@ const supportTiers = [
     description: 'Perfect for small businesses with basic IT needs',
     features: [
       'Business hours support (8AM-6PM)',
-      'Email & phone support',
+      'Email support',
       'Basic system monitoring',
       'Monthly system reports',
       'Software updates',

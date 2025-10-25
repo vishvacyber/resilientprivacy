@@ -45,7 +45,7 @@ export default function DefinitionsPage() {
                 <ul className="list-disc list-inside ml-4 space-y-1">
                   <li>
                     <strong className="text-white">Direct Identifiers:</strong>{' '}
-                    Name, email address, phone number, postal address
+                    Name, email address, postal address
                   </li>
                   <li>
                     <strong className="text-white">Online Identifiers:</strong>{' '}

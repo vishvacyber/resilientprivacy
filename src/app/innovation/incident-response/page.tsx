@@ -13,7 +13,6 @@ import {
   Users,
   Network,
   Clock,
-  Phone,
   Mail,
   Loader2,
 } from 'lucide-react'
@@ -225,9 +224,9 @@ export default function IncidentResponsePage() {
             <button
               onClick={() => setShowHotline(true)}
               className="btn text-lg px-8 py-4 inline-flex items-center gap-2"
-              aria-label="Call 24/7 AI-Enhanced Emergency Hotline"
+              aria-label="24/7 AI-Enhanced Emergency Response"
             >
-              <Phone className="w-5 h-5" /> 24/7 AI Emergency Response
+              <Mail className="w-5 h-5" /> 24/7 AI Emergency Response
             </button>
             <button
               onClick={() => setShowReport(true)}

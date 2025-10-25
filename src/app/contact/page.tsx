@@ -7,7 +7,6 @@ const contactMethods = [
     title: 'Sales & Partnerships',
     description:
       'Enterprise cybersecurity solutions and strategic partnerships',
-    phone: '+1 (469) 504-4135',
     email: 'sales@resilientprivacy.com',
     hours: 'Mon-Fri, 9AM-6PM CST',
     department: 'Business Development',
@@ -15,7 +14,6 @@ const contactMethods = [
   {
     title: 'Technical Support',
     description: 'Expert assistance for implementation and optimization',
-    phone: '+1 (469) 666-0131',
     email: 'support@resilientprivacy.com',
     hours: '24/7 Support Available',
     department: 'Customer Success',
@@ -23,7 +21,6 @@ const contactMethods = [
   {
     title: 'Incident Response',
     description: 'Emergency response for security breaches and cyber incidents',
-    phone: '+1 (469) 666-0131',
     email: 'ir@resilientprivacy.com',
     hours: '24/7 Emergency Response',
     department: 'Security Operations',
@@ -93,24 +90,6 @@ export default function ContactPage() {
 
                 {/* Contact Details */}
                 <div className="space-y-4 sm:space-y-6">
-                  <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
-                        <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
-                      </div>
-                      <span className="text-accent-500 font-medium text-xs sm:text-sm">
-                        Phone
-                      </span>
-                    </div>
-                    <a
-                      href={`tel:${method.phone.replace(/[^\d+]/g, '')}`}
-                      className="text-white text-sm sm:text-base lg:text-lg font-mono hover:text-accent-500 transition-colors duration-200"
-                    >
-                      {method.phone}
-                    </a>
-                  </div>
-
-                  <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
                         <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>

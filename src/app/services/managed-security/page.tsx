@@ -99,7 +99,7 @@ const socTiers = [
     features: [
       '24/7 security monitoring',
       'Basic threat detection rules',
-      'Email & phone alerting',
+      'Email alerting',
       'Monthly security reports',
       'Business hours analyst support',
       'Up to 10 log sources',

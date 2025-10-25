@@ -141,7 +141,7 @@ const structuredData = {
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      telephone: '+1-555-0123',
+      email: 'support@resilientprivacy.com',
       contactType: 'customer service',
       areaServed: 'US',
       availableLanguage: 'English',

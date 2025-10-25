@@ -144,7 +144,7 @@ export default function DataProcessingAgreement() {
                   Data Categories
                 </h3>
                 <ul className="space-y-2 text-text-secondary">
-                  <li>• Contact information (name, email, phone)</li>
+                  <li>• Contact information (name, email)</li>
                   <li>• Account credentials and authentication data</li>
                   <li>• Technical data (IP addresses, device info)</li>
                   <li>• Usage data and analytics</li>

@@ -280,7 +280,7 @@ export default function PrivacyPolicyPage() {
                         <strong>&quot;Personal Data&quot;</strong> means any
                         information relating to an identified or identifiable
                         natural person, including but not limited to names,
-                        email addresses, phone numbers, IP addresses, device
+                        email addresses, IP addresses, device
                         identifiers, location data, and any other information
                         that can be used to identify an individual.
                       </p>
