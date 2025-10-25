@@ -118,7 +118,7 @@ const structuredData = {
     {
       '@type': 'Person',
       name: 'Aditya Desai',
-      jobTitle: 'Board Member & CTO',
+      jobTitle: 'Board Member & CIO',
       url: 'https://resilientprivacy.com/about/leadership/aditya-desai',
     },
     {
