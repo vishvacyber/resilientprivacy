@@ -75,8 +75,8 @@ export default function CompanyScroller() {
   // Real company logos with optimized data
   const companies = [
     {
-      name: 'Amazon',
-      logo: '/logos/amazon.svg',
+      name: 'AWS',
+      logo: '/logos/aws.svg',
       alt: 'Amazon Web Services',
       width: 120,
       height: 40
@@ -110,9 +110,9 @@ export default function CompanyScroller() {
       height: 40
     },
     {
-      name: 'Microsoft',
-      logo: '/logos/microsoft.svg',
-      alt: 'Microsoft',
+      name: 'Azure',
+      logo: '/logos/azure.svg',
+      alt: 'Microsoft Azure',
       width: 120,
       height: 40
     },
