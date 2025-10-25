@@ -382,7 +382,7 @@ export default function InformationSharingPage() {
                   </h3>
                   <p className="mb-4">
                     <strong>
-                      Resilient Privacy LLC does not sell personal information
+                      Resilient Privacy, Inc. does not sell personal information
                     </strong>{' '}
                     as defined by applicable privacy laws including:
                   </p>

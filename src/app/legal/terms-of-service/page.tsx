@@ -38,7 +38,7 @@ export default function TermsOfServicePage() {
                   1. Acceptance of Terms
                 </h2>
                 <p className="mb-4">
-                  These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Client,&quot; &quot;you,&quot; or &quot;your&quot;) and Resilient Privacy, LLC (&quot;Company,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), a Delaware limited liability company. By accessing, using, or engaging with our services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
+                  These Terms of Service (&quot;Terms&quot;) constitute a legally binding agreement between you (&quot;Client,&quot; &quot;you,&quot; or &quot;your&quot;) and Resilient Privacy, Inc. (&quot;Company,&quot; &quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), a Delaware C Corporation. By accessing, using, or engaging with our services, you acknowledge that you have read, understood, and agree to be bound by these Terms.
                 </p>
                 <p>
                   If you do not agree to these Terms, you must immediately cease all use of our services. These Terms supplement and are incorporated into any separate written agreement between the parties.
@@ -325,7 +325,7 @@ export default function TermsOfServicePage() {
                 <div className="bg-[#0D0D0F] p-6 rounded border border-[#222]">
                   <p><strong>Legal Department:</strong> legal@resilientprivacy.com</p>
                   <p><strong>General Inquiries:</strong> info@resilientprivacy.com</p>
-                  <p><strong>Address:</strong> Resilient Privacy, LLC, Delaware, United States</p>
+                  <p><strong>Address:</strong> Resilient Privacy, Inc., Delaware, United States</p>
                 </div>
               </div>
             </div>

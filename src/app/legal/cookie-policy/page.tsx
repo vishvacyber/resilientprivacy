@@ -38,7 +38,7 @@ export default function CookiePolicyPage() {
                   Introduction
                 </h2>
                 <p>
-                  At Resilient Privacy Inc., we value your trust and are committed to being transparent about how we use cookies and similar technologies. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.
+                  At Resilient Privacy, Inc., we value your trust and are committed to being transparent about how we use cookies and similar technologies. This Cookie Policy explains what cookies are, how we use them, and how you can manage your preferences.
                 </p>
               </div>
 
@@ -101,7 +101,7 @@ export default function CookiePolicyPage() {
                 <p className="mb-4">Remain on your device until they expire or are deleted, helping us remember your preferences across visits.</p>
 
                 <h3 className="text-xl font-bold text-white mb-3">First-Party Cookies</h3>
-                <p className="mb-4">Placed by Resilient Privacy Inc. directly on our website.</p>
+                <p className="mb-4">Placed by Resilient Privacy, Inc. directly on our website.</p>
 
                 <h3 className="text-xl font-bold text-white mb-3">Third-Party Cookies</h3>
                 <p className="mb-4">Placed by service providers, such as analytics or advertising partners, when interacting with our site.</p>

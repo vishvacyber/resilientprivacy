@@ -437,7 +437,7 @@ export default function ContactInformationPage() {
                 <div className="bg-[#0D0D0F] p-6 rounded border border-[#333]">
                   <div className="text-center">
                     <h4 className="text-white font-semibold mb-4">
-                      Resilient Privacy LLC
+                      Resilient Privacy, Inc.
                     </h4>
                     <div className="space-y-1 text-text-secondary">
                       <p>Privacy Officer</p>

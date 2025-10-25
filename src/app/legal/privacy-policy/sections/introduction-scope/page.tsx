@@ -32,7 +32,7 @@ export default function IntroductionScopePage() {
                   1.1 Introduction
                 </h2>
                 <p className="mb-4">
-                  Resilient Privacy LLC ("Company," "we," "us," or "our") is
+                  Resilient Privacy, Inc. ("Company," "we," "us," or "our") is
                   committed to protecting and respecting your privacy. This
                   Privacy Policy explains how we collect, use, disclose, and
                   safeguard your information when you visit our website, use our
@@ -105,7 +105,7 @@ export default function IntroductionScopePage() {
                 <p className="mb-4">
                   Our services are provided globally, and this Privacy Policy
                   applies to personal data processing activities conducted by
-                  Resilient Privacy LLC in the following jurisdictions:
+                  Resilient Privacy, Inc. in the following jurisdictions:
                 </p>
 
                 <div className="space-y-4">

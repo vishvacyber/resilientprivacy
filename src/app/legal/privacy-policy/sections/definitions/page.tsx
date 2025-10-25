@@ -124,7 +124,7 @@ export default function DefinitionsPage() {
                 </h3>
                 <p>
                   The natural or legal person who determines the purposes and
-                  means of processing personal data. Resilient Privacy LLC acts
+                  means of processing personal data. Resilient Privacy, Inc. acts
                   as the data controller for personal data collected through our
                   services.
                 </p>
