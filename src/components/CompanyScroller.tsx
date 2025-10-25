@@ -71,24 +71,19 @@ export default function CompanyScroller() {
     }
   }, [])
 
-  // Company names for the scroller
+  // Top cloud services and major tech companies
   const companies = [
     { name: 'AWS' },
     { name: 'Microsoft Azure' },
     { name: 'Google Cloud' },
     { name: 'IBM Cloud' },
     { name: 'Oracle Cloud' },
-    { name: 'Alibaba Cloud' },
-    { name: 'DigitalOcean' },
-    { name: 'Vultr' },
     { name: 'Salesforce' },
     { name: 'Cisco' },
     { name: 'CrowdStrike' },
     { name: 'Splunk' },
     { name: 'VMware' },
-    { name: 'Red Hat' },
-    { name: 'Docker' },
-    { name: 'Kubernetes' }
+    { name: 'Red Hat' }
   ]
 
   // Duplicate the array for seamless scrolling
