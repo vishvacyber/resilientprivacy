@@ -90,6 +90,7 @@ export default function ContactPage() {
 
                 {/* Contact Details */}
                 <div className="space-y-4 sm:space-y-6">
+                  <div>
                     <div className="flex items-center gap-2 mb-2">
                       <div className="w-3 h-3 sm:w-4 sm:h-4 border border-accent-500 rounded-full flex items-center justify-center">
                         <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent-500 rounded-full"></div>
