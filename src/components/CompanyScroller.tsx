@@ -106,7 +106,7 @@ export default function CompanyScroller() {
             key={`${company.name}-${index}`}
             className="flex-shrink-0 px-4 sm:px-6 py-3 sm:py-4 bg-background-card/50 backdrop-blur-sm rounded-xl border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 group cursor-pointer"
           >
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center text-center">
               <span className="text-white text-sm sm:text-base font-medium opacity-60 group-hover:opacity-100 transition-all duration-300">
                 {company.name}
               </span>

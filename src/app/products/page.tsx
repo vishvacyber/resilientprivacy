@@ -350,19 +350,19 @@ export default function ProductsPage() {
                 Supported Platforms
               </h3>
               <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                <div className="flex items-center justify-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">AWS</span>
                 </div>
-                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                <div className="flex items-center justify-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">Microsoft Azure</span>
                 </div>
-                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                <div className="flex items-center justify-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">Google Cloud</span>
                 </div>
-                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                <div className="flex items-center justify-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">IBM Cloud</span>
                 </div>
-                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                <div className="flex items-center justify-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">Oracle Cloud</span>
                 </div>
               </div>
