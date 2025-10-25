@@ -129,14 +129,23 @@ export default function ContactPage() {
               Need immediate assistance? Our incident response team is available
               24/7.
             </p>
-            <a
-              href="https://forms.gle/8M41jMdsjVm6PoAG7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-accent-500 hover:bg-purple-700 text-white px-8 py-3 rounded-xl font-medium transition-all duration-300"
-            >
-              Emergency Contact
-            </a>
+            <div className="bg-background-card rounded-2xl border border-white/10 p-6 max-w-4xl mx-auto">
+              <h3 className="text-xl font-bold text-white mb-4">Emergency Incident Response Form</h3>
+              <iframe
+                width="100%"
+                height="480"
+                src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=X5B4nXtJyUe8_Q47cbEk1vTUMjFKWEwzVE9JS0RNN1lJWTJXQTlJSzFXWC4u&embed=true"
+                frameBorder="0"
+                marginWidth="0"
+                marginHeight="0"
+                style={{ border: 'none', maxWidth: '100%', maxHeight: '100vh' }}
+                allowFullScreen
+                webkitAllowFullScreen
+                mozAllowFullScreen
+                msAllowFullScreen
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
