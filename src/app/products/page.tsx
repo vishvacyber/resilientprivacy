@@ -349,7 +349,7 @@ export default function ProductsPage() {
               <h3 className="text-2xl font-bold text-white mb-6">
                 Supported Platforms
               </h3>
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">Microsoft Azure</span>
                 </div>
@@ -361,6 +361,21 @@ export default function ProductsPage() {
                 </div>
                 <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
                   <span className="text-white text-lg font-medium">Salesforce</span>
+                </div>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <span className="text-white text-lg font-medium">IBM Cloud</span>
+                </div>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <span className="text-white text-lg font-medium">Oracle Cloud</span>
+                </div>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <span className="text-white text-lg font-medium">Alibaba Cloud</span>
+                </div>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <span className="text-white text-lg font-medium">DigitalOcean</span>
+                </div>
+                <div className="text-center p-6 bg-background-card rounded-lg border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-purple/10">
+                  <span className="text-white text-lg font-medium">Vultr</span>
                 </div>
               </div>
             </div>

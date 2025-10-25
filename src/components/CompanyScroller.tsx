@@ -74,13 +74,21 @@ export default function CompanyScroller() {
   // Company names for the scroller
   const companies = [
     { name: 'AWS' },
+    { name: 'Microsoft Azure' },
+    { name: 'Google Cloud' },
+    { name: 'IBM Cloud' },
+    { name: 'Oracle Cloud' },
+    { name: 'Alibaba Cloud' },
+    { name: 'DigitalOcean' },
+    { name: 'Vultr' },
+    { name: 'Salesforce' },
     { name: 'Cisco' },
     { name: 'CrowdStrike' },
-    { name: 'Google Cloud' },
-    { name: 'IBM' },
-    { name: 'Microsoft Azure' },
-    { name: 'Salesforce' },
-    { name: 'Splunk' }
+    { name: 'Splunk' },
+    { name: 'VMware' },
+    { name: 'Red Hat' },
+    { name: 'Docker' },
+    { name: 'Kubernetes' }
   ]
 
   // Duplicate the array for seamless scrolling
