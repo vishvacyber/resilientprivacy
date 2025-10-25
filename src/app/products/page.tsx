@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
+import FormButton from '@/components/FormButton'
 
 export const metadata: Metadata = {
   title:
@@ -167,14 +168,9 @@ export default function ProductsPage() {
             <Link href="#features" className="btn text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4">
               Explore Features
             </Link>
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4"
-            >
+            <FormButton className="btn-secondary text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4">
               Request Demo
-            </Link>
+            </FormButton>
           </div>
         </div>
       </section>
@@ -405,14 +401,9 @@ export default function ProductsPage() {
             security for your APIs and AI workloads.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Request Demo
-            </Link>
+            </FormButton>
             <Link
               href="/services"
               className="btn-secondary text-lg px-8 py-4"
@@ -422,6 +413,7 @@ export default function ProductsPage() {
           </div>
         </div>
       </section>
+
     </div>
   )
 }
