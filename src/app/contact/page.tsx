@@ -186,14 +186,11 @@ export default function ContactPage() {
                 width="100%"
                 height="600"
                 src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=X5B4nXtJyUe8_Q47cbEk1vTkiwwqi3NAhP4Sm3GUiQpUQkJQMkpMQzJJMloyVFE0UjNXMjdRS1BRUi4u&embed=true"
-                frameBorder="0"
-                marginWidth="0"
-                marginHeight="0"
+                frameBorder={0}
+                marginWidth={0}
+                marginHeight={0}
                 style={{ border: 'none', maxWidth: '100%', maxHeight: '100%' }}
                 allowFullScreen
-                webkitAllowFullScreen
-                mozAllowFullScreen
-                msAllowFullScreen
                 className="rounded-lg"
               />
             </div>
@@ -224,14 +221,11 @@ export default function ContactPage() {
                 width="100%"
                 height="480"
                 src="https://forms.cloud.microsoft/r/6Mh3Gvh6tr?embed=true"
-                frameBorder="0"
-                marginWidth="0"
-                marginHeight="0"
+                frameBorder={0}
+                marginWidth={0}
+                marginHeight={0}
                 style={{ border: 'none', maxWidth: '100%', maxHeight: '100vh' }}
                 allowFullScreen
-                webkitAllowFullScreen
-                mozAllowFullScreen
-                msAllowFullScreen
                 className="rounded-lg"
               />
             </div>
