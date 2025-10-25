@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Image from 'next/image'
 
 export default function CompanyScroller() {
   const scrollerRef = useRef<HTMLDivElement>(null)
@@ -72,64 +71,16 @@ export default function CompanyScroller() {
     }
   }, [])
 
-  // Real company logos with optimized data
+  // Company names for the scroller
   const companies = [
-    {
-      name: 'AWS',
-      logo: '/logos/aws.svg',
-      alt: 'Amazon Web Services',
-      width: 120,
-      height: 40
-    },
-    {
-      name: 'Cisco',
-      logo: '/logos/cisco.svg',
-      alt: 'Cisco Systems',
-      width: 100,
-      height: 40
-    },
-    {
-      name: 'CrowdStrike',
-      logo: '/logos/crowdstrike.svg',
-      alt: 'CrowdStrike',
-      width: 140,
-      height: 40
-    },
-    {
-      name: 'Google',
-      logo: '/logos/google.svg',
-      alt: 'Google Cloud',
-      width: 100,
-      height: 40
-    },
-    {
-      name: 'IBM',
-      logo: '/logos/ibm.svg',
-      alt: 'IBM',
-      width: 80,
-      height: 40
-    },
-    {
-      name: 'Azure',
-      logo: '/logos/azure.svg',
-      alt: 'Microsoft Azure',
-      width: 120,
-      height: 40
-    },
-    {
-      name: 'Salesforce',
-      logo: '/logos/salesforce.svg',
-      alt: 'Salesforce',
-      width: 130,
-      height: 40
-    },
-    {
-      name: 'Splunk',
-      logo: '/logos/splunk.svg',
-      alt: 'Splunk',
-      width: 100,
-      height: 40
-    }
+    { name: 'AWS' },
+    { name: 'Cisco' },
+    { name: 'CrowdStrike' },
+    { name: 'Google Cloud' },
+    { name: 'IBM' },
+    { name: 'Microsoft Azure' },
+    { name: 'Salesforce' },
+    { name: 'Splunk' }
   ]
 
   // Duplicate the array for seamless scrolling
@@ -153,16 +104,9 @@ export default function CompanyScroller() {
             className="flex-shrink-0 px-4 sm:px-6 py-3 sm:py-4 bg-background-card/50 backdrop-blur-sm rounded-xl border border-border-light/20 hover:border-primary-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/10 group cursor-pointer"
           >
             <div className="flex items-center justify-center">
-              <Image
-                src={company.logo}
-                alt={company.alt}
-                width={company.width}
-                height={company.height}
-                className="object-contain filter brightness-0 invert opacity-60 group-hover:opacity-100 group-hover:brightness-100 transition-all duration-300"
-                priority={index < 8} // Prioritize first set of logos
-                quality={90}
-                sizes="(max-width: 640px) 100px, (max-width: 1024px) 120px, 140px"
-              />
+              <span className="text-white text-sm sm:text-base font-medium opacity-60 group-hover:opacity-100 transition-all duration-300">
+                {company.name}
+              </span>
             </div>
           </div>
         ))}
