@@ -58,7 +58,7 @@ export const leadership: LeadershipMember[] = [
       'Risk Management & Compliance',
       'Security Engineering & DevSecOps',
     ],
-    linkedin: 'https://www.linkedin.com/in/malay-bhavsar',
+    linkedin: 'https://www.linkedin.com/in/leo-malay-bhavsar',
     quote:
       "Security is not a feature—it's the foundation. As CTO and CISO, I ensure that every line of code, every system design, and every innovation we create is built with security at its core, enabling our clients to innovate fearlessly in a secure digital world.",
   },
