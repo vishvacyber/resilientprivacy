@@ -13,7 +13,10 @@ export default function FormButton({ children, className }: FormButtonProps) {
   return (
     <>
       <button
-        onClick={() => setShowForm(true)}
+        onClick={() => {
+          console.log('FormButton clicked, setting showForm to true')
+          setShowForm(true)
+        }}
         className={className}
       >
         {children}
@@ -21,6 +24,8 @@ export default function FormButton({ children, className }: FormButtonProps) {
 
       {/* Microsoft Forms Modal */}
       {showForm && (
+        <>
+          {console.log('Rendering modal, showForm is true')}
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-background rounded-2xl border border-white/10 w-full max-w-4xl max-h-[90vh] overflow-hidden">
             {/* Modal Header */}
@@ -38,6 +43,10 @@ export default function FormButton({ children, className }: FormButtonProps) {
 
             {/* Form Container */}
             <div className="p-6">
+              <div className="text-white text-center mb-4">
+                <h4 className="text-lg font-semibold mb-2">Product & Service Inquiry Form</h4>
+                <p className="text-sm text-gray-300">This is a test modal. The Microsoft Forms iframe should load below:</p>
+              </div>
               <iframe
                 width="100%"
                 height="480"
@@ -52,6 +61,7 @@ export default function FormButton({ children, className }: FormButtonProps) {
             </div>
           </div>
         </div>
+        </>
       )}
     </>
   )
