@@ -109,7 +109,7 @@ export const leadership: LeadershipMember[] = [
       'Performance Management',
       'HR Compliance & Policy',
     ],
-    linkedin: '',
+    linkedin: 'https://www.linkedin.com/in/siddhipatel772',
     quote:
       "People are the foundation of sustainable growth. As CHRO, I ensure that every human resources decision aligns with our mission while building the talent and culture needed to revolutionize cybersecurity and protect organizations worldwide.",
   },
