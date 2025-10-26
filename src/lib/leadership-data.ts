@@ -63,23 +63,6 @@ export const leadership: LeadershipMember[] = [
       "Security is not a feature—it's the foundation. As CTO and CISO, I ensure that every line of code, every system design, and every innovation we create is built with security at its core, enabling our clients to innovate fearlessly in a secure digital world.",
   },
   {
-    name: 'Keral Patel',
-    title: 'Chief Operations Officer (COO)',
-    photo: '/images/keral-patel-headshot.png',
-    bio: "Keral Patel serves as the Chief Operations Officer (COO) of Resilient Privacy, bringing strategic operational leadership and a proven track record of driving organizational excellence. With extensive experience in scaling operations and optimizing business processes, she plays a pivotal role in ensuring the company's continued growth and operational efficiency.\n\nIn her role as COO, Keral oversees all aspects of day-to-day operations, from process optimization and team management to strategic planning and execution. She develops and implements operational strategies that align with the company's mission of redefining digital trust and cybersecurity standards while maintaining the highest standards of quality and customer satisfaction.\n\nKeral's leadership philosophy centers on operational excellence, continuous improvement, and fostering a culture of innovation and collaboration. She is committed to building scalable processes and systems that support Resilient Privacy's growth while maintaining the highest standards of quality and customer satisfaction.",
-    expertise: [
-      'Operational Excellence',
-      'Strategic Planning & Execution',
-      'Process Optimization',
-      'Team Leadership & Management',
-      'Business Scaling',
-      'Performance Management',
-    ],
-    linkedin: '',
-    quote:
-      "Operational excellence is not just about efficiency, it's about creating the foundation for sustainable growth and innovation. At Resilient Privacy, we build systems that scale with our vision.",
-  },
-  {
     name: 'Rachna Patel',
     title: 'Chief of Staff (CoS)',
     photo: '/images/rachna-patel-headshot.png',

@@ -23,11 +23,6 @@ export async function GET() {
       priority: '0.6',
       changefreq: 'monthly',
     },
-    {
-      url: '/about/leadership/keral-patel',
-      priority: '0.6',
-      changefreq: 'monthly',
-    },
 
     { url: '/about/careers', priority: '0.6', changefreq: 'weekly' },
 

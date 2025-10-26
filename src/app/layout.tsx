@@ -127,12 +127,6 @@ const structuredData = {
       jobTitle: 'CTO & CISO',
       url: 'https://resilientprivacy.com/about/leadership/malay-bhavsar',
     },
-    {
-      '@type': 'Person',
-      name: 'Keral Patel',
-      jobTitle: 'Chief Operations Officer',
-      url: 'https://resilientprivacy.com/about/leadership/keral-patel',
-    },
   ],
   sameAs: [
     'https://linkedin.com/company/resilientprivacy',
