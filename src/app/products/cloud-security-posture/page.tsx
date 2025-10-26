@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 
 const cloudSecurityFeatures = [
   {
@@ -74,14 +75,9 @@ export default function CloudSecurityPosturePage() {
             protects your cloud environments and ensures regulatory compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Request Demo
-            </Link>
+            </FormButton>
             <Link
               href="#features"
               className="btn-secondary text-lg px-8 py-4"
@@ -231,14 +227,9 @@ export default function CloudSecurityPosturePage() {
             and automated compliance management.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Request Demo
-            </Link>
+            </FormButton>
             <Link
               href="/products/dlp-data-governance"
               className="btn-secondary text-lg px-8 py-4"

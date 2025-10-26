@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -168,14 +169,9 @@ export default function ServicesPage() {
             <Link href="#services" className="btn text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]">
               Explore Services
             </Link>
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]"
-            >
+            <FormButton className="btn-secondary text-sm sm:text-base lg:text-lg px-6 sm:px-8 py-3 sm:py-4 min-h-[44px]">
               Get Free Consultation
-            </Link>
+            </FormButton>
           </div>
 
         </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 
 const dataCenterServices = [
   {
@@ -535,14 +536,9 @@ export default function DataCenterPage() {
             growth.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Get Custom Quote
-            </Link>
+            </FormButton>
             <Link
               href="/services"
               className="btn-secondary text-lg px-8 py-4"

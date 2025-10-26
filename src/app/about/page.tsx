@@ -1,5 +1,7 @@
+'use client'
+
 import Link from 'next/link'
-import { Metadata } from 'next'
+import { useState } from 'react'
 import {
   ShieldCheck,
   Globe,
@@ -31,45 +33,10 @@ import {
   Sparkles,
 } from 'lucide-react'
 
-export const metadata: Metadata = {
-  title: 'About Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
-  description:
-    'Resilient Privacy is an advanced AI and API security company founded in 2025 by Vishva Patel. We provide cutting-edge AI security solutions, API protection, machine learning security, and AI-powered threat detection services.',
-  keywords: [
-    'AI security company about',
-    'API security company history',
-    'AI security experts',
-    'API security experts',
-    'AI security professionals',
-    'API security professionals',
-    'AI security company leadership',
-    'API security company founder',
-    'Vishva Patel AI security',
-    'enterprise AI security company',
-    'AI security consulting company',
-    'API security services company',
-    'AI security solutions company',
-    'AI security firm about',
-    'API security firm about',
-    'top AI security company about',
-    'best API security company about',
-    'AI security company team',
-    'AI security company expertise',
-    'API security company experience',
-  ],
-  openGraph: {
-    title: 'About Resilient Privacy - Advanced AI & API Security Company | Cutting-Edge Security Solutions',
-    description:
-      'Resilient Privacy is an advanced AI and API security company founded in 2025 by Vishva Patel. We provide cutting-edge AI security solutions, API protection, machine learning security, and AI-powered threat detection services.',
-    type: 'website',
-    url: 'https://resilientprivacy.com/about',
-  },
-  alternates: {
-    canonical: 'https://resilientprivacy.com/about',
-  },
-}
 
 export default function AboutPage() {
+  const [showForm, setShowForm] = useState(false)
+
   return (
     <div className="min-h-screen">
       {/* Unique Hero Section - Mobile Optimized */}
@@ -438,14 +405,12 @@ export default function AboutPage() {
             Join the security revolution. Let's make your APIs and AI systems <strong>unbreakable</strong>.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
+              onClick={() => setShowForm(true)}
               className="bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl text-sm sm:text-base"
             >
               Start Your Security Revolution
-            </Link>
+            </button>
             <Link
               href="/about/leadership"
               className="border-2 border-primary-500 text-primary-500 px-6 sm:px-8 py-3 sm:py-4 rounded-lg hover:bg-primary-500/10 hover:border-primary-400 transition-all duration-300 font-semibold text-sm sm:text-base"
@@ -457,6 +422,40 @@ export default function AboutPage() {
       </section>
 
 
+      {/* Contact Modal */}
+      {showForm && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+          <div className="bg-background rounded-2xl border border-white/10 w-full max-w-4xl max-h-[90vh] overflow-hidden">
+            {/* Modal Header */}
+            <div className="flex items-center justify-between p-6 border-b border-white/10">
+              <h3 className="text-2xl font-bold text-white">Contact Us</h3>
+              <button
+                onClick={() => setShowForm(false)}
+                className="text-text-secondary hover:text-white transition-colors duration-200 p-2"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Form Container */}
+            <div className="p-6">
+              <iframe
+                width="100%"
+                height="480"
+                src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=X5B4nXtJyUe8_Q47cbEk1vTkiwwqi3NAhP4Sm3GUiQpUQkJQMkpMQzJJMloyVFE0UjNXMjdRS1BRUi4u&embed=true"
+                frameBorder={0}
+                marginWidth={0}
+                marginHeight={0}
+                style={{ border: 'none', maxWidth: '100%', maxHeight: '100vh' }}
+                allowFullScreen
+                className="rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 
 const itServices = [
   {
@@ -204,14 +205,9 @@ export default function ITInfrastructurePage() {
             services to keep your business running smoothly and efficiently.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Get Started
-            </Link>
+            </FormButton>
             <Link
               href="#pricing"
               className="btn-secondary text-lg px-8 py-4"
@@ -317,10 +313,7 @@ export default function ITInfrastructurePage() {
                   ))}
                 </ul>
 
-                <Link
-                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <FormButton
                   className={`w-full block text-center py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
                     tier.popular
                       ? 'bg-accent-500 text-white hover:bg-[#7C3AED]'
@@ -328,7 +321,7 @@ export default function ITInfrastructurePage() {
                   }`}
                 >
                   Get Started
-                </Link>
+                </FormButton>
               </div>
             ))}
           </div>
@@ -404,14 +397,9 @@ export default function ITInfrastructurePage() {
             services can improve your business operations and reduce costs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Get Free Assessment
-            </Link>
+            </FormButton>
             <Link
               href="/services"
               className="btn-secondary text-lg px-8 py-4"
