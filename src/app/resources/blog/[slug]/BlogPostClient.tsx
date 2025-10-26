@@ -49,15 +49,10 @@ export default function BlogPostClient() {
       await navigator.clipboard.writeText(currentUrl)
       setCopied(true)
 
-      if (process.env.NODE_ENV === 'development') {
-        console.log('URL copied to clipboard')
-      }
 
       setTimeout(() => setCopied(false), 2000)
     } catch (error) {
-      if (process.env.NODE_ENV === 'development') {
-        console.error('Error copying URL:', error)
-      }
+      // Handle error silently in production
       setCopied(false)
     }
   }

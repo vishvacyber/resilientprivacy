@@ -12,13 +12,15 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Log the contact form submission
-    console.log('Contact form submission:', {
-      name: body.name,
-      email: body.email,
-      message: body.message,
-      timestamp: new Date().toISOString()
-    })
+    // Log the contact form submission (server-side only)
+    if (process.env.NODE_ENV === 'development') {
+      console.log('Contact form submission:', {
+        name: body.name,
+        email: body.email,
+        message: body.message,
+        timestamp: new Date().toISOString()
+      })
+    }
 
     // Return success response
     return NextResponse.json(
