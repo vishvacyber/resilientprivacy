@@ -470,7 +470,7 @@ export default function GovernanceCompliance() {
                   <li>• Real-time compliance dashboard</li>
                 </ul>
                 <Link
-                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+                  href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn w-full text-center"
@@ -504,7 +504,7 @@ export default function GovernanceCompliance() {
                   <li>• 6-month support included</li>
                 </ul>
                 <Link
-                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+                  href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn w-full text-center"
@@ -533,7 +533,7 @@ export default function GovernanceCompliance() {
                   <li>• Dedicated compliance AI agent</li>
                 </ul>
                 <Link
-                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+                  href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn w-full text-center"
@@ -583,7 +583,7 @@ export default function GovernanceCompliance() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4 font-semibold shadow-lg"

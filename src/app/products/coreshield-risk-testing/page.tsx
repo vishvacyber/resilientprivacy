@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -114,14 +115,8 @@ export default function APIRiskTestingPage() {
             <Link href="#features" className="btn text-lg px-8 py-4">
               Explore Features
             </Link>
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn-secondary text-lg px-8 py-4">Request Demo
+            </FormButton>
           </div>
         </div>
       </section>
@@ -244,14 +239,8 @@ export default function APIRiskTestingPage() {
             scanning. Ensure compliance and security with CoreShield™.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn text-lg px-8 py-4">Request Demo
+            </FormButton>
             <Link
               href="/products"
               className="btn-secondary text-lg px-8 py-4"

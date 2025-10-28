@@ -265,7 +265,7 @@ export default function LegalPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

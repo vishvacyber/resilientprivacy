@@ -2227,7 +2227,7 @@ export default async function GuidePage({
               solution.
             </p>
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block bg-white text-accent-500 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"

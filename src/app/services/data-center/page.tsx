@@ -228,7 +228,7 @@ export default function DataCenterPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-8 py-4"

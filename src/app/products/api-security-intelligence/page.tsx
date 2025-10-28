@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -212,14 +213,9 @@ export default function APISecurityIntelligencePage() {
             vulnerabilities, and zero-day exploits that bypass traditional WAFs and API gateways.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Request Demo
-            </Link>
+            </FormButton>
             <Link
               href="#features"
               className="btn-secondary text-lg px-8 py-4"
@@ -395,14 +391,9 @@ export default function APISecurityIntelligencePage() {
             to strengthen your API security posture.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
+            <FormButton className="btn text-lg px-8 py-4">
               Get Free Assessment
-            </Link>
+            </FormButton>
             <Link
               href="/products"
               className="btn-secondary text-lg px-8 py-4"

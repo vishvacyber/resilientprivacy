@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 
 const dlpFeatures = [
   {
@@ -76,14 +77,8 @@ export default function DlpDataGovernancePage() {
             organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn text-lg px-8 py-4">Request Demo
+            </FormButton>
             <Link
               href="#features"
               className="btn-secondary text-lg px-8 py-4"
@@ -232,14 +227,8 @@ export default function DlpDataGovernancePage() {
             data loss and ensure regulatory compliance.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn text-lg px-8 py-4">Request Demo
+            </FormButton>
             <Link
               href="/products/threat-intelligence-platform"
               className="btn-secondary text-lg px-8 py-4"

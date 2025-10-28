@@ -332,7 +332,7 @@ export default function LeadershipPage() {
             </Link>
             
             <Link
-              href="https://forms.gle/r4eosBbq6nTf7a8X7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative inline-flex items-center justify-center px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white font-semibold rounded-xl sm:rounded-2xl transition-all duration-300 hover:shadow-lg hover:shadow-primary-500/25 hover:-translate-y-1 backdrop-blur-sm text-sm sm:text-base"

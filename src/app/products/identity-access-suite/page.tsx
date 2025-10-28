@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 
 const identityFeatures = [
   {
@@ -74,14 +75,8 @@ export default function IdentityAccessSuitePage() {
             user identities and controls access across your entire organization.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn text-lg px-8 py-4">Request Demo
+            </FormButton>
             <Link
               href="#features"
               className="btn-secondary text-lg px-8 py-4"
@@ -233,14 +228,8 @@ export default function IdentityAccessSuitePage() {
             threats.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn text-lg px-8 py-4"
-            >
-              Request Demo
-            </Link>
+            <FormButton className="btn text-lg px-8 py-4">Request Demo
+            </FormButton>
             <Link
               href="/products/zero-trust-network-edge"
               className="btn-secondary text-lg px-8 py-4"

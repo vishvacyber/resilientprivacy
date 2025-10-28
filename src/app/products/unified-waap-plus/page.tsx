@@ -176,14 +176,9 @@ export default function UnifiedWAAPPage() {
             <Link href="#features" className="btn text-lg px-8 py-4">
               Explore Features
             </Link>
-            <Link
-              href="https://forms.gle/xuGFneJ1ijjfMp9x7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary text-lg px-8 py-4"
-            >
+            <FormButton className="btn-secondary text-lg px-8 py-4">
               Request Demo
-            </Link>
+            </FormButton>
           </div>
         </div>
       </section>

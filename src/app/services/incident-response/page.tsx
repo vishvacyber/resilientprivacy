@@ -307,7 +307,7 @@ export default function IncidentResponsePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
-                href="https://forms.gle/8M41jMdsjVm6PoAG7"
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn text-lg px-10 py-4"
@@ -606,7 +606,7 @@ export default function IncidentResponsePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
             <Link
-              href="https://forms.gle/8M41jMdsjVm6PoAG7"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="btn text-lg px-10 py-4"

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import FormButton from '@/components/FormButton'
 import { Metadata } from 'next'
 import {
   Shield,
@@ -230,7 +231,7 @@ export default function SecureAPIGatewayPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
               <Link
-                href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn text-lg px-10 py-5"
@@ -581,7 +582,7 @@ export default function SecureAPIGatewayPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
-                  href="https://forms.gle/xuGFneJ1ijjfMp9x7"
+                  href="/contact"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn text-lg px-12 py-6"

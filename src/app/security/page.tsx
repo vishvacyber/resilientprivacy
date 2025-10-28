@@ -67,7 +67,7 @@ export default function SecurityPage() {
           <ul className="list-disc list-inside text-text-secondary space-y-2">
             <li>
               <Link
-                href="https://forms.gle/r4eosBbq6nTf7a8X7"
+                href="/contact"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-accent-500 hover:underline"
@@ -115,7 +115,7 @@ export default function SecurityPage() {
         </section>
         <div className="text-center mt-8">
           <Link
-            href="https://forms.gle/r4eosBbq6nTf7a8X7"
+            href="/contact"
             target="_blank"
             rel="noopener noreferrer"
             className="btn text-lg px-8 py-4"
