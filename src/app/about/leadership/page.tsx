@@ -184,6 +184,63 @@ export default function LeadershipPage() {
         </div>
       </section>
 
+      {/* Mobile-Optimized Our Team Section */}
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-background-alt">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <div className="inline-flex items-center gap-2 bg-primary-500/10 border border-primary-500/20 rounded-full px-3 py-1.5 sm:px-4 sm:py-2 mb-4 sm:mb-6">
+              <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary-500" />
+              <span className="text-primary-500 text-xs sm:text-sm font-medium">Team Unity</span>
+              <Users className="w-3 h-3 sm:w-4 sm:h-4 text-primary-500" />
+            </div>
+            
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6">
+              Our <span className="darkfire-text-gradient">Team</span>
+            </h2>
+            <p className="text-sm sm:text-base lg:text-lg text-text-secondary max-w-4xl mx-auto leading-relaxed px-2">
+              These are the great minds and exceptional members who form the backbone of Resilient Privacy. United by a shared vision of redefining digital trust, each individual brings unique expertise, passion, and dedication to building a more secure future. Together, we combine innovation with excellence, transforming the cybersecurity landscape one breakthrough at a time.
+            </p>
+          </div>
+
+          <div className="flex justify-center">
+            <div className="relative w-full max-w-4xl">
+              {/* Outer decorative frame */}
+              <div className="absolute -inset-4 sm:-inset-6 lg:-inset-8 rounded-3xl sm:rounded-[2rem] lg:rounded-[2.5rem] bg-gradient-to-br from-primary-500/20 via-primary-600/10 to-primary-500/20 blur-xl opacity-50"></div>
+              
+              {/* Middle frame layer with gradient border */}
+              <div className="absolute -inset-2 sm:-inset-3 lg:-inset-4 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-primary-500/40 via-primary-600/30 to-primary-500/40 p-[2px] sm:p-[3px]">
+                <div className="w-full h-full rounded-2xl sm:rounded-3xl bg-background-alt"></div>
+              </div>
+              
+              {/* Inner frame with double border effect */}
+              <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden">
+                {/* Corner decorative elements */}
+                <div className="absolute top-0 left-0 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-l-2 border-primary-500/60 rounded-tl-2xl"></div>
+                <div className="absolute top-0 right-0 w-12 h-12 sm:w-16 sm:h-16 border-t-2 border-r-2 border-primary-500/60 rounded-tr-2xl"></div>
+                <div className="absolute bottom-0 left-0 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-l-2 border-primary-500/60 rounded-bl-2xl"></div>
+                <div className="absolute bottom-0 right-0 w-12 h-12 sm:w-16 sm:h-16 border-b-2 border-r-2 border-primary-500/60 rounded-br-2xl"></div>
+                
+                {/* Inner border */}
+                <div className="relative border-2 border-primary-500/30 rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-primary-500/20 hover:shadow-primary-500/30 transition-all duration-300">
+                  <img
+                    src="/images/Team Photo.jpg"
+                    alt="Resilient Privacy Team"
+                    className="w-full h-auto object-cover"
+                    loading="lazy"
+                  />
+                  
+                  {/* Decorative overlay gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background-alt/20 via-transparent to-transparent pointer-events-none"></div>
+                  
+                  {/* Animated glow effect on hover */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/0 via-primary-500/0 to-primary-500/0 hover:from-primary-500/10 hover:via-primary-500/5 hover:to-primary-500/10 transition-all duration-500 pointer-events-none rounded-2xl sm:rounded-3xl"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mobile-Optimized Advisory Board Section */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-background-alt">
         <div className="max-w-7xl mx-auto">
