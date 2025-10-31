@@ -44,7 +44,9 @@ export default function CookieConsent() {
         }
       } catch (error) {
         // If there's any error parsing stored data, show banner
-        console.error('Error parsing saved consent:', error)
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Error parsing saved consent:', error)
+        }
         setShowBanner(true)
       }
     }
@@ -63,7 +65,9 @@ export default function CookieConsent() {
         localStorage.setItem('cookieConsent', JSON.stringify(sanitizedData))
         localStorage.setItem('consentTimestamp', new Date().toISOString())
       } catch (error) {
-        console.error('Error saving cookie consent:', error)
+        if (process.env.NODE_ENV === 'development') {
+          console.error('Error saving cookie consent:', error)
+        }
       }
     }
   }

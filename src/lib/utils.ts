@@ -184,20 +184,18 @@ export function validateInputWithIntegrity(input: string): {
 export function handleError(error: Error, context?: string): void {
   const errorId = generateSecureId(16)
 
-  // Log error securely
+  // Log error securely - only in development
   if (process.env.NODE_ENV === 'development') {
     console.error(`Error [${errorId}]:`, {
       message: error.message,
       stack: error.stack,
       context,
     })
-  } else {
-    // Production: Only log error ID and basic info
-    console.error(`Application error [${errorId}] occurred`)
-
-    // Send to external logging service
-    // logToExternalService(errorId, error.message, context)
   }
+  
+  // Production: Log to external service (not console)
+  // TODO: Implement external logging service
+  // logToExternalService(errorId, error.message, context)
 }
 
 // Rate limiting utility
