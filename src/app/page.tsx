@@ -96,9 +96,9 @@ export default function Home() {
           <div className="absolute top-20 left-10 w-72 h-72 bg-primary-500/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
           
-          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24">
-            <div className="text-center mb-8 sm:mb-12 md:mb-16">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+          <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight">
                 <span className="block">
                   <TypewriterText 
                     phrases={[
@@ -107,77 +107,77 @@ export default function Home() {
                       "Threat Detection",
                       "Zero Trust"
                     ]}
-                    className="text-primary-400"
+                    className="text-primary-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
                     typingSpeed={80}
                     deletingSpeed={40}
                     pauseTime={2500}
                   />
                 </span>
-                <span className="block text-primary-400">in Minutes</span>
-                <span className="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-text-secondary mt-3 sm:mt-4">
+                <span className="block text-primary-400 text-xl sm:text-2xl md:text-3xl">in Minutes</span>
+                <span className="block text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mt-2 sm:mt-3 md:mt-4">
                   with <span className="text-primary-400 font-semibold">Security Edge</span>
                 </span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-text-secondary mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary mb-4 sm:mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
                 Real-time API threat protection at the edge. Security Edge discovers your API attack surface, stops API attacks in real-time, and automates security testing in development and production.
               </p>
             </div>
 
             {/* Separator */}
-            <div className="flex items-center justify-center mb-8 sm:mb-12 md:mb-16">
-              <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
-              <div className="mx-3 sm:mx-4 w-1.5 sm:w-2 h-1.5 sm:h-2 bg-primary-500/30 rounded-full"></div>
-              <div className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+            <div className="flex items-center justify-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <div className="w-12 sm:w-16 md:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
+              <div className="mx-2 sm:mx-3 md:mx-4 w-1 sm:w-1.5 md:w-2 h-1 sm:h-1.5 md:h-2 bg-primary-500/30 rounded-full"></div>
+              <div className="w-12 sm:w-16 md:w-24 h-px bg-gradient-to-r from-transparent via-primary-500/50 to-transparent"></div>
             </div>
 
           </div>
         </main>
 
         {/* AI Protection Focus */}
-        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-background-alt">
+        <section className="py-6 sm:py-8 md:py-12 lg:py-16 bg-background-alt">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-8 sm:mb-12 md:mb-16">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6 leading-tight">
+            <div className="text-center mb-6 sm:mb-8 md:mb-12 lg:mb-16">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-3 sm:mb-4 md:mb-6 leading-tight px-2">
                 The only platform that protects <span className="text-primary-400">Agentic AI</span>
               </h2>
-              <p className="text-base sm:text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed px-2 mb-8 sm:mb-12">
+              <p className="text-sm sm:text-base md:text-lg text-text-secondary max-w-3xl mx-auto leading-relaxed px-2 mb-6 sm:mb-8 md:mb-12">
                 AI deployments create complex attack surfaces. We secure them.
               </p>
               
               {/* AI Protection Counters */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 max-w-4xl mx-auto">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
                 <div className="text-center group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-primary-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-primary-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={99} suffix=".9%" />
                   </div>
-                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                  <div className="text-xs text-text-secondary font-medium px-1">
                     AI Threat Detection Accuracy
                   </div>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={15} suffix="ms" />
                   </div>
-                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                  <div className="text-xs text-text-secondary font-medium px-1">
                     Real-time Response Time
                   </div>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-green-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={24} suffix="/7" />
                   </div>
-                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                  <div className="text-xs text-text-secondary font-medium px-1">
                     AI Security Monitoring
                   </div>
                 </div>
                 
                 <div className="text-center group">
-                  <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform duration-300">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-purple-400 mb-1 sm:mb-2 group-hover:scale-110 transition-transform duration-300">
                     <AnimatedCounter end={50} suffix="K+" />
                   </div>
-                  <div className="text-xs sm:text-sm text-text-secondary font-medium">
+                  <div className="text-xs text-text-secondary font-medium px-1">
                     AI Models Protected
                   </div>
                 </div>
@@ -187,24 +187,24 @@ export default function Home() {
         </section>
 
         {/* Core Capabilities - Web Redesigned */}
-        <section className="py-16 sm:py-20 md:py-24 lg:py-28 bg-background">
+        <section className="py-8 sm:py-12 md:py-16 lg:py-20 bg-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
-            <div className="text-center mb-12 sm:mb-16 md:mb-20">
-              <div className="inline-flex items-center px-3 py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 mb-4">
-                <div className="w-1.5 h-1.5 bg-primary-400 rounded-full mr-2 animate-pulse"></div>
+            <div className="text-center mb-8 sm:mb-12 md:mb-16 lg:mb-20">
+              <div className="inline-flex items-center px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-primary-500/10 border border-primary-500/20 mb-3 sm:mb-4">
+                <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-primary-400 rounded-full mr-1.5 sm:mr-2 animate-pulse"></div>
                 <span className="text-xs font-medium text-primary-400">Core Capabilities</span>
               </div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 sm:mb-8 leading-tight">
+              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4 sm:mb-6 md:mb-8 leading-tight px-2">
                 Stop attacks, don't just detect them
               </h2>
-              <p className="text-lg sm:text-xl md:text-2xl text-text-secondary max-w-4xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-text-secondary max-w-4xl mx-auto leading-relaxed px-2">
                 Our platform goes beyond traditional security monitoring to actively prevent, block, and neutralize threats in real-time.
               </p>
             </div>
             
             {/* Capabilities Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8 lg:gap-10">
               {[
                 { 
                   icon: <Target className="w-12 h-12 text-primary-400" />,
