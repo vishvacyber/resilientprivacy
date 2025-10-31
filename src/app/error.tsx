@@ -6,7 +6,7 @@ import { AlertTriangle, Home, RefreshCw, Mail } from 'lucide-react'
 
 interface ErrorProps {
   error: Error & { digest?: string }
-  reset: () => void
+  reset?: () => void
 }
 
 export default function Error({ error, reset }: ErrorProps) {
@@ -58,13 +58,15 @@ export default function Error({ error, reset }: ErrorProps) {
           )}
 
           <div className="flex flex-col sm:flex-row gap-3">
-            <button
-              onClick={reset}
-              className="flex items-center justify-center gap-2 px-6 py-3 bg-accent-500 text-white font-semibold rounded-xl hover:bg-accent-600 transition-all duration-300"
-            >
-              <RefreshCw className="w-4 h-4" />
-              Try Again
-            </button>
+            {reset && (
+              <button
+                onClick={reset}
+                className="flex items-center justify-center gap-2 px-6 py-3 bg-accent-500 text-white font-semibold rounded-xl hover:bg-accent-600 transition-all duration-300 min-h-[44px]"
+              >
+                <RefreshCw className="w-4 h-4" />
+                Try Again
+              </button>
+            )}
 
             <Link
               href="/"

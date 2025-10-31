@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { Calendar } from 'lucide-react'
 import Image from 'next/image'
+import ContactModal from '@/components/ContactModal'
 
 const events = [
   {
@@ -205,16 +206,13 @@ export default function EventsPage() {
                       Starts in {getCountdown(event.date)}
                     </span>
                   )}
-                  <a
-                    href="#"
-                    onClick={(e) => {
-                      e.preventDefault()
-                      handleRegister(event)
-                    }}
+                  <button
+                    type="button"
+                    onClick={() => handleRegister(event)}
                     className="px-5 py-2 rounded-xl font-semibold bg-gradient-to-r from-accent-500 to-accent-600 text-white hover:from-accent-600 hover:to-accent-500 transition"
                   >
                     {event.action}
-                  </a>
+                  </button>
                   <a
                     href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.date.replace(/[-:]/g, '').replace('T', 'T').slice(0, 15)}/${event.date.replace(/[-:]/g, '').replace('T', 'T').slice(0, 15)}&details=${encodeURIComponent(event.desc)}`}
                     target="_blank"
@@ -256,20 +254,19 @@ export default function EventsPage() {
           Submit your request or propose a webinar and our team will get in
           touch.
         </p>
-        <a
-          href="#"
-          className="inline-block bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition shadow-lg"
-        >
+        <ContactModal className="inline-block bg-gradient-to-r from-accent-500 to-accent-600 text-white px-8 py-3 rounded-xl font-semibold hover:from-accent-600 hover:to-accent-500 transition shadow-lg">
           Submit Event/Webinar Idea
-        </a>
+        </ContactModal>
       </div>
       {/* Registration Modal */}
       {showModal && modalEvent && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
           <div className="bg-[#232336] rounded-2xl p-8 max-w-md w-full shadow-2xl border border-accent-500/40 relative">
             <button
-              className="absolute top-3 right-3 text-accent-500 text-xl"
+              type="button"
+              className="absolute top-3 right-3 text-accent-500 text-xl hover:text-white transition-colors"
               onClick={() => setShowModal(false)}
+              aria-label="Close modal"
             >
               &times;
             </button>

@@ -276,9 +276,9 @@ export default function IncidentResponsePage() {
                 key={item.name}
                 className="bg-[#232336] rounded-2xl p-6 border border-accent-500/30 shadow-lg hover:border-accent-500 transition-colors"
               >
-                <div className="flex items-center mb-4">
-                  {item.icon}
-                  <h3 className="text-lg font-bold text-white ml-3">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <h3 className="text-lg font-bold text-white leading-tight">
                     {item.name}
                   </h3>
                 </div>

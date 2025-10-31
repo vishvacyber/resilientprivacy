@@ -76,7 +76,6 @@ export async function GET() {
       changefreq: 'weekly',
     },
     { url: '/services/red-teaming', priority: '0.8', changefreq: 'weekly' },
-    { url: '/services/training', priority: '0.7', changefreq: 'monthly' },
     {
       url: '/services/governance-compliance',
       priority: '0.8',
@@ -94,11 +93,6 @@ export async function GET() {
     { url: '/resources', priority: '0.7', changefreq: 'weekly' },
     { url: '/resources/blog', priority: '0.7', changefreq: 'daily' },
     { url: '/resources/documentation', priority: '0.6', changefreq: 'monthly' },
-    {
-      url: '/resources/threat-reports',
-      priority: '0.6',
-      changefreq: 'monthly',
-    },
     { url: '/resources/training', priority: '0.6', changefreq: 'monthly' },
 
     // Other Important Pages

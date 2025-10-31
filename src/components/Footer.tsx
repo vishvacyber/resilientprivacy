@@ -37,8 +37,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-4 sm:mb-6 md:mb-8">
           {/* Company Info */}
           <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-2 sm:space-x-3">
-              <span className="text-base sm:text-lg font-bold text-white">Resilient Privacy Inc.</span>
+            <div className="flex items-center">
+              <span className="text-base sm:text-lg font-bold text-white leading-tight">Resilient Privacy Inc.</span>
             </div>
             <p className="text-text-secondary text-xs sm:text-sm leading-relaxed max-w-sm">
               A feature release engine company specializing in AI and API security solutions. We develop and deploy advanced cybersecurity technologies to protect modern digital infrastructure.
@@ -51,7 +51,7 @@ export default function Footer() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 sm:w-8 sm:h-8 bg-background-card rounded-lg flex items-center justify-center text-text-secondary hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300 touch-manipulation"
+                  className="w-8 h-8 sm:w-10 sm:h-10 bg-background-card rounded-lg flex items-center justify-center text-text-secondary hover:text-primary-500 hover:bg-primary-500/10 transition-all duration-300 touch-manipulation flex-shrink-0"
                   aria-label={social.name}
                 >
                   {social.icon}
@@ -89,16 +89,16 @@ export default function Footer() {
           <div className="space-y-3 sm:space-y-4">
             <h3 className="text-xs sm:text-sm font-semibold text-white">Contact</h3>
             <div className="space-y-2 sm:space-y-3">
-              <div className="flex items-start space-x-2">
-                <svg className="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center space-x-2">
+                <svg className="w-4 h-4 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
                 <a href="mailto:info@resilientprivacy.com" className="text-text-secondary hover:text-primary-500 transition-colors duration-300 text-xs sm:text-sm break-all min-h-[44px] flex items-center">
                   info@resilientprivacy.com
                 </a>
               </div>
-              <div className="flex items-start space-x-2">
-                <svg className="w-4 h-4 text-primary-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="flex items-center space-x-2">
+                <svg className="w-4 h-4 text-primary-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>

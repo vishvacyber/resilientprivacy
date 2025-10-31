@@ -68,12 +68,12 @@ export default function Header() {
             className="flex items-center group transition-all duration-500 ease-out"
             aria-label="Resilient Privacy - Home"
           >
-            <div className="relative">
-              <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold tracking-normal transition-all duration-300 ease-out group-hover:scale-102 select-none leading-tight">
-                <span className="logo-gradient font-bold">
+            <div className="relative flex items-center">
+              <h1 className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold tracking-normal transition-all duration-300 ease-out group-hover:scale-102 select-none leading-none flex items-baseline">
+                <span className="logo-gradient font-bold inline-block">
                   RESILIENT
                 </span>
-                <span className="ml-1.5 sm:ml-2 logo-gradient-purple font-bold">
+                <span className="ml-1.5 sm:ml-2 md:ml-3 logo-gradient-purple font-bold inline-block">
                   PRIVACY
                 </span>
               </h1>
@@ -83,7 +83,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation with Dropdowns */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center justify-center space-x-8">
             <Link
               href="/"
               className="text-text-secondary hover:text-white font-medium transition-colors duration-300"
@@ -93,13 +93,13 @@ export default function Header() {
             
             {/* Company Dropdown */}
             <div className="relative group">
-              <button
-                onClick={() => toggleDropdown('company')}
-                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
-              >
-                <span>Company</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'company' ? 'rotate-180' : ''}`} />
-              </button>
+            <button
+              onClick={() => toggleDropdown('company')}
+              className="flex items-center justify-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+            >
+              <span>Company</span>
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${activeDropdown === 'company' ? 'rotate-180' : ''}`} />
+            </button>
               {activeDropdown === 'company' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">
@@ -134,13 +134,13 @@ export default function Header() {
 
             {/* Products Dropdown */}
             <div className="relative group">
-              <button
-                onClick={() => toggleDropdown('products')}
-                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
-              >
-                <span>Products</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'products' ? 'rotate-180' : ''}`} />
-              </button>
+            <button
+              onClick={() => toggleDropdown('products')}
+              className="flex items-center justify-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+            >
+              <span>Products</span>
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${activeDropdown === 'products' ? 'rotate-180' : ''}`} />
+            </button>
               {activeDropdown === 'products' && (
                 <div className="absolute top-full left-0 mt-2 w-96 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">
@@ -209,13 +209,13 @@ export default function Header() {
 
             {/* Services Dropdown */}
             <div className="relative group">
-              <button
-                onClick={() => toggleDropdown('services')}
-                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
-              >
-                <span>Services</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'services' ? 'rotate-180' : ''}`} />
-              </button>
+            <button
+              onClick={() => toggleDropdown('services')}
+              className="flex items-center justify-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+            >
+              <span>Services</span>
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${activeDropdown === 'services' ? 'rotate-180' : ''}`} />
+            </button>
               {activeDropdown === 'services' && (
                 <div className="absolute top-full left-0 mt-2 w-72 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">
@@ -258,13 +258,13 @@ export default function Header() {
 
             {/* Resources Dropdown */}
             <div className="relative group">
-              <button
-                onClick={() => toggleDropdown('resources')}
-                className="flex items-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
-              >
-                <span>Resources</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${activeDropdown === 'resources' ? 'rotate-180' : ''}`} />
-              </button>
+            <button
+              onClick={() => toggleDropdown('resources')}
+              className="flex items-center justify-center space-x-1 text-text-secondary hover:text-white font-medium transition-colors duration-300"
+            >
+              <span>Resources</span>
+              <ChevronDown className={`w-4 h-4 transition-transform duration-300 flex-shrink-0 ${activeDropdown === 'resources' ? 'rotate-180' : ''}`} />
+            </button>
               {activeDropdown === 'resources' && (
                 <div className="absolute top-full left-0 mt-2 w-64 bg-background-card border border-border-light/20 rounded-xl shadow-2xl backdrop-blur-sm z-50">
                   <div className="p-4 space-y-3">

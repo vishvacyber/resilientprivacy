@@ -395,8 +395,8 @@ export default function Home() {
                 href="/products"
                 className="btn-secondary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-xl flex items-center justify-center gap-2 min-h-[48px]"
               >
-                <Shield className="w-4 h-4 sm:w-5 sm:h-5" />
-                View Products
+                <Shield className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
+                <span>View Products</span>
               </Link>
             </div>
           </div>

@@ -144,6 +144,7 @@ export default function CookieConsent() {
               </div>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 w-full sm:w-auto">
                 <button
+                  type="button"
                   onClick={handleAcceptAll}
                   className="btn text-xs sm:text-sm md:text-base flex items-center justify-center gap-2 min-h-[44px] px-3 sm:px-4 py-2 w-full sm:w-auto touch-manipulation"
                 >
@@ -151,12 +152,14 @@ export default function CookieConsent() {
                   Accept All
                 </button>
                 <button
+                  type="button"
                   onClick={handleRejectAll}
                   className="btn-secondary text-xs sm:text-sm md:text-base min-h-[44px] px-3 sm:px-4 py-2 w-full sm:w-auto touch-manipulation"
                 >
                   Reject All
                 </button>
                 <button
+                  type="button"
                   onClick={() => setShowSettings(true)}
                   className="btn-secondary text-xs sm:text-sm md:text-base flex items-center justify-center gap-2 min-h-[44px] px-3 sm:px-4 py-2 w-full sm:w-auto touch-manipulation"
                 >
@@ -179,8 +182,10 @@ export default function CookieConsent() {
                 Cookie Preferences
               </h3>
               <button
+                type="button"
                 onClick={() => setShowSettings(false)}
                 className="text-gray-400 hover:text-white transition-colors"
+                aria-label="Close settings"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -253,12 +258,14 @@ export default function CookieConsent() {
 
             <div className="flex gap-3">
               <button
+                type="button"
                 onClick={handleSavePreferences}
                 className="flex-1 btn"
               >
                 Save Preferences
               </button>
               <button
+                type="button"
                 onClick={() => setShowSettings(false)}
                 className="flex-1 btn-secondary"
               >
