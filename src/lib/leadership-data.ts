@@ -78,6 +78,7 @@ export const leadership: LeadershipMember[] = [
     linkedin: 'https://www.linkedin.com/in/rac1904',
     quote:
       "Vision without execution is just a dream. As Chief of Staff, I turn the CEO's vision into reality through strategic coordination and flawless execution. We're not just building a company—we're architecting the future of cybersecurity.",
+    hidden: true,
   },
   {
     name: 'Siddhi Patel',
