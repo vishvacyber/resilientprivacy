@@ -17,23 +17,8 @@ const nextConfig: NextConfig = {
   // Compression
   compress: true,
   // Turbopack configuration (Next.js 16+)
+  // Next.js 16 uses Turbopack by default, webpack config removed to avoid conflicts
   turbopack: {},
-  // Bundle analyzer (kept for webpack fallback if needed)
-  webpack: (config, { dev, isServer }) => {
-    if (!dev && !isServer) {
-      config.optimization.splitChunks = {
-        chunks: 'all',
-        cacheGroups: {
-          vendor: {
-            test: /[\\/]node_modules[\\/]/,
-            name: 'vendors',
-            chunks: 'all',
-          },
-        },
-      }
-    }
-    return config
-  },
   async headers() {
     return [
       {
