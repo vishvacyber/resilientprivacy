@@ -16,7 +16,9 @@ const nextConfig: NextConfig = {
   },
   // Compression
   compress: true,
-  // Bundle analyzer
+  // Turbopack configuration (Next.js 16+)
+  turbopack: {},
+  // Bundle analyzer (kept for webpack fallback if needed)
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
       config.optimization.splitChunks = {
