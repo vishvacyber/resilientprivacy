@@ -121,12 +121,6 @@ const structuredData = {
       jobTitle: 'Board Member & CIO',
       url: 'https://resilientprivacy.com/about/leadership/aditya-desai',
     },
-    {
-      '@type': 'Person',
-      name: 'Malay Bhavsar',
-      jobTitle: 'CTO & CISO',
-      url: 'https://resilientprivacy.com/about/leadership/malay-bhavsar',
-    },
   ],
   sameAs: [
     'https://linkedin.com/company/resilientprivacy',
